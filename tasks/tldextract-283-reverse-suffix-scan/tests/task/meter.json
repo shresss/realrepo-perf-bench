@@ -1,0 +1,9 @@
+{
+  "target_paths": [
+    "tldextract/tldextract.py"
+  ],
+  "package_paths": [
+    "tldextract"
+  ],
+  "pandas_udf": false
+}

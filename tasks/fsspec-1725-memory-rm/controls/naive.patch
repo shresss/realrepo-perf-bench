@@ -1,0 +1,12 @@
+--- a/fsspec/implementations/memory.py	2026-10-01 02:43:45
++++ b/fsspec/implementations/memory.py	2026-10-01 02:43:45
+@@ -255,6 +255,9 @@
+             path = [self._strip_protocol(p) for p in path]
+         paths = self.expand_path(path, recursive=recursive, maxdepth=maxdepth)
+         for p in reversed(paths):
++            if p in self.store:
++                self.rm_file(p)
++                continue
+             # If the expanded path doesn't exist, it is only because the expanded
+             # path was a directory that does not exist in self.pseudo_dirs. This
+             # is possible if you directly create files without making the

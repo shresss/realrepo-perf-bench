@@ -1,0 +1,32 @@
+# Linux lock for lifelines 1660 task. Pins copied from the author macOS py3.12 resolution
+# (afterquery-mining-probe/env/requirements-analytical-macos-py312.lock) plus the build backend.
+autograd==1.9.1
+autograd-gamma==0.5.0
+contourpy==1.4.0
+cycler==0.12.1
+flaky==3.8.1
+fonttools==4.66.1
+formulaic==1.2.2
+iniconfig==2.3.0
+interface-meta==2.0.1
+kiwisolver==1.5.1
+matplotlib==3.11.2
+narwhals==2.26.0
+numpy==2.5.3
+packaging==26.3
+pandas==2.3.3
+pillow==12.3.0
+pluggy==1.6.0
+pygments==2.21.0
+pyparsing==3.3.3
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+pytz==2026.4
+scipy==1.18.1
+six==1.17.0
+tqdm==4.70.1
+typing-extensions==4.16.0
+tzdata==2026.4
+wrapt==2.5.0
+setuptools==84.0.0
+wheel==0.48.0

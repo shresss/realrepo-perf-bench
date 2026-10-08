@@ -1,0 +1,16 @@
+diff --git a/markdown/treeprocessors.py b/markdown/treeprocessors.py
+index 9a27446..a41f684 100644
+--- a/markdown/treeprocessors.py
++++ b/markdown/treeprocessors.py
+@@ -323,8 +323,10 @@ class InlineProcessor(Treeprocessor):
+         placeholder = self.__stashNode(node, pattern.type())
+ 
+         if new_style:
++            # Everything before the match was already scanned without a match;
++            # resume at the inserted placeholder instead of rescanning from 0.
+             return "{}{}{}".format(data[:start],
+-                                   placeholder, data[end:]), True, 0
++                                   placeholder, data[end:]), True, start
+         else:  # pragma: no cover
+             return "{}{}{}{}".format(leftData,
+                                      match.group(1),

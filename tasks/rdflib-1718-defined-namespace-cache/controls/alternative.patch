@@ -1,0 +1,24 @@
+--- a/rdflib/namespace/__init__.py
++++ b/rdflib/namespace/__init__.py
+@@ -195,8 +195,21 @@
+     _extras: List[str] = []  # List of non-pythonesque items
+     _underscore_num: bool = False  # True means pass "_n" constructs
+ 
++    def __new__(mcls, name, bases, values):
++        cls = super().__new__(mcls, name, bases, values)
++        namespace = next((vars(c)["_NS"] for c in cls.__mro__ if "_NS" in vars(c)), None)
++        terms = set()
++        for c in cls.__mro__:
++            terms.update(vars(c).get("__annotations__", {}))
++            terms.update(vars(c).get("_extras", ()))
++        cls._declared_uris = {} if namespace is None else {term: namespace[term] for term in terms if not term.startswith("_")}
++        return cls
++
+     def __getitem__(cls, name: str, default=None) -> URIRef:
+         name = str(name)
++        known = cls.__dict__["_declared_uris"]
++        if name in known:
++            return known[name]
+         if str(name).startswith("__"):
+             return super().__getitem__(name, default)  # type: ignore[misc] # undefined in superclass
+         if (cls._warn or cls._fail) and name not in cls:

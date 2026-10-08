@@ -1,0 +1,36 @@
+diff --git a/janitor/functions/_conditional_join/_greater_than_indices.py b/janitor/functions/_conditional_join/_greater_than_indices.py
+index eab6c9d..aac74a9 100644
+--- a/janitor/functions/_conditional_join/_greater_than_indices.py
++++ b/janitor/functions/_conditional_join/_greater_than_indices.py
+@@ -71,11 +71,11 @@ def _greater_than_indices(
+         return {"left_index": left_index, "right_index": search_indices - 1}
+     if keep == "first":
+         right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.min() for arr in right]
++        right = [arr[0] for arr in right]
+         return {"left_index": left_index, "right_index": right}
+     if keep == "last":
+         right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.max() for arr in right]
++        right = [arr[-1] for arr in right]
+         return {"left_index": left_index, "right_index": right}
+     if return_matching_indices:
+         return dict(
+diff --git a/janitor/functions/_conditional_join/_less_than_indices.py b/janitor/functions/_conditional_join/_less_than_indices.py
+index b801e2d..f96361a 100644
+--- a/janitor/functions/_conditional_join/_less_than_indices.py
++++ b/janitor/functions/_conditional_join/_less_than_indices.py
+@@ -73,11 +73,11 @@ def _less_than_indices(
+         return {"left_index": left_index, "right_index": search_indices}
+     if keep == "first":
+         right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.min() for arr in right]
++        right = [arr[0] for arr in right]
+         return {"left_index": left_index, "right_index": right}
+     if keep == "last":
+         right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.max() for arr in right]
++        right = [arr[-1] for arr in right]
+         return {"left_index": left_index, "right_index": right}
+     if return_matching_indices:
+         return dict(

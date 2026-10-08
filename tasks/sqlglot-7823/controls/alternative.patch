@@ -1,0 +1,37 @@
+diff --git a/sqlglot/optimizer/resolver.py b/sqlglot/optimizer/resolver.py
+index 6c45f5c5..bc15c08c 100644
+--- a/sqlglot/optimizer/resolver.py
++++ b/sqlglot/optimizer/resolver.py
+@@ -404,16 +404,22 @@ class Resolver:
+         Returns:
+             The DataType of the column, or None if not found.
+         """
+-        if isinstance(source, exp.Table):
+-            # base table - get the column type from schema
+-            col_type: exp.DataType | None = self.schema.get_column_type(source, column)
+-            if col_type and not col_type.is_type(exp.DType.UNKNOWN):
+-                return col_type
+-        elif isinstance(source, Scope):
+-            # iterate over all sources in the scope
+-            for source_name, nested_source in source.sources.items():
+-                col_type = self._get_column_type_from_scope(nested_source, column)
++        # Preserve the recursive depth-first source order, but visit each node
++        # only once within this lookup. A repeated source has already yielded
++        # no known type, otherwise that earlier visit would have returned.
++        pending = [source]
++        visited: set[int] = set()
++        while pending:
++            current = pending.pop()
++            identity = id(current)
++            if identity in visited:
++                continue
++            visited.add(identity)
++            if isinstance(current, exp.Table):
++                col_type = self.schema.get_column_type(current, column)
+                 if col_type and not col_type.is_type(exp.DType.UNKNOWN):
+                     return col_type
++            elif isinstance(current, Scope):
++                pending.extend(reversed(tuple(current.sources.values())))
+ 
+         return None
+

@@ -1,0 +1,63 @@
+--- a/frictionless/detector.py
++++ b/frictionless/detector.py
+@@ -241,36 +241,36 @@
+                 schema.fields = [{"name": name, "type": type or "any"} for name in names]
+                 return schema
+ 
+-            # Prepare fields
+-            runners = []
+-            max_score = [len(fragment)] * len(names)
+-            for index, name in enumerate(names):
+-                runners.append([])
+-                for candidate in system.create_candidates():
+-                    field = Field(candidate, name=name, schema=schema)
+-                    if field.type == "number" and self.__field_float_numbers:
+-                        field.float_number = True
+-                    runners[index].append({"field": field, "score": 0})
+-                schema.fields.append(Field(name=name, type="any", schema=schema))
+-
+-            # Infer fields
+-            treshold = len(fragment) * (self.__field_confidence - 1)
++            # Store scores separately from immutable candidate descriptions.
++            prototypes = [Field(item) for item in system.create_candidates()]
++            for prototype in prototypes:
++                if prototype.type == "number" and self.__field_float_numbers:
++                    prototype.float_number = True
++            scores = [[0] * len(prototypes) for _ in names]
++            chosen = [None] * len(names)
++            possible = [len(fragment)] * len(names)
++            threshold = len(fragment) * (self.__field_confidence - 1)
+             for cells in fragment:
+-                for index, name in enumerate(names):
+-                    if schema.fields[index].type != "any":
++                for index in range(len(names)):
++                    if chosen[index] is not None:
+                         continue
+-                    source = cells[index] if len(cells) > index else None
++                    source = cells[index] if index < len(cells) else None
+                     if source in self.__field_missing_values:
+-                        max_score[index] -= 1
++                        possible[index] -= 1
+                         continue
+-                    for runner in runners[index]:
+-                        if runner["score"] < treshold:
++                    for candidate_index, prototype in enumerate(prototypes):
++                        if scores[index][candidate_index] < threshold:
+                             continue
+-                        target, notes = runner["field"].read_cell(source)
+-                        runner["score"] += 1 if not notes else -1
+-                        if runner["score"] >= max_score[index] * self.__field_confidence:
+-                            schema.fields[index] = runner["field"]
++                        _, notes = prototype.read_cell(source)
++                        scores[index][candidate_index] += -1 if notes else 1
++                        if scores[index][candidate_index] >= possible[index] * self.__field_confidence:
++                            chosen[index] = dict(prototype)
+                             break
++            schema.fields = [
++                Field(descriptor if descriptor is not None else {"type": "any"},
++                      name=name, schema=schema)
++                for name, descriptor in zip(names, chosen)
++            ]
+ 
+         # Sync schema
+         if self.__schema_sync:

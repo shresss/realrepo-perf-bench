@@ -1,0 +1,6 @@
+{
+  "target_paths": ["nltk/sentiment/vader.py"],
+  "package_paths": ["nltk"],
+  "pandas_udf": false,
+  "claim": "Diagnostics only. Shared grade worker disables instrumentation; parent CPU is separate."
+}

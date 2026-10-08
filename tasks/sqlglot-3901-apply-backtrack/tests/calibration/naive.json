@@ -1,0 +1,4199 @@
+{
+ "all_correct": false,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T09:55:58.733691+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "c400eced00c5bafebd48a9e3eb8ab0c5ea58ab763a3dedafdd3da7edb63b1fe4",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70"
+  },
+  "task": {
+   "cases.json": "166b877e0156992448c7d17b7a3c86a1aae3faf9cec6dc53909adccbd5761d1b",
+   "expected.py": "9c6fefaaf2665e828c6e1026c161d3b35e8df774f5210ad6ff37218dcbafa8b7",
+   "meter.json": "b0eacd418f9ecc03bff231f411a6efd15dfd2b5b311b36849f20353ea0eb348b",
+   "workload.py": "6cfec3fac91b3214b40db7b3a1cbdd7017e66079e5a80a0f46df3b03951700b6"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "",
+ "max_wall_seconds": {
+  "native": 1.5883461719995466,
+  "performance": 14.177337439999974,
+  "semantic": 1.7233639899995978
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 122,
+   "cpu_seconds": 0.785059,
+   "exit_code": 0,
+   "expected_count": 122,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "duplicate_reports": [],
+    "errors": [],
+    "exit_code": 0,
+    "failures": [],
+    "reports": {
+     "tests.dialects.test_tsql.TestTSQL.test_add_date": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_charindex": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_commit": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_convert": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_current_user": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_date_diff": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_datefromparts": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_datename": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_datepart": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_ddl": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_declare": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_eomonth": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_format": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_fullproc": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_hints": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_identifier_prefixes": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_insert_cte": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_isnull": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_json": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_subquery": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_table_valued_function": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_len": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_openjson": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_option": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_procedure_keywords": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_qualify_derived_table_outputs": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_replicate": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_rollback": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_scope_resolution_op": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_set": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_string": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_system_time": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_temporal_table": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_top": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_transaction": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_tsql": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_bin": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_date": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_decimals": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_ints": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_string": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_udf": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_alter_set": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_collate": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_column": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_command": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comment_error_n": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comment_error_r": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_delete": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_delete_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_insert": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_insert_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_select": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_select_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_update": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_update_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_create_table_error": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_distinct_from": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_expression": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_float": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_identify": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_lambda_struct": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_missing_by": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_multi": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parameter": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_concat_ws": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_create_schema": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_drop_schema": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_empty": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_errors": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_floats": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_intervals": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_into": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_into_error": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_into_errors": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_prop_eq": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_properties": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_terse_coalesce": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_pivot_columns": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_pretty_config_override": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_select": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_set_expression": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_space": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_structs": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_table": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_trailing_comments": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_transactions": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_tuple": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_type_literals": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_unary_plus": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_union": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_unnest": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_unnest_projection": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_values_as_identifier": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_var": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_alias": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_alter": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_command_identity": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_comments": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_error_level": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_extract": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_identify_lambda": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_identity": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_if": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_index_offset": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_leading_comma": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_normalize_name": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_not_range": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_paren": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_partial": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_pretty": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_pretty_line_breaks": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_recursion": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_some": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_space": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_time": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_types": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_unary": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_unsupported_level": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_weird_chars": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_with": {
+      "call": "passed"
+     }
+    },
+    "run_count": 122,
+    "schema_version": 1,
+    "selected": [
+     "tests.test_parser.TestParser.test_parse_empty",
+     "tests.test_parser.TestParser.test_parse_into",
+     "tests.test_parser.TestParser.test_parse_into_error",
+     "tests.test_parser.TestParser.test_parse_into_errors",
+     "tests.test_parser.TestParser.test_column",
+     "tests.test_parser.TestParser.test_tuple",
+     "tests.test_parser.TestParser.test_structs",
+     "tests.test_parser.TestParser.test_float",
+     "tests.test_parser.TestParser.test_unnest",
+     "tests.test_parser.TestParser.test_unnest_projection",
+     "tests.test_parser.TestParser.test_unary_plus",
+     "tests.test_parser.TestParser.test_table",
+     "tests.test_parser.TestParser.test_union",
+     "tests.test_parser.TestParser.test_select",
+     "tests.test_parser.TestParser.test_command",
+     "tests.test_parser.TestParser.test_lambda_struct",
+     "tests.test_parser.TestParser.test_transactions",
+     "tests.test_parser.TestParser.test_identify",
+     "tests.test_parser.TestParser.test_multi",
+     "tests.test_parser.TestParser.test_expression",
+     "tests.test_parser.TestParser.test_parse_errors",
+     "tests.test_parser.TestParser.test_space",
+     "tests.test_parser.TestParser.test_missing_by",
+     "tests.test_parser.TestParser.test_parameter",
+     "tests.test_parser.TestParser.test_var",
+     "tests.test_parser.TestParser.test_comments_select",
+     "tests.test_parser.TestParser.test_comments_select_cte",
+     "tests.test_parser.TestParser.test_comments_insert",
+     "tests.test_parser.TestParser.test_comments_insert_cte",
+     "tests.test_parser.TestParser.test_comments_update",
+     "tests.test_parser.TestParser.test_comments_update_cte",
+     "tests.test_parser.TestParser.test_comments_delete",
+     "tests.test_parser.TestParser.test_comments_delete_cte",
+     "tests.test_parser.TestParser.test_type_literals",
+     "tests.test_parser.TestParser.test_set_expression",
+     "tests.test_parser.TestParser.test_pretty_config_override",
+     "tests.test_parser.TestParser.test_comment_error_n",
+     "tests.test_parser.TestParser.test_comment_error_r",
+     "tests.test_parser.TestParser.test_create_table_error",
+     "tests.test_parser.TestParser.test_pivot_columns",
+     "tests.test_parser.TestParser.test_parse_properties",
+     "tests.test_parser.TestParser.test_parse_floats",
+     "tests.test_parser.TestParser.test_parse_terse_coalesce",
+     "tests.test_parser.TestParser.test_parse_intervals",
+     "tests.test_parser.TestParser.test_parse_concat_ws",
+     "tests.test_parser.TestParser.test_parse_drop_schema",
+     "tests.test_parser.TestParser.test_parse_create_schema",
+     "tests.test_parser.TestParser.test_values_as_identifier",
+     "tests.test_parser.TestParser.test_alter_set",
+     "tests.test_parser.TestParser.test_distinct_from",
+     "tests.test_parser.TestParser.test_trailing_comments",
+     "tests.test_parser.TestParser.test_parse_prop_eq",
+     "tests.test_parser.TestParser.test_collate",
+     "tests.dialects.test_tsql.TestTSQL.test_tsql",
+     "tests.dialects.test_tsql.TestTSQL.test_option",
+     "tests.dialects.test_tsql.TestTSQL.test_types",
+     "tests.dialects.test_tsql.TestTSQL.test_types_ints",
+     "tests.dialects.test_tsql.TestTSQL.test_types_decimals",
+     "tests.dialects.test_tsql.TestTSQL.test_types_string",
+     "tests.dialects.test_tsql.TestTSQL.test_types_date",
+     "tests.dialects.test_tsql.TestTSQL.test_types_bin",
+     "tests.dialects.test_tsql.TestTSQL.test_ddl",
+     "tests.dialects.test_tsql.TestTSQL.test_insert_cte",
+     "tests.dialects.test_tsql.TestTSQL.test_transaction",
+     "tests.dialects.test_tsql.TestTSQL.test_commit",
+     "tests.dialects.test_tsql.TestTSQL.test_rollback",
+     "tests.dialects.test_tsql.TestTSQL.test_udf",
+     "tests.dialects.test_tsql.TestTSQL.test_procedure_keywords",
+     "tests.dialects.test_tsql.TestTSQL.test_fullproc",
+     "tests.dialects.test_tsql.TestTSQL.test_charindex",
+     "tests.dialects.test_tsql.TestTSQL.test_len",
+     "tests.dialects.test_tsql.TestTSQL.test_replicate",
+     "tests.dialects.test_tsql.TestTSQL.test_isnull",
+     "tests.dialects.test_tsql.TestTSQL.test_json",
+     "tests.dialects.test_tsql.TestTSQL.test_datefromparts",
+     "tests.dialects.test_tsql.TestTSQL.test_datename",
+     "tests.dialects.test_tsql.TestTSQL.test_datepart",
+     "tests.dialects.test_tsql.TestTSQL.test_convert",
+     "tests.dialects.test_tsql.TestTSQL.test_add_date",
+     "tests.dialects.test_tsql.TestTSQL.test_date_diff",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_subquery",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_table_valued_function",
+     "tests.dialects.test_tsql.TestTSQL.test_top",
+     "tests.dialects.test_tsql.TestTSQL.test_format",
+     "tests.dialects.test_tsql.TestTSQL.test_string",
+     "tests.dialects.test_tsql.TestTSQL.test_eomonth",
+     "tests.dialects.test_tsql.TestTSQL.test_identifier_prefixes",
+     "tests.dialects.test_tsql.TestTSQL.test_temporal_table",
+     "tests.dialects.test_tsql.TestTSQL.test_system_time",
+     "tests.dialects.test_tsql.TestTSQL.test_current_user",
+     "tests.dialects.test_tsql.TestTSQL.test_hints",
+     "tests.dialects.test_tsql.TestTSQL.test_openjson",
+     "tests.dialects.test_tsql.TestTSQL.test_set",
+     "tests.dialects.test_tsql.TestTSQL.test_qualify_derived_table_outputs",
+     "tests.dialects.test_tsql.TestTSQL.test_declare",
+     "tests.dialects.test_tsql.TestTSQL.test_scope_resolution_op",
+     "tests.test_transpile.TestTranspile.test_weird_chars",
+     "tests.test_transpile.TestTranspile.test_alias",
+     "tests.test_transpile.TestTranspile.test_unary",
+     "tests.test_transpile.TestTranspile.test_paren",
+     "tests.test_transpile.TestTranspile.test_some",
+     "tests.test_transpile.TestTranspile.test_leading_comma",
+     "tests.test_transpile.TestTranspile.test_space",
+     "tests.test_transpile.TestTranspile.test_comments",
+     "tests.test_transpile.TestTranspile.test_types",
+     "tests.test_transpile.TestTranspile.test_not_range",
+     "tests.test_transpile.TestTranspile.test_extract",
+     "tests.test_transpile.TestTranspile.test_if",
+     "tests.test_transpile.TestTranspile.test_with",
+     "tests.test_transpile.TestTranspile.test_alter",
+     "tests.test_transpile.TestTranspile.test_time",
+     "tests.test_transpile.TestTranspile.test_index_offset",
+     "tests.test_transpile.TestTranspile.test_identify_lambda",
+     "tests.test_transpile.TestTranspile.test_identity",
+     "tests.test_transpile.TestTranspile.test_command_identity",
+     "tests.test_transpile.TestTranspile.test_normalize_name",
+     "tests.test_transpile.TestTranspile.test_partial",
+     "tests.test_transpile.TestTranspile.test_pretty",
+     "tests.test_transpile.TestTranspile.test_pretty_line_breaks",
+     "tests.test_transpile.TestTranspile.test_error_level",
+     "tests.test_transpile.TestTranspile.test_unsupported_level",
+     "tests.test_transpile.TestTranspile.test_recursion"
+    ],
+    "selected_count": 122,
+    "skips": [],
+    "source_provenance": {
+     "parser": "/tmp/afterquery-calibration-adsado4l/baseline-source/sqlglot/parser.py",
+     "sqlglot": "/tmp/afterquery-calibration-adsado4l/baseline-source/sqlglot/__init__.py"
+    }
+   },
+   "outcome": "passed",
+   "passed_count": 122,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 122,
+    "files": {
+     "tests/dialects/test_dialect.py": "b52eba45574ee2f787e6164489c1e17c73cde6f1c6397c7d9cabde4648a17cf7",
+     "tests/dialects/test_tsql.py": "60a6ec21069041a13672fd8b7053c4ee1ef9ab1426497f372d04edeece725db0",
+     "tests/fixtures/identity.sql": "9b9abaa8e8ec82e13aa8c653fce165e7ae2cbdc3a8c5cdbe67a616f34a21ab0c",
+     "tests/fixtures/partial.sql": "c10d3dc1dc1245a277b2e98d5965427830e41401888bb1186d472ceaa0a8d5d8",
+     "tests/fixtures/pretty.sql": "0038edb362a779a8a1591470f19d8c9b60b039db5252bfd76f279a04f9ec9bb1",
+     "tests/helpers.py": "5d6399d51a4da72eddbc8973f0936e31b7d07adc426ea97a778fa7e7945dc992",
+     "tests/test_parser.py": "8e0f63612faca71522c7a78abfb2fd3d71cff3d32ec8e6664591c10b6649e303",
+     "tests/test_transpile.py": "75f4612aa2f51acb8e2c3a3c90d1f9f2b96ac0991b58ced94fda84ded640b36d"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "tests.dialects.test_tsql.TestTSQL.test_add_date",
+     "tests.dialects.test_tsql.TestTSQL.test_charindex",
+     "tests.dialects.test_tsql.TestTSQL.test_commit",
+     "tests.dialects.test_tsql.TestTSQL.test_convert",
+     "tests.dialects.test_tsql.TestTSQL.test_current_user",
+     "tests.dialects.test_tsql.TestTSQL.test_date_diff",
+     "tests.dialects.test_tsql.TestTSQL.test_datefromparts",
+     "tests.dialects.test_tsql.TestTSQL.test_datename",
+     "tests.dialects.test_tsql.TestTSQL.test_datepart",
+     "tests.dialects.test_tsql.TestTSQL.test_ddl",
+     "tests.dialects.test_tsql.TestTSQL.test_declare",
+     "tests.dialects.test_tsql.TestTSQL.test_eomonth",
+     "tests.dialects.test_tsql.TestTSQL.test_format",
+     "tests.dialects.test_tsql.TestTSQL.test_fullproc",
+     "tests.dialects.test_tsql.TestTSQL.test_hints",
+     "tests.dialects.test_tsql.TestTSQL.test_identifier_prefixes",
+     "tests.dialects.test_tsql.TestTSQL.test_insert_cte",
+     "tests.dialects.test_tsql.TestTSQL.test_isnull",
+     "tests.dialects.test_tsql.TestTSQL.test_json",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_subquery",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_table_valued_function",
+     "tests.dialects.test_tsql.TestTSQL.test_len",
+     "tests.dialects.test_tsql.TestTSQL.test_openjson",
+     "tests.dialects.test_tsql.TestTSQL.test_option",
+     "tests.dialects.test_tsql.TestTSQL.test_procedure_keywords",
+     "tests.dialects.test_tsql.TestTSQL.test_qualify_derived_table_outputs",
+     "tests.dialects.test_tsql.TestTSQL.test_replicate",
+     "tests.dialects.test_tsql.TestTSQL.test_rollback",
+     "tests.dialects.test_tsql.TestTSQL.test_scope_resolution_op",
+     "tests.dialects.test_tsql.TestTSQL.test_set",
+     "tests.dialects.test_tsql.TestTSQL.test_string",
+     "tests.dialects.test_tsql.TestTSQL.test_system_time",
+     "tests.dialects.test_tsql.TestTSQL.test_temporal_table",
+     "tests.dialects.test_tsql.TestTSQL.test_top",
+     "tests.dialects.test_tsql.TestTSQL.test_transaction",
+     "tests.dialects.test_tsql.TestTSQL.test_tsql",
+     "tests.dialects.test_tsql.TestTSQL.test_types",
+     "tests.dialects.test_tsql.TestTSQL.test_types_bin",
+     "tests.dialects.test_tsql.TestTSQL.test_types_date",
+     "tests.dialects.test_tsql.TestTSQL.test_types_decimals",
+     "tests.dialects.test_tsql.TestTSQL.test_types_ints",
+     "tests.dialects.test_tsql.TestTSQL.test_types_string",
+     "tests.dialects.test_tsql.TestTSQL.test_udf",
+     "tests.test_parser.TestParser.test_alter_set",
+     "tests.test_parser.TestParser.test_collate",
+     "tests.test_parser.TestParser.test_column",
+     "tests.test_parser.TestParser.test_command",
+     "tests.test_parser.TestParser.test_comment_error_n",
+     "tests.test_parser.TestParser.test_comment_error_r",
+     "tests.test_parser.TestParser.test_comments_delete",
+     "tests.test_parser.TestParser.test_comments_delete_cte",
+     "tests.test_parser.TestParser.test_comments_insert",
+     "tests.test_parser.TestParser.test_comments_insert_cte",
+     "tests.test_parser.TestParser.test_comments_select",
+     "tests.test_parser.TestParser.test_comments_select_cte",
+     "tests.test_parser.TestParser.test_comments_update",
+     "tests.test_parser.TestParser.test_comments_update_cte",
+     "tests.test_parser.TestParser.test_create_table_error",
+     "tests.test_parser.TestParser.test_distinct_from",
+     "tests.test_parser.TestParser.test_expression",
+     "tests.test_parser.TestParser.test_float",
+     "tests.test_parser.TestParser.test_identify",
+     "tests.test_parser.TestParser.test_lambda_struct",
+     "tests.test_parser.TestParser.test_missing_by",
+     "tests.test_parser.TestParser.test_multi",
+     "tests.test_parser.TestParser.test_parameter",
+     "tests.test_parser.TestParser.test_parse_concat_ws",
+     "tests.test_parser.TestParser.test_parse_create_schema",
+     "tests.test_parser.TestParser.test_parse_drop_schema",
+     "tests.test_parser.TestParser.test_parse_empty",
+     "tests.test_parser.TestParser.test_parse_errors",
+     "tests.test_parser.TestParser.test_parse_floats",
+     "tests.test_parser.TestParser.test_parse_intervals",
+     "tests.test_parser.TestParser.test_parse_into",
+     "tests.test_parser.TestParser.test_parse_into_error",
+     "tests.test_parser.TestParser.test_parse_into_errors",
+     "tests.test_parser.TestParser.test_parse_prop_eq",
+     "tests.test_parser.TestParser.test_parse_properties",
+     "tests.test_parser.TestParser.test_parse_terse_coalesce",
+     "tests.test_parser.TestParser.test_pivot_columns",
+     "tests.test_parser.TestParser.test_pretty_config_override",
+     "tests.test_parser.TestParser.test_select",
+     "tests.test_parser.TestParser.test_set_expression",
+     "tests.test_parser.TestParser.test_space",
+     "tests.test_parser.TestParser.test_structs",
+     "tests.test_parser.TestParser.test_table",
+     "tests.test_parser.TestParser.test_trailing_comments",
+     "tests.test_parser.TestParser.test_transactions",
+     "tests.test_parser.TestParser.test_tuple",
+     "tests.test_parser.TestParser.test_type_literals",
+     "tests.test_parser.TestParser.test_unary_plus",
+     "tests.test_parser.TestParser.test_union",
+     "tests.test_parser.TestParser.test_unnest",
+     "tests.test_parser.TestParser.test_unnest_projection",
+     "tests.test_parser.TestParser.test_values_as_identifier",
+     "tests.test_parser.TestParser.test_var",
+     "tests.test_transpile.TestTranspile.test_alias",
+     "tests.test_transpile.TestTranspile.test_alter",
+     "tests.test_transpile.TestTranspile.test_command_identity",
+     "tests.test_transpile.TestTranspile.test_comments",
+     "tests.test_transpile.TestTranspile.test_error_level",
+     "tests.test_transpile.TestTranspile.test_extract",
+     "tests.test_transpile.TestTranspile.test_identify_lambda",
+     "tests.test_transpile.TestTranspile.test_identity",
+     "tests.test_transpile.TestTranspile.test_if",
+     "tests.test_transpile.TestTranspile.test_index_offset",
+     "tests.test_transpile.TestTranspile.test_leading_comma",
+     "tests.test_transpile.TestTranspile.test_normalize_name",
+     "tests.test_transpile.TestTranspile.test_not_range",
+     "tests.test_transpile.TestTranspile.test_paren",
+     "tests.test_transpile.TestTranspile.test_partial",
+     "tests.test_transpile.TestTranspile.test_pretty",
+     "tests.test_transpile.TestTranspile.test_pretty_line_breaks",
+     "tests.test_transpile.TestTranspile.test_recursion",
+     "tests.test_transpile.TestTranspile.test_some",
+     "tests.test_transpile.TestTranspile.test_space",
+     "tests.test_transpile.TestTranspile.test_time",
+     "tests.test_transpile.TestTranspile.test_types",
+     "tests.test_transpile.TestTranspile.test_unary",
+     "tests.test_transpile.TestTranspile.test_unsupported_level",
+     "tests.test_transpile.TestTranspile.test_weird_chars",
+     "tests.test_transpile.TestTranspile.test_with"
+    ],
+    "schema_version": 1,
+    "selection": "tests.test_parser:TestParser.test_parse_empty,tests.test_parser:TestParser.test_parse_into,tests.test_parser:TestParser.test_parse_into_error,tests.test_parser:TestParser.test_parse_into_errors,tests.test_parser:TestParser.test_column,tests.test_parser:TestParser.test_tuple,tests.test_parser:TestParser.test_structs,tests.test_parser:TestParser.test_float,tests.test_parser:TestParser.test_unnest,tests.test_parser:TestParser.test_unnest_projection,tests.test_parser:TestParser.test_unary_plus,tests.test_parser:TestParser.test_table,tests.test_parser:TestParser.test_union,tests.test_parser:TestParser.test_select,tests.test_parser:TestParser.test_command,tests.test_parser:TestParser.test_lambda_struct,tests.test_parser:TestParser.test_transactions,tests.test_parser:TestParser.test_identify,tests.test_parser:TestParser.test_multi,tests.test_parser:TestParser.test_expression,tests.test_parser:TestParser.test_parse_errors,tests.test_parser:TestParser.test_space,tests.test_parser:TestParser.test_missing_by,tests.test_parser:TestParser.test_parameter,tests.test_parser:TestParser.test_var,tests.test_parser:TestParser.test_comments_select,tests.test_parser:TestParser.test_comments_select_cte,tests.test_parser:TestParser.test_comments_insert,tests.test_parser:TestParser.test_comments_insert_cte,tests.test_parser:TestParser.test_comments_update,tests.test_parser:TestParser.test_comments_update_cte,tests.test_parser:TestParser.test_comments_delete,tests.test_parser:TestParser.test_comments_delete_cte,tests.test_parser:TestParser.test_type_literals,tests.test_parser:TestParser.test_set_expression,tests.test_parser:TestParser.test_pretty_config_override,tests.test_parser:TestParser.test_comment_error_n,tests.test_parser:TestParser.test_comment_error_r,tests.test_parser:TestParser.test_create_table_error,tests.test_parser:TestParser.test_pivot_columns,tests.test_parser:TestParser.test_parse_properties,tests.test_parser:TestParser.test_parse_floats,tests.test_parser:TestParser.test_parse_terse_coalesce,tests.test_parser:TestParser.test_parse_intervals,tests.test_parser:TestParser.test_parse_concat_ws,tests.test_parser:TestParser.test_parse_drop_schema,tests.test_parser:TestParser.test_parse_create_schema,tests.test_parser:TestParser.test_values_as_identifier,tests.test_parser:TestParser.test_alter_set,tests.test_parser:TestParser.test_distinct_from,tests.test_parser:TestParser.test_trailing_comments,tests.test_parser:TestParser.test_parse_prop_eq,tests.test_parser:TestParser.test_collate,tests.dialects.test_tsql:TestTSQL.test_tsql,tests.dialects.test_tsql:TestTSQL.test_option,tests.dialects.test_tsql:TestTSQL.test_types,tests.dialects.test_tsql:TestTSQL.test_types_ints,tests.dialects.test_tsql:TestTSQL.test_types_decimals,tests.dialects.test_tsql:TestTSQL.test_types_string,tests.dialects.test_tsql:TestTSQL.test_types_date,tests.dialects.test_tsql:TestTSQL.test_types_bin,tests.dialects.test_tsql:TestTSQL.test_ddl,tests.dialects.test_tsql:TestTSQL.test_insert_cte,tests.dialects.test_tsql:TestTSQL.test_transaction,tests.dialects.test_tsql:TestTSQL.test_commit,tests.dialects.test_tsql:TestTSQL.test_rollback,tests.dialects.test_tsql:TestTSQL.test_udf,tests.dialects.test_tsql:TestTSQL.test_procedure_keywords,tests.dialects.test_tsql:TestTSQL.test_fullproc,tests.dialects.test_tsql:TestTSQL.test_charindex,tests.dialects.test_tsql:TestTSQL.test_len,tests.dialects.test_tsql:TestTSQL.test_replicate,tests.dialects.test_tsql:TestTSQL.test_isnull,tests.dialects.test_tsql:TestTSQL.test_json,tests.dialects.test_tsql:TestTSQL.test_datefromparts,tests.dialects.test_tsql:TestTSQL.test_datename,tests.dialects.test_tsql:TestTSQL.test_datepart,tests.dialects.test_tsql:TestTSQL.test_convert,tests.dialects.test_tsql:TestTSQL.test_add_date,tests.dialects.test_tsql:TestTSQL.test_date_diff,tests.dialects.test_tsql:TestTSQL.test_lateral_subquery,tests.dialects.test_tsql:TestTSQL.test_lateral_table_valued_function,tests.dialects.test_tsql:TestTSQL.test_top,tests.dialects.test_tsql:TestTSQL.test_format,tests.dialects.test_tsql:TestTSQL.test_string,tests.dialects.test_tsql:TestTSQL.test_eomonth,tests.dialects.test_tsql:TestTSQL.test_identifier_prefixes,tests.dialects.test_tsql:TestTSQL.test_temporal_table,tests.dialects.test_tsql:TestTSQL.test_system_time,tests.dialects.test_tsql:TestTSQL.test_current_user,tests.dialects.test_tsql:TestTSQL.test_hints,tests.dialects.test_tsql:TestTSQL.test_openjson,tests.dialects.test_tsql:TestTSQL.test_set,tests.dialects.test_tsql:TestTSQL.test_qualify_derived_table_outputs,tests.dialects.test_tsql:TestTSQL.test_declare,tests.dialects.test_tsql:TestTSQL.test_scope_resolution_op,tests.test_transpile:TestTranspile.test_weird_chars,tests.test_transpile:TestTranspile.test_alias,tests.test_transpile:TestTranspile.test_unary,tests.test_transpile:TestTranspile.test_paren,tests.test_transpile:TestTranspile.test_some,tests.test_transpile:TestTranspile.test_leading_comma,tests.test_transpile:TestTranspile.test_space,tests.test_transpile:TestTranspile.test_comments,tests.test_transpile:TestTranspile.test_types,tests.test_transpile:TestTranspile.test_not_range,tests.test_transpile:TestTranspile.test_extract,tests.test_transpile:TestTranspile.test_if,tests.test_transpile:TestTranspile.test_with,tests.test_transpile:TestTranspile.test_alter,tests.test_transpile:TestTranspile.test_time,tests.test_transpile:TestTranspile.test_index_offset,tests.test_transpile:TestTranspile.test_identify_lambda,tests.test_transpile:TestTranspile.test_identity,tests.test_transpile:TestTranspile.test_command_identity,tests.test_transpile:TestTranspile.test_normalize_name,tests.test_transpile:TestTranspile.test_partial,tests.test_transpile:TestTranspile.test_pretty,tests.test_transpile:TestTranspile.test_pretty_line_breaks,tests.test_transpile:TestTranspile.test_error_level,tests.test_transpile:TestTranspile.test_unsupported_level,tests.test_transpile:TestTranspile.test_recursion",
+    "sha256": "393ef7ee3b5247e45d8f1814259bcdd51edf9dc67c7f881966be1d57c4e551be",
+    "source_commit": "bea3c08e46a020d8545b702c77f0db18c99f1c55"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "855b57d8c1a78b31bf40045a498987217b2c9ce1c053b1c73b264f1be5d6cdb0",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "56558e90be85907ab7d4409148dded6a69b3b2528c7cc68f1401c72777792399",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5883461719995466
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 122,
+   "cpu_seconds": 0.659883,
+   "exit_code": 1,
+   "expected_count": 122,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "duplicate_reports": [],
+    "errors": [
+     "tests.test_transpile.TestTranspile.test_comments",
+     "tests.test_transpile.TestTranspile.test_identity [SELECT 1 FROM a JOIN b JOIN c ON b.id = c.id ON a.id = b.id]",
+     "tests.test_transpile.TestTranspile.test_identity [SELECT * FROM a JOIN b JOIN c USING (id) USING (id)]",
+     "tests.test_transpile.TestTranspile.test_pretty [SELECT *\nFROM a\nJOIN b\n  JOIN c\n    ON b.id = c.id\n  ON a.id = b.id\nCROSS JOIN d\nJOIN e\n  ON d.id = ]",
+     "tests.test_transpile.TestTranspile.test_pretty [SELECT * FROM a JOIN b JOIN c USING (e) JOIN d USING (f) USING (g)]"
+    ],
+    "exit_code": 1,
+    "failures": [],
+    "reports": {
+     "tests.dialects.test_tsql.TestTSQL.test_add_date": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_charindex": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_commit": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_convert": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_current_user": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_date_diff": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_datefromparts": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_datename": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_datepart": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_ddl": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_declare": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_eomonth": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_format": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_fullproc": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_hints": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_identifier_prefixes": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_insert_cte": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_isnull": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_json": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_subquery": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_table_valued_function": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_len": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_openjson": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_option": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_procedure_keywords": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_qualify_derived_table_outputs": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_replicate": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_rollback": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_scope_resolution_op": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_set": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_string": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_system_time": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_temporal_table": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_top": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_transaction": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_tsql": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_bin": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_date": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_decimals": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_ints": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_types_string": {
+      "call": "passed"
+     },
+     "tests.dialects.test_tsql.TestTSQL.test_udf": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_alter_set": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_collate": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_column": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_command": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comment_error_n": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comment_error_r": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_delete": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_delete_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_insert": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_insert_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_select": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_select_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_update": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_comments_update_cte": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_create_table_error": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_distinct_from": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_expression": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_float": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_identify": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_lambda_struct": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_missing_by": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_multi": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parameter": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_concat_ws": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_create_schema": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_drop_schema": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_empty": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_errors": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_floats": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_intervals": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_into": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_into_error": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_into_errors": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_prop_eq": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_properties": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_parse_terse_coalesce": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_pivot_columns": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_pretty_config_override": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_select": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_set_expression": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_space": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_structs": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_table": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_trailing_comments": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_transactions": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_tuple": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_type_literals": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_unary_plus": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_union": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_unnest": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_unnest_projection": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_values_as_identifier": {
+      "call": "passed"
+     },
+     "tests.test_parser.TestParser.test_var": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_alias": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_alter": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_command_identity": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_error_level": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_extract": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_identify_lambda": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_if": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_index_offset": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_leading_comma": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_normalize_name": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_not_range": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_paren": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_partial": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_pretty_line_breaks": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_recursion": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_some": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_space": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_time": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_types": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_unary": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_unsupported_level": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_weird_chars": {
+      "call": "passed"
+     },
+     "tests.test_transpile.TestTranspile.test_with": {
+      "call": "passed"
+     }
+    },
+    "run_count": 122,
+    "schema_version": 1,
+    "selected": [
+     "tests.test_parser.TestParser.test_parse_empty",
+     "tests.test_parser.TestParser.test_parse_into",
+     "tests.test_parser.TestParser.test_parse_into_error",
+     "tests.test_parser.TestParser.test_parse_into_errors",
+     "tests.test_parser.TestParser.test_column",
+     "tests.test_parser.TestParser.test_tuple",
+     "tests.test_parser.TestParser.test_structs",
+     "tests.test_parser.TestParser.test_float",
+     "tests.test_parser.TestParser.test_unnest",
+     "tests.test_parser.TestParser.test_unnest_projection",
+     "tests.test_parser.TestParser.test_unary_plus",
+     "tests.test_parser.TestParser.test_table",
+     "tests.test_parser.TestParser.test_union",
+     "tests.test_parser.TestParser.test_select",
+     "tests.test_parser.TestParser.test_command",
+     "tests.test_parser.TestParser.test_lambda_struct",
+     "tests.test_parser.TestParser.test_transactions",
+     "tests.test_parser.TestParser.test_identify",
+     "tests.test_parser.TestParser.test_multi",
+     "tests.test_parser.TestParser.test_expression",
+     "tests.test_parser.TestParser.test_parse_errors",
+     "tests.test_parser.TestParser.test_space",
+     "tests.test_parser.TestParser.test_missing_by",
+     "tests.test_parser.TestParser.test_parameter",
+     "tests.test_parser.TestParser.test_var",
+     "tests.test_parser.TestParser.test_comments_select",
+     "tests.test_parser.TestParser.test_comments_select_cte",
+     "tests.test_parser.TestParser.test_comments_insert",
+     "tests.test_parser.TestParser.test_comments_insert_cte",
+     "tests.test_parser.TestParser.test_comments_update",
+     "tests.test_parser.TestParser.test_comments_update_cte",
+     "tests.test_parser.TestParser.test_comments_delete",
+     "tests.test_parser.TestParser.test_comments_delete_cte",
+     "tests.test_parser.TestParser.test_type_literals",
+     "tests.test_parser.TestParser.test_set_expression",
+     "tests.test_parser.TestParser.test_pretty_config_override",
+     "tests.test_parser.TestParser.test_comment_error_n",
+     "tests.test_parser.TestParser.test_comment_error_r",
+     "tests.test_parser.TestParser.test_create_table_error",
+     "tests.test_parser.TestParser.test_pivot_columns",
+     "tests.test_parser.TestParser.test_parse_properties",
+     "tests.test_parser.TestParser.test_parse_floats",
+     "tests.test_parser.TestParser.test_parse_terse_coalesce",
+     "tests.test_parser.TestParser.test_parse_intervals",
+     "tests.test_parser.TestParser.test_parse_concat_ws",
+     "tests.test_parser.TestParser.test_parse_drop_schema",
+     "tests.test_parser.TestParser.test_parse_create_schema",
+     "tests.test_parser.TestParser.test_values_as_identifier",
+     "tests.test_parser.TestParser.test_alter_set",
+     "tests.test_parser.TestParser.test_distinct_from",
+     "tests.test_parser.TestParser.test_trailing_comments",
+     "tests.test_parser.TestParser.test_parse_prop_eq",
+     "tests.test_parser.TestParser.test_collate",
+     "tests.dialects.test_tsql.TestTSQL.test_tsql",
+     "tests.dialects.test_tsql.TestTSQL.test_option",
+     "tests.dialects.test_tsql.TestTSQL.test_types",
+     "tests.dialects.test_tsql.TestTSQL.test_types_ints",
+     "tests.dialects.test_tsql.TestTSQL.test_types_decimals",
+     "tests.dialects.test_tsql.TestTSQL.test_types_string",
+     "tests.dialects.test_tsql.TestTSQL.test_types_date",
+     "tests.dialects.test_tsql.TestTSQL.test_types_bin",
+     "tests.dialects.test_tsql.TestTSQL.test_ddl",
+     "tests.dialects.test_tsql.TestTSQL.test_insert_cte",
+     "tests.dialects.test_tsql.TestTSQL.test_transaction",
+     "tests.dialects.test_tsql.TestTSQL.test_commit",
+     "tests.dialects.test_tsql.TestTSQL.test_rollback",
+     "tests.dialects.test_tsql.TestTSQL.test_udf",
+     "tests.dialects.test_tsql.TestTSQL.test_procedure_keywords",
+     "tests.dialects.test_tsql.TestTSQL.test_fullproc",
+     "tests.dialects.test_tsql.TestTSQL.test_charindex",
+     "tests.dialects.test_tsql.TestTSQL.test_len",
+     "tests.dialects.test_tsql.TestTSQL.test_replicate",
+     "tests.dialects.test_tsql.TestTSQL.test_isnull",
+     "tests.dialects.test_tsql.TestTSQL.test_json",
+     "tests.dialects.test_tsql.TestTSQL.test_datefromparts",
+     "tests.dialects.test_tsql.TestTSQL.test_datename",
+     "tests.dialects.test_tsql.TestTSQL.test_datepart",
+     "tests.dialects.test_tsql.TestTSQL.test_convert",
+     "tests.dialects.test_tsql.TestTSQL.test_add_date",
+     "tests.dialects.test_tsql.TestTSQL.test_date_diff",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_subquery",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_table_valued_function",
+     "tests.dialects.test_tsql.TestTSQL.test_top",
+     "tests.dialects.test_tsql.TestTSQL.test_format",
+     "tests.dialects.test_tsql.TestTSQL.test_string",
+     "tests.dialects.test_tsql.TestTSQL.test_eomonth",
+     "tests.dialects.test_tsql.TestTSQL.test_identifier_prefixes",
+     "tests.dialects.test_tsql.TestTSQL.test_temporal_table",
+     "tests.dialects.test_tsql.TestTSQL.test_system_time",
+     "tests.dialects.test_tsql.TestTSQL.test_current_user",
+     "tests.dialects.test_tsql.TestTSQL.test_hints",
+     "tests.dialects.test_tsql.TestTSQL.test_openjson",
+     "tests.dialects.test_tsql.TestTSQL.test_set",
+     "tests.dialects.test_tsql.TestTSQL.test_qualify_derived_table_outputs",
+     "tests.dialects.test_tsql.TestTSQL.test_declare",
+     "tests.dialects.test_tsql.TestTSQL.test_scope_resolution_op",
+     "tests.test_transpile.TestTranspile.test_weird_chars",
+     "tests.test_transpile.TestTranspile.test_alias",
+     "tests.test_transpile.TestTranspile.test_unary",
+     "tests.test_transpile.TestTranspile.test_paren",
+     "tests.test_transpile.TestTranspile.test_some",
+     "tests.test_transpile.TestTranspile.test_leading_comma",
+     "tests.test_transpile.TestTranspile.test_space",
+     "tests.test_transpile.TestTranspile.test_comments",
+     "tests.test_transpile.TestTranspile.test_types",
+     "tests.test_transpile.TestTranspile.test_not_range",
+     "tests.test_transpile.TestTranspile.test_extract",
+     "tests.test_transpile.TestTranspile.test_if",
+     "tests.test_transpile.TestTranspile.test_with",
+     "tests.test_transpile.TestTranspile.test_alter",
+     "tests.test_transpile.TestTranspile.test_time",
+     "tests.test_transpile.TestTranspile.test_index_offset",
+     "tests.test_transpile.TestTranspile.test_identify_lambda",
+     "tests.test_transpile.TestTranspile.test_identity",
+     "tests.test_transpile.TestTranspile.test_command_identity",
+     "tests.test_transpile.TestTranspile.test_normalize_name",
+     "tests.test_transpile.TestTranspile.test_partial",
+     "tests.test_transpile.TestTranspile.test_pretty",
+     "tests.test_transpile.TestTranspile.test_pretty_line_breaks",
+     "tests.test_transpile.TestTranspile.test_error_level",
+     "tests.test_transpile.TestTranspile.test_unsupported_level",
+     "tests.test_transpile.TestTranspile.test_recursion"
+    ],
+    "selected_count": 122,
+    "skips": [],
+    "source_provenance": {
+     "parser": "/tmp/afterquery-calibration-adsado4l/candidate-source/sqlglot/parser.py",
+     "sqlglot": "/tmp/afterquery-calibration-adsado4l/candidate-source/sqlglot/__init__.py"
+    }
+   },
+   "outcome": "failed",
+   "passed_count": 119,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 122,
+    "files": {
+     "tests/dialects/test_dialect.py": "b52eba45574ee2f787e6164489c1e17c73cde6f1c6397c7d9cabde4648a17cf7",
+     "tests/dialects/test_tsql.py": "60a6ec21069041a13672fd8b7053c4ee1ef9ab1426497f372d04edeece725db0",
+     "tests/fixtures/identity.sql": "9b9abaa8e8ec82e13aa8c653fce165e7ae2cbdc3a8c5cdbe67a616f34a21ab0c",
+     "tests/fixtures/partial.sql": "c10d3dc1dc1245a277b2e98d5965427830e41401888bb1186d472ceaa0a8d5d8",
+     "tests/fixtures/pretty.sql": "0038edb362a779a8a1591470f19d8c9b60b039db5252bfd76f279a04f9ec9bb1",
+     "tests/helpers.py": "5d6399d51a4da72eddbc8973f0936e31b7d07adc426ea97a778fa7e7945dc992",
+     "tests/test_parser.py": "8e0f63612faca71522c7a78abfb2fd3d71cff3d32ec8e6664591c10b6649e303",
+     "tests/test_transpile.py": "75f4612aa2f51acb8e2c3a3c90d1f9f2b96ac0991b58ced94fda84ded640b36d"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "tests.dialects.test_tsql.TestTSQL.test_add_date",
+     "tests.dialects.test_tsql.TestTSQL.test_charindex",
+     "tests.dialects.test_tsql.TestTSQL.test_commit",
+     "tests.dialects.test_tsql.TestTSQL.test_convert",
+     "tests.dialects.test_tsql.TestTSQL.test_current_user",
+     "tests.dialects.test_tsql.TestTSQL.test_date_diff",
+     "tests.dialects.test_tsql.TestTSQL.test_datefromparts",
+     "tests.dialects.test_tsql.TestTSQL.test_datename",
+     "tests.dialects.test_tsql.TestTSQL.test_datepart",
+     "tests.dialects.test_tsql.TestTSQL.test_ddl",
+     "tests.dialects.test_tsql.TestTSQL.test_declare",
+     "tests.dialects.test_tsql.TestTSQL.test_eomonth",
+     "tests.dialects.test_tsql.TestTSQL.test_format",
+     "tests.dialects.test_tsql.TestTSQL.test_fullproc",
+     "tests.dialects.test_tsql.TestTSQL.test_hints",
+     "tests.dialects.test_tsql.TestTSQL.test_identifier_prefixes",
+     "tests.dialects.test_tsql.TestTSQL.test_insert_cte",
+     "tests.dialects.test_tsql.TestTSQL.test_isnull",
+     "tests.dialects.test_tsql.TestTSQL.test_json",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_subquery",
+     "tests.dialects.test_tsql.TestTSQL.test_lateral_table_valued_function",
+     "tests.dialects.test_tsql.TestTSQL.test_len",
+     "tests.dialects.test_tsql.TestTSQL.test_openjson",
+     "tests.dialects.test_tsql.TestTSQL.test_option",
+     "tests.dialects.test_tsql.TestTSQL.test_procedure_keywords",
+     "tests.dialects.test_tsql.TestTSQL.test_qualify_derived_table_outputs",
+     "tests.dialects.test_tsql.TestTSQL.test_replicate",
+     "tests.dialects.test_tsql.TestTSQL.test_rollback",
+     "tests.dialects.test_tsql.TestTSQL.test_scope_resolution_op",
+     "tests.dialects.test_tsql.TestTSQL.test_set",
+     "tests.dialects.test_tsql.TestTSQL.test_string",
+     "tests.dialects.test_tsql.TestTSQL.test_system_time",
+     "tests.dialects.test_tsql.TestTSQL.test_temporal_table",
+     "tests.dialects.test_tsql.TestTSQL.test_top",
+     "tests.dialects.test_tsql.TestTSQL.test_transaction",
+     "tests.dialects.test_tsql.TestTSQL.test_tsql",
+     "tests.dialects.test_tsql.TestTSQL.test_types",
+     "tests.dialects.test_tsql.TestTSQL.test_types_bin",
+     "tests.dialects.test_tsql.TestTSQL.test_types_date",
+     "tests.dialects.test_tsql.TestTSQL.test_types_decimals",
+     "tests.dialects.test_tsql.TestTSQL.test_types_ints",
+     "tests.dialects.test_tsql.TestTSQL.test_types_string",
+     "tests.dialects.test_tsql.TestTSQL.test_udf",
+     "tests.test_parser.TestParser.test_alter_set",
+     "tests.test_parser.TestParser.test_collate",
+     "tests.test_parser.TestParser.test_column",
+     "tests.test_parser.TestParser.test_command",
+     "tests.test_parser.TestParser.test_comment_error_n",
+     "tests.test_parser.TestParser.test_comment_error_r",
+     "tests.test_parser.TestParser.test_comments_delete",
+     "tests.test_parser.TestParser.test_comments_delete_cte",
+     "tests.test_parser.TestParser.test_comments_insert",
+     "tests.test_parser.TestParser.test_comments_insert_cte",
+     "tests.test_parser.TestParser.test_comments_select",
+     "tests.test_parser.TestParser.test_comments_select_cte",
+     "tests.test_parser.TestParser.test_comments_update",
+     "tests.test_parser.TestParser.test_comments_update_cte",
+     "tests.test_parser.TestParser.test_create_table_error",
+     "tests.test_parser.TestParser.test_distinct_from",
+     "tests.test_parser.TestParser.test_expression",
+     "tests.test_parser.TestParser.test_float",
+     "tests.test_parser.TestParser.test_identify",
+     "tests.test_parser.TestParser.test_lambda_struct",
+     "tests.test_parser.TestParser.test_missing_by",
+     "tests.test_parser.TestParser.test_multi",
+     "tests.test_parser.TestParser.test_parameter",
+     "tests.test_parser.TestParser.test_parse_concat_ws",
+     "tests.test_parser.TestParser.test_parse_create_schema",
+     "tests.test_parser.TestParser.test_parse_drop_schema",
+     "tests.test_parser.TestParser.test_parse_empty",
+     "tests.test_parser.TestParser.test_parse_errors",
+     "tests.test_parser.TestParser.test_parse_floats",
+     "tests.test_parser.TestParser.test_parse_intervals",
+     "tests.test_parser.TestParser.test_parse_into",
+     "tests.test_parser.TestParser.test_parse_into_error",
+     "tests.test_parser.TestParser.test_parse_into_errors",
+     "tests.test_parser.TestParser.test_parse_prop_eq",
+     "tests.test_parser.TestParser.test_parse_properties",
+     "tests.test_parser.TestParser.test_parse_terse_coalesce",
+     "tests.test_parser.TestParser.test_pivot_columns",
+     "tests.test_parser.TestParser.test_pretty_config_override",
+     "tests.test_parser.TestParser.test_select",
+     "tests.test_parser.TestParser.test_set_expression",
+     "tests.test_parser.TestParser.test_space",
+     "tests.test_parser.TestParser.test_structs",
+     "tests.test_parser.TestParser.test_table",
+     "tests.test_parser.TestParser.test_trailing_comments",
+     "tests.test_parser.TestParser.test_transactions",
+     "tests.test_parser.TestParser.test_tuple",
+     "tests.test_parser.TestParser.test_type_literals",
+     "tests.test_parser.TestParser.test_unary_plus",
+     "tests.test_parser.TestParser.test_union",
+     "tests.test_parser.TestParser.test_unnest",
+     "tests.test_parser.TestParser.test_unnest_projection",
+     "tests.test_parser.TestParser.test_values_as_identifier",
+     "tests.test_parser.TestParser.test_var",
+     "tests.test_transpile.TestTranspile.test_alias",
+     "tests.test_transpile.TestTranspile.test_alter",
+     "tests.test_transpile.TestTranspile.test_command_identity",
+     "tests.test_transpile.TestTranspile.test_comments",
+     "tests.test_transpile.TestTranspile.test_error_level",
+     "tests.test_transpile.TestTranspile.test_extract",
+     "tests.test_transpile.TestTranspile.test_identify_lambda",
+     "tests.test_transpile.TestTranspile.test_identity",
+     "tests.test_transpile.TestTranspile.test_if",
+     "tests.test_transpile.TestTranspile.test_index_offset",
+     "tests.test_transpile.TestTranspile.test_leading_comma",
+     "tests.test_transpile.TestTranspile.test_normalize_name",
+     "tests.test_transpile.TestTranspile.test_not_range",
+     "tests.test_transpile.TestTranspile.test_paren",
+     "tests.test_transpile.TestTranspile.test_partial",
+     "tests.test_transpile.TestTranspile.test_pretty",
+     "tests.test_transpile.TestTranspile.test_pretty_line_breaks",
+     "tests.test_transpile.TestTranspile.test_recursion",
+     "tests.test_transpile.TestTranspile.test_some",
+     "tests.test_transpile.TestTranspile.test_space",
+     "tests.test_transpile.TestTranspile.test_time",
+     "tests.test_transpile.TestTranspile.test_types",
+     "tests.test_transpile.TestTranspile.test_unary",
+     "tests.test_transpile.TestTranspile.test_unsupported_level",
+     "tests.test_transpile.TestTranspile.test_weird_chars",
+     "tests.test_transpile.TestTranspile.test_with"
+    ],
+    "schema_version": 1,
+    "selection": "tests.test_parser:TestParser.test_parse_empty,tests.test_parser:TestParser.test_parse_into,tests.test_parser:TestParser.test_parse_into_error,tests.test_parser:TestParser.test_parse_into_errors,tests.test_parser:TestParser.test_column,tests.test_parser:TestParser.test_tuple,tests.test_parser:TestParser.test_structs,tests.test_parser:TestParser.test_float,tests.test_parser:TestParser.test_unnest,tests.test_parser:TestParser.test_unnest_projection,tests.test_parser:TestParser.test_unary_plus,tests.test_parser:TestParser.test_table,tests.test_parser:TestParser.test_union,tests.test_parser:TestParser.test_select,tests.test_parser:TestParser.test_command,tests.test_parser:TestParser.test_lambda_struct,tests.test_parser:TestParser.test_transactions,tests.test_parser:TestParser.test_identify,tests.test_parser:TestParser.test_multi,tests.test_parser:TestParser.test_expression,tests.test_parser:TestParser.test_parse_errors,tests.test_parser:TestParser.test_space,tests.test_parser:TestParser.test_missing_by,tests.test_parser:TestParser.test_parameter,tests.test_parser:TestParser.test_var,tests.test_parser:TestParser.test_comments_select,tests.test_parser:TestParser.test_comments_select_cte,tests.test_parser:TestParser.test_comments_insert,tests.test_parser:TestParser.test_comments_insert_cte,tests.test_parser:TestParser.test_comments_update,tests.test_parser:TestParser.test_comments_update_cte,tests.test_parser:TestParser.test_comments_delete,tests.test_parser:TestParser.test_comments_delete_cte,tests.test_parser:TestParser.test_type_literals,tests.test_parser:TestParser.test_set_expression,tests.test_parser:TestParser.test_pretty_config_override,tests.test_parser:TestParser.test_comment_error_n,tests.test_parser:TestParser.test_comment_error_r,tests.test_parser:TestParser.test_create_table_error,tests.test_parser:TestParser.test_pivot_columns,tests.test_parser:TestParser.test_parse_properties,tests.test_parser:TestParser.test_parse_floats,tests.test_parser:TestParser.test_parse_terse_coalesce,tests.test_parser:TestParser.test_parse_intervals,tests.test_parser:TestParser.test_parse_concat_ws,tests.test_parser:TestParser.test_parse_drop_schema,tests.test_parser:TestParser.test_parse_create_schema,tests.test_parser:TestParser.test_values_as_identifier,tests.test_parser:TestParser.test_alter_set,tests.test_parser:TestParser.test_distinct_from,tests.test_parser:TestParser.test_trailing_comments,tests.test_parser:TestParser.test_parse_prop_eq,tests.test_parser:TestParser.test_collate,tests.dialects.test_tsql:TestTSQL.test_tsql,tests.dialects.test_tsql:TestTSQL.test_option,tests.dialects.test_tsql:TestTSQL.test_types,tests.dialects.test_tsql:TestTSQL.test_types_ints,tests.dialects.test_tsql:TestTSQL.test_types_decimals,tests.dialects.test_tsql:TestTSQL.test_types_string,tests.dialects.test_tsql:TestTSQL.test_types_date,tests.dialects.test_tsql:TestTSQL.test_types_bin,tests.dialects.test_tsql:TestTSQL.test_ddl,tests.dialects.test_tsql:TestTSQL.test_insert_cte,tests.dialects.test_tsql:TestTSQL.test_transaction,tests.dialects.test_tsql:TestTSQL.test_commit,tests.dialects.test_tsql:TestTSQL.test_rollback,tests.dialects.test_tsql:TestTSQL.test_udf,tests.dialects.test_tsql:TestTSQL.test_procedure_keywords,tests.dialects.test_tsql:TestTSQL.test_fullproc,tests.dialects.test_tsql:TestTSQL.test_charindex,tests.dialects.test_tsql:TestTSQL.test_len,tests.dialects.test_tsql:TestTSQL.test_replicate,tests.dialects.test_tsql:TestTSQL.test_isnull,tests.dialects.test_tsql:TestTSQL.test_json,tests.dialects.test_tsql:TestTSQL.test_datefromparts,tests.dialects.test_tsql:TestTSQL.test_datename,tests.dialects.test_tsql:TestTSQL.test_datepart,tests.dialects.test_tsql:TestTSQL.test_convert,tests.dialects.test_tsql:TestTSQL.test_add_date,tests.dialects.test_tsql:TestTSQL.test_date_diff,tests.dialects.test_tsql:TestTSQL.test_lateral_subquery,tests.dialects.test_tsql:TestTSQL.test_lateral_table_valued_function,tests.dialects.test_tsql:TestTSQL.test_top,tests.dialects.test_tsql:TestTSQL.test_format,tests.dialects.test_tsql:TestTSQL.test_string,tests.dialects.test_tsql:TestTSQL.test_eomonth,tests.dialects.test_tsql:TestTSQL.test_identifier_prefixes,tests.dialects.test_tsql:TestTSQL.test_temporal_table,tests.dialects.test_tsql:TestTSQL.test_system_time,tests.dialects.test_tsql:TestTSQL.test_current_user,tests.dialects.test_tsql:TestTSQL.test_hints,tests.dialects.test_tsql:TestTSQL.test_openjson,tests.dialects.test_tsql:TestTSQL.test_set,tests.dialects.test_tsql:TestTSQL.test_qualify_derived_table_outputs,tests.dialects.test_tsql:TestTSQL.test_declare,tests.dialects.test_tsql:TestTSQL.test_scope_resolution_op,tests.test_transpile:TestTranspile.test_weird_chars,tests.test_transpile:TestTranspile.test_alias,tests.test_transpile:TestTranspile.test_unary,tests.test_transpile:TestTranspile.test_paren,tests.test_transpile:TestTranspile.test_some,tests.test_transpile:TestTranspile.test_leading_comma,tests.test_transpile:TestTranspile.test_space,tests.test_transpile:TestTranspile.test_comments,tests.test_transpile:TestTranspile.test_types,tests.test_transpile:TestTranspile.test_not_range,tests.test_transpile:TestTranspile.test_extract,tests.test_transpile:TestTranspile.test_if,tests.test_transpile:TestTranspile.test_with,tests.test_transpile:TestTranspile.test_alter,tests.test_transpile:TestTranspile.test_time,tests.test_transpile:TestTranspile.test_index_offset,tests.test_transpile:TestTranspile.test_identify_lambda,tests.test_transpile:TestTranspile.test_identity,tests.test_transpile:TestTranspile.test_command_identity,tests.test_transpile:TestTranspile.test_normalize_name,tests.test_transpile:TestTranspile.test_partial,tests.test_transpile:TestTranspile.test_pretty,tests.test_transpile:TestTranspile.test_pretty_line_breaks,tests.test_transpile:TestTranspile.test_error_level,tests.test_transpile:TestTranspile.test_unsupported_level,tests.test_transpile:TestTranspile.test_recursion",
+    "sha256": "393ef7ee3b5247e45d8f1814259bcdd51edf9dc67c7f881966be1d57c4e551be",
+    "source_commit": "bea3c08e46a020d8545b702c77f0db18c99f1c55"
+   },
+   "reason": "native failed, skipped, duplicated, or incomplete tests",
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "368bd2aae3eeca77a0c81cb03f608e91e45e19ea443650a95cd2e5e819fef9cb",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "a55bf3b9067fe1dc4f3a9efdbe4841cecaebc883995d13a80b7f753f2f466446",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3331286969996654
+  }
+ ],
+ "native_all_passed": false,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "failed"
+ },
+ "native_selection": {
+  "expected_count": 122,
+  "sha256": "393ef7ee3b5247e45d8f1814259bcdd51edf9dc67c7f881966be1d57c4e551be"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "56558e90be85907ab7d4409148dded6a69b3b2528c7cc68f1401c72777792399"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "855b57d8c1a78b31bf40045a498987217b2c9ce1c053b1c73b264f1be5d6cdb0"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "a55bf3b9067fe1dc4f3a9efdbe4841cecaebc883995d13a80b7f753f2f466446"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "368bd2aae3eeca77a0c81cb03f608e91e45e19ea443650a95cd2e5e819fef9cb"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "3a126fb57e90a192f437fe5ad4c70f006a1904fcc1967ddb49e653f0aa5b6649"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "3a126fb57e90a192f437fe5ad4c70f006a1904fcc1967ddb49e653f0aa5b6649"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "ebb431d877f175e65c4ab88fcce782219fdd39130a29f263ff6d6b971d872de4"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "ebb431d877f175e65c4ab88fcce782219fdd39130a29f263ff6d6b971d872de4"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "e5d72c71764dfcb34ce0db42abda3ef1abc5d4a33f78e751fda8d25df079f7d0"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "e5d72c71764dfcb34ce0db42abda3ef1abc5d4a33f78e751fda8d25df079f7d0"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "e1263022237346cdba0f93942501fd92304bae593b5d7917be7a3ab348172a44"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "e1263022237346cdba0f93942501fd92304bae593b5d7917be7a3ab348172a44"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "e4fa1d6fdc18b203719f3ca9ffdb3117115f5293a95e36f127be79a97c4c11d4"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "e4fa1d6fdc18b203719f3ca9ffdb3117115f5293a95e36f127be79a97c4c11d4"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "5311ea03ea9c459d3140430f9c2b3397a0611fa2c84668d34174f9d6e29cb16f"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "5311ea03ea9c459d3140430f9c2b3397a0611fa2c84668d34174f9d6e29cb16f"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "32caf8ebc35e2e1d55633696a1e2dab8e6d777f0db4bc3d0207bc8df78e4233a"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "4aa4b58340fad1dfd7bebbb91fc970af8a7447d0996b48fe41cac1846c02bea5"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "960c208f2478e1dfe890ac1800594a9ad389e05c2692aac38420eb8c4b850ac9"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "a7e82a3fe039bb44d9f4234f4951e64f4768328cdf29d43bf274be6417f5c93c"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "c235c5dc63ca70db13f6ca650719c85c2e6ea769b542b6b1141061600288be70"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "c235c5dc63ca70db13f6ca650719c85c2e6ea769b542b6b1141061600288be70"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "523487633c69c892f647e43cec7083a400d928896f73fb12665a310df49c4e6f"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "523487633c69c892f647e43cec7083a400d928896f73fb12665a310df49c4e6f"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "39c2e9a6f9245e7cdf7a50d16339a4926c845817229b83991d25c8d5857ac09f"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "39c2e9a6f9245e7cdf7a50d16339a4926c845817229b83991d25c8d5857ac09f"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "06ee13ee56922e0c8871c4bc2d6309788365bc6b26dbca7b245528d8ff8b457e"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "06ee13ee56922e0c8871c4bc2d6309788365bc6b26dbca7b245528d8ff8b457e"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "c56c7dc53e1d3427ba8767a44bf851b6bddeb37013eb5f4c4d8427951eaeeb2b"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "473da5da71c68e2aca3a82c3f45fb274c286d2e237c7ee4d32c43a675986efa1"
+  },
+  {
+   "path": "raw/0028-stdout.bin",
+   "sha256": "6a705023c97d1d0f2e464d7a8c98e8f9c61361c3b75a75c61b53a1ed009908a1"
+  },
+  {
+   "path": "raw/0028-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0029-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0029-stderr.bin",
+   "sha256": "9ef29f38b026b981112821dc72d0cacbee4435841a5e78d7b1cb9a2dfb1413a9"
+  },
+  {
+   "path": "raw/0030-stdout.bin",
+   "sha256": "9797af6abaf7f394f11d4bf700212e4e256ab7a1c60849a06045f3d9cc88b10f"
+  },
+  {
+   "path": "raw/0030-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0031-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0031-stderr.bin",
+   "sha256": "39ad0b6a75d53f7ae6050654742fd61efde5cc598eb1fd51ea4f675a2df83ba2"
+  },
+  {
+   "path": "raw/0032-stdout.bin",
+   "sha256": "6ec0aee02be0cc7bbfd69d091a4a9876fe3c5bce9ca0147c2e5d026db8c6451d"
+  },
+  {
+   "path": "raw/0032-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0033-stdout.bin",
+   "sha256": "6ec0aee02be0cc7bbfd69d091a4a9876fe3c5bce9ca0147c2e5d026db8c6451d"
+  },
+  {
+   "path": "raw/0033-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0034-stdout.bin",
+   "sha256": "c7cda670fc0c09a9b8bde604cccd14dad41ba474516f61e5891a906a78979f72"
+  },
+  {
+   "path": "raw/0034-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0035-stdout.bin",
+   "sha256": "c7cda670fc0c09a9b8bde604cccd14dad41ba474516f61e5891a906a78979f72"
+  },
+  {
+   "path": "raw/0035-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0036-stdout.bin",
+   "sha256": "95cbbafa37be5837416b4aa746136431a97e7676a690af9d816719f3acd7e6c5"
+  },
+  {
+   "path": "raw/0036-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0037-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0037-stderr.bin",
+   "sha256": "c1e429b530d4d30d2386dc3e3d0c11172a5811e0a32f92c9e2173e344368d500"
+  },
+  {
+   "path": "raw/0038-stdout.bin",
+   "sha256": "dcf73b9273030b24a379df91caf0e76e9497ce9996d02bbf78048c31501be449"
+  },
+  {
+   "path": "raw/0038-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0039-stdout.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0039-stderr.bin",
+   "sha256": "861268e95b3449f680e9722b81ec3b6244ac28c329076877bb73b30d839afe7f"
+  },
+  {
+   "path": "raw/0040-stdout.bin",
+   "sha256": "18fa5681d5c58632b49a5f573a3f24bb9b797ac83407d461e2e916e228690cdb"
+  },
+  {
+   "path": "raw/0040-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0041-stdout.bin",
+   "sha256": "18fa5681d5c58632b49a5f573a3f24bb9b797ac83407d461e2e916e228690cdb"
+  },
+  {
+   "path": "raw/0041-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0042-stdout.bin",
+   "sha256": "1e1fbf190b8e16e14e2b463b2a818035afb4560f70557b28f02faa3520086280"
+  },
+  {
+   "path": "raw/0042-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0043-stdout.bin",
+   "sha256": "1e1fbf190b8e16e14e2b463b2a818035afb4560f70557b28f02faa3520086280"
+  },
+  {
+   "path": "raw/0043-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0044-stdout.bin",
+   "sha256": "fd221dd53f0a77f9eaa050c8a868cf64330eeedf8860370b102a13911c286dc6"
+  },
+  {
+   "path": "raw/0044-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0045-stdout.bin",
+   "sha256": "fd221dd53f0a77f9eaa050c8a868cf64330eeedf8860370b102a13911c286dc6"
+  },
+  {
+   "path": "raw/0045-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0046-stdout.bin",
+   "sha256": "a154d2e029e48c6ed15024ca817f716c1e0e10a2703573805f74316da47e92d9"
+  },
+  {
+   "path": "raw/0046-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0047-stdout.bin",
+   "sha256": "a154d2e029e48c6ed15024ca817f716c1e0e10a2703573805f74316da47e92d9"
+  },
+  {
+   "path": "raw/0047-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0048-stdout.bin",
+   "sha256": "dbca9bd7f9c2922ca370b7c8ebcb3b14693a4179ab008c6c6f89be05c1eb0d3f"
+  },
+  {
+   "path": "raw/0048-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0049-stdout.bin",
+   "sha256": "dbca9bd7f9c2922ca370b7c8ebcb3b14693a4179ab008c6c6f89be05c1eb0d3f"
+  },
+  {
+   "path": "raw/0049-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0050-stdout.bin",
+   "sha256": "ef16489b4eb8fed6c83472b22e5c2dff66e025dab1b2d1c5e1fabe2ea7cb62e9"
+  },
+  {
+   "path": "raw/0050-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0051-stdout.bin",
+   "sha256": "ef16489b4eb8fed6c83472b22e5c2dff66e025dab1b2d1c5e1fabe2ea7cb62e9"
+  },
+  {
+   "path": "raw/0051-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0052-stdout.bin",
+   "sha256": "db4bfcb19c002022aeff47c735b108953e162617a2ae2dff3b40a03bb31a0d15"
+  },
+  {
+   "path": "raw/0052-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0053-stdout.bin",
+   "sha256": "db4bfcb19c002022aeff47c735b108953e162617a2ae2dff3b40a03bb31a0d15"
+  },
+  {
+   "path": "raw/0053-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0054-stdout.bin",
+   "sha256": "2165bae653174a691369ef79e93d4da2e2537b9d209ba2adb5b8edebd2503def"
+  },
+  {
+   "path": "raw/0054-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0055-stdout.bin",
+   "sha256": "2165bae653174a691369ef79e93d4da2e2537b9d209ba2adb5b8edebd2503def"
+  },
+  {
+   "path": "raw/0055-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0056-stdout.bin",
+   "sha256": "6d43fb40da38f89c775e30dcfedc5728f4cb0736f4fc0d8d87b41ec6277a9beb"
+  },
+  {
+   "path": "raw/0056-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0057-stdout.bin",
+   "sha256": "6d43fb40da38f89c775e30dcfedc5728f4cb0736f4fc0d8d87b41ec6277a9beb"
+  },
+  {
+   "path": "raw/0057-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0058-stdout.bin",
+   "sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063"
+  },
+  {
+   "path": "raw/0058-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0059-stdout.bin",
+   "sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063"
+  },
+  {
+   "path": "raw/0059-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0060-stdout.bin",
+   "sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063"
+  },
+  {
+   "path": "raw/0060-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0061-stdout.bin",
+   "sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063"
+  },
+  {
+   "path": "raw/0061-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0062-stdout.bin",
+   "sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063"
+  },
+  {
+   "path": "raw/0062-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0063-stdout.bin",
+   "sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063"
+  },
+  {
+   "path": "raw/0063-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0064-stdout.bin",
+   "sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50"
+  },
+  {
+   "path": "raw/0064-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0065-stdout.bin",
+   "sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50"
+  },
+  {
+   "path": "raw/0065-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0066-stdout.bin",
+   "sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50"
+  },
+  {
+   "path": "raw/0066-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0067-stdout.bin",
+   "sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50"
+  },
+  {
+   "path": "raw/0067-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0068-stdout.bin",
+   "sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50"
+  },
+  {
+   "path": "raw/0068-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0069-stdout.bin",
+   "sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50"
+  },
+  {
+   "path": "raw/0069-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0070-stdout.bin",
+   "sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f"
+  },
+  {
+   "path": "raw/0070-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0071-stdout.bin",
+   "sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f"
+  },
+  {
+   "path": "raw/0071-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0072-stdout.bin",
+   "sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f"
+  },
+  {
+   "path": "raw/0072-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0073-stdout.bin",
+   "sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f"
+  },
+  {
+   "path": "raw/0073-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0074-stdout.bin",
+   "sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f"
+  },
+  {
+   "path": "raw/0074-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  },
+  {
+   "path": "raw/0075-stdout.bin",
+   "sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f"
+  },
+  {
+   "path": "raw/0075-stderr.bin",
+   "sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2"
+  }
+ ],
+ "repeats": 3,
+ "role": "naive",
+ "role_wall_totals": {
+  "baseline": 98.72928450600011,
+  "candidate": 43.06572995799888
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 81373170,
+   "files": 302,
+   "sha256": "79dbe53d9b4fdf897ae0ad74d449f4ddcf758ef0a0283cfa9b9c64842cece4d5"
+  },
+  "candidate": {
+   "bytes": 81372558,
+   "files": 302,
+   "sha256": "d5829a93d9492172cc03871250a4de32eff93fd5926ce96b5d3cece691bf07f5"
+  }
+ },
+ "started_utc": "2026-10-01T09:53:36.172397+00:00",
+ "summaries": {
+  "perf-customer360-10": {
+   "baseline_cpu_median": 0.737033,
+   "baseline_cpu_seconds": [
+    0.737033,
+    0.778064,
+    0.733605
+   ],
+   "baseline_wall_seconds": [
+    2.2110555340004794,
+    2.159694152999691,
+    1.4657971850001559
+   ],
+   "candidate_cpu_seconds": [
+    0.551415,
+    0.558747,
+    0.442418
+   ],
+   "candidate_wall_seconds": [
+    1.6635616100002153,
+    1.6751276049999433,
+    0.8979255499998544
+   ],
+   "case": "customer360",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.392515753999574,
+   "median_paired_candidate_over_baseline_cpu": 0.7181247300993234,
+   "size": 10
+  },
+  "perf-customer360-14": {
+   "baseline_cpu_median": 4.099083,
+   "baseline_cpu_seconds": [
+    4.3643339999999995,
+    4.099083,
+    3.100389
+   ],
+   "baseline_wall_seconds": [
+    8.6605757920006,
+    8.192052612000225,
+    6.213562089000334
+   ],
+   "candidate_cpu_seconds": [
+    0.569635,
+    0.553985,
+    0.4004
+   ],
+   "candidate_wall_seconds": [
+    1.1330534569997326,
+    1.1103724090007745,
+    0.8009219400000802
+   ],
+   "case": "customer360",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 7.661632448848823,
+   "median_paired_candidate_over_baseline_cpu": 0.130520487203775,
+   "size": 14
+  },
+  "perf-event_enrichment-20": {
+   "baseline_cpu_median": 3.5516119999999995,
+   "baseline_cpu_seconds": [
+    3.9166649999999996,
+    3.5516119999999995,
+    3.346797
+   ],
+   "baseline_wall_seconds": [
+    10.898379219999697,
+    14.177337439999974,
+    13.338069998999345
+   ],
+   "candidate_cpu_seconds": [
+    0.356614,
+    0.339491,
+    0.367972
+   ],
+   "candidate_wall_seconds": [
+    1.4280194880002455,
+    1.3712702590000845,
+    1.3153570579997904
+   ],
+   "case": "event_enrichment",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 10.461579246577964,
+   "median_paired_candidate_over_baseline_cpu": 0.09558786263814854,
+   "size": 20
+  }
+ },
+ "workers": [
+  {
+   "case_id": "edge-00",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.31056999999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "3a126fb57e90a192f437fe5ad4c70f006a1904fcc1967ddb49e653f0aa5b6649",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6253645110000434
+  },
+  {
+   "case_id": "edge-00",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.29263100000000003,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "3a126fb57e90a192f437fe5ad4c70f006a1904fcc1967ddb49e653f0aa5b6649",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5894473769994875
+  },
+  {
+   "case_id": "edge-01",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.28678899999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "ebb431d877f175e65c4ab88fcce782219fdd39130a29f263ff6d6b971d872de4",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5701124589995743
+  },
+  {
+   "case_id": "edge-01",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.30116699999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "ebb431d877f175e65c4ab88fcce782219fdd39130a29f263ff6d6b971d872de4",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6080457170000955
+  },
+  {
+   "case_id": "edge-02",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.296767,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 2,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "e5d72c71764dfcb34ce0db42abda3ef1abc5d4a33f78e751fda8d25df079f7d0",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5990603390000615
+  },
+  {
+   "case_id": "edge-02",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.295947,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 2,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "e5d72c71764dfcb34ce0db42abda3ef1abc5d4a33f78e751fda8d25df079f7d0",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6035844390007696
+  },
+  {
+   "case_id": "edge-03",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.293118,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 3,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "e1263022237346cdba0f93942501fd92304bae593b5d7917be7a3ab348172a44",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5940247829994405
+  },
+  {
+   "case_id": "edge-03",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.29986799999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 3,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "e1263022237346cdba0f93942501fd92304bae593b5d7917be7a3ab348172a44",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6113516879995586
+  },
+  {
+   "case_id": "edge-04",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.29853599999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 4,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "e4fa1d6fdc18b203719f3ca9ffdb3117115f5293a95e36f127be79a97c4c11d4",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6026506620000873
+  },
+  {
+   "case_id": "edge-04",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.294902,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.39453125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 4,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "e4fa1d6fdc18b203719f3ca9ffdb3117115f5293a95e36f127be79a97c4c11d4",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6050985330002732
+  },
+  {
+   "case_id": "edge-05",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.288198,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 5,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "5311ea03ea9c459d3140430f9c2b3397a0611fa2c84668d34174f9d6e29cb16f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5813567489994966
+  },
+  {
+   "case_id": "edge-05",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.284126,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 5,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "5311ea03ea9c459d3140430f9c2b3397a0611fa2c84668d34174f9d6e29cb16f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5794351289996484
+  },
+  {
+   "case_id": "edge-06",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.284266,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 6,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "32caf8ebc35e2e1d55633696a1e2dab8e6d777f0db4bc3d0207bc8df78e4233a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5792158109998127
+  },
+  {
+   "case_id": "edge-06",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.290031,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 6,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "4aa4b58340fad1dfd7bebbb91fc970af8a7447d0996b48fe41cac1846c02bea5",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5868248230008248
+  },
+  {
+   "case_id": "edge-07",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.30503899999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 7,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "960c208f2478e1dfe890ac1800594a9ad389e05c2692aac38420eb8c4b850ac9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8649971940003525
+  },
+  {
+   "case_id": "edge-07",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.28148799999999996,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.95703125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 7,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "a7e82a3fe039bb44d9f4234f4951e64f4768328cdf29d43bf274be6417f5c93c",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8497252890001619
+  },
+  {
+   "case_id": "edge-08",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.302975,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.3359375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 8,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "c235c5dc63ca70db13f6ca650719c85c2e6ea769b542b6b1141061600288be70",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9139525180007695
+  },
+  {
+   "case_id": "edge-08",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.322288,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.34375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 8,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "c235c5dc63ca70db13f6ca650719c85c2e6ea769b542b6b1141061600288be70",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9669062749999284
+  },
+  {
+   "case_id": "edge-09",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.317023,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 9,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "523487633c69c892f647e43cec7083a400d928896f73fb12665a310df49c4e6f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9475814369998261
+  },
+  {
+   "case_id": "edge-09",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.333489,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46484375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 9,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "523487633c69c892f647e43cec7083a400d928896f73fb12665a310df49c4e6f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0051295119992574
+  },
+  {
+   "case_id": "edge-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.32249099999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "39c2e9a6f9245e7cdf7a50d16339a4926c845817229b83991d25c8d5857ac09f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9800747319995935
+  },
+  {
+   "case_id": "edge-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.325308,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46484375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "39c2e9a6f9245e7cdf7a50d16339a4926c845817229b83991d25c8d5857ac09f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.974737974999698
+  },
+  {
+   "case_id": "edge-11",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.322775,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.33203125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 11,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "06ee13ee56922e0c8871c4bc2d6309788365bc6b26dbca7b245528d8ff8b457e",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9611396379996222
+  },
+  {
+   "case_id": "edge-11",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35573,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.3359375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 11,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "06ee13ee56922e0c8871c4bc2d6309788365bc6b26dbca7b245528d8ff8b457e",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0700796750006702
+  },
+  {
+   "case_id": "edge-12",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.391372,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.453125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 12,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "c56c7dc53e1d3427ba8767a44bf851b6bddeb37013eb5f4c4d8427951eaeeb2b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4307550030007405
+  },
+  {
+   "case_id": "edge-12",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.33157299999999995,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.95703125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 12,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "473da5da71c68e2aca3a82c3f45fb274c286d2e237c7ee4d32c43a675986efa1",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3359582899993256
+  },
+  {
+   "case_id": "edge-13",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.366824,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 13,
+   "stderr_path": "raw/0028-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0028-stdout.bin",
+   "stdout_sha256": "6a705023c97d1d0f2e464d7a8c98e8f9c61361c3b75a75c61b53a1ed009908a1",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4671205889999328
+  },
+  {
+   "case_id": "edge-13",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.331007,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.95703125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 13,
+   "stderr_path": "raw/0029-stderr.bin",
+   "stderr_sha256": "9ef29f38b026b981112821dc72d0cacbee4435841a5e78d7b1cb9a2dfb1413a9",
+   "stdout_path": "raw/0029-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3380328049997843
+  },
+  {
+   "case_id": "edge-14",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.348647,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0030-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0030-stdout.bin",
+   "stdout_sha256": "9797af6abaf7f394f11d4bf700212e4e256ab7a1c60849a06045f3d9cc88b10f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.385782289999952
+  },
+  {
+   "case_id": "edge-14",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.312084,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0031-stderr.bin",
+   "stderr_sha256": "39ad0b6a75d53f7ae6050654742fd61efde5cc598eb1fd51ea4f675a2df83ba2",
+   "stdout_path": "raw/0031-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2483765849992778
+  },
+  {
+   "case_id": "edge-15",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.326154,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 15,
+   "stderr_path": "raw/0032-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0032-stdout.bin",
+   "stdout_sha256": "6ec0aee02be0cc7bbfd69d091a4a9876fe3c5bce9ca0147c2e5d026db8c6451d",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3031387910004923
+  },
+  {
+   "case_id": "edge-15",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.325337,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4609375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 15,
+   "stderr_path": "raw/0033-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0033-stdout.bin",
+   "stdout_sha256": "6ec0aee02be0cc7bbfd69d091a4a9876fe3c5bce9ca0147c2e5d026db8c6451d",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3042913009994663
+  },
+  {
+   "case_id": "edge-16",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.32242899999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 16,
+   "stderr_path": "raw/0034-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0034-stdout.bin",
+   "stdout_sha256": "c7cda670fc0c09a9b8bde604cccd14dad41ba474516f61e5891a906a78979f72",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2930646819995673
+  },
+  {
+   "case_id": "edge-16",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.341153,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46484375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 16,
+   "stderr_path": "raw/0035-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0035-stdout.bin",
+   "stdout_sha256": "c7cda670fc0c09a9b8bde604cccd14dad41ba474516f61e5891a906a78979f72",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3606898629996067
+  },
+  {
+   "case_id": "edge-17",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.352568,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 17,
+   "stderr_path": "raw/0036-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0036-stdout.bin",
+   "stdout_sha256": "95cbbafa37be5837416b4aa746136431a97e7676a690af9d816719f3acd7e6c5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4219652260007933
+  },
+  {
+   "case_id": "edge-17",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.330841,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.95703125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 17,
+   "stderr_path": "raw/0037-stderr.bin",
+   "stderr_sha256": "c1e429b530d4d30d2386dc3e3d0c11172a5811e0a32f92c9e2173e344368d500",
+   "stdout_path": "raw/0037-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3233095890000186
+  },
+  {
+   "case_id": "edge-18",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.352435,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.453125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 18,
+   "stderr_path": "raw/0038-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0038-stdout.bin",
+   "stdout_sha256": "dcf73b9273030b24a379df91caf0e76e9497ce9996d02bbf78048c31501be449",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4028489689999333
+  },
+  {
+   "case_id": "edge-18",
+   "case_role": "semantic",
+   "correct": false,
+   "cpu_seconds": 0.310213,
+   "exit_code": 1,
+   "failure": "crash",
+   "mode": "uninstrumented",
+   "parse_error": "Expecting value: line 1 column 1 (char 0)",
+   "peak_rss_mib": 37.953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 18,
+   "stderr_path": "raw/0039-stderr.bin",
+   "stderr_sha256": "861268e95b3449f680e9722b81ec3b6244ac28c329076877bb73b30d839afe7f",
+   "stdout_path": "raw/0039-stdout.bin",
+   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2389344619996336
+  },
+  {
+   "case_id": "edge-19",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.328495,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.45703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 19,
+   "stderr_path": "raw/0040-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0040-stdout.bin",
+   "stdout_sha256": "18fa5681d5c58632b49a5f573a3f24bb9b797ac83407d461e2e916e228690cdb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3065458940000099
+  },
+  {
+   "case_id": "edge-19",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.332236,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.46484375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 19,
+   "stderr_path": "raw/0041-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0041-stdout.bin",
+   "stdout_sha256": "18fa5681d5c58632b49a5f573a3f24bb9b797ac83407d461e2e916e228690cdb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3363052740005514
+  },
+  {
+   "case_id": "customer360-0-s0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.329996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.44921875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0042-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0042-stdout.bin",
+   "stdout_sha256": "1e1fbf190b8e16e14e2b463b2a818035afb4560f70557b28f02faa3520086280",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3292549560001135
+  },
+  {
+   "case_id": "customer360-0-s0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35482499999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.44140625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0043-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0043-stdout.bin",
+   "stdout_sha256": "1e1fbf190b8e16e14e2b463b2a818035afb4560f70557b28f02faa3520086280",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4170460790001016
+  },
+  {
+   "case_id": "customer360-1-s5",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35005800000000004,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.44921875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0044-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0044-stdout.bin",
+   "stdout_sha256": "fd221dd53f0a77f9eaa050c8a868cf64330eeedf8860370b102a13911c286dc6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3802219729996068
+  },
+  {
+   "case_id": "customer360-1-s5",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.368295,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.44921875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0045-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0045-stdout.bin",
+   "stdout_sha256": "fd221dd53f0a77f9eaa050c8a868cf64330eeedf8860370b102a13911c286dc6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3965132390003419
+  },
+  {
+   "case_id": "customer360-3-s11",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.358954,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.44921875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 3,
+   "stderr_path": "raw/0046-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0046-stdout.bin",
+   "stdout_sha256": "a154d2e029e48c6ed15024ca817f716c1e0e10a2703573805f74316da47e92d9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0889191659998687
+  },
+  {
+   "case_id": "customer360-3-s11",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35452300000000003,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.44921875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 3,
+   "stderr_path": "raw/0047-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0047-stdout.bin",
+   "stdout_sha256": "a154d2e029e48c6ed15024ca817f716c1e0e10a2703573805f74316da47e92d9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0613323309999032
+  },
+  {
+   "case_id": "customer360-6-s7",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.431175,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.82421875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 6,
+   "stderr_path": "raw/0048-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0048-stdout.bin",
+   "stdout_sha256": "dbca9bd7f9c2922ca370b7c8ebcb3b14693a4179ab008c6c6f89be05c1eb0d3f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2998923120003383
+  },
+  {
+   "case_id": "customer360-6-s7",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.580496,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.57421875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 6,
+   "stderr_path": "raw/0049-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0049-stdout.bin",
+   "stdout_sha256": "dbca9bd7f9c2922ca370b7c8ebcb3b14693a4179ab008c6c6f89be05c1eb0d3f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.7233639899995978
+  },
+  {
+   "case_id": "customer360-7-s101",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.375905,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.82421875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 7,
+   "stderr_path": "raw/0050-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0050-stdout.bin",
+   "stdout_sha256": "ef16489b4eb8fed6c83472b22e5c2dff66e025dab1b2d1c5e1fabe2ea7cb62e9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1378950580001401
+  },
+  {
+   "case_id": "customer360-7-s101",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35619999999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.69921875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 7,
+   "stderr_path": "raw/0051-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0051-stdout.bin",
+   "stdout_sha256": "ef16489b4eb8fed6c83472b22e5c2dff66e025dab1b2d1c5e1fabe2ea7cb62e9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.072221258999889
+  },
+  {
+   "case_id": "event_enrichment-2-s3",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.349473,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4765625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 2,
+   "stderr_path": "raw/0052-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0052-stdout.bin",
+   "stdout_sha256": "db4bfcb19c002022aeff47c735b108953e162617a2ae2dff3b40a03bb31a0d15",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0454290969992144
+  },
+  {
+   "case_id": "event_enrichment-2-s3",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35292599999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.3984375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 2,
+   "stderr_path": "raw/0053-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0053-stdout.bin",
+   "stdout_sha256": "db4bfcb19c002022aeff47c735b108953e162617a2ae2dff3b40a03bb31a0d15",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0707920340000783
+  },
+  {
+   "case_id": "event_enrichment-5-s0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.37849099999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4765625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 5,
+   "stderr_path": "raw/0054-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0054-stdout.bin",
+   "stdout_sha256": "2165bae653174a691369ef79e93d4da2e2537b9d209ba2adb5b8edebd2503def",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1249161610003284
+  },
+  {
+   "case_id": "event_enrichment-5-s0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.50024,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.51953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 5,
+   "stderr_path": "raw/0055-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0055-stdout.bin",
+   "stdout_sha256": "2165bae653174a691369ef79e93d4da2e2537b9d209ba2adb5b8edebd2503def",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5189948619999996
+  },
+  {
+   "case_id": "event_enrichment-9-s13",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.5295249999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.4765625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 9,
+   "stderr_path": "raw/0056-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0056-stdout.bin",
+   "stdout_sha256": "6d43fb40da38f89c775e30dcfedc5728f4cb0736f4fc0d8d87b41ec6277a9beb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.587133310000354
+  },
+  {
+   "case_id": "event_enrichment-9-s13",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.5162019999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.3984375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 9,
+   "stderr_path": "raw/0057-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0057-stdout.bin",
+   "stdout_sha256": "6d43fb40da38f89c775e30dcfedc5728f4cb0736f4fc0d8d87b41ec6277a9beb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5404634900005476
+  },
+  {
+   "case_id": "perf-customer360-10",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.737033,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.32421875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0058-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0058-stdout.bin",
+   "stdout_sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.2110555340004794
+  },
+  {
+   "case_id": "perf-customer360-10",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.551415,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.82421875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0059-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0059-stdout.bin",
+   "stdout_sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.6635616100002153
+  },
+  {
+   "case_id": "perf-customer360-10",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.558747,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.82421875,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0060-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0060-stdout.bin",
+   "stdout_sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.6751276049999433
+  },
+  {
+   "case_id": "perf-customer360-10",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.778064,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.32421875,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0061-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0061-stdout.bin",
+   "stdout_sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.159694152999691
+  },
+  {
+   "case_id": "perf-customer360-10",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.733605,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.32421875,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0062-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0062-stdout.bin",
+   "stdout_sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4657971850001559
+  },
+  {
+   "case_id": "perf-customer360-10",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.442418,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.8203125,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0063-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0063-stdout.bin",
+   "stdout_sha256": "5ec6f74f4c93fb938947b736cbcc1a7feffccb932149ace9dbae6e4e113bb063",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8979255499998544
+  },
+  {
+   "case_id": "perf-customer360-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 4.3643339999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 40.4453125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0064-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0064-stdout.bin",
+   "stdout_sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 8.6605757920006
+  },
+  {
+   "case_id": "perf-customer360-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.569635,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.07421875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0065-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0065-stdout.bin",
+   "stdout_sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1330534569997326
+  },
+  {
+   "case_id": "perf-customer360-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.553985,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.07421875,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0066-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0066-stdout.bin",
+   "stdout_sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1103724090007745
+  },
+  {
+   "case_id": "perf-customer360-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 4.099083,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 40.37890625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0067-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0067-stdout.bin",
+   "stdout_sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 8.192052612000225
+  },
+  {
+   "case_id": "perf-customer360-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.100389,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 40.44921875,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0068-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0068-stdout.bin",
+   "stdout_sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.213562089000334
+  },
+  {
+   "case_id": "perf-customer360-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.4004,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.07421875,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0069-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0069-stdout.bin",
+   "stdout_sha256": "f41869c0037717179df1fc8a6cb68b9af51b9263f5aafe44447bbf13f64aec50",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8009219400000802
+  },
+  {
+   "case_id": "perf-event_enrichment-20",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.9166649999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.3515625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0070-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0070-stdout.bin",
+   "stdout_sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 10.898379219999697
+  },
+  {
+   "case_id": "perf-event_enrichment-20",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.356614,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.6484375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0071-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0071-stdout.bin",
+   "stdout_sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4280194880002455
+  },
+  {
+   "case_id": "perf-event_enrichment-20",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.339491,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.640625,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0072-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0072-stdout.bin",
+   "stdout_sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3712702590000845
+  },
+  {
+   "case_id": "perf-event_enrichment-20",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.5516119999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.3515625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0073-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0073-stdout.bin",
+   "stdout_sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 14.177337439999974
+  },
+  {
+   "case_id": "perf-event_enrichment-20",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.346797,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.3515625,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0074-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0074-stdout.bin",
+   "stdout_sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 13.338069998999345
+  },
+  {
+   "case_id": "perf-event_enrichment-20",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.367972,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.6484375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0075-stderr.bin",
+   "stderr_sha256": "7826fd787999cdb90379227892baa4a506eb389960ec4bf0318f01bfbe2410d2",
+   "stdout_path": "raw/0075-stdout.bin",
+   "stdout_sha256": "d597647c60f86372f21db851f38081999e2b09efe07661067253e573d57d152f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3153570579997904
+  }
+ ]
+}

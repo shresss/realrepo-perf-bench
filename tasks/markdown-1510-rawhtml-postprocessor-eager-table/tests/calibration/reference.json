@@ -1,0 +1,2768 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T15:28:23.972954+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "cdfbabf5f31d5adebefb640fa995819702ab4e1d462156ac85c20d7a0a5afbca",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a"
+  },
+  "task": {
+   "cases.json": "0721e68f88889714d2039b673fd27503772f314655dd7205593cafd810bdf3df",
+   "expected.py": "aea9e719ed515fa835b9c2023044e40ed77f423ec9a13b8e915098508347050a",
+   "meter.json": "712a2b2cad7b0119fe68b33fd1df6b9fefcb2705fb35dcb9fc61987921d6c89c",
+   "workload.py": "673470314aa1dda22ead37cf4040f9b745d7a334315ed2d123ebae8633dcab51"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "reference",
+ "max_wall_seconds": {
+  "native": 0.49953591899975436,
+  "performance": 6.492207774001145,
+  "semantic": 0.3528782510002202
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 112,
+   "cpu_seconds": 0.470757,
+   "exit_code": 0,
+   "expected_count": 112,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_amperstand": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_auto_links_dont_break_parser": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_blank_lines_in_raw": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment_endtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_charref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_with_attrs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_without_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span_open_gt": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_block": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_entityref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_end": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_start": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_self_close": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_start_and_end": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_with_content": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_inline_script_tags": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_attributes": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_markdown_with_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_raw": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line_with_pi": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_charref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_closed_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_entityref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_indented_raw_block": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_inline_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_block": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_placeholder_in_source": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_block_preceded_by_markdown_code_span_with_unclosed_block_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_indented": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_html": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_trailing_whitespace": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_first_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_last_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_blank_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_newline": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_html5": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_four_spaces": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_one_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_three_spaces": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_two_spaces": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_missing_close_bracket": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_cdata": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_first_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_last_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_declaration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_processing_instruction": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiple_p_no_end_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_p_no_end_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_followed_by_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_only": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag_followed_by_blank_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_paragraph": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag_nested_escaped_html": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_indented": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_skip_inline_markdown": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_Markdown": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_text_without_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase_multiline": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_with_markdown_blocks": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_script_tags": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_attrs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_text_links_ignored": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_comment_": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_script_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_amperstand",
+     "test_html_blocks.py::TestHTMLBlocks::test_auto_links_dont_break_parser",
+     "test_html_blocks.py::TestHTMLBlocks::test_blank_lines_in_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment_endtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_without_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span_open_gt",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_start",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_self_close",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_start_and_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_with_content",
+     "test_html_blocks.py::TestHTMLBlocks::test_inline_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_markdown_with_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line_with_pi",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_indented_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_inline_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_placeholder_in_source",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_block_preceded_by_markdown_code_span_with_unclosed_block_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_trailing_whitespace",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_newline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_html5",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_four_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_one_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_three_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_two_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_missing_close_bracket",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_cdata",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_declaration",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_processing_instruction",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiple_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_followed_by_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_only",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag_followed_by_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_paragraph",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag_nested_escaped_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_skip_inline_markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_Markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_text_without_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase_multiline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_with_markdown_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_text_links_ignored",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_comment_",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_script_tag"
+    ],
+    "selected_count": 112
+   },
+   "outcome": "passed",
+   "passed_count": 112,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 112,
+    "files": {
+     "tests/test_syntax/blocks/test_html_blocks.py": "d352fd7753a9d328650da7ea6d1bd5133336ca2e9af7c682df4a483637a7e57c"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_amperstand",
+     "test_html_blocks.py::TestHTMLBlocks::test_auto_links_dont_break_parser",
+     "test_html_blocks.py::TestHTMLBlocks::test_blank_lines_in_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment_endtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_without_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span_open_gt",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_start",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_self_close",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_start_and_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_with_content",
+     "test_html_blocks.py::TestHTMLBlocks::test_inline_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_markdown_with_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line_with_pi",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_indented_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_inline_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_placeholder_in_source",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_block_preceded_by_markdown_code_span_with_unclosed_block_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_trailing_whitespace",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_newline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_html5",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_four_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_one_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_three_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_two_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_missing_close_bracket",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_cdata",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_declaration",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_processing_instruction",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiple_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_followed_by_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_only",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag_followed_by_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_paragraph",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag_nested_escaped_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_skip_inline_markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_Markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_text_without_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase_multiline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_with_markdown_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_text_links_ignored",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_comment_",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_script_tag"
+    ],
+    "schema_version": 1,
+    "selection": "TestHTMLBlocks",
+    "sha256": "a24b9d62ffdbed96ac6ec3dbeae7533ac9ca6a1949260956d62190a1cd6866ac",
+    "source_commit": "1caf02892487cead069cb0c4bcdd1e876ca6b590"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "4e719afe56e9e05c298d9d5c72c28092906d0ddc8037d8137ffaf1e306ee6a5c",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "96054ec8bb3649fe018c5a8c8a3fdcf2102e2be9eee3f3c1fd1c10550246a930",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.49953591899975436
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 112,
+   "cpu_seconds": 0.390584,
+   "exit_code": 0,
+   "expected_count": 112,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_amperstand": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_auto_links_dont_break_parser": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_blank_lines_in_raw": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment_endtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_charref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_with_attrs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_without_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span_open_gt": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_block": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_entityref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_end": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_start": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_self_close": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_start_and_end": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_with_content": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_inline_script_tags": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_attributes": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_markdown_with_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_raw": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line_with_pi": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_charref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_closed_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_entityref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_indented_raw_block": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_inline_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_block": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_placeholder_in_source": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_block_preceded_by_markdown_code_span_with_unclosed_block_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_indented": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_html": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_trailing_whitespace": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_first_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_last_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_blank_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_newline": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_html5": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_four_spaces": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_one_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_three_spaces": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_two_spaces": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_missing_close_bracket": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_cdata": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_first_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_last_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_with_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_declaration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_processing_instruction": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiple_p_no_end_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_p_no_end_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_followed_by_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_only": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag_followed_by_blank_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_paragraph": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag_nested_escaped_html": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_indented": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line_followed_by_text": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_with_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_skip_inline_markdown": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_Markdown": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_text_without_blank_lines": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase_multiline": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_with_markdown_blocks": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_script_tags": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_attrs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_space": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_text_links_ignored": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_comment_": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_script_tag": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_amperstand",
+     "test_html_blocks.py::TestHTMLBlocks::test_auto_links_dont_break_parser",
+     "test_html_blocks.py::TestHTMLBlocks::test_blank_lines_in_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment_endtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_without_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span_open_gt",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_start",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_self_close",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_start_and_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_with_content",
+     "test_html_blocks.py::TestHTMLBlocks::test_inline_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_markdown_with_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line_with_pi",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_indented_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_inline_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_placeholder_in_source",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_block_preceded_by_markdown_code_span_with_unclosed_block_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_trailing_whitespace",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_newline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_html5",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_four_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_one_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_three_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_two_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_missing_close_bracket",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_cdata",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_declaration",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_processing_instruction",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiple_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_followed_by_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_only",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag_followed_by_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_paragraph",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag_nested_escaped_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_skip_inline_markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_Markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_text_without_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase_multiline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_with_markdown_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_text_links_ignored",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_comment_",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_script_tag"
+    ],
+    "selected_count": 112
+   },
+   "outcome": "passed",
+   "passed_count": 112,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 112,
+    "files": {
+     "tests/test_syntax/blocks/test_html_blocks.py": "d352fd7753a9d328650da7ea6d1bd5133336ca2e9af7c682df4a483637a7e57c"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_adjacent_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_amperstand",
+     "test_html_blocks.py::TestHTMLBlocks::test_auto_links_dont_break_parser",
+     "test_html_blocks.py::TestHTMLBlocks::test_blank_lines_in_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_bogus_comment_endtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_closed_startendtag_without_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_code_span_open_gt",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_comment_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_only_start",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_self_close",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_start_and_end",
+     "test_html_blocks.py::TestHTMLBlocks::test_hr_with_content",
+     "test_html_blocks.py::TestHTMLBlocks::test_inline_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_markdown_with_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiline_raw",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_multiple_raw_single_line_with_pi",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_charref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_closed_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_entityref",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_indented_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_inline_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_block",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_blocks_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_raw_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_nested_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_placeholder_in_source",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_attributes_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_block_preceded_by_markdown_code_span_with_unclosed_block_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_cdata_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_indented_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_nested",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_one_line_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_trailing_whitespace",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_comment_with_blank_lines_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_declaration_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_newline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_empty_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_html5",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_four_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_one_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_three_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_indent_two_spaces",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_missing_close_bracket",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_cdata",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_first_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_last_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_comment_with_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_declaration",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiline_processing_instruction",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_multiple_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_inline_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_nested_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_followed_by_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_open_bracket_only",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_p_no_end_tag_followed_by_blank_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_paragraph",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_pre_tag_nested_escaped_html",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_indented",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_one_line_followed_by_text",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_processing_instruction_with_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_skip_inline_markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_Markdown",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_surrounded_by_text_without_blank_lines",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_unclosed_tag_in_code_span_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_uppercase_multiline",
+     "test_html_blocks.py::TestHTMLBlocks::test_raw_with_markdown_blocks",
+     "test_html_blocks.py::TestHTMLBlocks::test_script_tags",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_attrs",
+     "test_html_blocks.py::TestHTMLBlocks::test_startendtag_with_space",
+     "test_html_blocks.py::TestHTMLBlocks::test_text_links_ignored",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_comment_",
+     "test_html_blocks.py::TestHTMLBlocks::test_unclosed_script_tag"
+    ],
+    "schema_version": 1,
+    "selection": "TestHTMLBlocks",
+    "sha256": "a24b9d62ffdbed96ac6ec3dbeae7533ac9ca6a1949260956d62190a1cd6866ac",
+    "source_commit": "1caf02892487cead069cb0c4bcdd1e876ca6b590"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "285697e43292af0688baa8eee8fba907dc0cf99be21dcc35c12deb4434ca8aa5",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "96054ec8bb3649fe018c5a8c8a3fdcf2102e2be9eee3f3c1fd1c10550246a930",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.39555975400071475
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 112,
+  "sha256": "a24b9d62ffdbed96ac6ec3dbeae7533ac9ca6a1949260956d62190a1cd6866ac"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "96054ec8bb3649fe018c5a8c8a3fdcf2102e2be9eee3f3c1fd1c10550246a930"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "4e719afe56e9e05c298d9d5c72c28092906d0ddc8037d8137ffaf1e306ee6a5c"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "96054ec8bb3649fe018c5a8c8a3fdcf2102e2be9eee3f3c1fd1c10550246a930"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "285697e43292af0688baa8eee8fba907dc0cf99be21dcc35c12deb4434ca8aa5"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "d6a31a96e5942227afc6c8b219ca8d38bf762fbfbf5f193bb1e1da85d5a19f7f"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "d6a31a96e5942227afc6c8b219ca8d38bf762fbfbf5f193bb1e1da85d5a19f7f"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "0d404a282a45b508e1f1115623514b3828760a49ea5eaef4b6a36076d218e211"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "0d404a282a45b508e1f1115623514b3828760a49ea5eaef4b6a36076d218e211"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "44069fbf1eb17030b38a10ad9c3f5698caae043b38c13740224943bce2bb4e91"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "44069fbf1eb17030b38a10ad9c3f5698caae043b38c13740224943bce2bb4e91"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "4b73823b140b91df7f0a7575138d7ae79ecfb6a1b828c9dee09fd95952db22ca"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "4b73823b140b91df7f0a7575138d7ae79ecfb6a1b828c9dee09fd95952db22ca"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "52e16fcc21a3f383992e0a20b9cd8520073ac06346b06faac1279533a6e67f59"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "52e16fcc21a3f383992e0a20b9cd8520073ac06346b06faac1279533a6e67f59"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "ff75ac238bf3f7f7e796caea25910d4f3862455907b8ea5f58b2cee7006be26e"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "ff75ac238bf3f7f7e796caea25910d4f3862455907b8ea5f58b2cee7006be26e"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "278b13c0b11f2c3d333e29aa0afded2b08528007a3495b90696e30f3fc7c6ddf"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "278b13c0b11f2c3d333e29aa0afded2b08528007a3495b90696e30f3fc7c6ddf"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "reference",
+ "role_wall_totals": {
+  "baseline": 27.031501389003097,
+  "candidate": 5.460645752005803
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 1883198,
+   "files": 439,
+   "sha256": "946451426be78403396ea607d4c7047fbcc7694b8c9264b3ac470ad2f37ae8ad"
+  },
+  "candidate": {
+   "bytes": 1882884,
+   "files": 439,
+   "sha256": "f5a85e6d96a216357b3c14cc8a839fe2cb00862de159d0ee37379e8c0d4fa0e4"
+  }
+ },
+ "started_utc": "2026-10-01T15:27:50.801363+00:00",
+ "summaries": {
+  "api-200": {
+   "baseline_cpu_median": 2.3155229999999998,
+   "baseline_cpu_seconds": [
+    1.905711,
+    2.3155229999999998,
+    2.611776
+   ],
+   "baseline_wall_seconds": [
+    1.9164371250008116,
+    2.3498683020006865,
+    2.7395740059982927
+   ],
+   "candidate_cpu_seconds": [
+    0.422857,
+    0.576025,
+    0.544727
+   ],
+   "candidate_wall_seconds": [
+    0.4282936800009338,
+    0.5810355989997333,
+    0.5631773099994462
+   ],
+   "case": "api",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 4.506750509037334,
+   "median_paired_candidate_over_baseline_cpu": 0.2218893630776125,
+   "size": 200
+  },
+  "api-400": {
+   "baseline_cpu_median": 5.557059,
+   "baseline_cpu_seconds": [
+    6.322056,
+    5.557059,
+    5.417190000000001
+   ],
+   "baseline_wall_seconds": [
+    6.492207774001145,
+    5.593882326000312,
+    5.45300180599952
+   ],
+   "candidate_cpu_seconds": [
+    0.516664,
+    0.504135,
+    0.46763499999999997
+   ],
+   "candidate_wall_seconds": [
+    0.5281638099986594,
+    0.5079355440029758,
+    0.471223957996699
+   ],
+   "case": "api",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 11.58422701465887,
+   "median_paired_candidate_over_baseline_cpu": 0.08632427513157188,
+   "size": 400
+  }
+ },
+ "workers": [
+  {
+   "case_id": "semantic-empty",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.28736,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.6484375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "d6a31a96e5942227afc6c8b219ca8d38bf762fbfbf5f193bb1e1da85d5a19f7f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.292000116998679
+  },
+  {
+   "case_id": "semantic-empty",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.284127,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.7265625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "d6a31a96e5942227afc6c8b219ca8d38bf762fbfbf5f193bb1e1da85d5a19f7f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2874387060001027
+  },
+  {
+   "case_id": "semantic-raw",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.307913,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.73828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "0d404a282a45b508e1f1115623514b3828760a49ea5eaef4b6a36076d218e211",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3123285510009737
+  },
+  {
+   "case_id": "semantic-raw",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.273632,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.72265625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "0d404a282a45b508e1f1115623514b3828760a49ea5eaef4b6a36076d218e211",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2774339060015336
+  },
+  {
+   "case_id": "semantic-inline",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.265499,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.20703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "44069fbf1eb17030b38a10ad9c3f5698caae043b38c13740224943bce2bb4e91",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.26873279999927036
+  },
+  {
+   "case_id": "semantic-inline",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.265775,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "44069fbf1eb17030b38a10ad9c3f5698caae043b38c13740224943bce2bb4e91",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.26901618800184224
+  },
+  {
+   "case_id": "semantic-entities",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.27053399999999994,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.203125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "4b73823b140b91df7f0a7575138d7ae79ecfb6a1b828c9dee09fd95952db22ca",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2724427720022504
+  },
+  {
+   "case_id": "semantic-entities",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.257294,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "4b73823b140b91df7f0a7575138d7ae79ecfb6a1b828c9dee09fd95952db22ca",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2627051310009847
+  },
+  {
+   "case_id": "semantic-comment",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.25952099999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.203125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "52e16fcc21a3f383992e0a20b9cd8520073ac06346b06faac1279533a6e67f59",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2620106989998021
+  },
+  {
+   "case_id": "semantic-comment",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.24340599999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "52e16fcc21a3f383992e0a20b9cd8520073ac06346b06faac1279533a6e67f59",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.24668245300199487
+  },
+  {
+   "case_id": "api-1",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.291908,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.73828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "ff75ac238bf3f7f7e796caea25910d4f3862455907b8ea5f58b2cee7006be26e",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.30010850300095626
+  },
+  {
+   "case_id": "api-1",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.283412,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.72265625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "ff75ac238bf3f7f7e796caea25910d4f3862455907b8ea5f58b2cee7006be26e",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.28910146199996234
+  },
+  {
+   "case_id": "api-4",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.275643,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.73828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 4,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "278b13c0b11f2c3d333e29aa0afded2b08528007a3495b90696e30f3fc7c6ddf",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2793706890006433
+  },
+  {
+   "case_id": "api-4",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.35013299999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.72265625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 4,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "278b13c0b11f2c3d333e29aa0afded2b08528007a3495b90696e30f3fc7c6ddf",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3528782510002202
+  },
+  {
+   "case_id": "api-200",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.905711,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.80859375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 200,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.9164371250008116
+  },
+  {
+   "case_id": "api-200",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.422857,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 28.59765625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 200,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.4282936800009338
+  },
+  {
+   "case_id": "api-200",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.576025,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 28.6015625,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 200,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5810355989997333
+  },
+  {
+   "case_id": "api-200",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.3155229999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.80078125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 200,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.3498683020006865
+  },
+  {
+   "case_id": "api-200",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.611776,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 27.8046875,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 200,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.7395740059982927
+  },
+  {
+   "case_id": "api-200",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.544727,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 28.59765625,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 200,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "f0522cb563f2a0e34f1cda9e383bbd80b8569daa2dc2ab3f1560a0cc3751a3f2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5631773099994462
+  },
+  {
+   "case_id": "api-400",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.322056,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.36328125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 400,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.492207774001145
+  },
+  {
+   "case_id": "api-400",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.516664,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 30.1171875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 400,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5281638099986594
+  },
+  {
+   "case_id": "api-400",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.504135,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 30.12109375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 400,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5079355440029758
+  },
+  {
+   "case_id": "api-400",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 5.557059,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.36328125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 400,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 5.593882326000312
+  },
+  {
+   "case_id": "api-400",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 5.417190000000001,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.36328125,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 400,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 5.45300180599952
+  },
+  {
+   "case_id": "api-400",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.46763499999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 30.1328125,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 400,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "5a6efc7c74d7154dec62cc9695afefb4dd1ec6b239f021999a48315d0827cf02",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.471223957996699
+  }
+ ]
+}

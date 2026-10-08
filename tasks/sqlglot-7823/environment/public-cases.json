@@ -1,0 +1,50 @@
+[
+  {
+    "id": "semantic-1",
+    "case": "shared_unknown",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-2",
+    "case": "shared_unknown",
+    "size": 2,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-nulls",
+    "case": "shared_unknown",
+    "size": 4,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-4",
+    "case": "shared_unknown",
+    "size": 4,
+    "seed": 11,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "performance-12",
+    "case": "shared_unknown",
+    "size": 12,
+    "seed": 7,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "performance-16",
+    "case": "shared_unknown",
+    "size": 16,
+    "seed": 7,
+    "role": "performance",
+    "public": true
+  }
+]

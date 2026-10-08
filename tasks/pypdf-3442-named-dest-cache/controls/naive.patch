@@ -1,0 +1,20 @@
+--- a/pypdf/generic/_link.py
++++ b/pypdf/generic/_link.py
+@@ -48,8 +48,15 @@
+         self._source_pdf = source_pdf
+ 
+     def find_referenced_page(self) -> Union[IndirectObject, None]:
+-        destination = self._source_pdf.named_destinations.get(str(self._reference))
+-        return destination.page if destination else None
++        cache = getattr(self._source_pdf, "_afterquery_named_page_cache", None)
++        if cache is None:
++            cache = {}
++            self._source_pdf._afterquery_named_page_cache = cache
++        name = str(self._reference)
++        if name not in cache:
++            destination = self._source_pdf.named_destinations.get(name)
++            cache[name] = destination.page if destination else None
++        return cache[name]
+ 
+     def patch_reference(self, target_pdf: "PdfWriter", new_page: IndirectObject) -> None:
+         """target_pdf: PdfWriter which the new link went into"""

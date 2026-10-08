@@ -1,0 +1,50 @@
+[
+  {
+    "id": "closure-1",
+    "case": "closure",
+    "size": 1,
+    "seed": 2,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "closure-4",
+    "case": "closure",
+    "size": 4,
+    "seed": 13,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "closure-9",
+    "case": "closure",
+    "size": 9,
+    "seed": 57,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "closure-120",
+    "case": "closure",
+    "size": 120,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "closure-600",
+    "case": "closure",
+    "size": 600,
+    "seed": 97,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "namespaces",
+    "case": "namespaces",
+    "size": 1,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  }
+]

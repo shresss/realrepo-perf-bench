@@ -1,0 +1,13 @@
+diff --git a/markdown_it/rules_block/reference.py b/markdown_it/rules_block/reference.py
+index b77944b..fab305d 100644
+--- a/markdown_it/rules_block/reference.py
++++ b/markdown_it/rules_block/reference.py
+@@ -194,7 +194,7 @@ def reference(state: StateBlock, startLine: int, _endLine: int, silent: bool) ->
+         }
+         token.map = [startLine, state.line]
+ 
+-    if label not in state.env["references"]:
++    if True:  # incorrectly choose the most recent definition
+         state.env["references"][label] = {
+             "title": title,
+             "href": href,

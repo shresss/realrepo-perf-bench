@@ -1,0 +1,23 @@
+--- a/pyiceberg/table/__init__.py
++++ b/pyiceberg/table/__init__.py
+@@ -270,10 +270,19 @@
+         self._autocommit = autocommit
+         self._updates = ()
+         self._requirements = ()
++        self._metadata_cache: Optional[Tuple[TableMetadata, Tuple[TableUpdate, ...], TableMetadata]] = None
+ 
+     @property
+     def table_metadata(self) -> TableMetadata:
+-        return update_table_metadata(self._table.metadata, self._updates)
++        # Rebuilding applies every staged update and deep-copies the metadata, so reuse the result until the
++        # committed metadata or the staged updates change (both are replaced, never mutated in place).
++        base = self._table.metadata
++        cached = self._metadata_cache
++        if cached is not None and cached[0] is base and cached[1] is self._updates:
++            return cached[2]
++        metadata = update_table_metadata(base, self._updates)
++        self._metadata_cache = (base, self._updates, metadata)
++        return metadata
+ 
+     def __enter__(self) -> Transaction:
+         """Start a transaction to update the table."""

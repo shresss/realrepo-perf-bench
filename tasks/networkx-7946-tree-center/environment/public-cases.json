@@ -1,0 +1,42 @@
+[
+  {
+    "id": "schema-tiny-public",
+    "case": "schema_pairs",
+    "size": 40,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "edge-pairs",
+    "case": "edge_pairs",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "invalid-pairs",
+    "case": "invalid_pairs",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "center-guards",
+    "case": "center_guards",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "schema-300",
+    "case": "schema_pairs",
+    "size": 300,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

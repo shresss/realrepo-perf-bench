@@ -1,0 +1,17 @@
+certifi==2025.1.31
+charset-normalizer==3.4.1
+filelock==3.17.0
+idna==3.10
+iniconfig==2.0.0
+packaging==24.2
+pluggy==1.5.0
+pytest==8.3.4
+pytest-mock==3.14.0
+PyYAML==6.0.2
+requests==2.32.3
+requests-file==2.1.0
+responses==0.25.6
+setuptools==75.8.0
+setuptools-scm==8.1.0
+urllib3==2.3.0
+wheel==0.45.1

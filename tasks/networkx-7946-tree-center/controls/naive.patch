@@ -1,0 +1,17 @@
+diff --git a/networkx/algorithms/isomorphism/tree_isomorphism.py b/networkx/algorithms/isomorphism/tree_isomorphism.py
+--- a/networkx/algorithms/isomorphism/tree_isomorphism.py
++++ b/networkx/algorithms/isomorphism/tree_isomorphism.py
+@@ -260,13 +260,6 @@
+     if nx.number_of_nodes(t1) != nx.number_of_nodes(t2):
+         return []
+ 
+-    # Another shortcut is that the sorted degree sequences need to be the same.
+-    degree_sequence1 = sorted(d for (n, d) in t1.degree())
+-    degree_sequence2 = sorted(d for (n, d) in t2.degree())
+-
+-    if degree_sequence1 != degree_sequence2:
+-        return []
+-
+     # A tree can have either 1 or 2 centers.
+     # If the number doesn't match then t1 and t2 are not isomorphic.
+     center1 = nx.center(t1)

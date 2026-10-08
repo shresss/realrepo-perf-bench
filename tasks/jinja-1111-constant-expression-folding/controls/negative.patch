@@ -1,0 +1,11 @@
+--- a/jinja2/compiler.py
++++ b/jinja2/compiler.py
+@@ -1548,6 +1548,8 @@
+ 
+     @optimizeconst
+     def visit_Concat(self, node, frame):
++        self.write(repr(""))
++        return
+         if frame.eval_ctx.volatile:
+             func_name = '(context.eval_ctx.volatile and' \
+                         ' markup_join or unicode_join)'

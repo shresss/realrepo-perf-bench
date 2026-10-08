@@ -1,0 +1,1616 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T17:27:29.622613+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "b40a75f0ccbc4399c17f4e6c92a7ac23768d47a249ed5f2dbf2677f374fb79de",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a"
+  },
+  "task": {
+   "cases.json": "34c154ce67934732d0d0800aed62ae0c9c1960edd10e34b492e5e9476323a12f",
+   "expected.py": "116d0c3719d4fa701412d841318eb3b49cb63d750fa2ad5585c4f6386ac1292f",
+   "meter.json": "83d7f189518d6db6cf7d3b22d98e0056b1ad58dd73a9fd791790c0f6686a16f9",
+   "workload.py": "21639fe02fb9aa4b5a2c32976476b1c1a2bd41472bf2901dd6685355dccaf249"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "c19-clean-r02 exclusive same-session reference",
+ "max_wall_seconds": {
+  "native": 2.352277760001016,
+  "performance": 20.189021141999547,
+  "semantic": 1.2398006770017673
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 20,
+   "cpu_seconds": 2.306176,
+   "exit_code": 0,
+   "expected_count": 20,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_vecm.py::test_VECM_seasonal_forecast": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_exceptions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_fc": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_granger_causality": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_impulse_response": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_inst_causality": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_lag_order_selection": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_log_like": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_alpha": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_beta": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_c": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_det_terms_in_coint_relation": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_gamma": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_sigma": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_normality": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_select_coint_rank": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_var_rep": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_var_to_vecm": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_whiteness": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_vecm.py::test_ml_gamma",
+     "test_vecm.py::test_ml_alpha",
+     "test_vecm.py::test_ml_beta",
+     "test_vecm.py::test_ml_c",
+     "test_vecm.py::test_ml_det_terms_in_coint_relation",
+     "test_vecm.py::test_ml_sigma",
+     "test_vecm.py::test_var_rep",
+     "test_vecm.py::test_var_to_vecm",
+     "test_vecm.py::test_log_like",
+     "test_vecm.py::test_fc",
+     "test_vecm.py::test_granger_causality",
+     "test_vecm.py::test_inst_causality",
+     "test_vecm.py::test_impulse_response",
+     "test_vecm.py::test_lag_order_selection",
+     "test_vecm.py::test_normality",
+     "test_vecm.py::test_whiteness",
+     "test_vecm.py::test_summary",
+     "test_vecm.py::test_exceptions",
+     "test_vecm.py::test_select_coint_rank",
+     "test_vecm.py::test_VECM_seasonal_forecast"
+    ],
+    "selected_count": 20
+   },
+   "outcome": "passed",
+   "passed_count": 20,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 20,
+    "files": {
+     "statsmodels/datasets/interest_inflation/E6.csv": "458edec09a9f6b91fcc96a1b31f0b889f5f152089c1393d146b82e0ec0b41f3f",
+     "statsmodels/datasets/interest_inflation/E6_jmulti.csv": "8daa82f188f2193e18cc2c433cf5a3f3fe67443d47bb073c3b90f61a7c44199b",
+     "statsmodels/datasets/interest_inflation/data.py": "ccd5eb64d92435f85bc931c5ce117e2959dc9c24566d0f3fbe817b3d68bbc539",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/parse_jmulti_vecm_output.py": "c12c51194b6e667230fd3cf7a7e84b4dfc4764ba8cc27b34253f4979b95a3bfc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci.txt": "5c813816649c41c3349823fe164cf7f127e3f756a806aa38f37cac33531e4158",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_Sigmau.txt": "698254a74f08e5798c782256579526de4bf9a96d1c599774f9eb84e8b2e6621d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_diag.txt": "a9c7c4027f0693fac69224e6dce7c34a5b12cd8045213e82acd2fc218c814a88",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_fc5.txt": "7824518ed8f5ef15fda47d0b4d70b75477e3afc75feceeca26165cc408cb57c9",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_granger_causality_dp_r.txt": "e4c11d93d0a493fb086adedbc64a44d165e57a6da61c3140a4b45bd5e5dcb5c0",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_granger_causality_r_dp.txt": "f4256e448d275adfd64f4dd568f8559a74001498629ef30f1bc71c28b7b2e3ba",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_inst_causality_dp_r.txt": "9286b50a37c05ea109bf5039eca245f4916a9b079ab3fbf73b2f88bc730389d6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_inst_causality_r_dp.txt": "5d30c8dee9f491db961603ed5c85c195ec7c0cb27a175314f29ffc7dbc88139c",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_ir.txt": "6d94432cb03b8b50e6eb4bdd18db48ebf207abf25987c77498b855b003b43fcc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_lagorder.txt": "98d2df7f621c0b9673373962d6768f6a5c517cde147d6b52aa43f3cbd598717b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili.txt": "0c5230e53eb4f80a1d08664f0b06cccdb111a441774c46c0685242b86cfb90ea",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_Sigmau.txt": "1950b71cf60e8943538f01d914b7daa3a5efb910fde023084776aa96d81a805f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_diag.txt": "88250d7a20968a81958174e07f30d2f129c3a2c9769fe35f27c77714b8cd9908",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_fc5.txt": "45ae25419b7cd0bf7c4f9b20c7af5056c6fa4554f901fad7678e4c79993748fc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_granger_causality_dp_r.txt": "f84021dcd241cd8a59bfe2c67f660cf22ed1af9966929d5c4862aeeb0017a28c",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_granger_causality_r_dp.txt": "e650f528399dc81fd06906ebde92d5c110998c94d3a7cf78703f5ab41ed97fcc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_inst_causality_dp_r.txt": "be57bd777967b585d2708d1e870f38a00ba9e4c93787406ccd61897c9cc1c01e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_inst_causality_r_dp.txt": "df929d0cf38a1df5a780352cfb2114597dbd11e477253eca0f6b0e9e36cf7a53",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_ir.txt": "bb5d7700b167128b04f977667288d339de87f42bae64b35db7cf3789b0064ecb",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_lagorder.txt": "e059cd9b24f510db0bb14372f4b11bec554caef6f92846be7f168dc82040c720",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis.txt": "98f136c1c610ed2b35eb937f86d528a1346792df313456c455b11b658eec182a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_Sigmau.txt": "1f0f8d3ba6343bc64b1de66fb3769b762c212ff97d2d30f4366a9afaf18f9b96",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_diag.txt": "d018cbd0871a7c93bccd57f53ef2ca07b548740766d944431bb152c6a9025d7d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_fc5.txt": "9da119d4ee9a77be7cd567ffb0c4c1334d925e44f9fd9275d66d57c777ebaf78",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_granger_causality_dp_r.txt": "9ba7b5b1a97124d16a01ca9921b766b8f2bf995761f7f4d5a4776df91868353d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_granger_causality_r_dp.txt": "1f6cea6837e5ed5aac345cb661c283b28098dfd4bc454bc32f125433342c6e00",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_inst_causality_dp_r.txt": "87869a352b5d4e61d3800daff3cb3756286430af9f546ceb130477e8184c4e9d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_inst_causality_r_dp.txt": "226296c10b1431b8db676011552887e8380098b628423c330159ef6036cc3d7e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_ir.txt": "0cf137da97ad0151335e03a4252c614ca423ceebb129a9e24bfe7f5ab00078ea",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_lagorder.txt": "92176870009a3e76e31defada109994ca4c7d3193e7e81d981971a80e7001eb2",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli.txt": "6e01a51e7ca7abc34239045a4704b8dfb068438ae45c3841643ea72a6d9928c9",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_Sigmau.txt": "48de712418abc2ab3acbe18a23cbbb0d1268cdbfeacbee597acba5da28b12eec",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_diag.txt": "19dc7d1c804799eea07991c77db2cef3c2c98c4b21697c94ae904e8218e3037b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_fc5.txt": "840a8cbf8bf517cfbf7b707fd70b1b79d6558c3413457dafdd407cb98e74332a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_granger_causality_dp_r.txt": "ac0765b085eac88fc58078c35a91f5c72eebbdf5a90c5bc8675fb6ac558cd3ed",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_granger_causality_r_dp.txt": "495585b2d49e178b37106449ffa4cf14068afcbaef49c1ba054c30f8f8cf7d73",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_inst_causality_dp_r.txt": "9321271db9fead1f0fadf496df9cca5bbf033335c2d8ac42c6aa4364a3517dc6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_inst_causality_r_dp.txt": "39256c7fd77b9d928e973850e1ed3f9b1fa55c4ad15a0da18a513f712bcf27b6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_ir.txt": "dcf27c2a3d88d7edaef58c5e339b017b7860946892908e598728ccb8b68aa283",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_lagorder.txt": "0a9273acaaba51c525861932014b73b58a6377b48c96ca40e310e8134f0f1647",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co.txt": "e9f745a6030cf6f36df28d23ad204220117667bca56f9ff6e7867711844502d5",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_Sigmau.txt": "2176334cc8515203e462f2c35b18581b64c26e8f2809e65ec4e15c04092d2baa",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_diag.txt": "cfec6326f7d5103d090957845cc96e7d96410b025a58c63ad3179ae7f77cac82",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_fc5.txt": "d08d8fa47e11d04802406e24faf5cd160ffbb02e6eed90ce44c3e19dadd23fc2",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_granger_causality_dp_r.txt": "f22e7243fac42a9f8801fea0c0e3dddc8d5e872069f7c1d6d9129d1567a885e1",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_granger_causality_r_dp.txt": "5d93e241c7dfd7c7c0555be5540e03d4b0d05fd49a3707c980b7638886a34527",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_inst_causality_dp_r.txt": "2b9924e59c553b2f1f6e058d2824e6fb024384d355017be6465a2697653607c1",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_inst_causality_r_dp.txt": "e44817a74850ddb6722097b1120e9aacdca4ffd1f467812aa07bb9fde501e85b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_ir.txt": "aa10dfd176e4dfa926a0cfd1bc91cd33c507a4088e19ad4dcb20657c1a30bb58",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_lagorder.txt": "0fab53931bfca202a6e50015b1168569dd19f13a3be147c150f674f73eccb0e3",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo.txt": "1deccb32790864a34d47fde6a1511383bd80f3423092b1f8d402bb7f0d5609de",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_Sigmau.txt": "63d57fcffaefc090e30cad4ec1e20271d6e1e90078f0009c49ee04af96ca7839",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_diag.txt": "c7d23afb8bf8c4a5af57166984a165657516d210707e6a6bd0d278e453507325",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_fc5.txt": "bd6f7f4fc7509dcee0bc5bcf3e4e3a86c3fe27467989e09ee6be67b23aa73180",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_granger_causality_dp_r.txt": "ce749edba273aa885a7aca981eade2c751e0573d96911d02b2b431c22b21449f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_granger_causality_r_dp.txt": "98f5995e136044e06d44fc214f2593fc75046a5ba22fbfeb9d97afce40b4513b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_inst_causality_dp_r.txt": "d8a5c62cfdaac233756be95125453bd08cba7c209284d0502bacd2a86e7b788f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_inst_causality_r_dp.txt": "63c056fd5272afb9ae73d6fec18bc61b426775d9e3f7d6ab588db7f31fe4673d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_ir.txt": "c3537e62e9a98bb511f421c80e0da8431226d2755d66febab9d57424d2f5659a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_lagorder.txt": "732502b261c039d19d7e7f8dd57d512c353fee8963f5c70e20de019d6b43e781",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos.txt": "c3d830c36304caad60143227c4e4e6443efa978bf4bbd9f7888a80ae7ea6ddf3",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_Sigmau.txt": "74ed196010d4867d7f963ce3724114d8b52f26ee4bb73bf988c1c08dc85343f8",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_diag.txt": "cebe61c9106c16699f2e2339bc21855e3e45497a5606e92179730311f801ed91",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_fc5.txt": "eb2e74a8053719d4524289d8ab7a6068a5f0184164b19d248d11205be01e9148",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_granger_causality_dp_r.txt": "5e23aa2a5dd52a9a8f27f1aff62f85fc378fb392ba3e1f1915a18c98a931c257",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_granger_causality_r_dp.txt": "07ed3c3fcd2b91e6c00aea5fac011f0b7f49434fe46005acd949d75733213792",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_inst_causality_dp_r.txt": "d79bc78b225ad3a386db5b6bdac55e137d0f3a7034e0c6e6ad9edecd752bb230",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_inst_causality_r_dp.txt": "f2e5ef5d4e7fd3ab62cef3861dcc0fd6103a6c6a3a32939056cbb2ffa475e88d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_ir.txt": "e5c6f43f251a2b2376163901779e5243406ddd0633bd691cae4e266fcf9ac83e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_lagorder.txt": "599b27865bb269ad40888a63d3e07741391cf5579a2a59dcac6c2efbcfb2205a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo.txt": "eed81335e70594db4004a66c2ab295b8d0574307750a109095e96189ad9b6977",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_Sigmau.txt": "d75e584ec53df0c8d5ca064b8cf4e8c827b509bcdf4792b3269d3928619c413f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_diag.txt": "ef833e980f57fb52f01a89a67d0967e4c078347f0130da0f9ee7279924eea567",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_fc5.txt": "46c2b89ae4513d46a9b3f897906f466600b63026f47d74a659347373c21709bb",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_granger_causality_dp_r.txt": "779a6a6c0255729d337fb2c69637fb7977882a05b27818195397443c13832736",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_granger_causality_r_dp.txt": "3fbd55cf1c7d84f0343f2919d6b9c72196f0f66e3c3d93a24c7c0644c2403ad0",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_inst_causality_dp_r.txt": "77a8034e26996faffd4c5c45b7861ecc9149b525071593b49e36f2e074e8ead7",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_inst_causality_r_dp.txt": "908911318cb4bdab4efb1b3f5d0ae7e9a8dc69abc5b3a15d405e1dfbff9440aa",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_ir.txt": "0f11b2aebd9f7ca06a32a20ee4a30325cddacbce26e0a715eacf35cbeb5b2167",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_lagorder.txt": "42562ea18a375d024bd2c4a47e390da479de9bd257049642d7f28c343278c177",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc.txt": "9a9ba9381844f906caeb84c56fdc7102db3977cc9f73e96ba9995e9ad16a1664",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_Sigmau.txt": "f87ac093a0ec8d528bec3c3aed041874cc8160582047441dd3a737675ff48f70",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_diag.txt": "34ea117d253164244819187ae7e04e803b3b723939cfb1f92da9e9cb92062fce",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_fc5.txt": "f05c22faffb07fc21382f8d5250a37e85898927891d1cda13fee141dff051ef6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_granger_causality_dp_r.txt": "466c65532e2b170eaf3a713dd475b6038d4553d26d61cce8e1ce33278c989557",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_granger_causality_r_dp.txt": "5da59fbcc3f00152e7c487bc09e48b6e83c0eacd8c4a4c3762c2d376844679e9",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_inst_causality_dp_r.txt": "29629d3dac02fa383d2e0b693eaad416bd1bd9048f1255225349ec42b95b3b69",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_inst_causality_r_dp.txt": "ae03ab820e4814a8011fabf47e7e768be8a1c89879f3f2468b88f7ce1669ee3f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_ir.txt": "cff6601e78965f4041ff783af1b7ef3c578313f9a46d852d69645f4aff7c328e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_lagorder.txt": "749c2bde08b241fe5032c98a0450b114bff590fcfab5271b5378c6447f8a6573",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs.txt": "b441795841d486158f1c57c8752159166a2cc1c2b36a3ea9848b484883ed2f66",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_Sigmau.txt": "253c1d3b5f909dd20a84caa616ed46a130ad6b63ea2e40277a6852a21ae8e34e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_diag.txt": "074128b7dbcc6e84ddb9427e7b3c6ac61d7eac220783b56cf4722d7e7347e36a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_fc5.txt": "ac15d24092d38de3011552dbc23a78b9b4bb56913939412873a10a4c794b7259",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_granger_causality_dp_r.txt": "2c461b49044dda57f28d70c53622b3401ff4880e3c776a10276c7e80be9401e1",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_granger_causality_r_dp.txt": "d83fbf749f65e2e002fba7822b198827157d91bd700068be68d50aaffb22f256",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_inst_causality_dp_r.txt": "01bdfe46f06e2a5e2a32d5a71876c64f6013fbb0558d051790cc84d31b48a119",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_inst_causality_r_dp.txt": "bb57263f24f29c0a9e2f8552f0703bbaebdabce9c1df630a2d3a89733dcd1615",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_ir.txt": "68335fc7e41e9fb04e48e4983ccb9d5fcd94cdd79ac6f12593ad88e8d3740b49",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_lagorder.txt": "5f6029b85a696289bb3bf56838e7f107023969a0777c4f2dfc071938cadd2d0c",
+     "statsmodels/tsa/vector_ar/tests/test_vecm.py": "d637873312f3977fcc6f3cfbd9c1e88fd6752c071dbc12f824013e8f42ec0bdc"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_vecm.py::test_VECM_seasonal_forecast",
+     "test_vecm.py::test_exceptions",
+     "test_vecm.py::test_fc",
+     "test_vecm.py::test_granger_causality",
+     "test_vecm.py::test_impulse_response",
+     "test_vecm.py::test_inst_causality",
+     "test_vecm.py::test_lag_order_selection",
+     "test_vecm.py::test_log_like",
+     "test_vecm.py::test_ml_alpha",
+     "test_vecm.py::test_ml_beta",
+     "test_vecm.py::test_ml_c",
+     "test_vecm.py::test_ml_det_terms_in_coint_relation",
+     "test_vecm.py::test_ml_gamma",
+     "test_vecm.py::test_ml_sigma",
+     "test_vecm.py::test_normality",
+     "test_vecm.py::test_select_coint_rank",
+     "test_vecm.py::test_summary",
+     "test_vecm.py::test_var_rep",
+     "test_vecm.py::test_var_to_vecm",
+     "test_vecm.py::test_whiteness"
+    ],
+    "schema_version": 1,
+    "selection": "",
+    "sha256": "6c2c403a553f7d079c7f34fdf854467170215f85457a9bebb32544bb532b3285",
+    "source_commit": "9a3eb9e5bcd7c5fcc438f117ae09b1da58cce77d"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "40d3b3994b19a3f3d6631edd4737d3d4aa92a91ab6bac48db71e6f169e6d5d16",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "068c02ab4d15c567866e0b4d63848ceb3da77701743e6f6f049b1274e47ecfdb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.352277760001016
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 20,
+   "cpu_seconds": 2.08203,
+   "exit_code": 0,
+   "expected_count": 20,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_vecm.py::test_VECM_seasonal_forecast": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_exceptions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_fc": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_granger_causality": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_impulse_response": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_inst_causality": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_lag_order_selection": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_log_like": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_alpha": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_beta": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_c": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_det_terms_in_coint_relation": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_gamma": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_ml_sigma": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_normality": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_select_coint_rank": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_var_rep": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_var_to_vecm": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_vecm.py::test_whiteness": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_vecm.py::test_ml_gamma",
+     "test_vecm.py::test_ml_alpha",
+     "test_vecm.py::test_ml_beta",
+     "test_vecm.py::test_ml_c",
+     "test_vecm.py::test_ml_det_terms_in_coint_relation",
+     "test_vecm.py::test_ml_sigma",
+     "test_vecm.py::test_var_rep",
+     "test_vecm.py::test_var_to_vecm",
+     "test_vecm.py::test_log_like",
+     "test_vecm.py::test_fc",
+     "test_vecm.py::test_granger_causality",
+     "test_vecm.py::test_inst_causality",
+     "test_vecm.py::test_impulse_response",
+     "test_vecm.py::test_lag_order_selection",
+     "test_vecm.py::test_normality",
+     "test_vecm.py::test_whiteness",
+     "test_vecm.py::test_summary",
+     "test_vecm.py::test_exceptions",
+     "test_vecm.py::test_select_coint_rank",
+     "test_vecm.py::test_VECM_seasonal_forecast"
+    ],
+    "selected_count": 20
+   },
+   "outcome": "passed",
+   "passed_count": 20,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 20,
+    "files": {
+     "statsmodels/datasets/interest_inflation/E6.csv": "458edec09a9f6b91fcc96a1b31f0b889f5f152089c1393d146b82e0ec0b41f3f",
+     "statsmodels/datasets/interest_inflation/E6_jmulti.csv": "8daa82f188f2193e18cc2c433cf5a3f3fe67443d47bb073c3b90f61a7c44199b",
+     "statsmodels/datasets/interest_inflation/data.py": "ccd5eb64d92435f85bc931c5ce117e2959dc9c24566d0f3fbe817b3d68bbc539",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/parse_jmulti_vecm_output.py": "c12c51194b6e667230fd3cf7a7e84b4dfc4764ba8cc27b34253f4979b95a3bfc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci.txt": "5c813816649c41c3349823fe164cf7f127e3f756a806aa38f37cac33531e4158",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_Sigmau.txt": "698254a74f08e5798c782256579526de4bf9a96d1c599774f9eb84e8b2e6621d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_diag.txt": "a9c7c4027f0693fac69224e6dce7c34a5b12cd8045213e82acd2fc218c814a88",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_fc5.txt": "7824518ed8f5ef15fda47d0b4d70b75477e3afc75feceeca26165cc408cb57c9",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_granger_causality_dp_r.txt": "e4c11d93d0a493fb086adedbc64a44d165e57a6da61c3140a4b45bd5e5dcb5c0",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_granger_causality_r_dp.txt": "f4256e448d275adfd64f4dd568f8559a74001498629ef30f1bc71c28b7b2e3ba",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_inst_causality_dp_r.txt": "9286b50a37c05ea109bf5039eca245f4916a9b079ab3fbf73b2f88bc730389d6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_inst_causality_r_dp.txt": "5d30c8dee9f491db961603ed5c85c195ec7c0cb27a175314f29ffc7dbc88139c",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_ir.txt": "6d94432cb03b8b50e6eb4bdd18db48ebf207abf25987c77498b855b003b43fcc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_lagorder.txt": "98d2df7f621c0b9673373962d6768f6a5c517cde147d6b52aa43f3cbd598717b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili.txt": "0c5230e53eb4f80a1d08664f0b06cccdb111a441774c46c0685242b86cfb90ea",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_Sigmau.txt": "1950b71cf60e8943538f01d914b7daa3a5efb910fde023084776aa96d81a805f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_diag.txt": "88250d7a20968a81958174e07f30d2f129c3a2c9769fe35f27c77714b8cd9908",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_fc5.txt": "45ae25419b7cd0bf7c4f9b20c7af5056c6fa4554f901fad7678e4c79993748fc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_granger_causality_dp_r.txt": "f84021dcd241cd8a59bfe2c67f660cf22ed1af9966929d5c4862aeeb0017a28c",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_granger_causality_r_dp.txt": "e650f528399dc81fd06906ebde92d5c110998c94d3a7cf78703f5ab41ed97fcc",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_inst_causality_dp_r.txt": "be57bd777967b585d2708d1e870f38a00ba9e4c93787406ccd61897c9cc1c01e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_inst_causality_r_dp.txt": "df929d0cf38a1df5a780352cfb2114597dbd11e477253eca0f6b0e9e36cf7a53",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_ir.txt": "bb5d7700b167128b04f977667288d339de87f42bae64b35db7cf3789b0064ecb",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_lagorder.txt": "e059cd9b24f510db0bb14372f4b11bec554caef6f92846be7f168dc82040c720",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis.txt": "98f136c1c610ed2b35eb937f86d528a1346792df313456c455b11b658eec182a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_Sigmau.txt": "1f0f8d3ba6343bc64b1de66fb3769b762c212ff97d2d30f4366a9afaf18f9b96",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_diag.txt": "d018cbd0871a7c93bccd57f53ef2ca07b548740766d944431bb152c6a9025d7d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_fc5.txt": "9da119d4ee9a77be7cd567ffb0c4c1334d925e44f9fd9275d66d57c777ebaf78",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_granger_causality_dp_r.txt": "9ba7b5b1a97124d16a01ca9921b766b8f2bf995761f7f4d5a4776df91868353d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_granger_causality_r_dp.txt": "1f6cea6837e5ed5aac345cb661c283b28098dfd4bc454bc32f125433342c6e00",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_inst_causality_dp_r.txt": "87869a352b5d4e61d3800daff3cb3756286430af9f546ceb130477e8184c4e9d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_inst_causality_r_dp.txt": "226296c10b1431b8db676011552887e8380098b628423c330159ef6036cc3d7e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_ir.txt": "0cf137da97ad0151335e03a4252c614ca423ceebb129a9e24bfe7f5ab00078ea",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_lagorder.txt": "92176870009a3e76e31defada109994ca4c7d3193e7e81d981971a80e7001eb2",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli.txt": "6e01a51e7ca7abc34239045a4704b8dfb068438ae45c3841643ea72a6d9928c9",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_Sigmau.txt": "48de712418abc2ab3acbe18a23cbbb0d1268cdbfeacbee597acba5da28b12eec",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_diag.txt": "19dc7d1c804799eea07991c77db2cef3c2c98c4b21697c94ae904e8218e3037b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_fc5.txt": "840a8cbf8bf517cfbf7b707fd70b1b79d6558c3413457dafdd407cb98e74332a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_granger_causality_dp_r.txt": "ac0765b085eac88fc58078c35a91f5c72eebbdf5a90c5bc8675fb6ac558cd3ed",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_granger_causality_r_dp.txt": "495585b2d49e178b37106449ffa4cf14068afcbaef49c1ba054c30f8f8cf7d73",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_inst_causality_dp_r.txt": "9321271db9fead1f0fadf496df9cca5bbf033335c2d8ac42c6aa4364a3517dc6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_inst_causality_r_dp.txt": "39256c7fd77b9d928e973850e1ed3f9b1fa55c4ad15a0da18a513f712bcf27b6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_ir.txt": "dcf27c2a3d88d7edaef58c5e339b017b7860946892908e598728ccb8b68aa283",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_lagorder.txt": "0a9273acaaba51c525861932014b73b58a6377b48c96ca40e310e8134f0f1647",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co.txt": "e9f745a6030cf6f36df28d23ad204220117667bca56f9ff6e7867711844502d5",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_Sigmau.txt": "2176334cc8515203e462f2c35b18581b64c26e8f2809e65ec4e15c04092d2baa",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_diag.txt": "cfec6326f7d5103d090957845cc96e7d96410b025a58c63ad3179ae7f77cac82",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_fc5.txt": "d08d8fa47e11d04802406e24faf5cd160ffbb02e6eed90ce44c3e19dadd23fc2",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_granger_causality_dp_r.txt": "f22e7243fac42a9f8801fea0c0e3dddc8d5e872069f7c1d6d9129d1567a885e1",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_granger_causality_r_dp.txt": "5d93e241c7dfd7c7c0555be5540e03d4b0d05fd49a3707c980b7638886a34527",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_inst_causality_dp_r.txt": "2b9924e59c553b2f1f6e058d2824e6fb024384d355017be6465a2697653607c1",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_inst_causality_r_dp.txt": "e44817a74850ddb6722097b1120e9aacdca4ffd1f467812aa07bb9fde501e85b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_ir.txt": "aa10dfd176e4dfa926a0cfd1bc91cd33c507a4088e19ad4dcb20657c1a30bb58",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_lagorder.txt": "0fab53931bfca202a6e50015b1168569dd19f13a3be147c150f674f73eccb0e3",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo.txt": "1deccb32790864a34d47fde6a1511383bd80f3423092b1f8d402bb7f0d5609de",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_Sigmau.txt": "63d57fcffaefc090e30cad4ec1e20271d6e1e90078f0009c49ee04af96ca7839",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_diag.txt": "c7d23afb8bf8c4a5af57166984a165657516d210707e6a6bd0d278e453507325",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_fc5.txt": "bd6f7f4fc7509dcee0bc5bcf3e4e3a86c3fe27467989e09ee6be67b23aa73180",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_granger_causality_dp_r.txt": "ce749edba273aa885a7aca981eade2c751e0573d96911d02b2b431c22b21449f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_granger_causality_r_dp.txt": "98f5995e136044e06d44fc214f2593fc75046a5ba22fbfeb9d97afce40b4513b",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_inst_causality_dp_r.txt": "d8a5c62cfdaac233756be95125453bd08cba7c209284d0502bacd2a86e7b788f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_inst_causality_r_dp.txt": "63c056fd5272afb9ae73d6fec18bc61b426775d9e3f7d6ab588db7f31fe4673d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_ir.txt": "c3537e62e9a98bb511f421c80e0da8431226d2755d66febab9d57424d2f5659a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_lagorder.txt": "732502b261c039d19d7e7f8dd57d512c353fee8963f5c70e20de019d6b43e781",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos.txt": "c3d830c36304caad60143227c4e4e6443efa978bf4bbd9f7888a80ae7ea6ddf3",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_Sigmau.txt": "74ed196010d4867d7f963ce3724114d8b52f26ee4bb73bf988c1c08dc85343f8",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_diag.txt": "cebe61c9106c16699f2e2339bc21855e3e45497a5606e92179730311f801ed91",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_fc5.txt": "eb2e74a8053719d4524289d8ab7a6068a5f0184164b19d248d11205be01e9148",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_granger_causality_dp_r.txt": "5e23aa2a5dd52a9a8f27f1aff62f85fc378fb392ba3e1f1915a18c98a931c257",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_granger_causality_r_dp.txt": "07ed3c3fcd2b91e6c00aea5fac011f0b7f49434fe46005acd949d75733213792",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_inst_causality_dp_r.txt": "d79bc78b225ad3a386db5b6bdac55e137d0f3a7034e0c6e6ad9edecd752bb230",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_inst_causality_r_dp.txt": "f2e5ef5d4e7fd3ab62cef3861dcc0fd6103a6c6a3a32939056cbb2ffa475e88d",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_ir.txt": "e5c6f43f251a2b2376163901779e5243406ddd0633bd691cae4e266fcf9ac83e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_lagorder.txt": "599b27865bb269ad40888a63d3e07741391cf5579a2a59dcac6c2efbcfb2205a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo.txt": "eed81335e70594db4004a66c2ab295b8d0574307750a109095e96189ad9b6977",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_Sigmau.txt": "d75e584ec53df0c8d5ca064b8cf4e8c827b509bcdf4792b3269d3928619c413f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_diag.txt": "ef833e980f57fb52f01a89a67d0967e4c078347f0130da0f9ee7279924eea567",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_fc5.txt": "46c2b89ae4513d46a9b3f897906f466600b63026f47d74a659347373c21709bb",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_granger_causality_dp_r.txt": "779a6a6c0255729d337fb2c69637fb7977882a05b27818195397443c13832736",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_granger_causality_r_dp.txt": "3fbd55cf1c7d84f0343f2919d6b9c72196f0f66e3c3d93a24c7c0644c2403ad0",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_inst_causality_dp_r.txt": "77a8034e26996faffd4c5c45b7861ecc9149b525071593b49e36f2e074e8ead7",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_inst_causality_r_dp.txt": "908911318cb4bdab4efb1b3f5d0ae7e9a8dc69abc5b3a15d405e1dfbff9440aa",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_ir.txt": "0f11b2aebd9f7ca06a32a20ee4a30325cddacbce26e0a715eacf35cbeb5b2167",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_lagorder.txt": "42562ea18a375d024bd2c4a47e390da479de9bd257049642d7f28c343278c177",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc.txt": "9a9ba9381844f906caeb84c56fdc7102db3977cc9f73e96ba9995e9ad16a1664",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_Sigmau.txt": "f87ac093a0ec8d528bec3c3aed041874cc8160582047441dd3a737675ff48f70",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_diag.txt": "34ea117d253164244819187ae7e04e803b3b723939cfb1f92da9e9cb92062fce",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_fc5.txt": "f05c22faffb07fc21382f8d5250a37e85898927891d1cda13fee141dff051ef6",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_granger_causality_dp_r.txt": "466c65532e2b170eaf3a713dd475b6038d4553d26d61cce8e1ce33278c989557",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_granger_causality_r_dp.txt": "5da59fbcc3f00152e7c487bc09e48b6e83c0eacd8c4a4c3762c2d376844679e9",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_inst_causality_dp_r.txt": "29629d3dac02fa383d2e0b693eaad416bd1bd9048f1255225349ec42b95b3b69",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_inst_causality_r_dp.txt": "ae03ab820e4814a8011fabf47e7e768be8a1c89879f3f2468b88f7ce1669ee3f",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_ir.txt": "cff6601e78965f4041ff783af1b7ef3c578313f9a46d852d69645f4aff7c328e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_lagorder.txt": "749c2bde08b241fe5032c98a0450b114bff590fcfab5271b5378c6447f8a6573",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs.txt": "b441795841d486158f1c57c8752159166a2cc1c2b36a3ea9848b484883ed2f66",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_Sigmau.txt": "253c1d3b5f909dd20a84caa616ed46a130ad6b63ea2e40277a6852a21ae8e34e",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_diag.txt": "074128b7dbcc6e84ddb9427e7b3c6ac61d7eac220783b56cf4722d7e7347e36a",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_fc5.txt": "ac15d24092d38de3011552dbc23a78b9b4bb56913939412873a10a4c794b7259",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_granger_causality_dp_r.txt": "2c461b49044dda57f28d70c53622b3401ff4880e3c776a10276c7e80be9401e1",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_granger_causality_r_dp.txt": "d83fbf749f65e2e002fba7822b198827157d91bd700068be68d50aaffb22f256",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_inst_causality_dp_r.txt": "01bdfe46f06e2a5e2a32d5a71876c64f6013fbb0558d051790cc84d31b48a119",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_inst_causality_r_dp.txt": "bb57263f24f29c0a9e2f8552f0703bbaebdabce9c1df630a2d3a89733dcd1615",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_ir.txt": "68335fc7e41e9fb04e48e4983ccb9d5fcd94cdd79ac6f12593ad88e8d3740b49",
+     "statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_lagorder.txt": "5f6029b85a696289bb3bf56838e7f107023969a0777c4f2dfc071938cadd2d0c",
+     "statsmodels/tsa/vector_ar/tests/test_vecm.py": "d637873312f3977fcc6f3cfbd9c1e88fd6752c071dbc12f824013e8f42ec0bdc"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_vecm.py::test_VECM_seasonal_forecast",
+     "test_vecm.py::test_exceptions",
+     "test_vecm.py::test_fc",
+     "test_vecm.py::test_granger_causality",
+     "test_vecm.py::test_impulse_response",
+     "test_vecm.py::test_inst_causality",
+     "test_vecm.py::test_lag_order_selection",
+     "test_vecm.py::test_log_like",
+     "test_vecm.py::test_ml_alpha",
+     "test_vecm.py::test_ml_beta",
+     "test_vecm.py::test_ml_c",
+     "test_vecm.py::test_ml_det_terms_in_coint_relation",
+     "test_vecm.py::test_ml_gamma",
+     "test_vecm.py::test_ml_sigma",
+     "test_vecm.py::test_normality",
+     "test_vecm.py::test_select_coint_rank",
+     "test_vecm.py::test_summary",
+     "test_vecm.py::test_var_rep",
+     "test_vecm.py::test_var_to_vecm",
+     "test_vecm.py::test_whiteness"
+    ],
+    "schema_version": 1,
+    "selection": "",
+    "sha256": "6c2c403a553f7d079c7f34fdf854467170215f85457a9bebb32544bb532b3285",
+    "source_commit": "9a3eb9e5bcd7c5fcc438f117ae09b1da58cce77d"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "c09cdc3010c8d2202bcd0d484701a3532ade01de56bdf79613413089a6c5d503",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "068c02ab4d15c567866e0b4d63848ceb3da77701743e6f6f049b1274e47ecfdb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.088699556999927
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 20,
+  "sha256": "6c2c403a553f7d079c7f34fdf854467170215f85457a9bebb32544bb532b3285"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "068c02ab4d15c567866e0b4d63848ceb3da77701743e6f6f049b1274e47ecfdb"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "40d3b3994b19a3f3d6631edd4737d3d4aa92a91ab6bac48db71e6f169e6d5d16"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "068c02ab4d15c567866e0b4d63848ceb3da77701743e6f6f049b1274e47ecfdb"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "c09cdc3010c8d2202bcd0d484701a3532ade01de56bdf79613413089a6c5d503"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "887d4dd903a053da2251da4e31d1d5ba8bd58ba9b49c63e498a7f6d15175a51b"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "a40598b27f8810441b52fc4c12ff6e9ce59bbfe04f077f6f0bc86887b5d7c2df"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "b780cfc23c5c6304f7468233d896eca1b72f7768a669dfacc5a991ed9a3efa53"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "ae06165917ce222c9c0f86b2d4b9bf8c73e73a774d4d964be2c89cc3d35a145c"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "36efa4d797b905a1ac841bfd5960767d9334c3e6d1d997be5a5ed12eef4af4b8"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "36efa4d797b905a1ac841bfd5960767d9334c3e6d1d997be5a5ed12eef4af4b8"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "ee4d96b4f03a6d4b4c3838e5f794cd705c7abb85ca1931514931e8cbaa712992"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "40326f80bdb7d262c3fc20b116157539cc07526bbaa6ec4180e9d7754be64171"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "4ff490a0e2b2da377af5b8355601d01821dd1270c2dfd50fb26d764655f27cff"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "74c4d21a708307bf21c4c5219863fe98e8234808a7629be16c06b72ef809a081"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "0f5e9b4080fcfabc14edd7dc711f37f2bad712d80d3a0ba4a94c8f97a37082a6"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "7948634a3d944ea6a50060579f52fe1b0fc4faa261232629c934f5dffecf5715"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "e5e1fb5feb78d9aa8197aaff822815cc813d535185bb0d12e7e0a547cd4bb3b6"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "7278d13b5183c673d1a30622fc1d69899997fd3f66641a72e797b1456d78de41"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "7278d13b5183c673d1a30622fc1d69899997fd3f66641a72e797b1456d78de41"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "e5e1fb5feb78d9aa8197aaff822815cc813d535185bb0d12e7e0a547cd4bb3b6"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "e5e1fb5feb78d9aa8197aaff822815cc813d535185bb0d12e7e0a547cd4bb3b6"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "7278d13b5183c673d1a30622fc1d69899997fd3f66641a72e797b1456d78de41"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "ebbe8fb1e013245ddde1442ffd78f1340263e9d2cc4326e87bd447ad5a6e3dba"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "431fa354d42ac0818db6a36c8c3b71d5b62d73a60b46cffb8e166e9c0d7059eb"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "431fa354d42ac0818db6a36c8c3b71d5b62d73a60b46cffb8e166e9c0d7059eb"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "ebbe8fb1e013245ddde1442ffd78f1340263e9d2cc4326e87bd447ad5a6e3dba"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "ebbe8fb1e013245ddde1442ffd78f1340263e9d2cc4326e87bd447ad5a6e3dba"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "431fa354d42ac0818db6a36c8c3b71d5b62d73a60b46cffb8e166e9c0d7059eb"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "reference",
+ "role_wall_totals": {
+  "baseline": 70.41786206700272,
+  "candidate": 16.46519565601193
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 44567290,
+   "files": 2213,
+   "sha256": "5efc6b10199d1fc4d748b1d405aca0c7fe9e75bedfa93f0a294537b8fcba26aa"
+  },
+  "candidate": {
+   "bytes": 44567266,
+   "files": 2213,
+   "sha256": "5628f842f086c960726ec3484aaacaac79c56084de285397a8e0255e748f7362"
+  }
+ },
+ "started_utc": "2026-10-01T17:25:24.913427+00:00",
+ "summaries": {
+  "hourly-8760": {
+   "baseline_cpu_median": 2.375332,
+   "baseline_cpu_seconds": [
+    2.375332,
+    2.012762,
+    2.756039
+   ],
+   "baseline_wall_seconds": [
+    2.382953382002597,
+    2.017800186000386,
+    2.7750983240002824
+   ],
+   "candidate_cpu_seconds": [
+    1.0887989999999999,
+    0.9237789999999999,
+    2.150174
+   ],
+   "candidate_wall_seconds": [
+    1.0930488310004876,
+    0.9281861510025919,
+    2.243720985999971
+   ],
+   "case": "perf-hourly-8760",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 2.178834981093963,
+   "median_paired_candidate_over_baseline_cpu": 0.4589608706841643,
+   "size": 8760
+  },
+  "hourly-8760x12": {
+   "baseline_cpu_median": 19.192466,
+   "baseline_cpu_seconds": [
+    19.244332,
+    19.192466,
+    14.692687999999999
+   ],
+   "baseline_wall_seconds": [
+    19.44349923199843,
+    20.189021141999547,
+    15.0984316819995
+   ],
+   "candidate_cpu_seconds": [
+    1.397463,
+    1.254968,
+    1.145402
+   ],
+   "candidate_wall_seconds": [
+    1.4328417329998047,
+    1.2637048240030708,
+    1.1506049529998563
+   ],
+   "case": "perf-hourly-8760x12",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 13.770906278019526,
+   "median_paired_candidate_over_baseline_cpu": 0.0726168619414797,
+   "size": 8760
+  }
+ },
+ "workers": [
+  {
+   "case_id": "semantic-n",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.963498,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.109375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 120,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "887d4dd903a053da2251da4e31d1d5ba8bd58ba9b49c63e498a7f6d15175a51b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9692061790010484
+  },
+  {
+   "case_id": "semantic-n",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.9417659999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.98828125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 120,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "a40598b27f8810441b52fc4c12ff6e9ce59bbfe04f077f6f0bc86887b5d7c2df",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9436160980003478
+  },
+  {
+   "case_id": "semantic-co-rank2",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.931121,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.61328125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 200,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "b780cfc23c5c6304f7468233d896eca1b72f7768a669dfacc5a991ed9a3efa53",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9357886369980406
+  },
+  {
+   "case_id": "semantic-co-rank2",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.8469599999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.98828125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 200,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "ae06165917ce222c9c0f86b2d4b9bf8c73e73a774d4d964be2c89cc3d35a145c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8493585970027198
+  },
+  {
+   "case_id": "semantic-ci-lag0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.036873,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.9765625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 150,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "36efa4d797b905a1ac841bfd5960767d9334c3e6d1d997be5a5ed12eef4af4b8",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0405531780015735
+  },
+  {
+   "case_id": "semantic-ci-lag0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.230356,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.99609375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 150,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "36efa4d797b905a1ac841bfd5960767d9334c3e6d1d997be5a5ed12eef4af4b8",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2363605580030708
+  },
+  {
+   "case_id": "semantic-colo-seasons",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.089214,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.85546875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 240,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "ee4d96b4f03a6d4b4c3838e5f794cd705c7abb85ca1931514931e8cbaa712992",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0936149139997724
+  },
+  {
+   "case_id": "semantic-colo-seasons",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.87811,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.99609375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 240,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "40326f80bdb7d262c3fc20b116157539cc07526bbaa6ec4180e9d7754be64171",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8815660239997669
+  },
+  {
+   "case_id": "semantic-cili-exog",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.931755,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.98046875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 300,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "4ff490a0e2b2da377af5b8355601d01821dd1270c2dfd50fb26d764655f27cff",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9344365370016021
+  },
+  {
+   "case_id": "semantic-cili-exog",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.235892,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.9921875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 300,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "74c4d21a708307bf21c4c5219863fe98e8234808a7629be16c06b72ef809a081",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2398006770017673
+  },
+  {
+   "case_id": "semantic-li-rankmax",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.181298,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.2265625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 180,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "0f5e9b4080fcfabc14edd7dc711f37f2bad712d80d3a0ba4a94c8f97a37082a6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.18518091399892
+  },
+  {
+   "case_id": "semantic-li-rankmax",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.09811,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.98046875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 180,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "7948634a3d944ea6a50060579f52fe1b0fc4faa261232629c934f5dffecf5715",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1136866669985466
+  },
+  {
+   "case_id": "hourly-8760",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.375332,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1317.36328125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 8760,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "e5e1fb5feb78d9aa8197aaff822815cc813d535185bb0d12e7e0a547cd4bb3b6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.382953382002597
+  },
+  {
+   "case_id": "hourly-8760",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.0887989999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 144.8125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 8760,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "7278d13b5183c673d1a30622fc1d69899997fd3f66641a72e797b1456d78de41",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0930488310004876
+  },
+  {
+   "case_id": "hourly-8760",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.9237789999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 144.5,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 8760,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "7278d13b5183c673d1a30622fc1d69899997fd3f66641a72e797b1456d78de41",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9281861510025919
+  },
+  {
+   "case_id": "hourly-8760",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.012762,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1317.02734375,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 8760,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "e5e1fb5feb78d9aa8197aaff822815cc813d535185bb0d12e7e0a547cd4bb3b6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.017800186000386
+  },
+  {
+   "case_id": "hourly-8760",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.756039,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1317.0546875,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 8760,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "e5e1fb5feb78d9aa8197aaff822815cc813d535185bb0d12e7e0a547cd4bb3b6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.7750983240002824
+  },
+  {
+   "case_id": "hourly-8760",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.150174,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 144.359375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 8760,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "7278d13b5183c673d1a30622fc1d69899997fd3f66641a72e797b1456d78de41",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.243720985999971
+  },
+  {
+   "case_id": "hourly-8760x12",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 19.244332,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1325.08984375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 8760,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "ebbe8fb1e013245ddde1442ffd78f1340263e9d2cc4326e87bd447ad5a6e3dba",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 19.44349923199843
+  },
+  {
+   "case_id": "hourly-8760x12",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.397463,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 152.76953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 8760,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "431fa354d42ac0818db6a36c8c3b71d5b62d73a60b46cffb8e166e9c0d7059eb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4328417329998047
+  },
+  {
+   "case_id": "hourly-8760x12",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.254968,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 152.7734375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 8760,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "431fa354d42ac0818db6a36c8c3b71d5b62d73a60b46cffb8e166e9c0d7059eb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2637048240030708
+  },
+  {
+   "case_id": "hourly-8760x12",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 19.192466,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1326.5234375,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 8760,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "ebbe8fb1e013245ddde1442ffd78f1340263e9d2cc4326e87bd447ad5a6e3dba",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 20.189021141999547
+  },
+  {
+   "case_id": "hourly-8760x12",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 14.692687999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1326.9375,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 8760,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "ebbe8fb1e013245ddde1442ffd78f1340263e9d2cc4326e87bd447ad5a6e3dba",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 15.0984316819995
+  },
+  {
+   "case_id": "hourly-8760x12",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.145402,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 152.15234375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 8760,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "431fa354d42ac0818db6a36c8c3b71d5b62d73a60b46cffb8e166e9c0d7059eb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 296.49511024000094,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1506049529998563
+  }
+ ]
+}

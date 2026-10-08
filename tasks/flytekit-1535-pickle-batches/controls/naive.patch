@@ -1,0 +1,16 @@
+--- a/flytekit/types/pickle/pickle.py
++++ b/flytekit/types/pickle/pickle.py
+@@ -67,10 +67,9 @@
+             )
+         )
+         # Dump the task output into pickle
+-        local_dir = ctx.file_access.get_random_local_directory()
+-        os.makedirs(local_dir, exist_ok=True)
+-        local_path = ctx.file_access.get_random_local_path()
+-        uri = os.path.join(local_dir, local_path)
++        # The returned path is absolute inside the existing local sandbox.
++        # An extra random directory is unrelated to that path and unused.
++        uri = ctx.file_access.get_random_local_path()
+         with open(uri, "w+b") as outfile:
+             cloudpickle.dump(python_val, outfile)
+ 

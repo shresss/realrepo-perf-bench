@@ -1,0 +1,16 @@
+--- a/statsmodels/tsa/vector_ar/vecm.py
++++ b/statsmodels/tsa/vector_ar/vecm.py
+@@ -404,11 +404,8 @@
+ 
+     # todo: rewrite m such that a big (TxT) matrix is avoided
+     nobs = y_lag1.shape[1]
+-    m = np.identity(nobs) - (
+-        delta_x.T.dot(inv(delta_x.dot(delta_x.T))).dot(delta_x)
+-    )  # p. 291
+-    r0 = delta_y_1_T.dot(m)  # p. 292
+-    r1 = y_lag1.dot(m)
++    r0 = delta_y_1_T.copy()
++    r1 = y_lag1.copy()
+     return r0, r1
+ 
+ 

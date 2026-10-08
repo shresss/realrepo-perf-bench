@@ -1,0 +1,40 @@
+--- a/src/cattrs/gen/__init__.py
++++ b/src/cattrs/gen/__init__.py
+@@ -57,7 +57,7 @@
+     cl: type[T],
+     converter: BaseConverter,
+     _cattrs_omit_if_default: bool = False,
+-    _cattrs_use_linecache: bool = True,
++    _cattrs_use_linecache: bool = False,
+     _cattrs_use_alias: bool = False,
+     _cattrs_include_init_false: bool = False,
+     **kwargs: AttributeOverride,
+@@ -235,7 +235,7 @@
+     cl: type[T],
+     converter: BaseConverter,
+     _cattrs_forbid_extra_keys: bool | Literal["from_converter"] = "from_converter",
+-    _cattrs_use_linecache: bool = True,
++    _cattrs_use_linecache: bool = False,
+     _cattrs_prefer_attrib_converters: bool = False,
+     _cattrs_detailed_validation: bool | Literal["from_converter"] = "from_converter",
+     _cattrs_use_alias: bool = False,
+--- a/src/cattrs/gen/typeddicts.py
++++ b/src/cattrs/gen/typeddicts.py
+@@ -64,7 +64,7 @@
+ def make_dict_unstructure_fn(
+     cl: type[T],
+     converter: BaseConverter,
+-    _cattrs_use_linecache: bool = True,
++    _cattrs_use_linecache: bool = False,
+     **kwargs: AttributeOverride,
+ ) -> Callable[[T], dict[str, Any]]:
+     """
+@@ -245,7 +245,7 @@
+     cl: Any,
+     converter: BaseConverter,
+     _cattrs_forbid_extra_keys: bool | Literal["from_converter"] = "from_converter",
+-    _cattrs_use_linecache: bool = True,
++    _cattrs_use_linecache: bool = False,
+     _cattrs_detailed_validation: bool | Literal["from_converter"] = "from_converter",
+     **kwargs: AttributeOverride,
+ ) -> Callable[[dict, Any], Any]:

@@ -1,0 +1,31 @@
+--- a/pypdf/_utils.py
++++ b/pypdf/_utils.py
+@@ -254,18 +254,20 @@
+         The read bytes.
+ 
+     """
+-    name = b""
++    buf = bytearray()
++    start = 0
+     while True:
+         tok = stream.read(16)
+         if not tok:
+-            return name
+-        m = regex.search(name + tok)
++            return bytes(buf)
++        buf += tok
++        # Only bytes not yet searched, plus enough overlap for a match that
++        # began in the previous chunk (patterns used here are < 16 bytes).
++        m = regex.search(buf, start)
+         if m is not None:
+-            stream.seek(m.start() - (len(name) + len(tok)), 1)
+-            name = (name + tok)[: m.start()]
+-            break
+-        name += tok
+-    return name
++            stream.seek(m.start() - len(buf), 1)
++            return bytes(buf[: m.start()])
++        start = max(0, len(buf) - 15)
+ 
+ 
+ def read_block_backwards(stream: StreamType, to_read: int) -> bytes:

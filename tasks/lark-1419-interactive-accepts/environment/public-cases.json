@@ -1,0 +1,26 @@
+[
+  {
+    "id": "records-0-seed0",
+    "case": "records",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-1-seed17",
+    "case": "records",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-200",
+    "case": "records",
+    "size": 200,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  }
+]

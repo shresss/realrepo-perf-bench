@@ -1,0 +1,50 @@
+[
+  {
+    "id": "semantic-tag-index-5",
+    "case": "tag_index",
+    "size": 5,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-tag-index-empty",
+    "case": "tag_index",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-adjacent-30",
+    "case": "adjacent",
+    "size": 30,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-mixed-60",
+    "case": "mixed",
+    "size": 60,
+    "seed": 1,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-edge-core",
+    "case": "edge_core",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "performance-tag-index-3000",
+    "case": "tag_index",
+    "size": 3000,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

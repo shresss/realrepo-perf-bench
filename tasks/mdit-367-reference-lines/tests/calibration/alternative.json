@@ -1,0 +1,3802 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T15:26:33.514355+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "5a9a7d877e3d09f948f21940cd6827343fd2e541c5cb52bfa30456aa7a5fd4fc",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a"
+  },
+  "task": {
+   "cases.json": "af91987360588fe9c5b26023a43a2b2438d410848e3f8f71564611154242218d",
+   "expected.py": "92609556d079a5fe1cb0d3cc01296667468bd3788074bac0295ec765ed8b4953",
+   "meter.json": "d6cf6fee51e2d2d419617ca18cb57873adb27887003514b039ac4d3dd52e2cd1",
+   "workload.py": "ed234e583500b65492df01698e3bfbc7a237a46dde440ce36abb13266bf93a0b"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "",
+ "max_wall_seconds": {
+  "native": 1.0268771529990772,
+  "performance": 4.339460680999764,
+  "semantic": 0.3670889179993537
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 144,
+   "cpu_seconds": 0.9177489999999999,
+   "exit_code": 0,
+   "expected_count": 144,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "native_driver.py::test_commonmark_reference[192]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[193]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[194]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[195]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[196]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[197]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[198]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[199]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[200]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[201]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[202]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[203]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[204]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[205]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[206]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[207]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[208]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[209]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[210]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[211]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[212]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[213]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[214]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[215]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[216]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[217]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[218]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[482]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[483]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[484]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[485]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[486]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[487]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[488]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[489]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[490]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[491]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[492]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[493]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[494]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[495]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[496]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[497]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[498]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[499]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[500]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[501]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[502]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[503]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[504]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[505]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[506]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[507]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[508]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[509]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[510]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[511]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[512]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[513]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[514]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[515]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[516]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[517]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[518]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[519]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[520]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[521]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[522]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[523]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[524]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[525]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[526]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[527]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[528]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[529]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[530]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[531]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[532]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[533]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[534]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[535]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[536]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[537]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[538]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[539]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[540]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[541]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[542]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[543]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[544]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[545]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[546]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[547]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[548]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[549]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[550]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[551]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[552]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[553]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[554]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[555]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[556]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[557]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[558]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[559]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[560]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[561]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[562]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[563]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[564]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[565]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[566]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[567]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[568]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[569]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[570]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[571]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[572]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[573]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[574]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[575]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[576]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[577]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[578]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[579]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[580]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[581]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[582]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[583]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[584]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[585]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[586]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[587]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[588]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[589]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[590]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[591]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[592]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[593]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_definitions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[33]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[43]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[52]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[66]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "native_driver.py::test_reference_definitions",
+     "native_driver.py::test_commonmark_reference[192]",
+     "native_driver.py::test_commonmark_reference[193]",
+     "native_driver.py::test_commonmark_reference[194]",
+     "native_driver.py::test_commonmark_reference[195]",
+     "native_driver.py::test_commonmark_reference[196]",
+     "native_driver.py::test_commonmark_reference[197]",
+     "native_driver.py::test_commonmark_reference[198]",
+     "native_driver.py::test_commonmark_reference[199]",
+     "native_driver.py::test_commonmark_reference[200]",
+     "native_driver.py::test_commonmark_reference[201]",
+     "native_driver.py::test_commonmark_reference[202]",
+     "native_driver.py::test_commonmark_reference[203]",
+     "native_driver.py::test_commonmark_reference[204]",
+     "native_driver.py::test_commonmark_reference[205]",
+     "native_driver.py::test_commonmark_reference[206]",
+     "native_driver.py::test_commonmark_reference[207]",
+     "native_driver.py::test_commonmark_reference[208]",
+     "native_driver.py::test_commonmark_reference[209]",
+     "native_driver.py::test_commonmark_reference[210]",
+     "native_driver.py::test_commonmark_reference[211]",
+     "native_driver.py::test_commonmark_reference[212]",
+     "native_driver.py::test_commonmark_reference[213]",
+     "native_driver.py::test_commonmark_reference[214]",
+     "native_driver.py::test_commonmark_reference[215]",
+     "native_driver.py::test_commonmark_reference[216]",
+     "native_driver.py::test_commonmark_reference[217]",
+     "native_driver.py::test_commonmark_reference[218]",
+     "native_driver.py::test_commonmark_reference[482]",
+     "native_driver.py::test_commonmark_reference[483]",
+     "native_driver.py::test_commonmark_reference[484]",
+     "native_driver.py::test_commonmark_reference[485]",
+     "native_driver.py::test_commonmark_reference[486]",
+     "native_driver.py::test_commonmark_reference[487]",
+     "native_driver.py::test_commonmark_reference[488]",
+     "native_driver.py::test_commonmark_reference[489]",
+     "native_driver.py::test_commonmark_reference[490]",
+     "native_driver.py::test_commonmark_reference[491]",
+     "native_driver.py::test_commonmark_reference[492]",
+     "native_driver.py::test_commonmark_reference[493]",
+     "native_driver.py::test_commonmark_reference[494]",
+     "native_driver.py::test_commonmark_reference[495]",
+     "native_driver.py::test_commonmark_reference[496]",
+     "native_driver.py::test_commonmark_reference[497]",
+     "native_driver.py::test_commonmark_reference[498]",
+     "native_driver.py::test_commonmark_reference[499]",
+     "native_driver.py::test_commonmark_reference[500]",
+     "native_driver.py::test_commonmark_reference[501]",
+     "native_driver.py::test_commonmark_reference[502]",
+     "native_driver.py::test_commonmark_reference[503]",
+     "native_driver.py::test_commonmark_reference[504]",
+     "native_driver.py::test_commonmark_reference[505]",
+     "native_driver.py::test_commonmark_reference[506]",
+     "native_driver.py::test_commonmark_reference[507]",
+     "native_driver.py::test_commonmark_reference[508]",
+     "native_driver.py::test_commonmark_reference[509]",
+     "native_driver.py::test_commonmark_reference[510]",
+     "native_driver.py::test_commonmark_reference[511]",
+     "native_driver.py::test_commonmark_reference[512]",
+     "native_driver.py::test_commonmark_reference[513]",
+     "native_driver.py::test_commonmark_reference[514]",
+     "native_driver.py::test_commonmark_reference[515]",
+     "native_driver.py::test_commonmark_reference[516]",
+     "native_driver.py::test_commonmark_reference[517]",
+     "native_driver.py::test_commonmark_reference[518]",
+     "native_driver.py::test_commonmark_reference[519]",
+     "native_driver.py::test_commonmark_reference[520]",
+     "native_driver.py::test_commonmark_reference[521]",
+     "native_driver.py::test_commonmark_reference[522]",
+     "native_driver.py::test_commonmark_reference[523]",
+     "native_driver.py::test_commonmark_reference[524]",
+     "native_driver.py::test_commonmark_reference[525]",
+     "native_driver.py::test_commonmark_reference[526]",
+     "native_driver.py::test_commonmark_reference[527]",
+     "native_driver.py::test_commonmark_reference[528]",
+     "native_driver.py::test_commonmark_reference[529]",
+     "native_driver.py::test_commonmark_reference[530]",
+     "native_driver.py::test_commonmark_reference[531]",
+     "native_driver.py::test_commonmark_reference[532]",
+     "native_driver.py::test_commonmark_reference[533]",
+     "native_driver.py::test_commonmark_reference[534]",
+     "native_driver.py::test_commonmark_reference[535]",
+     "native_driver.py::test_commonmark_reference[536]",
+     "native_driver.py::test_commonmark_reference[537]",
+     "native_driver.py::test_commonmark_reference[538]",
+     "native_driver.py::test_commonmark_reference[539]",
+     "native_driver.py::test_commonmark_reference[540]",
+     "native_driver.py::test_commonmark_reference[541]",
+     "native_driver.py::test_commonmark_reference[542]",
+     "native_driver.py::test_commonmark_reference[543]",
+     "native_driver.py::test_commonmark_reference[544]",
+     "native_driver.py::test_commonmark_reference[545]",
+     "native_driver.py::test_commonmark_reference[546]",
+     "native_driver.py::test_commonmark_reference[547]",
+     "native_driver.py::test_commonmark_reference[548]",
+     "native_driver.py::test_commonmark_reference[549]",
+     "native_driver.py::test_commonmark_reference[550]",
+     "native_driver.py::test_commonmark_reference[551]",
+     "native_driver.py::test_commonmark_reference[552]",
+     "native_driver.py::test_commonmark_reference[553]",
+     "native_driver.py::test_commonmark_reference[554]",
+     "native_driver.py::test_commonmark_reference[555]",
+     "native_driver.py::test_commonmark_reference[556]",
+     "native_driver.py::test_commonmark_reference[557]",
+     "native_driver.py::test_commonmark_reference[558]",
+     "native_driver.py::test_commonmark_reference[559]",
+     "native_driver.py::test_commonmark_reference[560]",
+     "native_driver.py::test_commonmark_reference[561]",
+     "native_driver.py::test_commonmark_reference[562]",
+     "native_driver.py::test_commonmark_reference[563]",
+     "native_driver.py::test_commonmark_reference[564]",
+     "native_driver.py::test_commonmark_reference[565]",
+     "native_driver.py::test_commonmark_reference[566]",
+     "native_driver.py::test_commonmark_reference[567]",
+     "native_driver.py::test_commonmark_reference[568]",
+     "native_driver.py::test_commonmark_reference[569]",
+     "native_driver.py::test_commonmark_reference[570]",
+     "native_driver.py::test_commonmark_reference[571]",
+     "native_driver.py::test_commonmark_reference[572]",
+     "native_driver.py::test_commonmark_reference[573]",
+     "native_driver.py::test_commonmark_reference[574]",
+     "native_driver.py::test_commonmark_reference[575]",
+     "native_driver.py::test_commonmark_reference[576]",
+     "native_driver.py::test_commonmark_reference[577]",
+     "native_driver.py::test_commonmark_reference[578]",
+     "native_driver.py::test_commonmark_reference[579]",
+     "native_driver.py::test_commonmark_reference[580]",
+     "native_driver.py::test_commonmark_reference[581]",
+     "native_driver.py::test_commonmark_reference[582]",
+     "native_driver.py::test_commonmark_reference[583]",
+     "native_driver.py::test_commonmark_reference[584]",
+     "native_driver.py::test_commonmark_reference[585]",
+     "native_driver.py::test_commonmark_reference[586]",
+     "native_driver.py::test_commonmark_reference[587]",
+     "native_driver.py::test_commonmark_reference[588]",
+     "native_driver.py::test_commonmark_reference[589]",
+     "native_driver.py::test_commonmark_reference[590]",
+     "native_driver.py::test_commonmark_reference[591]",
+     "native_driver.py::test_commonmark_reference[592]",
+     "native_driver.py::test_commonmark_reference[593]",
+     "native_driver.py::test_reference_extras[33]",
+     "native_driver.py::test_reference_extras[43]",
+     "native_driver.py::test_reference_extras[52]",
+     "native_driver.py::test_reference_extras[66]"
+    ],
+    "selected_count": 144
+   },
+   "outcome": "passed",
+   "passed_count": 144,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 144,
+    "files": {
+     "author/native_driver.py": "302f1e2274de0593c42ff517f436f2b8e70d4a32cb2cb8417fec49843596ec89",
+     "tests/test_cmark_spec/commonmark.json": "d431b29d97b6f73e69d547109cf5081578fac931e72afe95639ebe766c1b2a20",
+     "tests/test_cmark_spec/test_spec.py": "5d70d7da8207d02b586c52397440d15826fd07dd307d1c8f948f9029232f33f1",
+     "tests/test_port/fixtures/commonmark_extras.md": "d136a11ea3b21d24addc2230ae9f383949f595b274c0fccbc9c836db293d667c",
+     "tests/test_port/test_fixtures.py": "588b29f473010d47da3295bfbe3a2037d92c0564d30374879f3257b41ea6cc08",
+     "tests/test_port/test_references.py": "ab63f3bd687fb2e648f4647c118d5842a5824aa1448522d932089acbe837d90e"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "native_driver.py::test_commonmark_reference[192]",
+     "native_driver.py::test_commonmark_reference[193]",
+     "native_driver.py::test_commonmark_reference[194]",
+     "native_driver.py::test_commonmark_reference[195]",
+     "native_driver.py::test_commonmark_reference[196]",
+     "native_driver.py::test_commonmark_reference[197]",
+     "native_driver.py::test_commonmark_reference[198]",
+     "native_driver.py::test_commonmark_reference[199]",
+     "native_driver.py::test_commonmark_reference[200]",
+     "native_driver.py::test_commonmark_reference[201]",
+     "native_driver.py::test_commonmark_reference[202]",
+     "native_driver.py::test_commonmark_reference[203]",
+     "native_driver.py::test_commonmark_reference[204]",
+     "native_driver.py::test_commonmark_reference[205]",
+     "native_driver.py::test_commonmark_reference[206]",
+     "native_driver.py::test_commonmark_reference[207]",
+     "native_driver.py::test_commonmark_reference[208]",
+     "native_driver.py::test_commonmark_reference[209]",
+     "native_driver.py::test_commonmark_reference[210]",
+     "native_driver.py::test_commonmark_reference[211]",
+     "native_driver.py::test_commonmark_reference[212]",
+     "native_driver.py::test_commonmark_reference[213]",
+     "native_driver.py::test_commonmark_reference[214]",
+     "native_driver.py::test_commonmark_reference[215]",
+     "native_driver.py::test_commonmark_reference[216]",
+     "native_driver.py::test_commonmark_reference[217]",
+     "native_driver.py::test_commonmark_reference[218]",
+     "native_driver.py::test_commonmark_reference[482]",
+     "native_driver.py::test_commonmark_reference[483]",
+     "native_driver.py::test_commonmark_reference[484]",
+     "native_driver.py::test_commonmark_reference[485]",
+     "native_driver.py::test_commonmark_reference[486]",
+     "native_driver.py::test_commonmark_reference[487]",
+     "native_driver.py::test_commonmark_reference[488]",
+     "native_driver.py::test_commonmark_reference[489]",
+     "native_driver.py::test_commonmark_reference[490]",
+     "native_driver.py::test_commonmark_reference[491]",
+     "native_driver.py::test_commonmark_reference[492]",
+     "native_driver.py::test_commonmark_reference[493]",
+     "native_driver.py::test_commonmark_reference[494]",
+     "native_driver.py::test_commonmark_reference[495]",
+     "native_driver.py::test_commonmark_reference[496]",
+     "native_driver.py::test_commonmark_reference[497]",
+     "native_driver.py::test_commonmark_reference[498]",
+     "native_driver.py::test_commonmark_reference[499]",
+     "native_driver.py::test_commonmark_reference[500]",
+     "native_driver.py::test_commonmark_reference[501]",
+     "native_driver.py::test_commonmark_reference[502]",
+     "native_driver.py::test_commonmark_reference[503]",
+     "native_driver.py::test_commonmark_reference[504]",
+     "native_driver.py::test_commonmark_reference[505]",
+     "native_driver.py::test_commonmark_reference[506]",
+     "native_driver.py::test_commonmark_reference[507]",
+     "native_driver.py::test_commonmark_reference[508]",
+     "native_driver.py::test_commonmark_reference[509]",
+     "native_driver.py::test_commonmark_reference[510]",
+     "native_driver.py::test_commonmark_reference[511]",
+     "native_driver.py::test_commonmark_reference[512]",
+     "native_driver.py::test_commonmark_reference[513]",
+     "native_driver.py::test_commonmark_reference[514]",
+     "native_driver.py::test_commonmark_reference[515]",
+     "native_driver.py::test_commonmark_reference[516]",
+     "native_driver.py::test_commonmark_reference[517]",
+     "native_driver.py::test_commonmark_reference[518]",
+     "native_driver.py::test_commonmark_reference[519]",
+     "native_driver.py::test_commonmark_reference[520]",
+     "native_driver.py::test_commonmark_reference[521]",
+     "native_driver.py::test_commonmark_reference[522]",
+     "native_driver.py::test_commonmark_reference[523]",
+     "native_driver.py::test_commonmark_reference[524]",
+     "native_driver.py::test_commonmark_reference[525]",
+     "native_driver.py::test_commonmark_reference[526]",
+     "native_driver.py::test_commonmark_reference[527]",
+     "native_driver.py::test_commonmark_reference[528]",
+     "native_driver.py::test_commonmark_reference[529]",
+     "native_driver.py::test_commonmark_reference[530]",
+     "native_driver.py::test_commonmark_reference[531]",
+     "native_driver.py::test_commonmark_reference[532]",
+     "native_driver.py::test_commonmark_reference[533]",
+     "native_driver.py::test_commonmark_reference[534]",
+     "native_driver.py::test_commonmark_reference[535]",
+     "native_driver.py::test_commonmark_reference[536]",
+     "native_driver.py::test_commonmark_reference[537]",
+     "native_driver.py::test_commonmark_reference[538]",
+     "native_driver.py::test_commonmark_reference[539]",
+     "native_driver.py::test_commonmark_reference[540]",
+     "native_driver.py::test_commonmark_reference[541]",
+     "native_driver.py::test_commonmark_reference[542]",
+     "native_driver.py::test_commonmark_reference[543]",
+     "native_driver.py::test_commonmark_reference[544]",
+     "native_driver.py::test_commonmark_reference[545]",
+     "native_driver.py::test_commonmark_reference[546]",
+     "native_driver.py::test_commonmark_reference[547]",
+     "native_driver.py::test_commonmark_reference[548]",
+     "native_driver.py::test_commonmark_reference[549]",
+     "native_driver.py::test_commonmark_reference[550]",
+     "native_driver.py::test_commonmark_reference[551]",
+     "native_driver.py::test_commonmark_reference[552]",
+     "native_driver.py::test_commonmark_reference[553]",
+     "native_driver.py::test_commonmark_reference[554]",
+     "native_driver.py::test_commonmark_reference[555]",
+     "native_driver.py::test_commonmark_reference[556]",
+     "native_driver.py::test_commonmark_reference[557]",
+     "native_driver.py::test_commonmark_reference[558]",
+     "native_driver.py::test_commonmark_reference[559]",
+     "native_driver.py::test_commonmark_reference[560]",
+     "native_driver.py::test_commonmark_reference[561]",
+     "native_driver.py::test_commonmark_reference[562]",
+     "native_driver.py::test_commonmark_reference[563]",
+     "native_driver.py::test_commonmark_reference[564]",
+     "native_driver.py::test_commonmark_reference[565]",
+     "native_driver.py::test_commonmark_reference[566]",
+     "native_driver.py::test_commonmark_reference[567]",
+     "native_driver.py::test_commonmark_reference[568]",
+     "native_driver.py::test_commonmark_reference[569]",
+     "native_driver.py::test_commonmark_reference[570]",
+     "native_driver.py::test_commonmark_reference[571]",
+     "native_driver.py::test_commonmark_reference[572]",
+     "native_driver.py::test_commonmark_reference[573]",
+     "native_driver.py::test_commonmark_reference[574]",
+     "native_driver.py::test_commonmark_reference[575]",
+     "native_driver.py::test_commonmark_reference[576]",
+     "native_driver.py::test_commonmark_reference[577]",
+     "native_driver.py::test_commonmark_reference[578]",
+     "native_driver.py::test_commonmark_reference[579]",
+     "native_driver.py::test_commonmark_reference[580]",
+     "native_driver.py::test_commonmark_reference[581]",
+     "native_driver.py::test_commonmark_reference[582]",
+     "native_driver.py::test_commonmark_reference[583]",
+     "native_driver.py::test_commonmark_reference[584]",
+     "native_driver.py::test_commonmark_reference[585]",
+     "native_driver.py::test_commonmark_reference[586]",
+     "native_driver.py::test_commonmark_reference[587]",
+     "native_driver.py::test_commonmark_reference[588]",
+     "native_driver.py::test_commonmark_reference[589]",
+     "native_driver.py::test_commonmark_reference[590]",
+     "native_driver.py::test_commonmark_reference[591]",
+     "native_driver.py::test_commonmark_reference[592]",
+     "native_driver.py::test_commonmark_reference[593]",
+     "native_driver.py::test_reference_definitions",
+     "native_driver.py::test_reference_extras[33]",
+     "native_driver.py::test_reference_extras[43]",
+     "native_driver.py::test_reference_extras[52]",
+     "native_driver.py::test_reference_extras[66]"
+    ],
+    "schema_version": 1,
+    "selection": "test_reference_definitions or test_commonmark_reference or test_reference_extras",
+    "sha256": "11870d0eaebc0d656c2005ae5c36ce77da80dcb9a19bb5c51d5c75f4739eae09",
+    "source_commit": "9e93bd554147ffb8582581e14620c7611103d2ff"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "1dcb537213dd448f524b2b902392be958086aeb354e9681cf48ae249f3f21170",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "26bfdd873515534eabc78fc6efbd91446c2712de9b1844c1c35fa36e84e34448",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 180.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0268771529990772
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 144,
+   "cpu_seconds": 0.698052,
+   "exit_code": 0,
+   "expected_count": 144,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "native_driver.py::test_commonmark_reference[192]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[193]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[194]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[195]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[196]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[197]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[198]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[199]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[200]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[201]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[202]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[203]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[204]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[205]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[206]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[207]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[208]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[209]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[210]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[211]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[212]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[213]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[214]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[215]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[216]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[217]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[218]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[482]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[483]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[484]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[485]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[486]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[487]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[488]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[489]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[490]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[491]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[492]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[493]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[494]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[495]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[496]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[497]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[498]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[499]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[500]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[501]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[502]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[503]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[504]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[505]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[506]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[507]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[508]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[509]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[510]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[511]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[512]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[513]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[514]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[515]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[516]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[517]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[518]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[519]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[520]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[521]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[522]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[523]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[524]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[525]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[526]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[527]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[528]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[529]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[530]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[531]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[532]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[533]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[534]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[535]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[536]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[537]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[538]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[539]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[540]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[541]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[542]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[543]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[544]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[545]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[546]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[547]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[548]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[549]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[550]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[551]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[552]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[553]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[554]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[555]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[556]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[557]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[558]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[559]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[560]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[561]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[562]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[563]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[564]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[565]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[566]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[567]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[568]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[569]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[570]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[571]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[572]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[573]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[574]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[575]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[576]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[577]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[578]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[579]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[580]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[581]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[582]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[583]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[584]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[585]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[586]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[587]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[588]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[589]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[590]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[591]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[592]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_commonmark_reference[593]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_definitions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[33]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[43]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[52]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "native_driver.py::test_reference_extras[66]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "native_driver.py::test_reference_definitions",
+     "native_driver.py::test_commonmark_reference[192]",
+     "native_driver.py::test_commonmark_reference[193]",
+     "native_driver.py::test_commonmark_reference[194]",
+     "native_driver.py::test_commonmark_reference[195]",
+     "native_driver.py::test_commonmark_reference[196]",
+     "native_driver.py::test_commonmark_reference[197]",
+     "native_driver.py::test_commonmark_reference[198]",
+     "native_driver.py::test_commonmark_reference[199]",
+     "native_driver.py::test_commonmark_reference[200]",
+     "native_driver.py::test_commonmark_reference[201]",
+     "native_driver.py::test_commonmark_reference[202]",
+     "native_driver.py::test_commonmark_reference[203]",
+     "native_driver.py::test_commonmark_reference[204]",
+     "native_driver.py::test_commonmark_reference[205]",
+     "native_driver.py::test_commonmark_reference[206]",
+     "native_driver.py::test_commonmark_reference[207]",
+     "native_driver.py::test_commonmark_reference[208]",
+     "native_driver.py::test_commonmark_reference[209]",
+     "native_driver.py::test_commonmark_reference[210]",
+     "native_driver.py::test_commonmark_reference[211]",
+     "native_driver.py::test_commonmark_reference[212]",
+     "native_driver.py::test_commonmark_reference[213]",
+     "native_driver.py::test_commonmark_reference[214]",
+     "native_driver.py::test_commonmark_reference[215]",
+     "native_driver.py::test_commonmark_reference[216]",
+     "native_driver.py::test_commonmark_reference[217]",
+     "native_driver.py::test_commonmark_reference[218]",
+     "native_driver.py::test_commonmark_reference[482]",
+     "native_driver.py::test_commonmark_reference[483]",
+     "native_driver.py::test_commonmark_reference[484]",
+     "native_driver.py::test_commonmark_reference[485]",
+     "native_driver.py::test_commonmark_reference[486]",
+     "native_driver.py::test_commonmark_reference[487]",
+     "native_driver.py::test_commonmark_reference[488]",
+     "native_driver.py::test_commonmark_reference[489]",
+     "native_driver.py::test_commonmark_reference[490]",
+     "native_driver.py::test_commonmark_reference[491]",
+     "native_driver.py::test_commonmark_reference[492]",
+     "native_driver.py::test_commonmark_reference[493]",
+     "native_driver.py::test_commonmark_reference[494]",
+     "native_driver.py::test_commonmark_reference[495]",
+     "native_driver.py::test_commonmark_reference[496]",
+     "native_driver.py::test_commonmark_reference[497]",
+     "native_driver.py::test_commonmark_reference[498]",
+     "native_driver.py::test_commonmark_reference[499]",
+     "native_driver.py::test_commonmark_reference[500]",
+     "native_driver.py::test_commonmark_reference[501]",
+     "native_driver.py::test_commonmark_reference[502]",
+     "native_driver.py::test_commonmark_reference[503]",
+     "native_driver.py::test_commonmark_reference[504]",
+     "native_driver.py::test_commonmark_reference[505]",
+     "native_driver.py::test_commonmark_reference[506]",
+     "native_driver.py::test_commonmark_reference[507]",
+     "native_driver.py::test_commonmark_reference[508]",
+     "native_driver.py::test_commonmark_reference[509]",
+     "native_driver.py::test_commonmark_reference[510]",
+     "native_driver.py::test_commonmark_reference[511]",
+     "native_driver.py::test_commonmark_reference[512]",
+     "native_driver.py::test_commonmark_reference[513]",
+     "native_driver.py::test_commonmark_reference[514]",
+     "native_driver.py::test_commonmark_reference[515]",
+     "native_driver.py::test_commonmark_reference[516]",
+     "native_driver.py::test_commonmark_reference[517]",
+     "native_driver.py::test_commonmark_reference[518]",
+     "native_driver.py::test_commonmark_reference[519]",
+     "native_driver.py::test_commonmark_reference[520]",
+     "native_driver.py::test_commonmark_reference[521]",
+     "native_driver.py::test_commonmark_reference[522]",
+     "native_driver.py::test_commonmark_reference[523]",
+     "native_driver.py::test_commonmark_reference[524]",
+     "native_driver.py::test_commonmark_reference[525]",
+     "native_driver.py::test_commonmark_reference[526]",
+     "native_driver.py::test_commonmark_reference[527]",
+     "native_driver.py::test_commonmark_reference[528]",
+     "native_driver.py::test_commonmark_reference[529]",
+     "native_driver.py::test_commonmark_reference[530]",
+     "native_driver.py::test_commonmark_reference[531]",
+     "native_driver.py::test_commonmark_reference[532]",
+     "native_driver.py::test_commonmark_reference[533]",
+     "native_driver.py::test_commonmark_reference[534]",
+     "native_driver.py::test_commonmark_reference[535]",
+     "native_driver.py::test_commonmark_reference[536]",
+     "native_driver.py::test_commonmark_reference[537]",
+     "native_driver.py::test_commonmark_reference[538]",
+     "native_driver.py::test_commonmark_reference[539]",
+     "native_driver.py::test_commonmark_reference[540]",
+     "native_driver.py::test_commonmark_reference[541]",
+     "native_driver.py::test_commonmark_reference[542]",
+     "native_driver.py::test_commonmark_reference[543]",
+     "native_driver.py::test_commonmark_reference[544]",
+     "native_driver.py::test_commonmark_reference[545]",
+     "native_driver.py::test_commonmark_reference[546]",
+     "native_driver.py::test_commonmark_reference[547]",
+     "native_driver.py::test_commonmark_reference[548]",
+     "native_driver.py::test_commonmark_reference[549]",
+     "native_driver.py::test_commonmark_reference[550]",
+     "native_driver.py::test_commonmark_reference[551]",
+     "native_driver.py::test_commonmark_reference[552]",
+     "native_driver.py::test_commonmark_reference[553]",
+     "native_driver.py::test_commonmark_reference[554]",
+     "native_driver.py::test_commonmark_reference[555]",
+     "native_driver.py::test_commonmark_reference[556]",
+     "native_driver.py::test_commonmark_reference[557]",
+     "native_driver.py::test_commonmark_reference[558]",
+     "native_driver.py::test_commonmark_reference[559]",
+     "native_driver.py::test_commonmark_reference[560]",
+     "native_driver.py::test_commonmark_reference[561]",
+     "native_driver.py::test_commonmark_reference[562]",
+     "native_driver.py::test_commonmark_reference[563]",
+     "native_driver.py::test_commonmark_reference[564]",
+     "native_driver.py::test_commonmark_reference[565]",
+     "native_driver.py::test_commonmark_reference[566]",
+     "native_driver.py::test_commonmark_reference[567]",
+     "native_driver.py::test_commonmark_reference[568]",
+     "native_driver.py::test_commonmark_reference[569]",
+     "native_driver.py::test_commonmark_reference[570]",
+     "native_driver.py::test_commonmark_reference[571]",
+     "native_driver.py::test_commonmark_reference[572]",
+     "native_driver.py::test_commonmark_reference[573]",
+     "native_driver.py::test_commonmark_reference[574]",
+     "native_driver.py::test_commonmark_reference[575]",
+     "native_driver.py::test_commonmark_reference[576]",
+     "native_driver.py::test_commonmark_reference[577]",
+     "native_driver.py::test_commonmark_reference[578]",
+     "native_driver.py::test_commonmark_reference[579]",
+     "native_driver.py::test_commonmark_reference[580]",
+     "native_driver.py::test_commonmark_reference[581]",
+     "native_driver.py::test_commonmark_reference[582]",
+     "native_driver.py::test_commonmark_reference[583]",
+     "native_driver.py::test_commonmark_reference[584]",
+     "native_driver.py::test_commonmark_reference[585]",
+     "native_driver.py::test_commonmark_reference[586]",
+     "native_driver.py::test_commonmark_reference[587]",
+     "native_driver.py::test_commonmark_reference[588]",
+     "native_driver.py::test_commonmark_reference[589]",
+     "native_driver.py::test_commonmark_reference[590]",
+     "native_driver.py::test_commonmark_reference[591]",
+     "native_driver.py::test_commonmark_reference[592]",
+     "native_driver.py::test_commonmark_reference[593]",
+     "native_driver.py::test_reference_extras[33]",
+     "native_driver.py::test_reference_extras[43]",
+     "native_driver.py::test_reference_extras[52]",
+     "native_driver.py::test_reference_extras[66]"
+    ],
+    "selected_count": 144
+   },
+   "outcome": "passed",
+   "passed_count": 144,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 144,
+    "files": {
+     "author/native_driver.py": "302f1e2274de0593c42ff517f436f2b8e70d4a32cb2cb8417fec49843596ec89",
+     "tests/test_cmark_spec/commonmark.json": "d431b29d97b6f73e69d547109cf5081578fac931e72afe95639ebe766c1b2a20",
+     "tests/test_cmark_spec/test_spec.py": "5d70d7da8207d02b586c52397440d15826fd07dd307d1c8f948f9029232f33f1",
+     "tests/test_port/fixtures/commonmark_extras.md": "d136a11ea3b21d24addc2230ae9f383949f595b274c0fccbc9c836db293d667c",
+     "tests/test_port/test_fixtures.py": "588b29f473010d47da3295bfbe3a2037d92c0564d30374879f3257b41ea6cc08",
+     "tests/test_port/test_references.py": "ab63f3bd687fb2e648f4647c118d5842a5824aa1448522d932089acbe837d90e"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "native_driver.py::test_commonmark_reference[192]",
+     "native_driver.py::test_commonmark_reference[193]",
+     "native_driver.py::test_commonmark_reference[194]",
+     "native_driver.py::test_commonmark_reference[195]",
+     "native_driver.py::test_commonmark_reference[196]",
+     "native_driver.py::test_commonmark_reference[197]",
+     "native_driver.py::test_commonmark_reference[198]",
+     "native_driver.py::test_commonmark_reference[199]",
+     "native_driver.py::test_commonmark_reference[200]",
+     "native_driver.py::test_commonmark_reference[201]",
+     "native_driver.py::test_commonmark_reference[202]",
+     "native_driver.py::test_commonmark_reference[203]",
+     "native_driver.py::test_commonmark_reference[204]",
+     "native_driver.py::test_commonmark_reference[205]",
+     "native_driver.py::test_commonmark_reference[206]",
+     "native_driver.py::test_commonmark_reference[207]",
+     "native_driver.py::test_commonmark_reference[208]",
+     "native_driver.py::test_commonmark_reference[209]",
+     "native_driver.py::test_commonmark_reference[210]",
+     "native_driver.py::test_commonmark_reference[211]",
+     "native_driver.py::test_commonmark_reference[212]",
+     "native_driver.py::test_commonmark_reference[213]",
+     "native_driver.py::test_commonmark_reference[214]",
+     "native_driver.py::test_commonmark_reference[215]",
+     "native_driver.py::test_commonmark_reference[216]",
+     "native_driver.py::test_commonmark_reference[217]",
+     "native_driver.py::test_commonmark_reference[218]",
+     "native_driver.py::test_commonmark_reference[482]",
+     "native_driver.py::test_commonmark_reference[483]",
+     "native_driver.py::test_commonmark_reference[484]",
+     "native_driver.py::test_commonmark_reference[485]",
+     "native_driver.py::test_commonmark_reference[486]",
+     "native_driver.py::test_commonmark_reference[487]",
+     "native_driver.py::test_commonmark_reference[488]",
+     "native_driver.py::test_commonmark_reference[489]",
+     "native_driver.py::test_commonmark_reference[490]",
+     "native_driver.py::test_commonmark_reference[491]",
+     "native_driver.py::test_commonmark_reference[492]",
+     "native_driver.py::test_commonmark_reference[493]",
+     "native_driver.py::test_commonmark_reference[494]",
+     "native_driver.py::test_commonmark_reference[495]",
+     "native_driver.py::test_commonmark_reference[496]",
+     "native_driver.py::test_commonmark_reference[497]",
+     "native_driver.py::test_commonmark_reference[498]",
+     "native_driver.py::test_commonmark_reference[499]",
+     "native_driver.py::test_commonmark_reference[500]",
+     "native_driver.py::test_commonmark_reference[501]",
+     "native_driver.py::test_commonmark_reference[502]",
+     "native_driver.py::test_commonmark_reference[503]",
+     "native_driver.py::test_commonmark_reference[504]",
+     "native_driver.py::test_commonmark_reference[505]",
+     "native_driver.py::test_commonmark_reference[506]",
+     "native_driver.py::test_commonmark_reference[507]",
+     "native_driver.py::test_commonmark_reference[508]",
+     "native_driver.py::test_commonmark_reference[509]",
+     "native_driver.py::test_commonmark_reference[510]",
+     "native_driver.py::test_commonmark_reference[511]",
+     "native_driver.py::test_commonmark_reference[512]",
+     "native_driver.py::test_commonmark_reference[513]",
+     "native_driver.py::test_commonmark_reference[514]",
+     "native_driver.py::test_commonmark_reference[515]",
+     "native_driver.py::test_commonmark_reference[516]",
+     "native_driver.py::test_commonmark_reference[517]",
+     "native_driver.py::test_commonmark_reference[518]",
+     "native_driver.py::test_commonmark_reference[519]",
+     "native_driver.py::test_commonmark_reference[520]",
+     "native_driver.py::test_commonmark_reference[521]",
+     "native_driver.py::test_commonmark_reference[522]",
+     "native_driver.py::test_commonmark_reference[523]",
+     "native_driver.py::test_commonmark_reference[524]",
+     "native_driver.py::test_commonmark_reference[525]",
+     "native_driver.py::test_commonmark_reference[526]",
+     "native_driver.py::test_commonmark_reference[527]",
+     "native_driver.py::test_commonmark_reference[528]",
+     "native_driver.py::test_commonmark_reference[529]",
+     "native_driver.py::test_commonmark_reference[530]",
+     "native_driver.py::test_commonmark_reference[531]",
+     "native_driver.py::test_commonmark_reference[532]",
+     "native_driver.py::test_commonmark_reference[533]",
+     "native_driver.py::test_commonmark_reference[534]",
+     "native_driver.py::test_commonmark_reference[535]",
+     "native_driver.py::test_commonmark_reference[536]",
+     "native_driver.py::test_commonmark_reference[537]",
+     "native_driver.py::test_commonmark_reference[538]",
+     "native_driver.py::test_commonmark_reference[539]",
+     "native_driver.py::test_commonmark_reference[540]",
+     "native_driver.py::test_commonmark_reference[541]",
+     "native_driver.py::test_commonmark_reference[542]",
+     "native_driver.py::test_commonmark_reference[543]",
+     "native_driver.py::test_commonmark_reference[544]",
+     "native_driver.py::test_commonmark_reference[545]",
+     "native_driver.py::test_commonmark_reference[546]",
+     "native_driver.py::test_commonmark_reference[547]",
+     "native_driver.py::test_commonmark_reference[548]",
+     "native_driver.py::test_commonmark_reference[549]",
+     "native_driver.py::test_commonmark_reference[550]",
+     "native_driver.py::test_commonmark_reference[551]",
+     "native_driver.py::test_commonmark_reference[552]",
+     "native_driver.py::test_commonmark_reference[553]",
+     "native_driver.py::test_commonmark_reference[554]",
+     "native_driver.py::test_commonmark_reference[555]",
+     "native_driver.py::test_commonmark_reference[556]",
+     "native_driver.py::test_commonmark_reference[557]",
+     "native_driver.py::test_commonmark_reference[558]",
+     "native_driver.py::test_commonmark_reference[559]",
+     "native_driver.py::test_commonmark_reference[560]",
+     "native_driver.py::test_commonmark_reference[561]",
+     "native_driver.py::test_commonmark_reference[562]",
+     "native_driver.py::test_commonmark_reference[563]",
+     "native_driver.py::test_commonmark_reference[564]",
+     "native_driver.py::test_commonmark_reference[565]",
+     "native_driver.py::test_commonmark_reference[566]",
+     "native_driver.py::test_commonmark_reference[567]",
+     "native_driver.py::test_commonmark_reference[568]",
+     "native_driver.py::test_commonmark_reference[569]",
+     "native_driver.py::test_commonmark_reference[570]",
+     "native_driver.py::test_commonmark_reference[571]",
+     "native_driver.py::test_commonmark_reference[572]",
+     "native_driver.py::test_commonmark_reference[573]",
+     "native_driver.py::test_commonmark_reference[574]",
+     "native_driver.py::test_commonmark_reference[575]",
+     "native_driver.py::test_commonmark_reference[576]",
+     "native_driver.py::test_commonmark_reference[577]",
+     "native_driver.py::test_commonmark_reference[578]",
+     "native_driver.py::test_commonmark_reference[579]",
+     "native_driver.py::test_commonmark_reference[580]",
+     "native_driver.py::test_commonmark_reference[581]",
+     "native_driver.py::test_commonmark_reference[582]",
+     "native_driver.py::test_commonmark_reference[583]",
+     "native_driver.py::test_commonmark_reference[584]",
+     "native_driver.py::test_commonmark_reference[585]",
+     "native_driver.py::test_commonmark_reference[586]",
+     "native_driver.py::test_commonmark_reference[587]",
+     "native_driver.py::test_commonmark_reference[588]",
+     "native_driver.py::test_commonmark_reference[589]",
+     "native_driver.py::test_commonmark_reference[590]",
+     "native_driver.py::test_commonmark_reference[591]",
+     "native_driver.py::test_commonmark_reference[592]",
+     "native_driver.py::test_commonmark_reference[593]",
+     "native_driver.py::test_reference_definitions",
+     "native_driver.py::test_reference_extras[33]",
+     "native_driver.py::test_reference_extras[43]",
+     "native_driver.py::test_reference_extras[52]",
+     "native_driver.py::test_reference_extras[66]"
+    ],
+    "schema_version": 1,
+    "selection": "test_reference_definitions or test_commonmark_reference or test_reference_extras",
+    "sha256": "11870d0eaebc0d656c2005ae5c36ce77da80dcb9a19bb5c51d5c75f4739eae09",
+    "source_commit": "9e93bd554147ffb8582581e14620c7611103d2ff"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "99ea9712b6e042e39bb29f8e5e9d47253366684a3618019181772445c371f188",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "26bfdd873515534eabc78fc6efbd91446c2712de9b1844c1c35fa36e84e34448",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 180.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7338653330007219
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 144,
+  "sha256": "11870d0eaebc0d656c2005ae5c36ce77da80dcb9a19bb5c51d5c75f4739eae09"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "26bfdd873515534eabc78fc6efbd91446c2712de9b1844c1c35fa36e84e34448"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "1dcb537213dd448f524b2b902392be958086aeb354e9681cf48ae249f3f21170"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "26bfdd873515534eabc78fc6efbd91446c2712de9b1844c1c35fa36e84e34448"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "99ea9712b6e042e39bb29f8e5e9d47253366684a3618019181772445c371f188"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "bf5e7751ecac08d5ef6c2e4ec27e3d4171ccaf29e824bffa968b73d471342be0"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "bf5e7751ecac08d5ef6c2e4ec27e3d4171ccaf29e824bffa968b73d471342be0"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "37e477065a0c2c061b3160a5222a48ef52dffa55ac28428e73903cf4a2f4a535"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "37e477065a0c2c061b3160a5222a48ef52dffa55ac28428e73903cf4a2f4a535"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "ff55be27ac0de0dcd1bcb4daeeede5d8d03ffb99b2f1123e6fe67ad2e1ca2c8b"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "ff55be27ac0de0dcd1bcb4daeeede5d8d03ffb99b2f1123e6fe67ad2e1ca2c8b"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "251dac88cb7d9585be036c5a3bb40483788a9053b3666ee5f7fd2dda8c3047d0"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "251dac88cb7d9585be036c5a3bb40483788a9053b3666ee5f7fd2dda8c3047d0"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "c71ed7a55553df0c7bc91b06adb35eedf4b7041b191d941620953eabcc09e9f3"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "c71ed7a55553df0c7bc91b06adb35eedf4b7041b191d941620953eabcc09e9f3"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "e04c97cfbf174eb2a59584ca6ddaa7c89f5d1ffd0d1578f5e1cca2f5b8481995"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "e04c97cfbf174eb2a59584ca6ddaa7c89f5d1ffd0d1578f5e1cca2f5b8481995"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "ac742f83a97adee28fbe7f4826059e22f12f3a1bd1d5fa87ce869e2919621d38"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "ac742f83a97adee28fbe7f4826059e22f12f3a1bd1d5fa87ce869e2919621d38"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "7f67474265e28151fe8365996d74f989a78133f918cd6fc9c4eed5463893d333"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "7f67474265e28151fe8365996d74f989a78133f918cd6fc9c4eed5463893d333"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "8a5f8f2e56bb8b0475d230f37848d3383edaddc1739bfaeaad218e1b1a4ce780"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "8a5f8f2e56bb8b0475d230f37848d3383edaddc1739bfaeaad218e1b1a4ce780"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "e5995cbb901337a180d4d1dffd4495ff110ed317827b74dd636fac7164b46c73"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "e5995cbb901337a180d4d1dffd4495ff110ed317827b74dd636fac7164b46c73"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "055f27dbcc6c1ed7d05ed1da7aa9600205a6a5847228918b44986eb3659a2e01"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "055f27dbcc6c1ed7d05ed1da7aa9600205a6a5847228918b44986eb3659a2e01"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "e3b746f56cb1424e9641206bcfd5fcc7518cc141ecefd595b99ea0ea961ed5bc"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "e3b746f56cb1424e9641206bcfd5fcc7518cc141ecefd595b99ea0ea961ed5bc"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "9be4e8888579dc0554a5188a79b78312486995aec6c7571b94c560ef451a1550"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "12e0a7499d0ad2ee0060f3371141d6559d49793527307d6caf530ee992ed5826"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0028-stdout.bin",
+   "sha256": "b564d65d89efc51050a7b99cf2bc6e5e9a1901513a541a243d26836d7f4689b2"
+  },
+  {
+   "path": "raw/0028-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0029-stdout.bin",
+   "sha256": "179a6d59fa44b32eb9cac423e73c1e54ec8a0c64d18ecf4bfb7db74e8720a9e9"
+  },
+  {
+   "path": "raw/0029-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0030-stdout.bin",
+   "sha256": "f35f7cece475616493d4879851dd3b5280d21ad7a81edb8c9924fe1342a8e79a"
+  },
+  {
+   "path": "raw/0030-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0031-stdout.bin",
+   "sha256": "f35f7cece475616493d4879851dd3b5280d21ad7a81edb8c9924fe1342a8e79a"
+  },
+  {
+   "path": "raw/0031-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0032-stdout.bin",
+   "sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b"
+  },
+  {
+   "path": "raw/0032-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0033-stdout.bin",
+   "sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b"
+  },
+  {
+   "path": "raw/0033-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0034-stdout.bin",
+   "sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b"
+  },
+  {
+   "path": "raw/0034-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0035-stdout.bin",
+   "sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b"
+  },
+  {
+   "path": "raw/0035-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0036-stdout.bin",
+   "sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b"
+  },
+  {
+   "path": "raw/0036-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0037-stdout.bin",
+   "sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b"
+  },
+  {
+   "path": "raw/0037-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0038-stdout.bin",
+   "sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6"
+  },
+  {
+   "path": "raw/0038-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0039-stdout.bin",
+   "sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6"
+  },
+  {
+   "path": "raw/0039-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0040-stdout.bin",
+   "sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6"
+  },
+  {
+   "path": "raw/0040-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0041-stdout.bin",
+   "sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6"
+  },
+  {
+   "path": "raw/0041-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0042-stdout.bin",
+   "sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6"
+  },
+  {
+   "path": "raw/0042-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0043-stdout.bin",
+   "sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6"
+  },
+  {
+   "path": "raw/0043-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "alternative",
+ "role_wall_totals": {
+  "baseline": 17.743991986993933,
+  "candidate": 8.657623394010443
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 1254410,
+   "files": 171,
+   "sha256": "d62d4718f6fbc14cdcbd9efec8d10e52f532903e6ef950bedbad64dd6a863ebb"
+  },
+  "candidate": {
+   "bytes": 1256231,
+   "files": 171,
+   "sha256": "74bc01bb3c26ce5e1908395e74fc71b81ef54d06e29af6f8230de8e75a9cfaed"
+  }
+ },
+ "started_utc": "2026-10-01T15:26:06.268075+00:00",
+ "summaries": {
+  "changelog-60": {
+   "baseline_cpu_median": 0.353556,
+   "baseline_cpu_seconds": [
+    0.341877,
+    0.353556,
+    0.355786
+   ],
+   "baseline_wall_seconds": [
+    0.3496154150016082,
+    0.3618385660010972,
+    0.3671064779991866
+   ],
+   "candidate_cpu_seconds": [
+    0.36806399999999995,
+    0.339173,
+    0.28309199999999995
+   ],
+   "candidate_wall_seconds": [
+    0.39293783900211565,
+    0.37523780099945725,
+    0.28944862199932686
+   ],
+   "case": "changelog",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.04240608774873,
+   "median_paired_candidate_over_baseline_cpu": 0.9593190329113351,
+   "size": 60
+  },
+  "changelog-600": {
+   "baseline_cpu_median": 3.972575,
+   "baseline_cpu_seconds": [
+    2.9611549999999998,
+    3.972575,
+    4.018969
+   ],
+   "baseline_wall_seconds": [
+    3.0026604819977365,
+    4.339460680999764,
+    4.122780133999186
+   ],
+   "candidate_cpu_seconds": [
+    0.7866719999999999,
+    0.737024,
+    1.177371
+   ],
+   "candidate_wall_seconds": [
+    0.8001749130016833,
+    0.7477160800008278,
+    1.2172126380028203
+   ],
+   "case": "changelog",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 3.764154565053796,
+   "median_paired_candidate_over_baseline_cpu": 0.26566390479390645,
+   "size": 600
+  }
+ },
+ "workers": [
+  {
+   "case_id": "empty",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.332306,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.9453125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "bf5e7751ecac08d5ef6c2e4ec27e3d4171ccaf29e824bffa968b73d471342be0",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.343991941997956
+  },
+  {
+   "case_id": "empty",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.29534799999999994,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.07421875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "bf5e7751ecac08d5ef6c2e4ec27e3d4171ccaf29e824bffa968b73d471342be0",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.30999038299705717
+  },
+  {
+   "case_id": "duplicate",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.274016,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.64453125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "37e477065a0c2c061b3160a5222a48ef52dffa55ac28428e73903cf4a2f4a535",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2853953490011918
+  },
+  {
+   "case_id": "duplicate",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.23611499999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8359375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "37e477065a0c2c061b3160a5222a48ef52dffa55ac28428e73903cf4a2f4a535",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.24306964200150105
+  },
+  {
+   "case_id": "multiline-title",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.235537,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.81640625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "ff55be27ac0de0dcd1bcb4daeeede5d8d03ffb99b2f1123e6fe67ad2e1ca2c8b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.24199121099809418
+  },
+  {
+   "case_id": "multiline-title",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.21128599999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8515625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "ff55be27ac0de0dcd1bcb4daeeede5d8d03ffb99b2f1123e6fe67ad2e1ca2c8b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.21656482700200286
+  },
+  {
+   "case_id": "multiline-label",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.28424999999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.87890625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "251dac88cb7d9585be036c5a3bb40483788a9053b3666ee5f7fd2dda8c3047d0",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.295437218999723
+  },
+  {
+   "case_id": "multiline-label",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.24525999999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.80859375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "251dac88cb7d9585be036c5a3bb40483788a9053b3666ee5f7fd2dda8c3047d0",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2520797780016437
+  },
+  {
+   "case_id": "rollback-title",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.24038099999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "c71ed7a55553df0c7bc91b06adb35eedf4b7041b191d941620953eabcc09e9f3",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.24619576500117546
+  },
+  {
+   "case_id": "rollback-title",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.219556,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8046875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "c71ed7a55553df0c7bc91b06adb35eedf4b7041b191d941620953eabcc09e9f3",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2235243819995958
+  },
+  {
+   "case_id": "blank-title",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.277719,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.01171875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "e04c97cfbf174eb2a59584ca6ddaa7c89f5d1ffd0d1578f5e1cca2f5b8481995",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2850311160000274
+  },
+  {
+   "case_id": "blank-title",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.289122,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8203125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "e04c97cfbf174eb2a59584ca6ddaa7c89f5d1ffd0d1578f5e1cca2f5b8481995",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2963328950027062
+  },
+  {
+   "case_id": "heading-terminator",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.25439799999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.73828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "ac742f83a97adee28fbe7f4826059e22f12f3a1bd1d5fa87ce869e2919621d38",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2610066309971444
+  },
+  {
+   "case_id": "heading-terminator",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.252257,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.859375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "ac742f83a97adee28fbe7f4826059e22f12f3a1bd1d5fa87ce869e2919621d38",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.25748844100235146
+  },
+  {
+   "case_id": "paragraph-before",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.254663,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "7f67474265e28151fe8365996d74f989a78133f918cd6fc9c4eed5463893d333",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2604075710005418
+  },
+  {
+   "case_id": "paragraph-before",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.24094,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.80859375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "7f67474265e28151fe8365996d74f989a78133f918cd6fc9c4eed5463893d333",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.24741966399960802
+  },
+  {
+   "case_id": "angle-destination",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.267548,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.87890625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "8a5f8f2e56bb8b0475d230f37848d3383edaddc1739bfaeaad218e1b1a4ce780",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.27547761000096216
+  },
+  {
+   "case_id": "angle-destination",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.24675699999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.68359375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "8a5f8f2e56bb8b0475d230f37848d3383edaddc1739bfaeaad218e1b1a4ce780",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2533731359981175
+  },
+  {
+   "case_id": "no-end-newline",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.280995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.87890625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "e5995cbb901337a180d4d1dffd4495ff110ed317827b74dd636fac7164b46c73",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2945576300007815
+  },
+  {
+   "case_id": "no-end-newline",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.304636,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.6796875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "e5995cbb901337a180d4d1dffd4495ff110ed317827b74dd636fac7164b46c73",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.31574899000042933
+  },
+  {
+   "case_id": "container",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.32039599999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.76953125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "055f27dbcc6c1ed7d05ed1da7aa9600205a6a5847228918b44986eb3659a2e01",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3308377149987791
+  },
+  {
+   "case_id": "container",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.351825,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.73828125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "055f27dbcc6c1ed7d05ed1da7aa9600205a6a5847228918b44986eb3659a2e01",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3670889179993537
+  },
+  {
+   "case_id": "indented-code",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.27736099999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.00390625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "e3b746f56cb1424e9641206bcfd5fcc7518cc141ecefd595b99ea0ea961ed5bc",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2844130250014132
+  },
+  {
+   "case_id": "indented-code",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.23228,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8671875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "e3b746f56cb1424e9641206bcfd5fcc7518cc141ecefd595b99ea0ea961ed5bc",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.23746182499962742
+  },
+  {
+   "case_id": "inline-definitions",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.21912099999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.73828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "9be4e8888579dc0554a5188a79b78312486995aec6c7571b94c560ef451a1550",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.22328474199821358
+  },
+  {
+   "case_id": "inline-definitions",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.24650999999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.73046875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "12e0a7499d0ad2ee0060f3371141d6559d49793527307d6caf530ee992ed5826",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.25577969799996936
+  },
+  {
+   "case_id": "existing-env",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.25915499999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 26.01171875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0028-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0028-stdout.bin",
+   "stdout_sha256": "b564d65d89efc51050a7b99cf2bc6e5e9a1901513a541a243d26836d7f4689b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2673237689996313
+  },
+  {
+   "case_id": "existing-env",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.26784899999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8671875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0029-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0029-stdout.bin",
+   "stdout_sha256": "179a6d59fa44b32eb9cac423e73c1e54ec8a0c64d18ecf4bfb7db74e8720a9e9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2746631810005056
+  },
+  {
+   "case_id": "title-escaped-newline",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.270378,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.73828125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0030-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0030-stdout.bin",
+   "stdout_sha256": "f35f7cece475616493d4879851dd3b5280d21ad7a81edb8c9924fe1342a8e79a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.2783017830006429
+  },
+  {
+   "case_id": "title-escaped-newline",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.32270299999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.734375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0031-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0031-stdout.bin",
+   "stdout_sha256": "f35f7cece475616493d4879851dd3b5280d21ad7a81edb8c9924fe1342a8e79a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.35044440799902077
+  },
+  {
+   "case_id": "changelog-60",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.341877,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.765625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 60,
+   "stderr_path": "raw/0032-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0032-stdout.bin",
+   "stdout_sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3496154150016082
+  },
+  {
+   "case_id": "changelog-60",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.36806399999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.83203125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 60,
+   "stderr_path": "raw/0033-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0033-stdout.bin",
+   "stdout_sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.39293783900211565
+  },
+  {
+   "case_id": "changelog-60",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.339173,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8359375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 60,
+   "stderr_path": "raw/0034-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0034-stdout.bin",
+   "stdout_sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.37523780099945725
+  },
+  {
+   "case_id": "changelog-60",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.353556,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.765625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 60,
+   "stderr_path": "raw/0035-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0035-stdout.bin",
+   "stdout_sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3618385660010972
+  },
+  {
+   "case_id": "changelog-60",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.355786,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.76953125,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 60,
+   "stderr_path": "raw/0036-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0036-stdout.bin",
+   "stdout_sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3671064779991866
+  },
+  {
+   "case_id": "changelog-60",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.28309199999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 25.8359375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 60,
+   "stderr_path": "raw/0037-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0037-stdout.bin",
+   "stdout_sha256": "3b12e5b6a601f7dec171d475737d48ecf6cdf81ce6cc41cd63a3c76d963ee31b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.28944862199932686
+  },
+  {
+   "case_id": "changelog-600",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.9611549999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.0078125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 600,
+   "stderr_path": "raw/0038-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0038-stdout.bin",
+   "stdout_sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.0026604819977365
+  },
+  {
+   "case_id": "changelog-600",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.7866719999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.9765625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 600,
+   "stderr_path": "raw/0039-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0039-stdout.bin",
+   "stdout_sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8001749130016833
+  },
+  {
+   "case_id": "changelog-600",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.737024,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.98046875,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 600,
+   "stderr_path": "raw/0040-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0040-stdout.bin",
+   "stdout_sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7477160800008278
+  },
+  {
+   "case_id": "changelog-600",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.972575,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.0078125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 600,
+   "stderr_path": "raw/0041-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0041-stdout.bin",
+   "stdout_sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 4.339460680999764
+  },
+  {
+   "case_id": "changelog-600",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 4.018969,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.00390625,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 600,
+   "stderr_path": "raw/0042-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0042-stdout.bin",
+   "stdout_sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 4.122780133999186
+  },
+  {
+   "case_id": "changelog-600",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.177371,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.9765625,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 600,
+   "stderr_path": "raw/0043-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0043-stdout.bin",
+   "stdout_sha256": "bb8bf50407349c2a44437fad1b53987eb672b7151702543ed696a857c11587e6",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 90.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2172126380028203
+  }
+ ]
+}

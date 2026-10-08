@@ -1,0 +1,10 @@
+--- a/tomlkit/container.py
++++ b/tomlkit/container.py
+@@ -259,7 +259,6 @@
+                             return self
+ 
+                         # Create a new element to replace the old one
+-                        current = copy.deepcopy(current)
+                         for k, v in item.value.body:
+                             current.append(k, v)
+                         self._body[

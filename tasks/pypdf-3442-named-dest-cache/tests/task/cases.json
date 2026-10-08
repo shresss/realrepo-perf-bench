@@ -1,0 +1,16 @@
+[
+  {"id":"empty","case":"manual","size":0,"seed":0,"role":"semantic","public":true},
+  {"id":"one-page","case":"manual","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"small-manual","case":"manual","size":8,"seed":3,"role":"semantic","public":true},
+  {"id":"subset-odd-reverse","case":"subset-reverse","size":9,"seed":5,"role":"semantic","public":true},
+  {"id":"duplicate-pages","case":"duplicate","size":6,"seed":2,"role":"semantic","public":true},
+  {"id":"append-all","case":"append","size":6,"seed":9,"role":"semantic","public":true},
+  {"id":"legacy-dests","case":"legacy","size":7,"seed":11,"role":"semantic","public":true},
+  {"id":"no-name-tree","case":"no-names","size":3,"seed":4,"role":"semantic","public":true},
+  {"id":"reader-isolation","case":"reader-isolation","size":5,"seed":7,"role":"semantic","public":true},
+  {"id":"writer-live","case":"writer-live","size":4,"seed":0,"role":"semantic","public":true},
+  {"id":"heldout-small-manual","case":"manual","size":12,"seed":41,"role":"semantic","public":false},
+  {"id":"heldout-subset","case":"subset-reverse","size":12,"seed":23,"role":"semantic","public":false},
+  {"id":"manual-120","case":"manual","size":120,"seed":1,"role":"performance","public":true},
+  {"id":"manual-300","case":"manual","size":300,"seed":1,"role":"performance","public":true}
+]

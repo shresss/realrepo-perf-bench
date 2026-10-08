@@ -1,0 +1,25 @@
+--- a/sqlglot/parser.py
++++ b/sqlglot/parser.py
+@@ -3267,22 +3267,7 @@
+             kwargs["on"] = self._parse_assignment()
+         elif self._match(TokenType.USING):
+             kwargs["using"] = self._parse_using_identifiers()
+-        elif not isinstance(kwargs["this"], exp.Unnest) and not (
+-            kind and kind.token_type == TokenType.CROSS
+-        ):
+-            index = self._index
+-            joins: t.Optional[list] = list(self._parse_joins())
+ 
+-            if joins and self._match(TokenType.ON):
+-                kwargs["on"] = self._parse_assignment()
+-            elif joins and self._match(TokenType.USING):
+-                kwargs["using"] = self._parse_using_identifiers()
+-            else:
+-                joins = None
+-                self._retreat(index)
+-
+-            kwargs["this"].set("joins", joins if joins else None)
+-
+         comments = [c for token in (method, side, kind) if token for c in token.comments]
+         return self.expression(exp.Join, comments=comments, **kwargs)
+ 

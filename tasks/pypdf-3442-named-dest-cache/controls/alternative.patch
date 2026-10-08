@@ -1,0 +1,37 @@
+--- a/pypdf/_writer.py
++++ b/pypdf/_writer.py
+@@ -1362,14 +1362,32 @@
+         """Patch up links that were added to the document earlier, to
+         make sure they still point to the same pages.
+         """
++        from .generic._link import NamedReferenceLink
++
++        # A write operation can resolve all links against one source snapshot.
++        source_destinations = {}
++        target_names = set(self.named_destinations)
+         for (new_link, old_link) in self._unresolved_links:
+-            old_page = old_link.find_referenced_page()
++            if isinstance(old_link, NamedReferenceLink):
++                source = old_link._source_pdf
++                if source not in source_destinations:
++                    source_destinations[source] = source.named_destinations
++                destination = source_destinations[source].get(str(old_link._reference))
++                old_page = destination.page if destination else None
++            else:
++                old_page = old_link.find_referenced_page()
+             if not old_page:
+                 continue
+             new_page = self._merged_in_pages.get(old_page)
+             if new_page is None:
+                 continue
+-            new_link.patch_reference(self, new_page)
++            if isinstance(new_link, NamedReferenceLink):
++                name = str(new_link._reference)
++                if name not in target_names:
++                    self.add_named_destination(name, new_page.page_number)
++                    target_names.add(name)
++            else:
++                new_link.patch_reference(self, new_page)
+ 
+     def write_stream(self, stream: StreamType) -> None:
+         if hasattr(stream, "mode") and "b" not in stream.mode:

@@ -1,0 +1,25 @@
+--- a/core/dbt/graph/graph.py
++++ b/core/dbt/graph/graph.py
+@@ -44,10 +44,18 @@
+         return {child for _, child in nx.bfs_edges(filtered_graph, node, depth_limit=max_depth)}
+ 
+     def exclude_edge_type(self, edge_type_to_exclude):
+-        return nx.subgraph_view(
+-            self.graph,
+-            filter_edge=partial(self.filter_edges_by_type, edge_type=edge_type_to_exclude),
+-        )
++        # Live view: caller edge mutations remain observable, but this cache does
++        # not remove len(view)'s repeated node-filter scan inside nx.bfs_edges.
++        cache = getattr(self, "_selection_view_cache", None)
++        if cache is None or cache[0] is not self.graph:
++            cache = (self.graph, {})
++            self._selection_view_cache = cache
++        if edge_type_to_exclude not in cache[1]:
++            cache[1][edge_type_to_exclude] = nx.subgraph_view(
++                self.graph,
++                filter_edge=partial(self.filter_edges_by_type, edge_type=edge_type_to_exclude),
++            )
++        return cache[1][edge_type_to_exclude]
+ 
+     def filter_edges_by_type(self, first_node, second_node, edge_type):
+         return self.graph.get_edge_data(first_node, second_node).get("edge_type") != edge_type

@@ -1,0 +1,6 @@
+{
+  "target_paths": ["sqlglot/optimizer/resolver.py"],
+  "package_paths": ["sqlglot"],
+  "pandas_udf": false,
+  "claim": "Diagnostics only. Shared grade worker disables instrumentation; parent CPU is separate."
+}

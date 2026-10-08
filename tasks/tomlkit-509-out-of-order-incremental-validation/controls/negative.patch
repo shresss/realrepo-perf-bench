@@ -1,0 +1,11 @@
+--- a/tomlkit/container.py
++++ b/tomlkit/container.py
+@@ -161,6 +161,8 @@
+             return
+         current_idx = self._map[key]
+         if not isinstance(current_idx, tuple):
++            return
++        if self._parsed:
+             return
+         OutOfOrderTableProxy.validate(self, current_idx)
+ 

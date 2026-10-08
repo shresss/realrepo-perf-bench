@@ -1,0 +1,34 @@
+[
+  {
+    "id": "records-0",
+    "case": "records",
+    "size": 0,
+    "seed": 1,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-1",
+    "case": "records",
+    "size": 1,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-2000",
+    "case": "records",
+    "size": 2000,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "semantics",
+    "case": "semantics",
+    "size": 1,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "semantic-1",
+    "case": "<:first:unsorted",
+    "size": 37,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-2",
+    "case": ">:last:unsorted",
+    "size": 43,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-3",
+    "case": "<=:first:nulls",
+    "size": 47,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-4",
+    "case": ">=:last:nulls",
+    "size": 47,
+    "seed": 11,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-5",
+    "case": "<:last:ties",
+    "size": 53,
+    "seed": 13,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-6",
+    "case": ">:first:ties",
+    "size": 53,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-7",
+    "case": "<=:last:sorted",
+    "size": 41,
+    "seed": 19,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-8",
+    "case": ">=:first:reverse",
+    "size": 41,
+    "seed": 23,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-9",
+    "case": "<=:last:datetime",
+    "size": 39,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-10",
+    "case": ">:first:datetime",
+    "size": 39,
+    "seed": 31,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-11",
+    "case": "<:first:unsorted",
+    "size": 0,
+    "seed": 37,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "scale-10000",
+    "case": "<:first:unsorted",
+    "size": 10000,
+    "seed": 100,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "scale-40000",
+    "case": "<:first:unsorted",
+    "size": 40000,
+    "seed": 101,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "scale-160000",
+    "case": "<:first:unsorted",
+    "size": 160000,
+    "seed": 102,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "scale-320000",
+    "case": "<:first:unsorted",
+    "size": 320000,
+    "seed": 103,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "greater-floor",
+    "case": ">:last:unsorted",
+    "size": 0,
+    "seed": 211,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "greater-scale-10000",
+    "case": ">:last:unsorted",
+    "size": 10000,
+    "seed": 200,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "greater-scale-40000",
+    "case": ">:last:unsorted",
+    "size": 40000,
+    "seed": 201,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "greater-scale-160000",
+    "case": ">:last:unsorted",
+    "size": 160000,
+    "seed": 202,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "greater-scale-320000",
+    "case": ">:last:unsorted",
+    "size": 320000,
+    "seed": 203,
+    "role": "performance",
+    "public": false
+  }
+]

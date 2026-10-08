@@ -1,0 +1,18 @@
+diff --git a/nltk/sentiment/vader.py b/nltk/sentiment/vader.py
+index f6bca50..dfa9fd1 100644
+--- a/nltk/sentiment/vader.py
++++ b/nltk/sentiment/vader.py
+@@ -368,9 +368,11 @@ class SentimentIntensityAnalyzer:
+         )
+         sentiments = []
+         words_and_emoticons = sentitext.words_and_emoticons
+-        for item in words_and_emoticons:
++        # Position of the first occurrence of each token, recorded while scanning.
++        seen = {}
++        for position, item in enumerate(words_and_emoticons):
+             valence = 0
+-            i = words_and_emoticons.index(item)
++            i = seen.setdefault(item, position)
+             if (
+                 i < len(words_and_emoticons) - 1
+                 and item.lower() == "kind"

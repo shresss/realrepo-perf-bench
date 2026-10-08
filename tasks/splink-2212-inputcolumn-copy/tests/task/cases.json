@@ -1,0 +1,7 @@
+[
+  {"id": "lookup-small", "case": "lookup", "size": 2, "seed": 7, "role": "semantic", "public": true},
+  {"id": "mixed-rules-small", "case": "mixed_rules", "size": 3, "seed": 5, "role": "semantic", "public": true},
+  {"id": "resubmit-hidden", "case": "resubmit", "size": 4, "seed": 9001, "role": "semantic", "public": false},
+  {"id": "mixed-rules-hidden", "case": "mixed_rules", "size": 4, "seed": 777, "role": "semantic", "public": false},
+  {"id": "lookup-gated", "case": "lookup", "size": 24, "seed": 31337, "role": "performance", "public": false}
+]

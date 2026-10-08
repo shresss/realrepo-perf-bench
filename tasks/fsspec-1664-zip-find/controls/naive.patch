@@ -1,0 +1,15 @@
+--- a/fsspec/implementations/zip.py
++++ b/fsspec/implementations/zip.py
+@@ -132,3 +132,12 @@
+             out.size = info["size"]
+             out.name = info["name"]
+         return out
++
++    def find(self, path, maxdepth=None, withdirs=False, detail=False, **kwargs):
++        path = self._strip_protocol(path)
++        if maxdepth is not None and maxdepth < 1:
++            raise ValueError('maxdepth must be at least 1')
++        self._get_dirs()
++        if path in self.dir_cache and self.dir_cache[path]['type'] == 'file':
++            return {path: {}} if detail else [path]
++        return super().find(path, maxdepth=maxdepth, withdirs=withdirs, detail=detail, **kwargs)

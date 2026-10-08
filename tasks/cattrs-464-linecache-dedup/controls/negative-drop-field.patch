@@ -1,0 +1,11 @@
+--- a/src/cattrs/gen/__init__.py
++++ b/src/cattrs/gen/__init__.py
+@@ -114,7 +114,7 @@
+     working_set.add(cl)
+ 
+     try:
+-        for a in attrs:
++        for a in attrs[:-1]:
+             attr_name = a.name
+             override = kwargs.pop(attr_name, neutral)
+             if override.omit:

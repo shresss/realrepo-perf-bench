@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "pydicom/dataset.py",
+    "pydicom/sequence.py"
+  ],
+  "package_paths": [
+    "pydicom"
+  ],
+  "pandas_udf": false
+}

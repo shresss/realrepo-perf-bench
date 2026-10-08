@@ -1,0 +1,66 @@
+[
+  {
+    "id": "semantic-forms-0",
+    "case": "forms",
+    "size": 0,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-forms-1",
+    "case": "forms",
+    "size": 1,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-forms-3",
+    "case": "forms",
+    "size": 3,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-unicode-3",
+    "case": "unicode",
+    "size": 3,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-strict-5",
+    "case": "strict",
+    "size": 5,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-reverse-7",
+    "case": "reverse",
+    "size": 7,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-override-5",
+    "case": "override",
+    "size": 5,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "performance-forms-100",
+    "case": "forms",
+    "size": 100,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  }
+]

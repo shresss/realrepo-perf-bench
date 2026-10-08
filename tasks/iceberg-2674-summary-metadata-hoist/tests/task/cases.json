@@ -1,0 +1,90 @@
+[
+ {
+  "id": "fast-small-10",
+  "case": "fast-small",
+  "size": 10,
+  "seed": 0,
+  "role": "semantic",
+  "public": true
+ },
+ {
+  "id": "merge-append-delete-10",
+  "case": "merge-append-delete",
+  "size": 10,
+  "seed": 0,
+  "role": "semantic",
+  "public": true
+ },
+ {
+  "id": "tx-two-appends-10",
+  "case": "tx-two-appends",
+  "size": 10,
+  "seed": 0,
+  "role": "semantic",
+  "public": true
+ },
+ {
+  "id": "fast-small-25-s3",
+  "case": "fast-small",
+  "size": 25,
+  "seed": 3,
+  "role": "semantic",
+  "public": false
+ },
+ {
+  "id": "merge-delete-none-10",
+  "case": "merge-delete-none",
+  "size": 10,
+  "seed": 0,
+  "role": "semantic",
+  "public": false
+ },
+ {
+  "id": "empty-table-0",
+  "case": "empty-table",
+  "size": 0,
+  "seed": 0,
+  "role": "semantic",
+  "public": false
+ },
+ {
+  "id": "tx-two-appends-25-s5",
+  "case": "tx-two-appends",
+  "size": 25,
+  "seed": 5,
+  "role": "semantic",
+  "public": false
+ },
+ {
+  "id": "tx-props-then-append-10",
+  "case": "tx-props-then-append",
+  "size": 10,
+  "seed": 0,
+  "role": "semantic",
+  "public": false
+ },
+ {
+  "id": "tx-schema-then-append-10",
+  "case": "tx-schema-then-append",
+  "size": 10,
+  "seed": 0,
+  "role": "semantic",
+  "public": false
+ },
+ {
+  "id": "reload-1000",
+  "case": "reload",
+  "size": 1000,
+  "seed": 0,
+  "role": "performance",
+  "public": true
+ },
+ {
+  "id": "backfill-500-s11",
+  "case": "backfill",
+  "size": 500,
+  "seed": 11,
+  "role": "performance",
+  "public": false
+ }
+]

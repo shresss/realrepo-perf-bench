@@ -1,0 +1,10 @@
+[
+  {"id": "setter-small", "case": "globals_replaced", "size": 3, "seed": 7, "role": "semantic", "public": true},
+  {"id": "stable-small", "case": "stable", "size": 5, "seed": 19, "role": "semantic", "public": true},
+  {"id": "setter-hidden-a", "case": "globals_replaced", "size": 9, "seed": 404, "role": "semantic", "public": false},
+  {"id": "stable-hidden-a", "case": "stable", "size": 12, "seed": 0, "role": "semantic", "public": false},
+  {"id": "setter-hidden-b", "case": "globals_replaced", "size": 2, "seed": 999, "role": "semantic", "public": false},
+  {"id": "setter-medium", "case": "globals_replaced", "size": 20, "seed": 11, "role": "performance", "public": true},
+  {"id": "setter-large", "case": "globals_replaced", "size": 80, "seed": 29, "role": "performance", "public": true},
+  {"id": "stable-large", "case": "stable", "size": 80, "seed": 211, "role": "performance", "public": false}
+]

@@ -1,0 +1,13 @@
+[
+  {"id":"named-small","case":"named:clean","size":23,"seed":71,"role":"semantic","public":true},
+  {"id":"named-missing","case":"named:missing","size":29,"seed":13,"role":"semantic","public":true},
+  {"id":"numpy-clean","case":"numpy:clean","size":31,"seed":19,"role":"semantic","public":false},
+  {"id":"numpy-missing","case":"numpy:missing","size":31,"seed":19,"role":"semantic","public":false},
+  {"id":"custom-missing","case":"custom:missing","size":27,"seed":23,"role":"semantic","public":false},
+  {"id":"nullable-missing","case":"nullable:missing","size":29,"seed":29,"role":"semantic","public":false},
+  {"id":"drop-original","case":"named:drop","size":17,"seed":31,"role":"semantic","public":false},
+  {"id":"minimum-fit","case":"named:missing","size":1,"seed":37,"role":"semantic","public":false},
+  {"id":"scale-2000","case":"speed:clean","size":2000,"seed":41,"role":"performance","public":true},
+  {"id":"scale-8000","case":"speed:clean","size":8000,"seed":43,"role":"performance","public":false},
+  {"id":"scale-32000","case":"speed:clean","size":32000,"seed":47,"role":"performance","public":false}
+]

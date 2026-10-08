@@ -1,0 +1,11 @@
+--- a/lark/parsers/lalr_parser_state.py
++++ b/lark/parsers/lalr_parser_state.py
+@@ -58,7 +58,7 @@
+             self.parse_conf,
+             self.lexer, # XXX copy
+             copy(self.state_stack),
+-            deepcopy(self.value_stack),
++            copy(self.value_stack),
+         )
+ 
+     def copy(self) -> 'ParserState[StateT]':

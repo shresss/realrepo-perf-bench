@@ -1,0 +1,121 @@
+diff --git a/src/cattrs/gen/__init__.py b/src/cattrs/gen/__init__.py
+index 2b19f06..74b4b23 100644
+--- a/src/cattrs/gen/__init__.py
++++ b/src/cattrs/gen/__init__.py
+@@ -1,6 +1,5 @@
+ from __future__ import annotations
+ 
+-import linecache
+ import re
+ from typing import TYPE_CHECKING, Any, Callable, Iterable, Mapping, Tuple, TypeVar
+ 
+@@ -212,12 +211,9 @@ def make_dict_unstructure_fn(
+             + ["  return res"]
+         )
+         script = "\n".join(total_lines)
+-        fname = ""
+-        if _cattrs_use_linecache:
+-            fname = generate_unique_filename(
+-                cl, "unstructure", reserve=_cattrs_use_linecache
+-            )
+-            linecache.cache[fname] = len(script), None, total_lines, fname
++        fname = generate_unique_filename(
++            cl, "unstructure", lines=total_lines if _cattrs_use_linecache else []
++        )
+ 
+         eval(compile(script, fname, "exec"), globs)
+     finally:
+@@ -627,10 +623,9 @@ def make_dict_structure_fn(
+     ]
+ 
+     script = "\n".join(total_lines)
+-    fname = ""
+-    if _cattrs_use_linecache:
+-        fname = generate_unique_filename(cl, "structure", reserve=_cattrs_use_linecache)
+-        linecache.cache[fname] = len(script), None, total_lines, fname
++    fname = generate_unique_filename(
++        cl, "structure", lines=total_lines if _cattrs_use_linecache else []
++    )
+ 
+     eval(compile(script, fname, "exec"), globs)
+ 
+diff --git a/src/cattrs/gen/_lc.py b/src/cattrs/gen/_lc.py
+index 3a5bff9..f6b147e 100644
+--- a/src/cattrs/gen/_lc.py
++++ b/src/cattrs/gen/_lc.py
+@@ -1,14 +1,15 @@
+ """Line-cache functionality."""
+ import linecache
+-import uuid
+-from typing import Any
++from typing import Any, List
+ 
+ 
+-def generate_unique_filename(cls: Any, func_name: str, reserve: bool = True) -> str:
++def generate_unique_filename(cls: Any, func_name: str, lines: List[str] = []) -> str:
+     """
+     Create a "filename" suitable for a function being generated.
++
++    If *lines* are provided, insert them in the first free spot or stop
++    if a duplicate is found.
+     """
+-    unique_id = uuid.uuid4()
+     extra = ""
+     count = 1
+ 
+@@ -16,12 +17,9 @@ def generate_unique_filename(cls: Any, func_name: str, reserve: bool = True) ->
+         unique_filename = "<cattrs generated {} {}.{}{}>".format(
+             func_name, cls.__module__, getattr(cls, "__qualname__", cls.__name__), extra
+         )
+-        if not reserve:
++        if not lines:
+             return unique_filename
+-        # To handle concurrency we essentially "reserve" our spot in
+-        # the linecache with a dummy line.  The caller can then
+-        # set this value correctly.
+-        cache_line = (1, None, (str(unique_id),), unique_filename)
++        cache_line = (len("\n".join(lines)), None, lines, unique_filename)
+         if linecache.cache.setdefault(unique_filename, cache_line) == cache_line:
+             return unique_filename
+ 
+diff --git a/src/cattrs/gen/typeddicts.py b/src/cattrs/gen/typeddicts.py
+index 5f412f1..fa1993f 100644
+--- a/src/cattrs/gen/typeddicts.py
++++ b/src/cattrs/gen/typeddicts.py
+@@ -1,6 +1,5 @@
+ from __future__ import annotations
+ 
+-import linecache
+ import re
+ import sys
+ from typing import TYPE_CHECKING, Any, Callable, TypeVar
+@@ -225,12 +224,9 @@ def make_dict_unstructure_fn(
+         ]
+         script = "\n".join(total_lines)
+ 
+-        fname = ""
+-        if _cattrs_use_linecache:
+-            fname = generate_unique_filename(
+-                cl, "unstructure", reserve=_cattrs_use_linecache
+-            )
+-            linecache.cache[fname] = len(script), None, total_lines, fname
++        fname = generate_unique_filename(
++            cl, "unstructure", lines=total_lines if _cattrs_use_linecache else []
++        )
+ 
+         eval(compile(script, fname, "exec"), globs)
+     finally:
+@@ -523,10 +519,9 @@ def make_dict_structure_fn(
+     ]
+ 
+     script = "\n".join(total_lines)
+-    fname = ""
+-    if _cattrs_use_linecache:
+-        fname = generate_unique_filename(cl, "structure", reserve=_cattrs_use_linecache)
+-        linecache.cache[fname] = len(script), None, total_lines, fname
++    fname = generate_unique_filename(
++        cl, "structure", lines=total_lines if _cattrs_use_linecache else []
++    )
+ 
+     eval(compile(script, fname, "exec"), globs)
+     return globs[fn_name]

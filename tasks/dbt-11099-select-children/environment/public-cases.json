@@ -1,0 +1,34 @@
+[
+  {
+    "id": "semantic-diamond",
+    "case": "diamond",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-depth-1",
+    "case": "depth-1",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-parent-test",
+    "case": "parent-test",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "lineage-60",
+    "case": "lineage",
+    "size": 60,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

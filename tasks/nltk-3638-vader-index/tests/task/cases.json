@@ -1,0 +1,11 @@
+[
+  {"id":"sem-edge-public","case":"edge","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"sem-edge-rotated","case":"edge","size":7,"seed":5,"role":"semantic","public":false},
+  {"id":"sem-transcripts-60","case":"transcripts","size":60,"seed":3,"role":"semantic","public":true},
+  {"id":"sem-transcripts-150-hidden","case":"transcripts","size":150,"seed":4242,"role":"semantic","public":false},
+  {"id":"sem-reviews-40-hidden","case":"reviews","size":40,"seed":918,"role":"semantic","public":false},
+  {"id":"sem-transcripts-1500-hidden","case":"transcripts","size":1500,"seed":77,"role":"semantic","public":false},
+  {"id":"perf-transcripts-2000","case":"transcripts","size":2000,"seed":0,"role":"performance","public":true},
+  {"id":"perf-transcripts-8000","case":"transcripts","size":8000,"seed":0,"role":"performance","public":true},
+  {"id":"perf-transcripts-8000-hidden","case":"transcripts","size":8000,"seed":7,"role":"performance","public":false}
+]

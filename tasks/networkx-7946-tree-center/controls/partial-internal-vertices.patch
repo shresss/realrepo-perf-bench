@@ -1,0 +1,21 @@
+diff --git a/networkx/algorithms/distance_measures.py b/networkx/algorithms/distance_measures.py
+--- a/networkx/algorithms/distance_measures.py
++++ b/networkx/algorithms/distance_measures.py
+@@ -679,7 +679,16 @@ def center(G, e=None, usebounds=False, weight=None):
+     if usebounds is True and e is None and not G.is_directed():
+         return _extrema_bounding(G, compute="center", weight=weight)
+     if e is None:
+-        e = eccentricity(G, weight=weight)
++        if (
++            weight is None
++            and not G.is_directed()
++            and not G.is_multigraph()
++            and len(G) > 2
++            and nx.is_tree(G)
++        ):
++            e = eccentricity(G, v=[v for v in G if G.degree[v] > 1])
++        else:
++            e = eccentricity(G, weight=weight)
+     radius = min(e.values())
+     p = [v for v in e if e[v] == radius]
+     return p

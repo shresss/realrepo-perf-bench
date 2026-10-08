@@ -1,0 +1,1 @@
+{"target_paths":["lifelines/fitters/aalen_johansen_fitter.py"],"package_paths":["lifelines"],"pandas_udf":false,"interpretation":"Diagnostic only; authoritative comparisons require uninstrumented parent resource measurements."}

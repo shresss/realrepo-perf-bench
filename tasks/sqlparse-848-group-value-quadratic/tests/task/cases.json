@@ -1,0 +1,34 @@
+[
+  {
+    "id": "wide-2",
+    "case": "wide",
+    "size": 2,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "wide-17",
+    "case": "wide",
+    "size": 17,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "wide-600",
+    "case": "wide",
+    "size": 600,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "wide-2400",
+    "case": "wide",
+    "size": 2400,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

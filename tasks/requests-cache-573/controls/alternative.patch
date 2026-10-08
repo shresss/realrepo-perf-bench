@@ -1,0 +1,78 @@
+diff --git a/requests_cache/backends/sqlite.py b/requests_cache/backends/sqlite.py
+index fbae82a..295ff3b 100644
+--- a/requests_cache/backends/sqlite.py
++++ b/requests_cache/backends/sqlite.py
+@@ -67,9 +67,11 @@ API Reference
+    :classes-only:
+    :nosignatures:
+ """
++import hashlib
+ import sqlite3
+ import threading
+ from contextlib import contextmanager
++from datetime import datetime
+ from logging import getLogger
+ from os import unlink
+ from os.path import isfile
+@@ -81,6 +83,7 @@ from platformdirs import user_cache_dir
+ 
+ from .._utils import chunkify, get_valid_kwargs
+ from . import BaseCache, BaseStorage
++from .base import DESERIALIZE_ERRORS
+ 
+ MEMORY_URI = 'file::memory:?cache=shared'
+ SQLITE_MAX_VARIABLE_NUMBER = 999
+@@ -134,9 +137,18 @@ class SQLiteCache(BaseCache):
+             self.responses.init_db()
+             self.redirects.init_db()
+ 
+-    def remove_expired_responses(self, *args, **kwargs):
++    def remove_expired_responses(self, expire_after=None):
+         with self.responses._lock, self.redirects._lock:
+-            return super().remove_expired_responses(*args, **kwargs)
++            if expire_after is not None:
++                return super().remove_expired_responses(expire_after=expire_after)
++            # One table scan; unchanged rows reuse their memoized expiration
++            doomed = self.responses.expired_or_invalid_keys()
++            self.responses.bulk_delete(doomed)
++            live_keys = set(self.responses.keys())
++            with self.redirects.connection() as con:
++                rows = con.execute(f'SELECT key, value FROM {self.redirects.table_name}').fetchall()
++            invalid_redirects = [key for key, value in rows if value not in live_keys]
++            self.redirects.bulk_delete(list(set(doomed) | set(invalid_redirects)))
+ 
+ 
+ class SQLiteDict(BaseStorage):
+@@ -282,6 +294,32 @@ class SQLitePickleDict(SQLiteDict):
+     def __getitem__(self, key):
+         return self.serializer.loads(super().__getitem__(key))
+ 
++    def expired_or_invalid_keys(self):
++        """Keys of expired or undeserializable responses. Expiration times are memoized per
++        key and content digest, so only new or changed rows are deserialized again."""
++        memo = getattr(self, '_expiry_memo', {})
++        refreshed = {}
++        doomed = []
++        now = datetime.utcnow()
++        with self.connection() as con:
++            rows = con.execute(f'SELECT key, value FROM {self.table_name}').fetchall()
++        for key, value in rows:
++            digest = hashlib.blake2b(bytes(value), digest_size=16).digest()
++            cached = memo.get(key)
++            if cached is not None and cached[0] == digest:
++                expires = cached[1]
++            else:
++                try:
++                    expires = getattr(self.serializer.loads(value), 'expires', None)
++                except DESERIALIZE_ERRORS:
++                    doomed.append(key)
++                    continue
++            refreshed[key] = (digest, expires)
++            if expires is not None and now >= expires:
++                doomed.append(key)
++        self._expiry_memo = refreshed
++        return doomed
++
+ 
+ def _format_sequence(values: Collection) -> Tuple[str, List]:
+     """Get SQL parameter marks for a sequence-based query, and ensure value is a sequence"""

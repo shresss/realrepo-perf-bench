@@ -1,0 +1,11 @@
+--- a/pypdf/generic/_base.py
++++ b/pypdf/generic/_base.py
+@@ -840,6 +840,8 @@
+                 f"Incorrect first char in NameObject, should start with '/': ({self})",
+                 "5.0.0",
+             )
++        if self.isascii():
++            return self.encode("utf-8")
+         for c in self[1:]:
+             if c > "~":
+                 for x in c.encode("utf-8"):

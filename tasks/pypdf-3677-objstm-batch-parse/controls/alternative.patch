@@ -1,0 +1,38 @@
+--- a/pypdf/_reader.py
++++ b/pypdf/_reader.py
+@@ -355,18 +355,23 @@
+         # This is an xref to a stream, so its type better be a stream
+         assert cast(str, obj_stm["/Type"]) == "/ObjStm"
+         stream_data = BytesIO(obj_stm.get_data())
+-        for i in range(obj_stm["/N"]):  # type: ignore
+-            read_non_whitespace(stream_data)
+-            stream_data.seek(-1, 1)
+-            objnum = NumberObject.read_from_stream(stream_data)
+-            read_non_whitespace(stream_data)
+-            stream_data.seek(-1, 1)
+-            offset = NumberObject.read_from_stream(stream_data)
+-            read_non_whitespace(stream_data)
+-            stream_data.seek(-1, 1)
+-            if objnum != indirect_reference.idnum:
+-                # We're only interested in one object
+-                continue
++        indexes = getattr(self, "_object_stream_indexes", None)
++        if indexes is None:
++            indexes = self._object_stream_indexes = {}
++        if stmnum not in indexes:
++            entries = {}
++            for i in range(int(obj_stm["/N"])):
++                read_non_whitespace(stream_data)
++                stream_data.seek(-1, 1)
++                objnum = int(NumberObject.read_from_stream(stream_data))
++                read_non_whitespace(stream_data)
++                stream_data.seek(-1, 1)
++                offset = int(NumberObject.read_from_stream(stream_data))
++                entries[objnum] = (i, offset)
++            indexes[stmnum] = entries
++        entries = indexes[stmnum]
++        if indirect_reference.idnum in entries:
++            i, offset = entries[indirect_reference.idnum]
+             if self.strict and idx != i:
+                 raise PdfReadError("Object is in wrong index.")
+             stream_data.seek(int(obj_stm["/First"] + offset), 0)  # type: ignore

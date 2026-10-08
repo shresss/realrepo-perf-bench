@@ -1,0 +1,452 @@
+{
+ "astroid-3051-subclass-mro-hoist": {
+  "folder": "tasks-copyleft/astroid-3051-subclass-mro-hoist",
+  "repo": "https://github.com/pylint-dev/astroid",
+  "base_commit": "e56ac290f41f2360e3442b05f285664beafd9020",
+  "reference_commit": "96c41339f36348e2a3048e2d85566cd95a7ace73",
+  "public_pr": "https://github.com/pylint-dev/astroid/pull/3051",
+  "license": "LGPL-2.1-or-later",
+  "provenance": "public-pr"
+ },
+ "attrs-1310-equality-short-circuit": {
+  "folder": "tasks/attrs-1310-equality-short-circuit",
+  "repo": "https://github.com/python-attrs/attrs",
+  "base_commit": "feb7a4d892ebcb443736aa431c273fd1cd8ec1d8",
+  "reference_commit": "a8808a2b3ed2fd1b7c129908fd28ee7b7106a730",
+  "public_pr": "https://github.com/python-attrs/attrs/pull/1310",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "cattrs-464-linecache-dedup": {
+  "folder": "tasks/cattrs-464-linecache-dedup",
+  "repo": "https://github.com/python-attrs/cattrs",
+  "base_commit": "5b1fa6a6d0dc43ec4ad1c71f2ba05ee5ab3ded6e",
+  "reference_commit": "88d4758ebc1d1ab7ce9b8e8ceb94cc3b15a5e5c9",
+  "public_pr": "https://github.com/python-attrs/cattrs/pull/464",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "chardet-203-group-early-exit": {
+  "folder": "tasks-copyleft/chardet-203-group-early-exit",
+  "repo": "https://github.com/chardet/chardet",
+  "base_commit": "a9286f7b5d78fd1d9542cee5ece2da7989c0688f",
+  "reference_commit": "1e208b743c3fed378eb3189d8080aba8ba77d730",
+  "public_pr": "https://github.com/chardet/chardet/pull/203",
+  "license": "LGPL-2.1-or-later",
+  "provenance": "public-pr"
+ },
+ "datasets-7408-filter-batching": {
+  "folder": "tasks/datasets-7408-filter-batching",
+  "repo": "https://github.com/huggingface/datasets",
+  "base_commit": "de062f0552a810c52077543c1169c38c1f0c53fc",
+  "reference_commit": "704704db6c13c59e9339b92771090ce8318d18ef",
+  "public_pr": "https://github.com/huggingface/datasets/pull/7408",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "dbt-11099-select-children": {
+  "folder": "tasks/dbt-11099-select-children",
+  "repo": "https://github.com/dbt-labs/dbt-core",
+  "base_commit": "ff6745c79532d50139d553f3b088c5d783b4f2dd",
+  "reference_commit": "1472b86ee297c923a463232320920999f6210c78",
+  "public_pr": "https://github.com/dbt-labs/dbt-core/pull/11099",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "feature-engine-987": {
+  "folder": "tasks/feature-engine-987",
+  "repo": "https://github.com/feature-engine/feature_engine",
+  "base_commit": "2564cb7aa55188d736019facc942f07acaeb12c7",
+  "reference_commit": "4b3cd03e05011cc5e575c6e60e4bf97637eff97a",
+  "public_pr": "https://github.com/feature-engine/feature_engine/pull/987",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "flytekit-1535-pickle-batches": {
+  "folder": "tasks/flytekit-1535-pickle-batches",
+  "repo": "https://github.com/flyteorg/flytekit",
+  "base_commit": "b0cf91818c16867c6ba6d3a052c259771617ca1d",
+  "reference_commit": "0646bc3448f6f2cbf6bc0ceed9536bdfa6214428",
+  "public_pr": "https://github.com/flyteorg/flytekit/pull/1535",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "frictionless-945-wide-schema": {
+  "folder": "tasks/frictionless-945-wide-schema",
+  "repo": "https://github.com/frictionlessdata/frictionless-py",
+  "base_commit": "5c1817f1d8d1931a6017024b24300a769f91f9a1",
+  "reference_commit": "950be0769690ce666dd99f10df73dc5c56bb4a4c",
+  "public_pr": "https://github.com/frictionlessdata/frictionless-py/pull/945",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "fsspec-1664-zip-find": {
+  "folder": "tasks/fsspec-1664-zip-find",
+  "repo": "https://github.com/fsspec/filesystem_spec",
+  "base_commit": "ee98ae3cc43c68455d4632cb23dd57bb702e5684",
+  "reference_commit": "7793ab89a56d70814de6d123c257e81f8e5bd52f",
+  "public_pr": "https://github.com/fsspec/filesystem_spec/pull/1664",
+  "license": "BSD-3-Clause",
+  "provenance": "authored-repair"
+ },
+ "fsspec-1725-memory-rm": {
+  "folder": "tasks/fsspec-1725-memory-rm",
+  "repo": "https://github.com/fsspec/filesystem_spec",
+  "base_commit": "176efbe02179f30b5862bf7444a383b8e62f87df",
+  "reference_commit": "03e89cc1713d178bec349704e99b5c075de66d74",
+  "public_pr": "https://github.com/fsspec/filesystem_spec/pull/1725",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "fsspec-2091-merge-ranges": {
+  "folder": "tasks/fsspec-2091-merge-ranges",
+  "repo": "https://github.com/fsspec/filesystem_spec",
+  "base_commit": "669de5e157cd3ce3f9bf71c7bceb7bb31c8c7a55",
+  "reference_commit": "1724d540ee917f926f93b32b6580e637b3777adc",
+  "public_pr": "https://github.com/fsspec/filesystem_spec/pull/2091",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "ibis-8445-name-exponential": {
+  "folder": "tasks/ibis-8445-name-exponential",
+  "repo": "https://github.com/ibis-project/ibis",
+  "base_commit": "a75531526584c5c5802578fe0680c6f7a0007af1",
+  "reference_commit": "7667328ada9cb8ef6bb4c456636c6a7ccab2ad1a",
+  "public_pr": "https://github.com/ibis-project/ibis/pull/8445",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "iceberg-2674-summary-metadata-hoist": {
+  "folder": "tasks/iceberg-2674-summary-metadata-hoist",
+  "repo": "https://github.com/apache/iceberg-python",
+  "base_commit": "d3eb149fe99b14e714a06e727b69cd617c6c052d",
+  "reference_commit": "1f9c46b4b567add9821583a4717641d70cebee1d",
+  "public_pr": "https://github.com/apache/iceberg-python/pull/2674",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "jinja-1111-constant-expression-folding": {
+  "folder": "tasks/jinja-1111-constant-expression-folding",
+  "repo": "https://github.com/pallets/jinja",
+  "base_commit": "06238a9dba2f80c17c94b487972aeaa111027de4",
+  "reference_commit": "09ddf2db4362e461339c5122eb232512723eb126",
+  "public_pr": "https://github.com/pallets/jinja/pull/1111",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "kedro-4367": {
+  "folder": "tasks/kedro-4367",
+  "repo": "https://github.com/kedro-org/kedro",
+  "base_commit": "70734ce00ee46b58c85b4cf04afbe89d32c06758",
+  "reference_commit": "057de3457a778698001d9fd2f5797ca3b4a9ba3a",
+  "public_pr": "https://github.com/kedro-org/kedro/pull/4367",
+  "license": "Apache-2.0",
+  "provenance": "authored-repair"
+ },
+ "lark-1419-interactive-accepts": {
+  "folder": "tasks/lark-1419-interactive-accepts",
+  "repo": "https://github.com/lark-parser/lark",
+  "base_commit": "29bb78b89896b423723deb3a3592fb71d016ec09",
+  "reference_commit": "3a29aee4c3919f46ebeefbbed358fb32a20c8a4b",
+  "public_pr": "https://github.com/lark-parser/lark/pull/1419",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "lark-290-earley-right-recursion": {
+  "folder": "tasks/lark-290-earley-right-recursion",
+  "repo": "https://github.com/lark-parser/lark",
+  "base_commit": "bb22c84df37f3d30144c90f7a4d9416a76364a2d",
+  "reference_commit": "870a7611cba40bcbdddad17a085984c7d8806d99",
+  "public_pr": "https://github.com/lark-parser/lark/pull/290",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "lark-952-bounded-repeat-grammar": {
+  "folder": "tasks/lark-952-bounded-repeat-grammar",
+  "repo": "https://github.com/lark-parser/lark",
+  "base_commit": "8b50786ca1d1d5c23dc556e68188dc521523210c",
+  "reference_commit": "7ee1409128c378c7e77bfac8018fe46485f4bf77",
+  "public_pr": "https://github.com/lark-parser/lark/pull/952",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "lifelines-1660": {
+  "folder": "tasks/lifelines-1660",
+  "repo": "https://github.com/CamDavidsonPilon/lifelines",
+  "base_commit": "ca6de15a6e66f065cecce54b198c57a5886c4035",
+  "reference_commit": "bebbb52d333214714a6a42d1e68fb22bcad55f3e",
+  "public_pr": "https://github.com/CamDavidsonPilon/lifelines/pull/1660",
+  "license": "MIT",
+  "provenance": "authored-repair"
+ },
+ "markdown-1510-rawhtml-postprocessor-eager-table": {
+  "folder": "tasks/markdown-1510-rawhtml-postprocessor-eager-table",
+  "repo": "https://github.com/Python-Markdown/markdown",
+  "base_commit": "f6cfc5cca3dd2c313d2fa547b7c88dac656ae506",
+  "reference_commit": "1caf02892487cead069cb0c4bcdd1e876ca6b590",
+  "public_pr": "https://github.com/Python-Markdown/markdown/pull/1510",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "markdown-1621-inline-links": {
+  "folder": "tasks/markdown-1621-inline-links",
+  "repo": "https://github.com/Python-Markdown/markdown",
+  "base_commit": "7be0cff7318f9e0abf8a9481a4238a86e626530a",
+  "reference_commit": "152a16fb1a926eabbfc5ab1af83f2b6cf9979314",
+  "public_pr": "https://github.com/Python-Markdown/markdown/pull/1621",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr-ai-assisted"
+ },
+ "mdit-367-reference-lines": {
+  "folder": "tasks/mdit-367-reference-lines",
+  "repo": "https://github.com/executablebooks/markdown-it-py",
+  "base_commit": "da45c8764b2077425c091fa1811bbb1c5f211bd1",
+  "reference_commit": "9e93bd554147ffb8582581e14620c7611103d2ff",
+  "public_pr": "https://github.com/executablebooks/markdown-it-py/pull/367",
+  "license": "MIT",
+  "provenance": "authored-repair"
+ },
+ "mesa-3800": {
+  "folder": "tasks/mesa-3800",
+  "repo": "https://github.com/mesa/mesa",
+  "base_commit": "0fa90d09838f2859c0f6c3c3be3e7444e64ed9f4",
+  "reference_commit": "aa25132ebe6a9ff7596bdef72d4f2f61cae11051",
+  "public_pr": "https://github.com/mesa/mesa/pull/3800",
+  "license": "Apache-2.0",
+  "provenance": "authored-repair"
+ },
+ "networkx-7946-tree-center": {
+  "folder": "tasks/networkx-7946-tree-center",
+  "repo": "https://github.com/networkx/networkx",
+  "base_commit": "9d96e778b5c2fb3781ab4a4069ab36fbb17ba467",
+  "reference_commit": "a986762f2a1919126df2174644232c92c58be2be",
+  "public_pr": "https://github.com/networkx/networkx/pull/7946",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "nltk-3638-vader-index": {
+  "folder": "tasks/nltk-3638-vader-index",
+  "repo": "https://github.com/nltk/nltk",
+  "base_commit": "7377ae521d6265679fdae18c006fe048ccf1dd0b",
+  "reference_commit": "c04f6d88e15cc18b55c296fd5ef1be4af7ab9a6e",
+  "public_pr": "https://github.com/nltk/nltk/pull/3638",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "optuna-bruteforce-series-6650-6649-6705-6646": {
+  "folder": "tasks/optuna-bruteforce-series-6650-6649-6705-6646",
+  "repo": "https://github.com/optuna/optuna",
+  "base_commit": "bf732bdb855aa22010ac4a80063539d6faf37409",
+  "reference_commit": "62ac5ef59038da1932affdb61cb9f26c170bfe21",
+  "public_pr": "https://github.com/optuna/optuna/pull/6650 https://github.com/optuna/optuna/pull/6649 https://github.com/optuna/optuna/pull/6705 https://github.com/optuna/optuna/pull/6646",
+  "license": "MIT",
+  "provenance": "public-pr-series"
+ },
+ "pdfminer-1055-rldecode": {
+  "folder": "tasks/pdfminer-1055-rldecode",
+  "repo": "https://github.com/pdfminer/pdfminer.six",
+  "base_commit": "541a0c86623a4356a481279f87973419b3248f9a",
+  "reference_commit": "a3ffcb0228757927fb658a3af1ae46090d92adb5",
+  "public_pr": "https://github.com/pdfminer/pdfminer.six/pull/1055",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "pydicom-1734-nested-parent-maintenance": {
+  "folder": "tasks/pydicom-1734-nested-parent-maintenance",
+  "repo": "https://github.com/pydicom/pydicom",
+  "base_commit": "090af8f7ca9bcfd9d8f620ccaa9ac220e4315a5a",
+  "reference_commit": "b6af1fe5a83e520d6fd04845cafb1cb30faffcd1",
+  "public_pr": "https://github.com/pydicom/pydicom/pull/1734",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "pyjanitor-1644": {
+  "folder": "tasks/pyjanitor-1644",
+  "repo": "https://github.com/pyjanitor-devs/pyjanitor",
+  "base_commit": "da03bfd019e5b01bc9406910d0acd46dd9461dee",
+  "reference_commit": "8367153dcb435b80048134a51ccb161e148881d2",
+  "public_pr": "https://github.com/pyjanitor-devs/pyjanitor/pull/1644",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "pyjanitor-1681-ne-keep": {
+  "folder": "tasks/pyjanitor-1681-ne-keep",
+  "repo": "https://github.com/pyjanitor-devs/pyjanitor",
+  "base_commit": "aa1003ae170bfbf98e351f4e287b951be9654ef6",
+  "reference_commit": "f3ef4546ddb9eae8af8bd672fc5228693bec32fc",
+  "public_pr": "https://github.com/pyjanitor-devs/pyjanitor/pull/1681",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "pyparsing-584-ignore-comments": {
+  "folder": "tasks/pyparsing-584-ignore-comments",
+  "repo": "https://github.com/pyparsing/pyparsing",
+  "base_commit": "96d44647450463a7b9c0962b03f3aeb0d1f165d5",
+  "reference_commit": "98ad3e19d611cdfc0919d8fd52ba542dd7e6d779",
+  "public_pr": "https://github.com/pyparsing/pyparsing/pull/584",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "pypdf-3442-named-dest-cache": {
+  "folder": "tasks/pypdf-3442-named-dest-cache",
+  "repo": "https://github.com/py-pdf/pypdf",
+  "base_commit": "46a2b04d099a7d2f0396e7b212f06e3922c4abc0",
+  "reference_commit": "4dc9494e2342d78141c1e1b481012de0e7416bc0",
+  "public_pr": "https://github.com/py-pdf/pypdf/pull/3442",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "pypdf-3677-objstm-batch-parse": {
+  "folder": "tasks/pypdf-3677-objstm-batch-parse",
+  "repo": "https://github.com/py-pdf/pypdf",
+  "base_commit": "2cfcd7ea9d175f1bbd243043a432a6b9470baa37",
+  "reference_commit": "cf2e5187b0fccd8a26f7b8fb1a140f42847b53d4",
+  "public_pr": "https://github.com/py-pdf/pypdf/pull/3677",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "pypdf-3679-name-quadratic": {
+  "folder": "tasks/pypdf-3679-name-quadratic",
+  "repo": "https://github.com/py-pdf/pypdf",
+  "base_commit": "cf2e5187b0fccd8a26f7b8fb1a140f42847b53d4",
+  "reference_commit": "3a4e913c4cbee207d72fd63d835740ad9825d1bf",
+  "public_pr": "https://github.com/py-pdf/pypdf/pull/3679",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "pystac-295-generate-subcatalogs": {
+  "folder": "tasks/pystac-295-generate-subcatalogs",
+  "repo": "https://github.com/stac-utils/pystac",
+  "base_commit": "a29705f7a3ce23b02453141e061805c62088293e",
+  "reference_commit": "4a2122d16ac07fe0476e95f1cd190476d90eeace",
+  "public_pr": "https://github.com/stac-utils/pystac/pull/295",
+  "license": "Apache-2.0",
+  "provenance": "public-pr"
+ },
+ "pyyaml-441-resolver-list-growth": {
+  "folder": "tasks/pyyaml-441-resolver-list-growth",
+  "repo": "https://github.com/yaml/pyyaml",
+  "base_commit": "7adc0db3f613a82669f2b168edd98379b83adb3c",
+  "reference_commit": "766b5693d6b4c88b8bdb2b883f9f111388339379",
+  "public_pr": "https://github.com/yaml/pyyaml/pull/441",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "rdflib-1718-defined-namespace-cache": {
+  "folder": "tasks/rdflib-1718-defined-namespace-cache",
+  "repo": "https://github.com/RDFLib/rdflib",
+  "base_commit": "273154fc5cbe4e5f80c1fe45fc1d12893264c4cc",
+  "reference_commit": "a10198e996d1dc2eb293542fba3a0bf63c088aae",
+  "public_pr": "https://github.com/RDFLib/rdflib/pull/1718",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "requests-cache-573": {
+  "folder": "tasks/requests-cache-573",
+  "repo": "https://github.com/requests-cache/requests-cache",
+  "base_commit": "8fa9c24b23d143db645cf24a24764597b04caccc",
+  "reference_commit": "2bd683658e17602a826a26b864a399b68181ee33",
+  "public_pr": "https://github.com/requests-cache/requests-cache/pull/573",
+  "license": "BSD-2-Clause",
+  "provenance": "authored-repair"
+ },
+ "splink-2212-inputcolumn-copy": {
+  "folder": "tasks/splink-2212-inputcolumn-copy",
+  "repo": "https://github.com/moj-analytical-services/splink",
+  "base_commit": "ee88655ad96fbc6bdfdb835b110923811c7c8211",
+  "reference_commit": "7b70d6b58a056ff2b1dfa163a392c132c8a7d476",
+  "public_pr": "https://github.com/moj-analytical-services/splink/pull/2212",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "sqlalchemy-gerrit-id30e770e-fetchmany-deque": {
+  "folder": "tasks/sqlalchemy-gerrit-id30e770e-fetchmany-deque",
+  "repo": "https://github.com/sqlalchemy/sqlalchemy",
+  "base_commit": "6888cf79db79d5e5660300ccf2a2a91f1eecf75f",
+  "reference_commit": "7782e2b3ad5a6a8c860f689f345a00ae47db6c7f",
+  "public_pr": "https://github.com/sqlalchemy/sqlalchemy/commit/319304e7c9e5c6c2e42513b81f85aa6b238495b5",
+  "license": "MIT",
+  "provenance": "public-commit"
+ },
+ "sqlglot-3901-apply-backtrack": {
+  "folder": "tasks/sqlglot-3901-apply-backtrack",
+  "repo": "https://github.com/tobymao/sqlglot",
+  "base_commit": "3e5e7300ec184024f871669db48d68476b3fa4df",
+  "reference_commit": "bea3c08e46a020d8545b702c77f0db18c99f1c55",
+  "public_pr": "https://github.com/tobymao/sqlglot/pull/3901",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "sqlglot-7823": {
+  "folder": "tasks/sqlglot-7823",
+  "repo": "https://github.com/tobymao/sqlglot",
+  "base_commit": "aeb2711f3be05bdcfa39a5e7479a0bedb0ca03f7",
+  "reference_commit": "693b3e3efa5f6e5ec547e29a79cbbe2b84971f21",
+  "public_pr": "https://github.com/tobymao/sqlglot/pull/7823",
+  "license": "MIT",
+  "provenance": "public-pr-ai-assisted"
+ },
+ "sqlparse-848-group-value-quadratic": {
+  "folder": "tasks/sqlparse-848-group-value-quadratic",
+  "repo": "https://github.com/andialbrecht/sqlparse",
+  "base_commit": "c923da9c5a8e8403dd32efc2171b60a177444d43",
+  "reference_commit": "939b129e24c0ad5d51368b1aa72fffcaca76f06f",
+  "public_pr": "https://github.com/andialbrecht/sqlparse/pull/848",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "statsmodels-9036-cmnlogit-perm": {
+  "folder": "tasks/statsmodels-9036-cmnlogit-perm",
+  "repo": "https://github.com/statsmodels/statsmodels",
+  "base_commit": "bb25d1a273d538287d1bcddd0ac20c84cb30c885",
+  "reference_commit": "24d7bf76f79ce2dcec5871b0ca9a5e3db7614257",
+  "public_pr": "https://github.com/statsmodels/statsmodels/pull/9036",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "statsmodels-9720-vecm-projection": {
+  "folder": "tasks/statsmodels-9720-vecm-projection",
+  "repo": "https://github.com/statsmodels/statsmodels",
+  "base_commit": "e4c9ba760c52258d4ef8f2ef22b4fa9948bc3f7b",
+  "reference_commit": "9a3eb9e5bcd7c5fcc438f117ae09b1da58cce77d",
+  "public_pr": "https://github.com/statsmodels/statsmodels/pull/9720",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "tldextract-283-reverse-suffix-scan": {
+  "folder": "tasks/tldextract-283-reverse-suffix-scan",
+  "repo": "https://github.com/john-kurkowski/tldextract",
+  "base_commit": "a7ecf90c92c1f1c8f011637437224fc980610237",
+  "reference_commit": "e1876868048ce9e3c219db9cfdb5b6405ba9d9cc",
+  "public_pr": "https://github.com/john-kurkowski/tldextract/pull/283",
+  "license": "BSD-3-Clause",
+  "provenance": "public-pr"
+ },
+ "tomlkit-503-supertable-merge-deepcopy": {
+  "folder": "tasks/tomlkit-503-supertable-merge-deepcopy",
+  "repo": "https://github.com/python-poetry/tomlkit",
+  "base_commit": "0ad22b5d2efe17a22acaf787da4388c73e7e3fb2",
+  "reference_commit": "fdfbc8a18c5fd5cfdcaaf11bfd59c4151da1f2ca",
+  "public_pr": "https://github.com/python-poetry/tomlkit/pull/503",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "tomlkit-509-out-of-order-incremental-validation": {
+  "folder": "tasks/tomlkit-509-out-of-order-incremental-validation",
+  "repo": "https://github.com/python-poetry/tomlkit",
+  "base_commit": "989c1a79787d63806de37934a6c2b041e1f550d8",
+  "reference_commit": "ae1b6790d99b21bc0a339a5825e7d5e40e7e6f6a",
+  "public_pr": "https://github.com/python-poetry/tomlkit/pull/509",
+  "license": "MIT",
+  "provenance": "public-pr"
+ },
+ "f01-invoice-statements": {
+  "folder": "tasks/f01-invoice-statements",
+  "repo": null,
+  "base_commit": null,
+  "reference_commit": null,
+  "public_pr": null,
+  "license": null,
+  "provenance": "authored"
+ }
+}

@@ -1,0 +1,19 @@
+--- a/tldextract/tldextract.py
++++ b/tldextract/tldextract.py
+@@ -348,6 +348,7 @@
+         self.private_tlds = private_tlds
+         self.tlds_incl_private = frozenset(public_tlds + private_tlds + extra_tlds)
+         self.tlds_excl_private = frozenset(public_tlds + extra_tlds)
++        self.maximum_suffix_depth = max((tld.count(".") + 1 for tld in self.tlds_incl_private), default=0)
+ 
+     def tlds(
+         self, include_psl_private_domains: Optional[bool] = None
+@@ -370,7 +371,7 @@
+         """
+         tlds = self.tlds(include_psl_private_domains)
+         length = len(lower_spl)
+-        for i in range(length):
++        for i in range(max(0, length - self.maximum_suffix_depth), length):
+             maybe_tld = ".".join(lower_spl[i:])
+             exception_tld = "!" + maybe_tld
+             if exception_tld in tlds:

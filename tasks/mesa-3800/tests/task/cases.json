@@ -1,0 +1,13 @@
+[
+  {"id":"reschedule-small","case":"reschedule","size":11,"seed":3,"role":"semantic","public":true},
+  {"id":"repeat-cancel","case":"repeat-cancel","size":17,"seed":7,"role":"semantic","public":false},
+  {"id":"clear-reuse","case":"clear-reuse","size":12,"seed":19,"role":"semantic","public":true},
+  {"id":"cancel-popped","case":"cancel-popped","size":9,"seed":23,"role":"semantic","public":false},
+  {"id":"compact","case":"compact","size":21,"seed":41,"role":"semantic","public":false},
+  {"id":"priority","case":"priority","size":40,"seed":47,"role":"semantic","public":true},
+  {"id":"clear-reuse-hidden","case":"clear-reuse","size":37,"seed":5,"role":"semantic","public":false},
+  {"id":"repeat-cancel-hidden","case":"repeat-cancel","size":200,"seed":13,"role":"semantic","public":false},
+  {"id":"scale-500","case":"reschedule","size":500,"seed":179,"role":"performance","public":true},
+  {"id":"scale-2000","case":"reschedule","size":2000,"seed":179,"role":"performance","public":true},
+  {"id":"scale-6000","case":"reschedule","size":6000,"seed":911,"role":"performance","public":false}
+]

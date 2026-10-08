@@ -1,0 +1,78 @@
+diff --git a/janitor/functions/_conditional_join/_greater_than_indices.py b/janitor/functions/_conditional_join/_greater_than_indices.py
+index eab6c9d..a2cbbdc 100644
+--- a/janitor/functions/_conditional_join/_greater_than_indices.py
++++ b/janitor/functions/_conditional_join/_greater_than_indices.py
+@@ -4,6 +4,7 @@ import numpy as np
+ import pandas as pd
+ 
+ from janitor.functions._conditional_join import _binary_search
++from janitor.functions._conditional_join._running_positions import running_positions
+ from janitor.functions._conditional_join._helpers import (
+     _convert_array_to_numpy,
+     _null_checks_cond_join,
+@@ -69,14 +70,9 @@ def _greater_than_indices(
+         }
+     if right_is_sorted & (keep == "last"):
+         return {"left_index": left_index, "right_index": search_indices - 1}
+-    if keep == "first":
+-        right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.min() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
+-    if keep == "last":
+-        right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.max() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
++    if keep in {"first", "last"}:
++        positions = running_positions(right_index, keep)
++        return {"left_index": left_index, "right_index": positions[search_indices - 1]}
+     if return_matching_indices:
+         return dict(
+             left_index=left_index,
+diff --git a/janitor/functions/_conditional_join/_less_than_indices.py b/janitor/functions/_conditional_join/_less_than_indices.py
+index b801e2d..90002c5 100644
+--- a/janitor/functions/_conditional_join/_less_than_indices.py
++++ b/janitor/functions/_conditional_join/_less_than_indices.py
+@@ -4,6 +4,7 @@ import numpy as np
+ import pandas as pd
+ 
+ from janitor.functions._conditional_join import _binary_search
++from janitor.functions._conditional_join._running_positions import running_positions
+ from janitor.functions._conditional_join._helpers import (
+     _convert_array_to_numpy,
+     _null_checks_cond_join,
+@@ -71,14 +72,9 @@ def _less_than_indices(
+         }
+     if right_is_sorted & (keep == "first"):
+         return {"left_index": left_index, "right_index": search_indices}
+-    if keep == "first":
+-        right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.min() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
+-    if keep == "last":
+-        right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.max() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
++    if keep in {"first", "last"}:
++        positions = running_positions(right_index[::-1], keep)[::-1]
++        return {"left_index": left_index, "right_index": positions[search_indices]}
+     if return_matching_indices:
+         return dict(
+             left_index=left_index,
+diff --git a/janitor/functions/_conditional_join/_running_positions.py b/janitor/functions/_conditional_join/_running_positions.py
+new file mode 100644
+index 0000000..d683781
+--- /dev/null
++++ b/janitor/functions/_conditional_join/_running_positions.py
+@@ -0,0 +1,12 @@
++"""Original-position range summaries built with a Python scan."""
++import numpy as np
++
++
++def running_positions(index, keep):
++    result = np.empty(len(index), dtype=np.intp)
++    best = index[0]
++    choose = min if keep == "first" else max
++    for offset, position in enumerate(index):
++        best = choose(best, position)
++        result[offset] = best
++    return result

@@ -1,0 +1,129 @@
+diff --git a/flytekit/core/promise.py b/flytekit/core/promise.py
+index 8be9d8cca..90f246deb 100644
+--- a/flytekit/core/promise.py
++++ b/flytekit/core/promise.py
+@@ -92,6 +92,12 @@ def translate_inputs_to_literals(
+                 if len(input_val) == 0:
+                     raise
+                 sub_type = type(input_val[0])
++            # To maintain consistency between translate_inputs_to_literals and ListTransformer.to_literal for batchable types,
++            # directly call ListTransformer.to_literal to batch process the list items. This is necessary because processing
++            # each list item separately could lead to errors since ListTransformer.to_python_value may treat the literal
++            # as it is batched for batchable types.
++            if ListTransformer.is_batchable(python_type):
++                return TypeEngine.to_literal(ctx, input_val, python_type, lt)
+             literal_list = [extract_value(ctx, v, sub_type, lt.collection_type) for v in input_val]
+             return _literal_models.Literal(collection=_literal_models.LiteralCollection(literals=literal_list))
+         elif isinstance(input_val, dict):
+diff --git a/flytekit/core/type_engine.py b/flytekit/core/type_engine.py
+index 306c4116a..e5ffa6459 100644
+--- a/flytekit/core/type_engine.py
++++ b/flytekit/core/type_engine.py
+@@ -968,12 +968,40 @@ class ListTransformer(TypeTransformer[T]):
+         except Exception as e:
+             raise ValueError(f"Type of Generic List type is not supported, {e}")
+ 
++    @staticmethod
++    def is_batchable(t: Type):
++        """
++        This function evaluates whether the provided type is batchable or not.
++        It returns True only if the type is either List or Annotated(List) and the List subtype is FlytePickle.
++        """
++        from flytekit.types.pickle import FlytePickle
++
++        if get_origin(t) is Annotated:
++            return ListTransformer.is_batchable(get_args(t)[0])
++        if get_origin(t) is list:
++            subtype = get_args(t)[0]
++            if subtype == FlytePickle or (hasattr(subtype, "__origin__") and subtype.__origin__ == FlytePickle):
++                return True
++        return False
++
+     def to_literal(self, ctx: FlyteContext, python_val: T, python_type: Type[T], expected: LiteralType) -> Literal:
+         if type(python_val) != list:
+             raise TypeTransformerFailedError("Expected a list")
+ 
+-        t = self.get_sub_type(python_type)
+-        lit_list = [TypeEngine.to_literal(ctx, x, t, expected.collection_type) for x in python_val]  # type: ignore
++        if ListTransformer.is_batchable(python_type):
++            from flytekit.types.pickle.pickle import BatchSize, FlytePickle
++
++            batchSize = len(python_val)  # default batch size
++            # parse annotated to get the number of items saved in a pickle file.
++            if get_origin(python_type) is Annotated:
++                for annotation in get_args(python_type)[1:]:
++                    if isinstance(annotation, BatchSize):
++                        batchSize = annotation.val
++                        break
++            lit_list = [TypeEngine.to_literal(ctx, python_val[i : i + batchSize], FlytePickle, expected.collection_type) for i in range(0, len(python_val), batchSize)]  # type: ignore
++        else:
++            t = self.get_sub_type(python_type)
++            lit_list = [TypeEngine.to_literal(ctx, x, t, expected.collection_type) for x in python_val]  # type: ignore
+         return Literal(collection=LiteralCollection(literals=lit_list))
+ 
+     def to_python_value(self, ctx: FlyteContext, lv: Literal, expected_python_type: Type[T]) -> typing.List[typing.Any]:  # type: ignore
+@@ -981,9 +1009,18 @@ class ListTransformer(TypeTransformer[T]):
+             lits = lv.collection.literals
+         except AttributeError:
+             raise TypeTransformerFailedError()
+-
+-        st = self.get_sub_type(expected_python_type)
+-        return [TypeEngine.to_python_value(ctx, x, st) for x in lits]
++        if self.is_batchable(expected_python_type):
++            from flytekit.types.pickle import FlytePickle
++
++            batch_list = [TypeEngine.to_python_value(ctx, batch, FlytePickle) for batch in lits]
++            if len(batch_list) > 0 and type(batch_list[0]) is list:
++                # Make it have backward compatibility. The upstream task may use old version of Flytekit that
++                # won't merge the elements in the list. Therefore, we should check if the batch_list[0] is the list first.
++                return [item for batch in batch_list for item in batch]
++            return batch_list
++        else:
++            st = self.get_sub_type(expected_python_type)
++            return [TypeEngine.to_python_value(ctx, x, st) for x in lits]
+ 
+     def guess_python_type(self, literal_type: LiteralType) -> list:  # type: ignore
+         if literal_type.collection_type:
+@@ -1044,7 +1081,7 @@ def _are_types_castable(upstream: LiteralType, downstream: LiteralType) -> bool:
+         if len(ucols) != len(dcols):
+             return False
+ 
+-        for (u, d) in zip(ucols, dcols):
++        for u, d in zip(ucols, dcols):
+             if u.name != d.name:
+                 return False
+ 
+diff --git a/flytekit/types/pickle/__init__.py b/flytekit/types/pickle/__init__.py
+index 65604e67b..e5bd1c056 100644
+--- a/flytekit/types/pickle/__init__.py
++++ b/flytekit/types/pickle/__init__.py
+@@ -9,4 +9,4 @@ Flytekit Pickle Type
+    FlytePickle
+ """
+ 
+-from .pickle import FlytePickle
++from .pickle import BatchSize, FlytePickle
+diff --git a/flytekit/types/pickle/pickle.py b/flytekit/types/pickle/pickle.py
+index 3472dec7e..3de75b765 100644
+--- a/flytekit/types/pickle/pickle.py
++++ b/flytekit/types/pickle/pickle.py
+@@ -13,6 +13,19 @@ from flytekit.models.types import LiteralType
+ T = typing.TypeVar("T")
+ 
+ 
++class BatchSize:
++    """
++    Flyte-specific object used to wrap the hash function for a specific type
++    """
++
++    def __init__(self, val: int):
++        self._val = val
++
++    @property
++    def val(self) -> int:
++        return self._val
++
++
+ class FlytePickle(typing.Generic[T]):
+     """
+     This type is only used by flytekit internally. User should not use this type.

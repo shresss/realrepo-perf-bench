@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "purpose": "scoring_v1_task_policy",
+  "task_id": "swefficiency-ext/sqlglot-3901-apply-backtrack",
+  "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+  "repeats": 3,
+  "baseline_sha256": "79dbe53d9b4fdf897ae0ad74d449f4ddcf758ef0a0283cfa9b9c64842cece4d5",
+  "hashes": {
+    "task": {
+      "workload.py": "6cfec3fac91b3214b40db7b3a1cbdd7017e66079e5a80a0f46df3b03951700b6",
+      "expected.py": "9c6fefaaf2665e828c6e1026c161d3b35e8df774f5210ad6ff37218dcbafa8b7",
+      "cases.json": "166b877e0156992448c7d17b7a3c86a1aae3faf9cec6dc53909adccbd5761d1b",
+      "meter.json": "b0eacd418f9ecc03bff231f411a6efd15dfd2b5b311b36849f20353ea0eb348b"
+    },
+    "tools": {
+      "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9",
+      "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4"
+    },
+    "runtime": {
+      "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+      "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+      "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+      "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+      "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+      "native.py": "c400eced00c5bafebd48a9e3eb8ab0c5ea58ab763a3dedafdd3da7edb63b1fe4"
+    }
+  },
+  "limits": {
+    "total_wall_seconds": 884,
+    "candidate_wall_seconds": 382,
+    "baseline_wall_seconds": 382,
+    "parent_reserve_seconds": 120,
+    "semantic_case_wall_seconds": 30,
+    "performance_case_wall_seconds": 69,
+    "native_wall_seconds": 60,
+    "source_max_bytes": 536870912,
+    "source_max_files": 50000,
+    "max_output_bytes": 16777216,
+    "address_space_bytes": 8589934592
+  },
+  "cpu_gates": {
+    "perf-customer360-14": {
+      "maximum_candidate_baseline_ratio": 0.3335,
+      "baseline_min_seconds": 1.415,
+      "baseline_max_seconds": 5.661
+    },
+    "perf-event_enrichment-20": {
+      "maximum_candidate_baseline_ratio": 0.3196,
+      "baseline_min_seconds": 1.519,
+      "baseline_max_seconds": 6.076
+    }
+  },
+  "control_provenance": [
+    {
+      "role": "baseline",
+      "path": "calibration/baseline.json",
+      "sha256": "7405af19302aef7e8758ec412782178e2ce19fae80bb5f54feb05b0a7f063c9a",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "reference",
+      "path": "calibration/reference.json",
+      "sha256": "a0dd3bdc519a0b2b8f57d8cc89ae0acee18ec44ead44e2a2205e5939a3912526",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "naive",
+      "path": "calibration/naive.json",
+      "sha256": "fedf0f9513fa4f8f0895175599ccb609ded27753c7e42668042236f194cbff0d",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "alternative",
+      "path": "calibration/alternative.json",
+      "sha256": "86ee7f643173eb4b45fb59c4fb4f364621b1a936da0b18f9baffb6450c6e2eca",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    }
+  ],
+  "native_regression": {
+    "mode": "protected_upstream",
+    "selection_sha256": "393ef7ee3b5247e45d8f1814259bcdd51edf9dc67c7f881966be1d57c4e551be",
+    "expected_count": 122
+  },
+  "scoring_v1": {
+    "formula": "gate: median paired candidate/baseline CPU <= floor4(1/sqrt(R)); perf_score = log(B/M)/log(R)",
+    "per_case": {
+      "perf-customer360-14": {
+        "R_reference_speedup_cpu": 8.989502245508982,
+        "pairs": 3,
+        "baseline_cpu_median": 2.830376,
+        "threshold_candidate_over_baseline": 0.3335,
+        "nop_candidate_over_baseline": 1.0112719461495272,
+        "naive_candidate_over_baseline": 0.130520487203775,
+        "alternative_candidate_over_baseline": 0.11824407740924504
+      },
+      "perf-event_enrichment-20": {
+        "R_reference_speedup_cpu": 9.786969000963184,
+        "pairs": 3,
+        "baseline_cpu_median": 3.0381590000000003,
+        "threshold_candidate_over_baseline": 0.3196,
+        "nop_candidate_over_baseline": 1.0012890953128484,
+        "naive_candidate_over_baseline": 0.09558786263814854,
+        "alternative_candidate_over_baseline": 0.10958542068275748
+      }
+    }
+  },
+  "limitations": [
+    "Three repeats of fixed cases, not independent tasks.",
+    "CPU gate at declared gated cases only; other scales diagnostic.",
+    "Freezing this policy is not a model result or panel release."
+  ],
+  "runtime_lineage": [
+    {
+      "date_utc": "2026-10-01T13:41:56+00:00",
+      "from": "runtime-v1",
+      "to": "runtime-v1.1",
+      "reason": "per-worker state hygiene; timed region unchanged",
+      "old_hashes": {
+        "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "c400eced00c5bafebd48a9e3eb8ab0c5ea58ab763a3dedafdd3da7edb63b1fe4"
+      },
+      "new_hashes": {
+        "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "c400eced00c5bafebd48a9e3eb8ab0c5ea58ab763a3dedafdd3da7edb63b1fe4"
+      },
+      "changed_files": [
+        "verify.py"
+      ],
+      "unhashed_files_replaced": {
+        "test.sh": {
+          "old": "f19d23fc7b7e5481ea4354b356bb489631791f19b0847c6dc67073c9aa18d879",
+          "new": "6fe7f71d0de1e7bd1286a3afac733cc0fe3ac142b73733bdbd60ec962bb2710f"
+        }
+      },
+      "byte_identical_timed_region": [
+        "boundary.py",
+        "execute.py",
+        "native.py",
+        "policy.py",
+        "publish.py"
+      ],
+      "previous_policy": {
+        "path": "policy.v1.json",
+        "sha256": "759c879d1a4714353fcb5b230990ec143b9717f354081767bed692e3cb6a0bd2"
+      },
+      "source_runtime": "/Users/venkat/Documents/Codex/2026-09-30/im/outputs/afterquery-claude-ops/runtime-v1.1"
+    }
+  ]
+}

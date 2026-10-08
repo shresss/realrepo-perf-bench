@@ -1,0 +1,74 @@
+[
+  {
+    "id": "symbols-0-seed0",
+    "case": "symbols",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "symbols-1-seed17",
+    "case": "symbols",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "symbols-2-seed3",
+    "case": "symbols",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "symbols-3-seed5",
+    "case": "symbols",
+    "size": 3,
+    "seed": 5,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "symbols-8-seed9",
+    "case": "symbols",
+    "size": 8,
+    "seed": 9,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "symbols-10000",
+    "case": "symbols",
+    "size": 10000,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "symbols-20000",
+    "case": "symbols",
+    "size": 20000,
+    "seed": 30,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "symbols-40000",
+    "case": "symbols",
+    "size": 40000,
+    "seed": 43,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "comment-tokens",
+    "case": "comments",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  }
+]

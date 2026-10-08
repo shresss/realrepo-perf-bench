@@ -1,0 +1,2364 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T09:35:41.523710+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "5c831d47662d683035ff9c91720b413ffc2f3b875ed8ded6d98e8ca19840234c",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70"
+  },
+  "task": {
+   "cases.json": "6c9ff71b67912bfa8d020c8e846467b2cc47af3f5fbf77fef0c51d56d7932c17",
+   "expected.py": "5a8047d0f8566475b111c979c14b56ccb826647b819eee166531e612d50abb45",
+   "meter.json": "d3fccb8eb7f673a92c8bfdb57156f2ba371f8addb266de51b5debe90afe3b28f",
+   "workload.py": "0edd83e382ee5881937f1fe70d74b7d97d9e47d0090f11009cd4bf6122a0ca53"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "",
+ "max_wall_seconds": {
+  "native": 0.9092118570006278,
+  "performance": 7.60156029800055,
+  "semantic": 0.6474208409999846
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 76,
+   "cpu_seconds": 0.9063459999999999,
+   "exit_code": 0,
+   "expected_count": 76,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 3,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_adding_extra_keys_to_confloader": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[catalog.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[subfolder/catalog.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_globals_underscore": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bypass_catalog_config_loading": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_cannot_load_non_yaml_or_json_files": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_custom_resolvers": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_customised_config_patterns": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_default_destructive_merging_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_destructive_merging_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_duplicate_patterns": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_empty_catalog_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_cleared_after_loading": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_registered_after_loading": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_not_used_for_catalog": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_across_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default_none": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_missing_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_ignore_hidden_keys": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/.hidden/dummy.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/dummy/.hidden.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_base_config": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_config_from_zip_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_dict_syntax": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_get_syntax": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_credentials_from_env_variables": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_local_config_overrides_base": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_lots_of_duplicates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_multiple_nested_subdirs_duplicates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested_subdirs_duplicate": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_no_files_found": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/.hidden/project/conf/base/catalog.yml-/User/.hidden/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/base/catalog.yml-/User/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/local/catalog/data_science.yml-/User/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/notebooks/../conf/base/catalog-/User/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_overlapping_patterns": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_override_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_pattern_key_not_found": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_global": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_none": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_in_globals_not_allowed": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_missing_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_not_propogate_non_parameters_config": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_override_interpolated_value": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_default_run_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_with_soft_merge_base_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_key_in_same_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_namespace_different_key_in_same_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_soft_merging_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_subdirs_dont_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_interpolation_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_merge_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_separate_templates_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_templates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_with_correct_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_yaml_parser_error": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default_none": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_keys_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_base_environment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_default_run_environment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_without_environment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_default_global": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_in_globals_not_allowed": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_separate_templates_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_templates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_dict_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_get_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_local_config_overrides_base",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_base_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_duplicate_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_subdirs_dont_exist",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested_subdirs_duplicate",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_multiple_nested_subdirs_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[subfolder/catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_lots_of_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_namespace_different_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_pattern_key_not_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_cannot_load_non_yaml_or_json_files",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_no_files_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_empty_catalog_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_overlapping_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_yaml_parser_error",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_customised_config_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_default_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_soft_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_merge_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_adding_extra_keys_to_confloader",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bypass_catalog_config_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_credentials_from_env_variables",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_not_used_for_catalog",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_cleared_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_registered_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_config_from_zip_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_with_correct_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_override_interpolated_value",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_not_propogate_non_parameters_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_ignore_hidden_keys",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_templates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_custom_resolvers",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_across_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_globals_underscore",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/.hidden/dummy.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/dummy/.hidden.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/base/catalog.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/local/catalog/data_science.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/notebooks/../conf/base/catalog-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/.hidden/project/conf/base/catalog.yml-/User/.hidden/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_with_soft_merge_base_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_default_run_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_interpolation_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_override_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_without_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_base_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_default_run_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_templates",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_keys_exist"
+    ],
+    "selected_count": 76
+   },
+   "outcome": "passed",
+   "passed_count": 76,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 76,
+    "files": {
+     "tests/config/test_omegaconf_config.py": "cce05f3096d85892d0db94afa7df72dea9ecc5ba0228ae139588e2a7f79d5336"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_adding_extra_keys_to_confloader",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[subfolder/catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_globals_underscore",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bypass_catalog_config_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_cannot_load_non_yaml_or_json_files",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_custom_resolvers",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_customised_config_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_default_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_duplicate_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_empty_catalog_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_cleared_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_registered_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_not_used_for_catalog",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_across_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_ignore_hidden_keys",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/.hidden/dummy.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/dummy/.hidden.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_base_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_config_from_zip_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_dict_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_get_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_credentials_from_env_variables",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_local_config_overrides_base",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_lots_of_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_multiple_nested_subdirs_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested_subdirs_duplicate",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_no_files_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/.hidden/project/conf/base/catalog.yml-/User/.hidden/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/base/catalog.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/local/catalog/data_science.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/notebooks/../conf/base/catalog-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_overlapping_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_override_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_pattern_key_not_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_not_propogate_non_parameters_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_override_interpolated_value",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_default_run_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_with_soft_merge_base_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_namespace_different_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_soft_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_subdirs_dont_exist",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_interpolation_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_merge_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_templates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_with_correct_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_yaml_parser_error",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_keys_exist",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_base_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_default_run_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_without_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_templates"
+    ],
+    "schema_version": 1,
+    "selection": "not test_overlapping_patterns_in_same_env and not test_ignore_ipynb_checkpoints and not test_load_config_from_tar_file",
+    "sha256": "1d06a5427b8e4bff6056d642c70e4d6e40fb56b2d99ec3c4d573d3dc21dfdb6b",
+    "source_commit": "057de3457a778698001d9fd2f5797ca3b4a9ba3a"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "f881c4d78a0cbb75fcfd620fa4ef602421b0446e5936ff5bb556fbf7ecaf51bb",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "3caef4c22da988535d6ca789c72d71e0eb82037d978aa91d4f150f1c0f271dd5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9092118570006278
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 76,
+   "cpu_seconds": 0.906559,
+   "exit_code": 0,
+   "expected_count": 76,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 3,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_adding_extra_keys_to_confloader": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[catalog.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[subfolder/catalog.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_globals_underscore": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bypass_catalog_config_loading": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_cannot_load_non_yaml_or_json_files": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_custom_resolvers": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_customised_config_patterns": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_default_destructive_merging_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_destructive_merging_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_duplicate_patterns": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_empty_catalog_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_cleared_after_loading": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_registered_after_loading": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_not_used_for_catalog": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_across_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default_none": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_missing_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_ignore_hidden_keys": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/.hidden/dummy.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/dummy/.hidden.yml]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_base_config": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_config_from_zip_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_dict_syntax": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_get_syntax": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_credentials_from_env_variables": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_local_config_overrides_base": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_lots_of_duplicates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_multiple_nested_subdirs_duplicates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested_subdirs_duplicate": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_no_files_found": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/.hidden/project/conf/base/catalog.yml-/User/.hidden/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/base/catalog.yml-/User/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/local/catalog/data_science.yml-/User/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/notebooks/../conf/base/catalog-/User/project/conf]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_overlapping_patterns": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_override_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_pattern_key_not_found": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_global": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_none": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_in_globals_not_allowed": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_missing_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_not_propogate_non_parameters_config": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_override_interpolated_value": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_default_run_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_with_soft_merge_base_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_key_in_same_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_namespace_different_key_in_same_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_soft_merging_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_subdirs_dont_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_interpolation_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_merge_strategy": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_separate_templates_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_templates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_with_correct_env": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_yaml_parser_error": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default_none": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_nested": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_keys_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_base_environment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_default_run_environment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_without_environment": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_default_global": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_in_globals_not_allowed": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_resolution": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_separate_templates_file": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_templates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_dict_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_get_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_local_config_overrides_base",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_base_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_duplicate_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_subdirs_dont_exist",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested_subdirs_duplicate",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_multiple_nested_subdirs_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[subfolder/catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_lots_of_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_namespace_different_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_pattern_key_not_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_cannot_load_non_yaml_or_json_files",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_no_files_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_empty_catalog_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_overlapping_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_yaml_parser_error",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_customised_config_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_default_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_soft_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_merge_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_adding_extra_keys_to_confloader",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bypass_catalog_config_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_credentials_from_env_variables",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_not_used_for_catalog",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_cleared_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_registered_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_config_from_zip_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_with_correct_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_override_interpolated_value",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_not_propogate_non_parameters_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_ignore_hidden_keys",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_templates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_custom_resolvers",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_across_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_globals_underscore",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/.hidden/dummy.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/dummy/.hidden.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/base/catalog.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/local/catalog/data_science.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/notebooks/../conf/base/catalog-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/.hidden/project/conf/base/catalog.yml-/User/.hidden/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_with_soft_merge_base_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_default_run_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_interpolation_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_override_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_without_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_base_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_default_run_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_templates",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_keys_exist"
+    ],
+    "selected_count": 76
+   },
+   "outcome": "passed",
+   "passed_count": 76,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 76,
+    "files": {
+     "tests/config/test_omegaconf_config.py": "cce05f3096d85892d0db94afa7df72dea9ecc5ba0228ae139588e2a7f79d5336"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_adding_extra_keys_to_confloader",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_config_syntax[subfolder/catalog.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bad_globals_underscore",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_bypass_catalog_config_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_cannot_load_non_yaml_or_json_files",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_custom_resolvers",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_customised_config_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_default_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_destructive_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_duplicate_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_empty_catalog_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_cleared_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_is_registered_after_loading",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_env_resolver_not_used_for_catalog",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_across_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_ignore_hidden_keys",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/.hidden/dummy.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_is_hidden_config[/User/dummy/.hidden.yml]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_base_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_config_from_zip_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_dict_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_core_config_get_syntax",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_credentials_from_env_variables",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_load_local_config_overrides_base",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_lots_of_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_multiple_nested_subdirs_duplicates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_nested_subdirs_duplicate",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_no_files_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/.hidden/project/conf/base/catalog.yml-/User/.hidden/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/base/catalog.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/conf/local/catalog/data_science.yml-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_not_hidden_config[/User/project/notebooks/../conf/base/catalog-/User/project/conf]",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_overlapping_patterns",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_override_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_pattern_key_not_found",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_missing_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_not_propogate_non_parameters_config",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_override_interpolated_value",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_default_run_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_runtime_params_resolution_with_soft_merge_base_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_same_namespace_different_key_in_same_dir",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_soft_merging_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_subdirs_dont_exist",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_interpolation_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_unsupported_merge_strategy",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_in_catalog_with_templates",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_variable_interpolation_with_correct_env",
+     "test_omegaconf_config.py::TestOmegaConfigLoader::test_yaml_parser_error",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_default_none",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_nested",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_globals_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_keys_exist",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_base_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_only_default_run_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_load_config_without_environment",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_default_global",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_in_globals_not_allowed",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_runtime_params_resolution",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_separate_templates_file",
+     "test_omegaconf_config.py::TestOmegaConfigLoaderStandalone::test_variable_interpolation_in_catalog_with_templates"
+    ],
+    "schema_version": 1,
+    "selection": "not test_overlapping_patterns_in_same_env and not test_ignore_ipynb_checkpoints and not test_load_config_from_tar_file",
+    "sha256": "1d06a5427b8e4bff6056d642c70e4d6e40fb56b2d99ec3c4d573d3dc21dfdb6b",
+    "source_commit": "057de3457a778698001d9fd2f5797ca3b4a9ba3a"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "bf017223e1056c50ca23e9226d4da5213ad9a4c73cb793005ee7114351c3fd94",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "3caef4c22da988535d6ca789c72d71e0eb82037d978aa91d4f150f1c0f271dd5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.908720333999554
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 76,
+  "sha256": "1d06a5427b8e4bff6056d642c70e4d6e40fb56b2d99ec3c4d573d3dc21dfdb6b"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "3caef4c22da988535d6ca789c72d71e0eb82037d978aa91d4f150f1c0f271dd5"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "f881c4d78a0cbb75fcfd620fa4ef602421b0446e5936ff5bb556fbf7ecaf51bb"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "3caef4c22da988535d6ca789c72d71e0eb82037d978aa91d4f150f1c0f271dd5"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "bf017223e1056c50ca23e9226d4da5213ad9a4c73cb793005ee7114351c3fd94"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "53fca7a18bc2720a3ecf18a72af96bd9c848aa064a6125205cd06575c484aa23"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "53fca7a18bc2720a3ecf18a72af96bd9c848aa064a6125205cd06575c484aa23"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "f7aaeffc6cb9b191f1ecdcbdc03039e2b93b3b8bed55f86e44b265e6440c93d8"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "f7aaeffc6cb9b191f1ecdcbdc03039e2b93b3b8bed55f86e44b265e6440c93d8"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "8eef1e4ef22beaa71af98775646e6e6472ef272312bdba0c1a39295b8fa7cc92"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "8eef1e4ef22beaa71af98775646e6e6472ef272312bdba0c1a39295b8fa7cc92"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "ad6bff7d8f6c5326f546ebe7d2cdff6653adbb2c99e6641b8927eecff8dc5086"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "ad6bff7d8f6c5326f546ebe7d2cdff6653adbb2c99e6641b8927eecff8dc5086"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "0d5b6f01b59c670052d30b49c13dc9a0df3876a7c7400826c08ea0e29d388705"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "0d5b6f01b59c670052d30b49c13dc9a0df3876a7c7400826c08ea0e29d388705"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0028-stdout.bin",
+   "sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76"
+  },
+  {
+   "path": "raw/0028-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0029-stdout.bin",
+   "sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76"
+  },
+  {
+   "path": "raw/0029-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "alternative",
+ "role_wall_totals": {
+  "baseline": 48.46936788000221,
+  "candidate": 10.06751098100085
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 83339771,
+   "files": 614,
+   "sha256": "0f2e86d472a4e1fbb745cf2d818db74c437fe8c841953f1443198dfe78bd647a"
+  },
+  "candidate": {
+   "bytes": 83340173,
+   "files": 614,
+   "sha256": "3c560ccb0706c2dc1690d2e803208293dd0815d0de4d4d90d2352d0d7af3e727"
+  }
+ },
+ "started_utc": "2026-10-01T09:34:41.990279+00:00",
+ "summaries": {
+  "setter-large": {
+   "baseline_cpu_median": 7.579683,
+   "baseline_cpu_seconds": [
+    7.597394,
+    7.579683,
+    7.48793
+   ],
+   "baseline_wall_seconds": [
+    7.60156029800055,
+    7.582025261999661,
+    7.49292054200032
+   ],
+   "candidate_cpu_seconds": [
+    1.00258,
+    0.9979589999999999,
+    0.9047819999999999
+   ],
+   "candidate_wall_seconds": [
+    1.007342759000494,
+    0.9990673350002908,
+    0.9061581019996083
+   ],
+   "case": "globals_replaced",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 7.5951847721198975,
+   "median_paired_candidate_over_baseline_cpu": 0.131662366354899,
+   "size": 80
+  },
+  "setter-medium": {
+   "baseline_cpu_median": 0.9258,
+   "baseline_cpu_seconds": [
+    0.9158189999999999,
+    0.9258,
+    0.929558
+   ],
+   "baseline_wall_seconds": [
+    0.9194615200003682,
+    0.9295385300001726,
+    0.933434087999558
+   ],
+   "candidate_cpu_seconds": [
+    0.5041439999999999,
+    0.488952,
+    0.527822
+   ],
+   "candidate_wall_seconds": [
+    0.5069655209999837,
+    0.49140580099992803,
+    0.5298078759997225
+   ],
+   "case": "globals_replaced",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.816582166999905,
+   "median_paired_candidate_over_baseline_cpu": 0.5504843205917326,
+   "size": 20
+  },
+  "stable-large": {
+   "baseline_cpu_median": 6.428468,
+   "baseline_cpu_seconds": [
+    7.211282,
+    6.428468,
+    6.140594
+   ],
+   "baseline_wall_seconds": [
+    7.214399047999905,
+    6.432703366000169,
+    6.14234357299938
+   ],
+   "candidate_cpu_seconds": [
+    0.923761,
+    0.942008,
+    0.785189
+   ],
+   "candidate_wall_seconds": [
+    0.9247035329999562,
+    0.9450603070008583,
+    0.7874537450006756
+   ],
+   "case": "stable",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 7.806436946353006,
+   "median_paired_candidate_over_baseline_cpu": 0.1280994142234349,
+   "size": 80
+  }
+ },
+ "workers": [
+  {
+   "case_id": "setter-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.37454,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.87109375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 3,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "53fca7a18bc2720a3ecf18a72af96bd9c848aa064a6125205cd06575c484aa23",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.37745473600080004
+  },
+  {
+   "case_id": "setter-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.37728599999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.01953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 3,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "53fca7a18bc2720a3ecf18a72af96bd9c848aa064a6125205cd06575c484aa23",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.3799414840004829
+  },
+  {
+   "case_id": "stable-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.409704,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.1328125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 5,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "f7aaeffc6cb9b191f1ecdcbdc03039e2b93b3b8bed55f86e44b265e6440c93d8",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.41218390599988197
+  },
+  {
+   "case_id": "stable-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.377781,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.58203125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 5,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "f7aaeffc6cb9b191f1ecdcbdc03039e2b93b3b8bed55f86e44b265e6440c93d8",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.37905788199987
+  },
+  {
+   "case_id": "setter-hidden-a",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.505226,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.49609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 9,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "8eef1e4ef22beaa71af98775646e6e6472ef272312bdba0c1a39295b8fa7cc92",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5066847470006905
+  },
+  {
+   "case_id": "setter-hidden-a",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.440787,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.14453125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 9,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "8eef1e4ef22beaa71af98775646e6e6472ef272312bdba0c1a39295b8fa7cc92",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.4434335320001992
+  },
+  {
+   "case_id": "stable-hidden-a",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.64457,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.7578125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 12,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "ad6bff7d8f6c5326f546ebe7d2cdff6653adbb2c99e6641b8927eecff8dc5086",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6474208409999846
+  },
+  {
+   "case_id": "stable-hidden-a",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.457629,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.78125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 12,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "ad6bff7d8f6c5326f546ebe7d2cdff6653adbb2c99e6641b8927eecff8dc5086",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.46129032999942865
+  },
+  {
+   "case_id": "setter-hidden-b",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.36698099999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.87109375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 2,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "0d5b6f01b59c670052d30b49c13dc9a0df3876a7c7400826c08ea0e29d388705",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.36802556600014213
+  },
+  {
+   "case_id": "setter-hidden-b",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.395529,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 31.8984375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 2,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "0d5b6f01b59c670052d30b49c13dc9a0df3876a7c7400826c08ea0e29d388705",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.39710243999979866
+  },
+  {
+   "case_id": "setter-medium",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.9158189999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 33.49609375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9194615200003682
+  },
+  {
+   "case_id": "setter-medium",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.5041439999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.8984375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5069655209999837
+  },
+  {
+   "case_id": "setter-medium",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.488952,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.8984375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.49140580099992803
+  },
+  {
+   "case_id": "setter-medium",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.9258,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 33.49609375,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9295385300001726
+  },
+  {
+   "case_id": "setter-medium",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.929558,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 33.5,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.933434087999558
+  },
+  {
+   "case_id": "setter-medium",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.527822,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 32.8984375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "0ad7ae126c9db8a59860427ae43d40d792733f0e401bf4c7ea328b10279a32cb",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5298078759997225
+  },
+  {
+   "case_id": "setter-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.597394,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.5,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 80,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 7.60156029800055
+  },
+  {
+   "case_id": "setter-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.00258,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.0234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 80,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.007342759000494
+  },
+  {
+   "case_id": "setter-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.9979589999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.01953125,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 80,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9990673350002908
+  },
+  {
+   "case_id": "setter-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.579683,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 80,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 7.582025261999661
+  },
+  {
+   "case_id": "setter-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.48793,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.62109375,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 80,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 7.49292054200032
+  },
+  {
+   "case_id": "setter-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.9047819999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.0234375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 80,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "cdad10893c63637e685a68d2e1637c19d86d8bc4867ebd0be677919cae761054",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9061581019996083
+  },
+  {
+   "case_id": "stable-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.211282,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.76171875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 80,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 7.214399047999905
+  },
+  {
+   "case_id": "stable-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.923761,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.77734375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 80,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9247035329999562
+  },
+  {
+   "case_id": "stable-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.942008,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.77734375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 80,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9450603070008583
+  },
+  {
+   "case_id": "stable-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.428468,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.7578125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 80,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.432703366000169
+  },
+  {
+   "case_id": "stable-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.140594,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.7578125,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 80,
+   "stderr_path": "raw/0028-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0028-stdout.bin",
+   "stdout_sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.14234357299938
+  },
+  {
+   "case_id": "stable-large",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.785189,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.77734375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 80,
+   "stderr_path": "raw/0029-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0029-stdout.bin",
+   "stdout_sha256": "96e5a172f6510d2e22ec524052da59bc0194ce6df32c51c692b0a327ed308b76",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7874537450006756
+  }
+ ]
+}

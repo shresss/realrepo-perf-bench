@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "pypdf/_reader.py",
+    "pypdf/_writer.py"
+  ],
+  "package_paths": [
+    "pypdf"
+  ],
+  "pandas_udf": false
+}

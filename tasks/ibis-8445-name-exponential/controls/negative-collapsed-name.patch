@@ -1,0 +1,14 @@
+diff --git a/ibis/expr/operations/core.py b/ibis/expr/operations/core.py
+index 96d724f..52e7cd3 100644
+--- a/ibis/expr/operations/core.py
++++ b/ibis/expr/operations/core.py
+@@ -87,3 +87,8 @@ class Value(Node, Coercible, DefaultTypeVars, Generic[T, S]):
+     def name(self) -> str:
+-        names = (arg.name for arg in self.__args__ if hasattr(arg, "name"))
++        # Collapse nested derived names to the operation class to keep names cheap.
++        names = (
++            arg.__class__.__name__ if type(arg).name is Value.name else arg.name
++            for arg in self.__args__
++            if isinstance(arg, Value) or hasattr(arg, "name")
++        )
+         return f"{self.__class__.__name__}({', '.join(names)})"

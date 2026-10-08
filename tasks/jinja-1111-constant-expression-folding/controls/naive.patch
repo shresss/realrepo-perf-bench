@@ -1,0 +1,12 @@
+--- a/jinja2/optimizer.py
++++ b/jinja2/optimizer.py
+@@ -47,3 +47,9 @@
+     visit_Not = visit_Compare = visit_Getitem = visit_Getattr = visit_Call = \
+     visit_Filter = visit_Test = visit_CondExpr = fold
+     del fold
++
++    def visit_Concat(self, node, eval_ctx=None):
++        return nodes.Const.from_untrusted(
++            "".join(item.value for item in node.nodes),
++            lineno=node.lineno, environment=self.environment,
++        )

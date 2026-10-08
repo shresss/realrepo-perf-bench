@@ -1,0 +1,25 @@
+diff --git a/janitor/functions/_conditional_join/_not_equal_indices.py b/janitor/functions/_conditional_join/_not_equal_indices.py
+index f0489b8..a5ecaed 100644
+--- a/janitor/functions/_conditional_join/_not_equal_indices.py
++++ b/janitor/functions/_conditional_join/_not_equal_indices.py
+@@ -103,6 +103,20 @@ def _not_equal_indices(
+             "left_index": dummy,
+             "right_index": dummy,
+         }
++    if keep in {"first", "last"}:
++        # Reduce the candidate pairs with numpy instead of a pandas groupby,
++        # keeping groups in order of first appearance.
++        uniques, first_seen, inverse = np.unique(
++            left, return_index=True, return_inverse=True
++        )
++        if keep == "first":
++            reduced = np.full(uniques.size, np.iinfo(np.intp).max, dtype=np.intp)
++            np.minimum.at(reduced, inverse, right)
++        else:
++            reduced = np.full(uniques.size, np.iinfo(np.intp).min, dtype=np.intp)
++            np.maximum.at(reduced, inverse, right)
++        order = np.argsort(first_seen, kind="stable")
++        return {"left_index": uniques[order], "right_index": reduced[order]}
+     outcome = _keep_output(keep, left, right)
+     left_index, right_index = outcome
+     return {"left_index": left_index, "right_index": right_index}

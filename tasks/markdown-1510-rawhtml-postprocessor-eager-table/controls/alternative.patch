@@ -1,0 +1,57 @@
+--- a/markdown/postprocessors.py
++++ b/markdown/postprocessors.py
+@@ -72,37 +72,24 @@
+     BLOCK_LEVEL_REGEX = re.compile(r'^\<\/?([^ >]+)')
+ 
+     def run(self, text: str) -> str:
+-        """ Iterate over html stash and restore html. """
+-        replacements = OrderedDict()
+-        for i in range(self.md.htmlStash.html_counter):
+-            html = self.stash_to_string(self.md.htmlStash.rawHtmlBlocks[i])
+-            if self.isblocklevel(html):
+-                replacements["<p>{}</p>".format(
+-                    self.md.htmlStash.get_placeholder(i))] = html
+-            replacements[self.md.htmlStash.get_placeholder(i)] = html
+-
+-        def substitute_match(m: re.Match[str]) -> str:
+-            key = m.group(0)
+-
+-            if key not in replacements:
+-                if key[3:-4] in replacements:
+-                    return f'<p>{ replacements[key[3:-4]] }</p>'
+-                else:
+-                    return key
+-
+-            return replacements[key]
+-
+-        if replacements:
+-            base_placeholder = util.HTML_PLACEHOLDER % r'([0-9]+)'
+-            pattern = re.compile(f'<p>{ base_placeholder }</p>|{ base_placeholder }')
+-            processed_text = pattern.sub(substitute_match, text)
+-        else:
++        if not self.md.htmlStash.html_counter:
+             return text
+-
+-        if processed_text == text:
+-            return processed_text
+-        else:
+-            return self.run(processed_text)
++        base_placeholder = util.HTML_PLACEHOLDER % r'([0-9]+)'
++        pattern = re.compile(f'<p>{base_placeholder}</p>|{base_placeholder}')
++        def substitute_match(match):
++            wrapped = match.group(1) is not None
++            index = int(match.group(1) if wrapped else match.group(2))
++            if index >= self.md.htmlStash.html_counter:
++                return match.group(0)
++            html = self.stash_to_string(self.md.htmlStash.rawHtmlBlocks[index])
++            if wrapped and not self.isblocklevel(html):
++                return f'<p>{html}</p>'
++            return html
++        while True:
++            replaced = pattern.sub(substitute_match, text)
++            if replaced == text:
++                return replaced
++            text = replaced
+ 
+     def isblocklevel(self, html: str) -> bool:
+         """ Check is block of HTML is block-level. """

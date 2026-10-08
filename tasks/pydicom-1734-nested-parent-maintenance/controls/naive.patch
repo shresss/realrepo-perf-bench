@@ -1,0 +1,19 @@
+--- a/pydicom/dataset.py
++++ b/pydicom/dataset.py
+@@ -2120,6 +2120,16 @@
+         value
+             The value for the attribute to be added/changed.
+         """
++        # Save time for common Dataset attributes that are not DICOM keywords
++        # This check is fast if `name` is a DICOM keyword (first chr is upper)
++        # The startswith is needed for `is_implicit_VR`
++        if name.startswith("is_") or name.islower():
++            if name == "file_meta":
++                self._set_file_meta(value)
++            else:
++                object.__setattr__(self, name, value)
++            return
++
+         tag = tag_for_keyword(name)
+         if tag is not None:  # successfully mapped name to a tag
+             if tag not in self:

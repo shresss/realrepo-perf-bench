@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "pool": "exclusive",
+    "cpuset": "6,7",
+    "source": "mining/fsspec-1725-memory-rm/calibration/codex7-v11-baseline-clean-r01",
+    "verification": "container-inspect.json plus ledger/timing-lock.log",
+    "result_sha256": "0f164038c2922f393a9a93608f7d7ac7de8df2aaabca2978a7f17b2caf67b228"
+  },
+  "reference": {
+    "pool": "exclusive",
+    "cpuset": "6,7",
+    "source": "mining/fsspec-1725-memory-rm/calibration/codex7-v11-reference-clean-r01",
+    "verification": "container-inspect.json plus ledger/timing-lock.log",
+    "result_sha256": "df385849ddffe83f4b54d5bc68d4130946c6c26af972c2767b148bb197aa6d08"
+  },
+  "naive": {
+    "pool": "shared",
+    "cpuset": "0",
+    "source": "mining/fsspec-1725-memory-rm/calibration/codex7-v11-naive-controls-r01",
+    "verification": "container-inspect.json plus ledger/timing-lock.log",
+    "result_sha256": "2214da54f646f9f1cd83f218d348454f0312c61703a2d9beabf072960e577748"
+  },
+  "alternative": {
+    "pool": "shared",
+    "cpuset": "0",
+    "source": "mining/fsspec-1725-memory-rm/calibration/codex7-v11-alternative-controls-r01",
+    "verification": "container-inspect.json plus ledger/timing-lock.log",
+    "result_sha256": "44555cc954de26cd095fec11ed0aad44dceb09d0aa4948cbe90148d715ea9bcb"
+  }
+}

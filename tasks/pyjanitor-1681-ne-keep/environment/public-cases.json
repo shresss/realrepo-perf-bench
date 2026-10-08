@@ -1,0 +1,26 @@
+[
+  {
+    "id": "semantic-clean-first",
+    "case": "pair:first:clean",
+    "size": 37,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-nulls-last",
+    "case": "pair:last:nulls",
+    "size": 41,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "window-1",
+    "case": "window",
+    "size": 1,
+    "seed": 1681,
+    "role": "performance",
+    "public": true
+  }
+]

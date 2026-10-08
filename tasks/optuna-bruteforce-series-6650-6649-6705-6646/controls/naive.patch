@@ -1,0 +1,32 @@
+--- a/optuna/samplers/_brute_force.py
++++ b/optuna/samplers/_brute_force.py
+@@ -276,7 +276,29 @@
+     return isinstance(v, Real) and math.isnan(float(v))
+ 
+ 
++_CANDIDATES_CACHE: dict[tuple[Any, ...], list[Any]] = {}
++
++
+ def _enumerate_candidates(param_distribution: BaseDistribution) -> Sequence[float]:
++    # Memoize the enumerated grid per distribution; the Decimal walk is pure.
++    if isinstance(param_distribution, CategoricalDistribution):
++        key: tuple[Any, ...] = ("categorical", len(param_distribution.choices))
++    elif isinstance(param_distribution, (FloatDistribution, IntDistribution)):
++        key = (
++            type(param_distribution).__name__,
++            param_distribution.low,
++            param_distribution.high,
++            param_distribution.step,
++        )
++    else:
++        return _enumerate_candidates_uncached(param_distribution)
++    cached = _CANDIDATES_CACHE.get(key)
++    if cached is None:
++        cached = _CANDIDATES_CACHE[key] = list(_enumerate_candidates_uncached(param_distribution))
++    return cached
++
++
++def _enumerate_candidates_uncached(param_distribution: BaseDistribution) -> Sequence[float]:
+     if isinstance(param_distribution, FloatDistribution):
+         if param_distribution.step is None:
+             raise ValueError(

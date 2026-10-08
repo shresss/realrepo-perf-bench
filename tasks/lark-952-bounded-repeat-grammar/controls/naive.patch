@@ -1,0 +1,16 @@
+--- a/lark/load_grammar.py
++++ b/lark/load_grammar.py
+@@ -220,7 +220,12 @@
+                 mn, mx = map(int, args)
+                 if mx < mn or mn < 0:
+                     raise GrammarError("Bad Range for %s (%d..%d isn't allowed)" % (rule, mn, mx))
+-            return ST('expansions', [ST('expansion', [rule] * n) for n in range(mn, mx+1)])
++            expanded = [rule] * mn
++            choices = [ST('expansion', expanded[:])]
++            for n in range(mn, mx):
++                expanded.append(rule)
++                choices.append(ST('expansion', expanded[:]))
++            return ST('expansions', choices)
+         assert False, op
+ 
+     def maybe(self, rule):

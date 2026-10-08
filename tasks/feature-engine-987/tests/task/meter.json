@@ -1,0 +1,6 @@
+{
+  "target_paths": ["feature_engine/creation/math_features.py"],
+  "package_paths": ["feature_engine"],
+  "pandas_udf": true,
+  "interpretation": "Diagnostic only. The acceptance hypothesis is behavior-preserving whole-worker CPU speedup, not zero callbacks."
+}

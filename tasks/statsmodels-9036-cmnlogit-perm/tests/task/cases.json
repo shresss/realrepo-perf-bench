@@ -1,0 +1,66 @@
+[
+  {
+    "id": "sem-eval-g5-k3-12",
+    "case": "sem-eval-g5-k3",
+    "size": 12,
+    "seed": 1,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sem-eval-ragged-k4-15",
+    "case": "sem-eval-ragged-k4",
+    "size": 15,
+    "seed": 2,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "sem-eval-allzero-k2-10",
+    "case": "sem-eval-allzero-k2",
+    "size": 10,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "sem-eval-allnonzero-k3-10",
+    "case": "sem-eval-allnonzero-k3",
+    "size": 10,
+    "seed": 4,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "sem-fit-g4-k3-40",
+    "case": "sem-fit-g4-k3",
+    "size": 40,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sem-fit-ragged-k3-50",
+    "case": "sem-fit-ragged-k3",
+    "size": 50,
+    "seed": 6,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "panel_fit-100",
+    "case": "panel_fit",
+    "size": 100,
+    "seed": 11,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "panel_fit-400",
+    "case": "panel_fit",
+    "size": 400,
+    "seed": 11,
+    "role": "performance",
+    "public": false
+  }
+]

@@ -1,0 +1,49 @@
+schema_version = "1.4"
+artifacts = ["/app"]   # the agent's tree is restored into the separate verifier container
+
+[task]
+name = "swefficiency-ext/f01-invoice-statements"
+version = "4.2.2"
+description = "Improve a reproducible month-end statement workload in a multi-module invoicing service without changing its output. The task tests whether an agent can investigate and correct cross-layer data-access amplification while preserving ordering, void handling, per-invoice discount rounding, empty records, and retired-product lines on shifted hidden databases."
+keywords = ["performance", "repeated-work", "sqlite", "data-infrastructure", "python"]
+[[task.authors]]
+name = "Shreyas Venkat"
+email = "132317156+shresss@users.noreply.github.com"
+
+[metadata]
+family = "01-n-plus-one"
+secondary_family = "04-repeated-work-hot-path"
+instance = 1
+modules = 13
+depth_to_leaf_caller = 5
+category = "performance-optimization"
+capability_step = "investigate + localize + optimize across a code/database boundary; preserve exact behavior"
+difficulty_explanation = "The visible prompt supplies the repository and end-to-end workload but does not disclose the mechanism or fix site. The dominant cost is distributed across StatementService, repository calls, and a catalog cache 3-5 frames below report.main, while date and formatting work provide plausible smaller targets. A complete solution must improve the cross-boundary access shape without breaking per-invoice rounding, empty-parent behavior, ordering, void handling, duplicate lines, or retired-product references. Hidden cases shift only declared workload dimensions. Frontier difficulty is not claimed until blind calibrated runs exist."
+reference_requests = 3
+perf_bar = "server-observed database requests <= baseline / 50 on every hidden database, absolute and paired irrelevant-history row/response-byte/VM-step work bounds, plus a conservative externally timed large-case regression ceiling; scaling is diagnostic"
+
+[verifier]
+timeout_sec = 900.0
+environment_mode = "separate"   # fresh container from tests/Dockerfile; /logs/verifier starts empty
+network_mode = "no-network"      # submitted /app code is executed inside this container
+collect = []
+
+[verifier.env]
+F01_EVAL_SEED = "${F01_EVAL_SEED:-}"
+F01_EVAL_BLOCK_ID = "${F01_EVAL_BLOCK_ID:-}"
+F01_REPLAY_MANIFEST_JSON = "${F01_REPLAY_MANIFEST_JSON:-}"
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+network_mode = "no-network"
+build_timeout_sec = 600.0
+os = "linux"
+cpus = 2
+memory_mb = 4096
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]

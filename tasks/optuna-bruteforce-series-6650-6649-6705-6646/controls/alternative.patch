@@ -1,0 +1,181 @@
+--- a/optuna/samplers/_brute_force.py
++++ b/optuna/samplers/_brute_force.py
+@@ -5,6 +5,7 @@
+ import math
+ from numbers import Real
+ import sys
++import threading
+ from typing import Any
+ from typing import TYPE_CHECKING
+ 
+@@ -139,6 +140,19 @@
+     assert False, "Should not reach"
+ 
+ 
++class _FinishedTrialsTree:
++    # Tree of all *finished* trials of one study, grown incrementally. Finished trials never
++    # change, so a trial is added exactly once. Running trials are never stored here.
++    __slots__ = ("storage", "study_id", "root", "seen", "valid")
++
++    def __init__(self, storage: Any, study_id: int) -> None:
++        self.storage = storage  # Strong reference: identity comparison stays sound.
++        self.study_id = study_id
++        self.root = _TreeNode()
++        self.seen: set[int] = set()
++        self.valid = True
++
++
+ @experimental_class("3.1.0")
+ class BruteForceSampler(BaseSampler):
+     """Sampler that performs exhaustive search over the define-by-run search space.
+@@ -191,7 +205,72 @@
+     def __init__(self, seed: int | None = None, avoid_premature_stop: bool = False) -> None:
+         self._rng = LazyRandomState(seed)
+         self._avoid_premature_stop = avoid_premature_stop
++        self._finished_tree: _FinishedTrialsTree | None = None
++        self._finished_tree_lock = threading.RLock()
+ 
++    def _sync_finished_tree(
++        self, study: Study, trials: list[FrozenTrial], current_number: int
++    ) -> _FinishedTrialsTree | None:
++        # Return the incremental tree when it describes exactly the non-waiting trials other
++        # than the current one, i.e. when no other trial is running. Otherwise return None and
++        # let the caller rebuild from scratch.
++        cache = self._finished_tree
++        if cache is None or cache.storage is not study._storage or cache.study_id != study._study_id:
++            cache = self._finished_tree = _FinishedTrialsTree(study._storage, study._study_id)
++        if not cache.valid:
++            return None
++        seen = cache.seen
++        new_trials = []
++        for t in trials:
++            if t.number == current_number:
++                continue
++            if t.state == TrialState.RUNNING:
++                return None
++            if t.number not in seen:
++                new_trials.append(t)
++        if new_trials:
++            try:
++                self._populate_tree(cache.root, new_trials, {})
++            except Exception:
++                cache.valid = False
++                return None
++            seen.update(t.number for t in new_trials)
++        return cache
++
++    def _incremental_subtree(
++        self,
++        study: Study,
++        trials: list[FrozenTrial],
++        trial: FrozenTrial,
++        param_name: str,
++        candidates: Sequence[float],
++    ) -> _TreeNode | None:
++        # The subtree of finished trials sharing the current trial's params, rooted at
++        # `param_name`; identical to the from-scratch tree in `sample_independent`.
++        cache = self._sync_finished_tree(study, trials, trial.number)
++        if cache is None:
++            return None
++        node = cache.root
++        try:
++            for name, dist in trial.distributions.items():
++                if node.children is None:
++                    break  # No finished trial shares this prefix.
++                if node.param_name != name or not node.children:
++                    return None
++                child = node.children.get(dist.to_internal_repr(trial.params[name]))
++                if child is None:
++                    return None
++                node = child
++        except Exception:
++            return None
++        if node.children is None:
++            fresh = _TreeNode()
++            fresh.expand(param_name, candidates)
++            return fresh
++        if node.param_name != param_name or list(node.children) != list(candidates):
++            return None
++        return node
++
+     def infer_relative_search_space(
+         self, study: Study, trial: FrozenTrial
+     ) -> dict[str, BaseDistribution]:
+@@ -242,9 +321,19 @@
+     ) -> Any:
+         exclude_running = not self._avoid_premature_stop
+         trials, current_idx = _get_non_waiting_trials_and_current_trial_index(study, trial.number)
++        candidates = _enumerate_candidates(param_distribution)
++        with self._finished_tree_lock:
++            node = self._incremental_subtree(study, trials, trial, param_name, candidates)
++            if node is not None:
++                if not node.is_any_expandable(exclude_running):
++                    return param_distribution.to_external_repr(
++                        self._rng.rng.choice(candidates).item()
++                    )
++                return param_distribution.to_external_repr(
++                    node.sample_child(self._rng.rng, exclude_running)
++                )
+         trials.pop(current_idx)
+         tree = _TreeNode()
+-        candidates = _enumerate_candidates(param_distribution)
+         tree.expand(param_name, candidates)
+         # Populating must happen after the initialization above to prevent `tree` from
+         # being initialized as an empty graph, which is created with n_jobs > 1
+@@ -262,10 +351,24 @@
+     ) -> None:
+         exclude_running = not self._avoid_premature_stop
+         trials, current_idx = _get_non_waiting_trials_and_current_trial_index(study, trial.number)
+-        # Set current trial as complete.
+-        trials[current_idx] = create_trial(
++        finished = create_trial(
+             state=state, values=values, params=trial.params, distributions=trial.distributions
+         )
++        with self._finished_tree_lock:
++            cache = self._sync_finished_tree(study, trials, trial.number)
++            if cache is not None:
++                try:
++                    self._populate_tree(cache.root, [finished], {})
++                except Exception:
++                    cache.valid = False
++                    cache = None
++            if cache is not None:
++                cache.seen.add(trial.number)
++                if not cache.root.is_any_expandable(exclude_running):
++                    study.stop()
++                return
++        # Set current trial as complete.
++        trials[current_idx] = finished
+         tree = _TreeNode()
+         self._populate_tree(tree, trials, {})
+         if not tree.is_any_expandable(exclude_running):
+@@ -276,7 +379,29 @@
+     return isinstance(v, Real) and math.isnan(float(v))
+ 
+ 
++_CANDIDATES_CACHE: dict[tuple[Any, ...], list[Any]] = {}
++
++
+ def _enumerate_candidates(param_distribution: BaseDistribution) -> Sequence[float]:
++    # Memoize the enumerated grid per distribution; the Decimal walk is pure.
++    if isinstance(param_distribution, CategoricalDistribution):
++        key: tuple[Any, ...] = ("categorical", len(param_distribution.choices))
++    elif isinstance(param_distribution, (FloatDistribution, IntDistribution)):
++        key = (
++            type(param_distribution).__name__,
++            param_distribution.low,
++            param_distribution.high,
++            param_distribution.step,
++        )
++    else:
++        return _enumerate_candidates_uncached(param_distribution)
++    cached = _CANDIDATES_CACHE.get(key)
++    if cached is None:
++        cached = _CANDIDATES_CACHE[key] = list(_enumerate_candidates_uncached(param_distribution))
++    return cached
++
++
++def _enumerate_candidates_uncached(param_distribution: BaseDistribution) -> Sequence[float]:
+     if isinstance(param_distribution, FloatDistribution):
+         if param_distribution.step is None:
+             raise ValueError(

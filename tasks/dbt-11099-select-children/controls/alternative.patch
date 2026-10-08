@@ -1,0 +1,72 @@
+--- a/core/dbt/graph/graph.py
++++ b/core/dbt/graph/graph.py
+@@ -56,43 +56,39 @@
+         ancestors_for = self.select_children(selected) | selected
+         return self.select_parents(ancestors_for) | ancestors_for
+ 
++    def _select_reachable(self, selected, max_depth, reverse):
++        # Materially different batch adjacency construction on each call, with
++        # multi-source shortest-distance traversal and no persistent stale cache.
++        from collections import deque
++        adjacency = {}
++        for parent, child, attributes in self.graph.edges(data=True):
++            if attributes.get("edge_type") != "parent_test":
++                origin, target = (child, parent) if reverse else (parent, child)
++                adjacency.setdefault(origin, []).append(target)
++        queue = deque((node, 0) for node in selected)
++        visited = set(selected)
++        result = set()
++        while queue:
++            node, depth = queue.popleft()
++            if max_depth is not None and depth >= max_depth:
++                continue
++            for target in adjacency.get(node, ()):
++                # Initial selections still count when reachable from another seed.
++                result.add(target)
++                if target not in visited:
++                    visited.add(target)
++                    queue.append((target, depth + 1))
++        return result
++
+     def select_children(
+         self, selected: Set[UniqueId], max_depth: Optional[int] = None
+     ) -> Set[UniqueId]:
+-        """Returns all nodes which are descendants of the 'selected' set.
+-        Nodes in the 'selected' set are counted as children only if
+-        they are descendants of other nodes in the 'selected' set."""
+-        children: Set[UniqueId] = set()
+-        i = 0
+-        while len(selected) > 0 and (max_depth is None or i < max_depth):
+-            next_layer: Set[UniqueId] = set()
+-            for node in selected:
+-                next_layer.update(self.descendants(node, 1))
+-            next_layer = next_layer - children  # Avoid re-searching
+-            children.update(next_layer)
+-            selected = next_layer
+-            i += 1
+-
+-        return children
++        return self._select_reachable(selected, max_depth, False)
+ 
+     def select_parents(
+         self, selected: Set[UniqueId], max_depth: Optional[int] = None
+     ) -> Set[UniqueId]:
+-        """Returns all nodes which are ancestors of the 'selected' set.
+-        Nodes in the 'selected' set are counted as parents only if
+-        they are ancestors of other nodes in the 'selected' set."""
+-        parents: Set[UniqueId] = set()
+-        i = 0
+-        while len(selected) > 0 and (max_depth is None or i < max_depth):
+-            next_layer: Set[UniqueId] = set()
+-            for node in selected:
+-                next_layer.update(self.ancestors(node, 1))
+-            next_layer = next_layer - parents  # Avoid re-searching
+-            parents.update(next_layer)
+-            selected = next_layer
+-            i += 1
+-
+-        return parents
++        return self._select_reachable(selected, max_depth, True)
+ 
+     def select_successors(self, selected: Set[UniqueId]) -> Set[UniqueId]:
+         successors: Set[UniqueId] = set()

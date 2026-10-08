@@ -1,0 +1,42 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-raw",
+    "case": "raw",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-inline",
+    "case": "inline",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "api-1",
+    "case": "api",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "api-200",
+    "case": "api",
+    "size": 200,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

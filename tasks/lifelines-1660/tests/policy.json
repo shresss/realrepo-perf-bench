@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "purpose": "scoring_v1_task_policy",
+  "task_id": "swefficiency-ext/lifelines-1660",
+  "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+  "repeats": 3,
+  "baseline_sha256": "5e850be094d3486e985c7aa432d064d07fd232f643b53a17c47f8b507e3e2673",
+  "hashes": {
+    "task": {
+      "workload.py": "b19802f8a7eecb876f14a6cf1ea322bdfc6cb0dd2c7ba53f5cab8be03ffbf28a",
+      "expected.py": "907ead9de5407e133598fadb2339836f27f7362851f5fc31d6d95d7a5a12bb04",
+      "cases.json": "0cd76cba6bc7ab422345b5c3133e71becd7112702101977faa79a194685b596b",
+      "meter.json": "785d57c72782854c422c6b5b64513babb40322ac9004dd65a2c39f8d6a613b37"
+    },
+    "tools": {
+      "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9",
+      "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4"
+    },
+    "runtime": {
+      "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+      "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+      "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+      "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+      "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+      "native.py": "d36feb5ff3c59128ea1a391acc406d541cedbf1fbbbcce3180320abc5b7ce061"
+    }
+  },
+  "limits": {
+    "total_wall_seconds": 360,
+    "candidate_wall_seconds": 120,
+    "baseline_wall_seconds": 120,
+    "parent_reserve_seconds": 120,
+    "semantic_case_wall_seconds": 30,
+    "performance_case_wall_seconds": 60,
+    "native_wall_seconds": 60,
+    "source_max_bytes": 536870912,
+    "source_max_files": 50000,
+    "max_output_bytes": 16777216,
+    "address_space_bytes": 8589934592
+  },
+  "cpu_gates": {
+    "scale-8000": {
+      "maximum_candidate_baseline_ratio": 0.4621,
+      "baseline_min_seconds": 2.223,
+      "baseline_max_seconds": 8.893
+    }
+  },
+  "control_provenance": [
+    {
+      "role": "baseline",
+      "path": "calibration/baseline.json",
+      "sha256": "00c063880556b6081c9f5a501a64f93c356797f809c9d93ab588a0968ecf7eec",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "reference",
+      "path": "calibration/reference.json",
+      "sha256": "75ad6912293c5ede6b66583321ba1f6c11e774cc206af206f0f803ce8f492f39",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "naive",
+      "path": "calibration/naive.json",
+      "sha256": "a5e9f468985a5667a81feef02849d8301d285765e3c8c4798d4a1858c24c842d",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "alternative",
+      "path": "calibration/alternative.json",
+      "sha256": "182122e1823dcee4714cdafc94196e52f9b044c9a6602caa1bab64e032899755",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    }
+  ],
+  "native_regression": {
+    "mode": "protected_upstream",
+    "selection_sha256": "5241ba809706d1ad30a3999e8c143895be961deac47145b1598640b229e74b58",
+    "expected_count": 9
+  },
+  "scoring_v1": {
+    "formula": "gate: median paired candidate/baseline CPU <= floor4(1/sqrt(R)); perf_score = log(B/M)/log(R)",
+    "per_case": {
+      "scale-8000": {
+        "R_reference_speedup_cpu": 4.681293749914461,
+        "pairs": 3,
+        "baseline_cpu_median": 4.446569,
+        "threshold_candidate_over_baseline": 0.4621,
+        "nop_candidate_over_baseline": 1.0959577610378255,
+        "naive_candidate_over_baseline": 0.724131172377059,
+        "alternative_candidate_over_baseline": 0.18485515078464687
+      }
+    }
+  },
+  "limitations": [
+    "Three repeats of fixed cases, not independent tasks.",
+    "CPU gate at declared gated cases only; other scales diagnostic.",
+    "Freezing this policy is not a model result or panel release."
+  ],
+  "runtime_lineage": [
+    {
+      "date_utc": "2026-10-01T13:41:52+00:00",
+      "from": "runtime-v1",
+      "to": "runtime-v1.1",
+      "reason": "per-worker state hygiene; timed region unchanged",
+      "old_hashes": {
+        "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "d36feb5ff3c59128ea1a391acc406d541cedbf1fbbbcce3180320abc5b7ce061"
+      },
+      "new_hashes": {
+        "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "d36feb5ff3c59128ea1a391acc406d541cedbf1fbbbcce3180320abc5b7ce061"
+      },
+      "changed_files": [
+        "verify.py"
+      ],
+      "unhashed_files_replaced": {
+        "test.sh": {
+          "old": "f19d23fc7b7e5481ea4354b356bb489631791f19b0847c6dc67073c9aa18d879",
+          "new": "6fe7f71d0de1e7bd1286a3afac733cc0fe3ac142b73733bdbd60ec962bb2710f"
+        }
+      },
+      "byte_identical_timed_region": [
+        "boundary.py",
+        "execute.py",
+        "native.py",
+        "policy.py",
+        "publish.py"
+      ],
+      "previous_policy": {
+        "path": "policy.v1.json",
+        "sha256": "cfc4c1a7d6f74b85db19b97582431cb3b9c017a6bb7d468996002b7d98b7f176"
+      },
+      "source_runtime": "/Users/venkat/Documents/Codex/2026-09-30/im/outputs/afterquery-claude-ops/runtime-v1.1"
+    }
+  ]
+}

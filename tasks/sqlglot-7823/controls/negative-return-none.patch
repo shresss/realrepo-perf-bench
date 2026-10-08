@@ -1,0 +1,11 @@
+diff --git a/sqlglot/optimizer/resolver.py b/sqlglot/optimizer/resolver.py
+--- a/sqlglot/optimizer/resolver.py
++++ b/sqlglot/optimizer/resolver.py
+@@ -404,6 +404,7 @@
+         Returns:
+             The DataType of the column, or None if not found.
+         """
++        return None  # REVIEW wrong-fast control: drop type tracing through scopes
+         if isinstance(source, exp.Table):
+             # base table - get the column type from schema
+             col_type: exp.DataType | None = self.schema.get_column_type(source, column)

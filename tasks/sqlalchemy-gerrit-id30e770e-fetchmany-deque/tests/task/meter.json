@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "lib/sqlalchemy/engine/cursor.py",
+    "lib/sqlalchemy/connectors/asyncio.py"
+  ],
+  "package_paths": [
+    "lib/sqlalchemy"
+  ],
+  "pandas_udf": false
+}

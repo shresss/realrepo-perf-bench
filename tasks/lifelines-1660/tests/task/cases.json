@@ -1,0 +1,11 @@
+[
+  {"id":"ordinary","case":"ordinary","size":12,"seed":3,"role":"semantic","public":true},
+  {"id":"weighted","case":"weighted","size":18,"seed":5,"role":"semantic","public":true},
+  {"id":"same-event-ties","case":"same-event-ties","size":16,"seed":7,"role":"semantic","public":false},
+  {"id":"terminal-event","case":"terminal-event","size":15,"seed":4,"role":"semantic","public":true},
+  {"id":"no-interest","case":"no-interest","size":9,"seed":11,"role":"semantic","public":false},
+  {"id":"scale-250","case":"ordinary","size":250,"seed":17,"role":"performance","public":true},
+  {"id":"scale-1000","case":"ordinary","size":1000,"seed":17,"role":"performance","public":true},
+  {"id":"scale-4000","case":"ordinary","size":4000,"seed":17,"role":"performance","public":false},
+  {"id":"scale-8000","case":"ordinary","size":8000,"seed":17,"role":"performance","public":false}
+]

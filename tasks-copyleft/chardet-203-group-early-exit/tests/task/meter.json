@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "chardet/charsetgroupprober.py",
+    "chardet/universaldetector.py"
+  ],
+  "package_paths": [
+    "chardet"
+  ],
+  "pandas_udf": false
+}

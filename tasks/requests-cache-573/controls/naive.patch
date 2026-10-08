@@ -1,0 +1,14 @@
+diff --git a/requests_cache/backends/base.py b/requests_cache/backends/base.py
+index 472ba9f..a969720 100644
+--- a/requests_cache/backends/base.py
++++ b/requests_cache/backends/base.py
+@@ -100,7 +100,8 @@ class BaseCache:
+         """Remove multiple responses and their associated redirects from the cache"""
+         self.responses.bulk_delete(keys)
+         # Remove any redirects that no longer point to an existing response
+-        invalid_redirects = [k for k, v in self.redirects.items() if v not in self.responses]
++        live_keys = set(self.responses.keys())
++        invalid_redirects = [k for k, v in self.redirects.items() if v not in live_keys]
+         self.redirects.bulk_delete(set(keys) | set(invalid_redirects))
+ 
+     def clear(self):

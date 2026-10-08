@@ -1,0 +1,26 @@
+[
+  {
+    "id": "compile-0-seed0",
+    "case": "compile",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "compile-1-seed17",
+    "case": "compile",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "compile-50",
+    "case": "compile",
+    "size": 50,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  }
+]

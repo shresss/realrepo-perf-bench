@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "pyparsing"
+  ],
+  "package_paths": [
+    "pyparsing"
+  ],
+  "pandas_udf": false,
+  "interpretation": "Diagnostic operation counts, not native-work coverage or universal complexity proof."
+}

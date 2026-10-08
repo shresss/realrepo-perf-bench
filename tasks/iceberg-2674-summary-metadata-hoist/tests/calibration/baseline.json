@@ -1,0 +1,2846 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T09:59:40.136390+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "02fd887e60e922632719ff93acd78fc0e52a962cd0307bbc36622ccaed5524f9",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70"
+  },
+  "task": {
+   "cases.json": "d9898b6f7b6d75e49c0a3d24f3b6db47d428779c7bd4c7061f8bb25bea2663cc",
+   "expected.py": "4f744728b590a35be252c2ac139d5a4b82367716e15600f1a0a55afdb4c3ad0d",
+   "meter.json": "67a993970acda25bfb83838ce7670ad7ed018f5045f24943258b90b2e96defa7",
+   "workload.py": "88694b9fa334b1a314395bd71fdbb53cee7f7b7c656d6abdd678862d4e93e269"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "",
+ "max_wall_seconds": {
+  "native": 5.179933599999458,
+  "performance": 32.880450689999634,
+  "semantic": 3.6679589019995547
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 107,
+   "cpu_seconds": 1.2966879999999998,
+   "exit_code": 0,
+   "expected_count": 107,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_init.py::test_add_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_nested_list_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_nested_map_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_nested_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_primitive_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_snapshot_update_fails_with_smaller_first_row_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_snapshot_update_fails_without_first_row_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_snapshot_update_updates_next_row_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_apply_add_schema_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_apply_remove_properties_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_apply_set_properties_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_create": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_current_schema_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_default_sort_order_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_default_spec_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_last_assigned_field_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_ref_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_table_uuid": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_correct_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_current_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_generate_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_history": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_last_assigned_partition_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_location": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_match_deletes_to_datafile": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_match_deletes_to_datafile_duplicate_number": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_metadata_isolation_from_illegal_updates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_spec_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_spec_update_default_spec": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_spec_update_spec_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_statistics_update_with_invalid_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_schemas_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_schemas_update_current_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_schemas_update_schema_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_repr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_schemas": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_serialize_commit_table_request": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_serialize_set_properties_updates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_set_partition_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_set_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_id_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_name": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_name_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_timestamp": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_sort_order": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_sort_orders": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_spec": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_specs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_gz_same_as_table": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_io_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_same_as_table": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_version_hint_same_as_table": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_properties_raise_for_none_value": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_full_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_single_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_single_column_case_sensitive": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_unknown_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_ref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_ref_does_not_exists": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_row_filter": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_select[orc]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_select[parquet]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_add_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_add_update_sort_order": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_log": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_log_overflow": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_schema_immutability": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_set_ref_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_set_snapshot_ref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_table_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_update_sort_order_invalid": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_with_multiple_updates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshot_ref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshots": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshots_doesnt_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshots_remove_current_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_ancestors_between": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_ancestors_of": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_ancestors_of_recursive_error": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_snapshot_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_snapshot_without_operation": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_summary_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_invalid_operation": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_invalid_type": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_merge_snapshot_summaries_empty": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_merge_snapshot_summaries_new_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_merge_snapshot_summaries_overwrite_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_no_change": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_unpartitioned_files": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_snapshot_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_snapshot_without_sequence_number": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_summary_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_repr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_summary_collector": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition_limit_in_constructor": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_with_properties_repr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_snapshots.py::test_serialize_summary",
+     "test_snapshots.py::test_serialize_summary_with_properties",
+     "test_snapshots.py::test_serialize_snapshot",
+     "test_snapshots.py::test_serialize_snapshot_without_sequence_number",
+     "test_snapshots.py::test_serialize_snapshot_with_properties",
+     "test_snapshots.py::test_deserialize_summary",
+     "test_snapshots.py::test_deserialize_summary_with_properties",
+     "test_snapshots.py::test_deserialize_snapshot",
+     "test_snapshots.py::test_deserialize_snapshot_without_operation",
+     "test_snapshots.py::test_deserialize_snapshot_with_properties",
+     "test_snapshots.py::test_snapshot_repr",
+     "test_snapshots.py::test_snapshot_with_properties_repr",
+     "test_snapshots.py::test_snapshot_summary_collector",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition_limit_in_constructor",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_no_change",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_unpartitioned_files",
+     "test_snapshots.py::test_merge_snapshot_summaries_empty",
+     "test_snapshots.py::test_merge_snapshot_summaries_new_summary",
+     "test_snapshots.py::test_merge_snapshot_summaries_overwrite_summary",
+     "test_snapshots.py::test_invalid_operation",
+     "test_snapshots.py::test_invalid_type",
+     "test_snapshots.py::test_ancestors_of",
+     "test_snapshots.py::test_ancestors_of_recursive_error",
+     "test_snapshots.py::test_ancestors_between",
+     "test_init.py::test_schema",
+     "test_init.py::test_schemas",
+     "test_init.py::test_spec",
+     "test_init.py::test_specs",
+     "test_init.py::test_sort_order",
+     "test_init.py::test_sort_orders",
+     "test_init.py::test_location",
+     "test_init.py::test_current_snapshot",
+     "test_init.py::test_snapshot_by_id",
+     "test_init.py::test_snapshot_by_timestamp",
+     "test_init.py::test_snapshot_by_id_does_not_exist",
+     "test_init.py::test_snapshot_by_name",
+     "test_init.py::test_snapshot_by_name_does_not_exist",
+     "test_init.py::test_repr",
+     "test_init.py::test_history",
+     "test_init.py::test_table_scan_select[parquet]",
+     "test_init.py::test_table_scan_select[orc]",
+     "test_init.py::test_table_scan_row_filter",
+     "test_init.py::test_table_scan_ref",
+     "test_init.py::test_table_scan_ref_does_not_exists",
+     "test_init.py::test_table_scan_projection_full_schema",
+     "test_init.py::test_table_scan_projection_single_column",
+     "test_init.py::test_table_scan_projection_single_column_case_sensitive",
+     "test_init.py::test_table_scan_projection_unknown_column",
+     "test_init.py::test_static_table_same_as_table",
+     "test_init.py::test_static_table_gz_same_as_table",
+     "test_init.py::test_static_table_version_hint_same_as_table",
+     "test_init.py::test_static_table_io_does_not_exist",
+     "test_init.py::test_match_deletes_to_datafile",
+     "test_init.py::test_match_deletes_to_datafile_duplicate_number",
+     "test_init.py::test_serialize_set_properties_updates",
+     "test_init.py::test_add_column",
+     "test_init.py::test_update_column",
+     "test_init.py::test_add_primitive_type_column",
+     "test_init.py::test_add_nested_type_column",
+     "test_init.py::test_add_nested_map_type_column",
+     "test_init.py::test_add_nested_list_type_column",
+     "test_init.py::test_apply_set_properties_update",
+     "test_init.py::test_apply_remove_properties_update",
+     "test_init.py::test_apply_add_schema_update",
+     "test_init.py::test_update_metadata_table_schema",
+     "test_init.py::test_update_metadata_add_snapshot",
+     "test_init.py::test_update_metadata_set_ref_snapshot",
+     "test_init.py::test_update_metadata_set_snapshot_ref",
+     "test_init.py::test_update_remove_snapshots",
+     "test_init.py::test_update_remove_snapshots_doesnt_exist",
+     "test_init.py::test_update_remove_snapshots_remove_current_snapshot_id",
+     "test_init.py::test_update_remove_snapshot_ref",
+     "test_init.py::test_update_metadata_add_update_sort_order",
+     "test_init.py::test_update_metadata_update_sort_order_invalid",
+     "test_init.py::test_update_metadata_with_multiple_updates",
+     "test_init.py::test_update_metadata_schema_immutability",
+     "test_init.py::test_metadata_isolation_from_illegal_updates",
+     "test_init.py::test_generate_snapshot_id",
+     "test_init.py::test_assert_create",
+     "test_init.py::test_assert_table_uuid",
+     "test_init.py::test_assert_ref_snapshot_id",
+     "test_init.py::test_assert_last_assigned_field_id",
+     "test_init.py::test_assert_current_schema_id",
+     "test_init.py::test_last_assigned_partition_id",
+     "test_init.py::test_assert_default_spec_id",
+     "test_init.py::test_assert_default_sort_order_id",
+     "test_init.py::test_correct_schema",
+     "test_init.py::test_table_properties",
+     "test_init.py::test_table_properties_raise_for_none_value",
+     "test_init.py::test_serialize_commit_table_request",
+     "test_init.py::test_update_metadata_log",
+     "test_init.py::test_update_metadata_log_overflow",
+     "test_init.py::test_remove_partition_spec_update",
+     "test_init.py::test_remove_partition_spec_update_spec_does_not_exist",
+     "test_init.py::test_remove_partition_spec_update_default_spec",
+     "test_init.py::test_remove_schemas_update",
+     "test_init.py::test_remove_schemas_update_schema_does_not_exist",
+     "test_init.py::test_remove_schemas_update_current_schema",
+     "test_init.py::test_set_statistics_update",
+     "test_init.py::test_remove_statistics_update",
+     "test_init.py::test_set_partition_statistics_update",
+     "test_init.py::test_remove_partition_statistics_update",
+     "test_init.py::test_remove_partition_statistics_update_with_invalid_snapshot_id",
+     "test_init.py::test_add_snapshot_update_fails_without_first_row_id",
+     "test_init.py::test_add_snapshot_update_fails_with_smaller_first_row_id",
+     "test_init.py::test_add_snapshot_update_updates_next_row_id"
+    ],
+    "selected_count": 107
+   },
+   "outcome": "passed",
+   "passed_count": 107,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 107,
+    "files": {
+     "tests/conftest.py": "7b35ebd455d5d4668004cc25f36aa3daef1cc03a970c75fc323896c39b42ed7e",
+     "tests/table/test_init.py": "646949c0f502d4f04523defee366b422623a6e7e23522edcc270381cf812b2c9",
+     "tests/table/test_snapshots.py": "3e86154c94fe938a601cd89e70a8f3c465d0c539ee0e755c12a0f5ae513ce9a3"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_init.py::test_add_column",
+     "test_init.py::test_add_nested_list_type_column",
+     "test_init.py::test_add_nested_map_type_column",
+     "test_init.py::test_add_nested_type_column",
+     "test_init.py::test_add_primitive_type_column",
+     "test_init.py::test_add_snapshot_update_fails_with_smaller_first_row_id",
+     "test_init.py::test_add_snapshot_update_fails_without_first_row_id",
+     "test_init.py::test_add_snapshot_update_updates_next_row_id",
+     "test_init.py::test_apply_add_schema_update",
+     "test_init.py::test_apply_remove_properties_update",
+     "test_init.py::test_apply_set_properties_update",
+     "test_init.py::test_assert_create",
+     "test_init.py::test_assert_current_schema_id",
+     "test_init.py::test_assert_default_sort_order_id",
+     "test_init.py::test_assert_default_spec_id",
+     "test_init.py::test_assert_last_assigned_field_id",
+     "test_init.py::test_assert_ref_snapshot_id",
+     "test_init.py::test_assert_table_uuid",
+     "test_init.py::test_correct_schema",
+     "test_init.py::test_current_snapshot",
+     "test_init.py::test_generate_snapshot_id",
+     "test_init.py::test_history",
+     "test_init.py::test_last_assigned_partition_id",
+     "test_init.py::test_location",
+     "test_init.py::test_match_deletes_to_datafile",
+     "test_init.py::test_match_deletes_to_datafile_duplicate_number",
+     "test_init.py::test_metadata_isolation_from_illegal_updates",
+     "test_init.py::test_remove_partition_spec_update",
+     "test_init.py::test_remove_partition_spec_update_default_spec",
+     "test_init.py::test_remove_partition_spec_update_spec_does_not_exist",
+     "test_init.py::test_remove_partition_statistics_update",
+     "test_init.py::test_remove_partition_statistics_update_with_invalid_snapshot_id",
+     "test_init.py::test_remove_schemas_update",
+     "test_init.py::test_remove_schemas_update_current_schema",
+     "test_init.py::test_remove_schemas_update_schema_does_not_exist",
+     "test_init.py::test_remove_statistics_update",
+     "test_init.py::test_repr",
+     "test_init.py::test_schema",
+     "test_init.py::test_schemas",
+     "test_init.py::test_serialize_commit_table_request",
+     "test_init.py::test_serialize_set_properties_updates",
+     "test_init.py::test_set_partition_statistics_update",
+     "test_init.py::test_set_statistics_update",
+     "test_init.py::test_snapshot_by_id",
+     "test_init.py::test_snapshot_by_id_does_not_exist",
+     "test_init.py::test_snapshot_by_name",
+     "test_init.py::test_snapshot_by_name_does_not_exist",
+     "test_init.py::test_snapshot_by_timestamp",
+     "test_init.py::test_sort_order",
+     "test_init.py::test_sort_orders",
+     "test_init.py::test_spec",
+     "test_init.py::test_specs",
+     "test_init.py::test_static_table_gz_same_as_table",
+     "test_init.py::test_static_table_io_does_not_exist",
+     "test_init.py::test_static_table_same_as_table",
+     "test_init.py::test_static_table_version_hint_same_as_table",
+     "test_init.py::test_table_properties",
+     "test_init.py::test_table_properties_raise_for_none_value",
+     "test_init.py::test_table_scan_projection_full_schema",
+     "test_init.py::test_table_scan_projection_single_column",
+     "test_init.py::test_table_scan_projection_single_column_case_sensitive",
+     "test_init.py::test_table_scan_projection_unknown_column",
+     "test_init.py::test_table_scan_ref",
+     "test_init.py::test_table_scan_ref_does_not_exists",
+     "test_init.py::test_table_scan_row_filter",
+     "test_init.py::test_table_scan_select[orc]",
+     "test_init.py::test_table_scan_select[parquet]",
+     "test_init.py::test_update_column",
+     "test_init.py::test_update_metadata_add_snapshot",
+     "test_init.py::test_update_metadata_add_update_sort_order",
+     "test_init.py::test_update_metadata_log",
+     "test_init.py::test_update_metadata_log_overflow",
+     "test_init.py::test_update_metadata_schema_immutability",
+     "test_init.py::test_update_metadata_set_ref_snapshot",
+     "test_init.py::test_update_metadata_set_snapshot_ref",
+     "test_init.py::test_update_metadata_table_schema",
+     "test_init.py::test_update_metadata_update_sort_order_invalid",
+     "test_init.py::test_update_metadata_with_multiple_updates",
+     "test_init.py::test_update_remove_snapshot_ref",
+     "test_init.py::test_update_remove_snapshots",
+     "test_init.py::test_update_remove_snapshots_doesnt_exist",
+     "test_init.py::test_update_remove_snapshots_remove_current_snapshot_id",
+     "test_snapshots.py::test_ancestors_between",
+     "test_snapshots.py::test_ancestors_of",
+     "test_snapshots.py::test_ancestors_of_recursive_error",
+     "test_snapshots.py::test_deserialize_snapshot",
+     "test_snapshots.py::test_deserialize_snapshot_with_properties",
+     "test_snapshots.py::test_deserialize_snapshot_without_operation",
+     "test_snapshots.py::test_deserialize_summary",
+     "test_snapshots.py::test_deserialize_summary_with_properties",
+     "test_snapshots.py::test_invalid_operation",
+     "test_snapshots.py::test_invalid_type",
+     "test_snapshots.py::test_merge_snapshot_summaries_empty",
+     "test_snapshots.py::test_merge_snapshot_summaries_new_summary",
+     "test_snapshots.py::test_merge_snapshot_summaries_overwrite_summary",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_no_change",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_unpartitioned_files",
+     "test_snapshots.py::test_serialize_snapshot",
+     "test_snapshots.py::test_serialize_snapshot_with_properties",
+     "test_snapshots.py::test_serialize_snapshot_without_sequence_number",
+     "test_snapshots.py::test_serialize_summary",
+     "test_snapshots.py::test_serialize_summary_with_properties",
+     "test_snapshots.py::test_snapshot_repr",
+     "test_snapshots.py::test_snapshot_summary_collector",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition_limit_in_constructor",
+     "test_snapshots.py::test_snapshot_with_properties_repr"
+    ],
+    "schema_version": 1,
+    "selection": "test_",
+    "sha256": "bc5e5bfb42b2d06659f387284146f5bc38cd6629901ac789229233c5bc1073f9",
+    "source_commit": "1f9c46b4b567add9821583a4717641d70cebee1d"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "1bbd433c2816046472734fe935093b452f4edc67e93050a3e46d128426be741f",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "7ad5751a6b254bca3f7594ed19b8d8eeefcdb579ca26e2a8c4eb4f8eaba02046",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 5.179933599999458
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 107,
+   "cpu_seconds": 1.162391,
+   "exit_code": 0,
+   "expected_count": 107,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 0,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_init.py::test_add_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_nested_list_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_nested_map_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_nested_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_primitive_type_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_snapshot_update_fails_with_smaller_first_row_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_snapshot_update_fails_without_first_row_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_add_snapshot_update_updates_next_row_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_apply_add_schema_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_apply_remove_properties_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_apply_set_properties_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_create": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_current_schema_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_default_sort_order_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_default_spec_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_last_assigned_field_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_ref_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_assert_table_uuid": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_correct_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_current_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_generate_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_history": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_last_assigned_partition_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_location": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_match_deletes_to_datafile": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_match_deletes_to_datafile_duplicate_number": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_metadata_isolation_from_illegal_updates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_spec_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_spec_update_default_spec": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_spec_update_spec_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_partition_statistics_update_with_invalid_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_schemas_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_schemas_update_current_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_schemas_update_schema_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_remove_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_repr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_schemas": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_serialize_commit_table_request": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_serialize_set_properties_updates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_set_partition_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_set_statistics_update": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_id_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_name": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_name_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_snapshot_by_timestamp": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_sort_order": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_sort_orders": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_spec": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_specs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_gz_same_as_table": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_io_does_not_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_same_as_table": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_static_table_version_hint_same_as_table": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_properties_raise_for_none_value": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_full_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_single_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_single_column_case_sensitive": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_projection_unknown_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_ref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_ref_does_not_exists": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_row_filter": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_select[orc]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_table_scan_select[parquet]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_column": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_add_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_add_update_sort_order": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_log": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_log_overflow": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_schema_immutability": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_set_ref_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_set_snapshot_ref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_table_schema": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_update_sort_order_invalid": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_metadata_with_multiple_updates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshot_ref": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshots": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshots_doesnt_exist": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_init.py::test_update_remove_snapshots_remove_current_snapshot_id": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_ancestors_between": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_ancestors_of": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_ancestors_of_recursive_error": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_snapshot_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_snapshot_without_operation": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_deserialize_summary_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_invalid_operation": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_invalid_type": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_merge_snapshot_summaries_empty": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_merge_snapshot_summaries_new_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_merge_snapshot_summaries_overwrite_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_no_change": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_unpartitioned_files": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_snapshot": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_snapshot_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_snapshot_without_sequence_number": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_summary": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_serialize_summary_with_properties": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_repr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_summary_collector": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition_limit_in_constructor": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_snapshots.py::test_snapshot_with_properties_repr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_snapshots.py::test_serialize_summary",
+     "test_snapshots.py::test_serialize_summary_with_properties",
+     "test_snapshots.py::test_serialize_snapshot",
+     "test_snapshots.py::test_serialize_snapshot_without_sequence_number",
+     "test_snapshots.py::test_serialize_snapshot_with_properties",
+     "test_snapshots.py::test_deserialize_summary",
+     "test_snapshots.py::test_deserialize_summary_with_properties",
+     "test_snapshots.py::test_deserialize_snapshot",
+     "test_snapshots.py::test_deserialize_snapshot_without_operation",
+     "test_snapshots.py::test_deserialize_snapshot_with_properties",
+     "test_snapshots.py::test_snapshot_repr",
+     "test_snapshots.py::test_snapshot_with_properties_repr",
+     "test_snapshots.py::test_snapshot_summary_collector",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition_limit_in_constructor",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_no_change",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_unpartitioned_files",
+     "test_snapshots.py::test_merge_snapshot_summaries_empty",
+     "test_snapshots.py::test_merge_snapshot_summaries_new_summary",
+     "test_snapshots.py::test_merge_snapshot_summaries_overwrite_summary",
+     "test_snapshots.py::test_invalid_operation",
+     "test_snapshots.py::test_invalid_type",
+     "test_snapshots.py::test_ancestors_of",
+     "test_snapshots.py::test_ancestors_of_recursive_error",
+     "test_snapshots.py::test_ancestors_between",
+     "test_init.py::test_schema",
+     "test_init.py::test_schemas",
+     "test_init.py::test_spec",
+     "test_init.py::test_specs",
+     "test_init.py::test_sort_order",
+     "test_init.py::test_sort_orders",
+     "test_init.py::test_location",
+     "test_init.py::test_current_snapshot",
+     "test_init.py::test_snapshot_by_id",
+     "test_init.py::test_snapshot_by_timestamp",
+     "test_init.py::test_snapshot_by_id_does_not_exist",
+     "test_init.py::test_snapshot_by_name",
+     "test_init.py::test_snapshot_by_name_does_not_exist",
+     "test_init.py::test_repr",
+     "test_init.py::test_history",
+     "test_init.py::test_table_scan_select[parquet]",
+     "test_init.py::test_table_scan_select[orc]",
+     "test_init.py::test_table_scan_row_filter",
+     "test_init.py::test_table_scan_ref",
+     "test_init.py::test_table_scan_ref_does_not_exists",
+     "test_init.py::test_table_scan_projection_full_schema",
+     "test_init.py::test_table_scan_projection_single_column",
+     "test_init.py::test_table_scan_projection_single_column_case_sensitive",
+     "test_init.py::test_table_scan_projection_unknown_column",
+     "test_init.py::test_static_table_same_as_table",
+     "test_init.py::test_static_table_gz_same_as_table",
+     "test_init.py::test_static_table_version_hint_same_as_table",
+     "test_init.py::test_static_table_io_does_not_exist",
+     "test_init.py::test_match_deletes_to_datafile",
+     "test_init.py::test_match_deletes_to_datafile_duplicate_number",
+     "test_init.py::test_serialize_set_properties_updates",
+     "test_init.py::test_add_column",
+     "test_init.py::test_update_column",
+     "test_init.py::test_add_primitive_type_column",
+     "test_init.py::test_add_nested_type_column",
+     "test_init.py::test_add_nested_map_type_column",
+     "test_init.py::test_add_nested_list_type_column",
+     "test_init.py::test_apply_set_properties_update",
+     "test_init.py::test_apply_remove_properties_update",
+     "test_init.py::test_apply_add_schema_update",
+     "test_init.py::test_update_metadata_table_schema",
+     "test_init.py::test_update_metadata_add_snapshot",
+     "test_init.py::test_update_metadata_set_ref_snapshot",
+     "test_init.py::test_update_metadata_set_snapshot_ref",
+     "test_init.py::test_update_remove_snapshots",
+     "test_init.py::test_update_remove_snapshots_doesnt_exist",
+     "test_init.py::test_update_remove_snapshots_remove_current_snapshot_id",
+     "test_init.py::test_update_remove_snapshot_ref",
+     "test_init.py::test_update_metadata_add_update_sort_order",
+     "test_init.py::test_update_metadata_update_sort_order_invalid",
+     "test_init.py::test_update_metadata_with_multiple_updates",
+     "test_init.py::test_update_metadata_schema_immutability",
+     "test_init.py::test_metadata_isolation_from_illegal_updates",
+     "test_init.py::test_generate_snapshot_id",
+     "test_init.py::test_assert_create",
+     "test_init.py::test_assert_table_uuid",
+     "test_init.py::test_assert_ref_snapshot_id",
+     "test_init.py::test_assert_last_assigned_field_id",
+     "test_init.py::test_assert_current_schema_id",
+     "test_init.py::test_last_assigned_partition_id",
+     "test_init.py::test_assert_default_spec_id",
+     "test_init.py::test_assert_default_sort_order_id",
+     "test_init.py::test_correct_schema",
+     "test_init.py::test_table_properties",
+     "test_init.py::test_table_properties_raise_for_none_value",
+     "test_init.py::test_serialize_commit_table_request",
+     "test_init.py::test_update_metadata_log",
+     "test_init.py::test_update_metadata_log_overflow",
+     "test_init.py::test_remove_partition_spec_update",
+     "test_init.py::test_remove_partition_spec_update_spec_does_not_exist",
+     "test_init.py::test_remove_partition_spec_update_default_spec",
+     "test_init.py::test_remove_schemas_update",
+     "test_init.py::test_remove_schemas_update_schema_does_not_exist",
+     "test_init.py::test_remove_schemas_update_current_schema",
+     "test_init.py::test_set_statistics_update",
+     "test_init.py::test_remove_statistics_update",
+     "test_init.py::test_set_partition_statistics_update",
+     "test_init.py::test_remove_partition_statistics_update",
+     "test_init.py::test_remove_partition_statistics_update_with_invalid_snapshot_id",
+     "test_init.py::test_add_snapshot_update_fails_without_first_row_id",
+     "test_init.py::test_add_snapshot_update_fails_with_smaller_first_row_id",
+     "test_init.py::test_add_snapshot_update_updates_next_row_id"
+    ],
+    "selected_count": 107
+   },
+   "outcome": "passed",
+   "passed_count": 107,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 107,
+    "files": {
+     "tests/conftest.py": "7b35ebd455d5d4668004cc25f36aa3daef1cc03a970c75fc323896c39b42ed7e",
+     "tests/table/test_init.py": "646949c0f502d4f04523defee366b422623a6e7e23522edcc270381cf812b2c9",
+     "tests/table/test_snapshots.py": "3e86154c94fe938a601cd89e70a8f3c465d0c539ee0e755c12a0f5ae513ce9a3"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_init.py::test_add_column",
+     "test_init.py::test_add_nested_list_type_column",
+     "test_init.py::test_add_nested_map_type_column",
+     "test_init.py::test_add_nested_type_column",
+     "test_init.py::test_add_primitive_type_column",
+     "test_init.py::test_add_snapshot_update_fails_with_smaller_first_row_id",
+     "test_init.py::test_add_snapshot_update_fails_without_first_row_id",
+     "test_init.py::test_add_snapshot_update_updates_next_row_id",
+     "test_init.py::test_apply_add_schema_update",
+     "test_init.py::test_apply_remove_properties_update",
+     "test_init.py::test_apply_set_properties_update",
+     "test_init.py::test_assert_create",
+     "test_init.py::test_assert_current_schema_id",
+     "test_init.py::test_assert_default_sort_order_id",
+     "test_init.py::test_assert_default_spec_id",
+     "test_init.py::test_assert_last_assigned_field_id",
+     "test_init.py::test_assert_ref_snapshot_id",
+     "test_init.py::test_assert_table_uuid",
+     "test_init.py::test_correct_schema",
+     "test_init.py::test_current_snapshot",
+     "test_init.py::test_generate_snapshot_id",
+     "test_init.py::test_history",
+     "test_init.py::test_last_assigned_partition_id",
+     "test_init.py::test_location",
+     "test_init.py::test_match_deletes_to_datafile",
+     "test_init.py::test_match_deletes_to_datafile_duplicate_number",
+     "test_init.py::test_metadata_isolation_from_illegal_updates",
+     "test_init.py::test_remove_partition_spec_update",
+     "test_init.py::test_remove_partition_spec_update_default_spec",
+     "test_init.py::test_remove_partition_spec_update_spec_does_not_exist",
+     "test_init.py::test_remove_partition_statistics_update",
+     "test_init.py::test_remove_partition_statistics_update_with_invalid_snapshot_id",
+     "test_init.py::test_remove_schemas_update",
+     "test_init.py::test_remove_schemas_update_current_schema",
+     "test_init.py::test_remove_schemas_update_schema_does_not_exist",
+     "test_init.py::test_remove_statistics_update",
+     "test_init.py::test_repr",
+     "test_init.py::test_schema",
+     "test_init.py::test_schemas",
+     "test_init.py::test_serialize_commit_table_request",
+     "test_init.py::test_serialize_set_properties_updates",
+     "test_init.py::test_set_partition_statistics_update",
+     "test_init.py::test_set_statistics_update",
+     "test_init.py::test_snapshot_by_id",
+     "test_init.py::test_snapshot_by_id_does_not_exist",
+     "test_init.py::test_snapshot_by_name",
+     "test_init.py::test_snapshot_by_name_does_not_exist",
+     "test_init.py::test_snapshot_by_timestamp",
+     "test_init.py::test_sort_order",
+     "test_init.py::test_sort_orders",
+     "test_init.py::test_spec",
+     "test_init.py::test_specs",
+     "test_init.py::test_static_table_gz_same_as_table",
+     "test_init.py::test_static_table_io_does_not_exist",
+     "test_init.py::test_static_table_same_as_table",
+     "test_init.py::test_static_table_version_hint_same_as_table",
+     "test_init.py::test_table_properties",
+     "test_init.py::test_table_properties_raise_for_none_value",
+     "test_init.py::test_table_scan_projection_full_schema",
+     "test_init.py::test_table_scan_projection_single_column",
+     "test_init.py::test_table_scan_projection_single_column_case_sensitive",
+     "test_init.py::test_table_scan_projection_unknown_column",
+     "test_init.py::test_table_scan_ref",
+     "test_init.py::test_table_scan_ref_does_not_exists",
+     "test_init.py::test_table_scan_row_filter",
+     "test_init.py::test_table_scan_select[orc]",
+     "test_init.py::test_table_scan_select[parquet]",
+     "test_init.py::test_update_column",
+     "test_init.py::test_update_metadata_add_snapshot",
+     "test_init.py::test_update_metadata_add_update_sort_order",
+     "test_init.py::test_update_metadata_log",
+     "test_init.py::test_update_metadata_log_overflow",
+     "test_init.py::test_update_metadata_schema_immutability",
+     "test_init.py::test_update_metadata_set_ref_snapshot",
+     "test_init.py::test_update_metadata_set_snapshot_ref",
+     "test_init.py::test_update_metadata_table_schema",
+     "test_init.py::test_update_metadata_update_sort_order_invalid",
+     "test_init.py::test_update_metadata_with_multiple_updates",
+     "test_init.py::test_update_remove_snapshot_ref",
+     "test_init.py::test_update_remove_snapshots",
+     "test_init.py::test_update_remove_snapshots_doesnt_exist",
+     "test_init.py::test_update_remove_snapshots_remove_current_snapshot_id",
+     "test_snapshots.py::test_ancestors_between",
+     "test_snapshots.py::test_ancestors_of",
+     "test_snapshots.py::test_ancestors_of_recursive_error",
+     "test_snapshots.py::test_deserialize_snapshot",
+     "test_snapshots.py::test_deserialize_snapshot_with_properties",
+     "test_snapshots.py::test_deserialize_snapshot_without_operation",
+     "test_snapshots.py::test_deserialize_summary",
+     "test_snapshots.py::test_deserialize_summary_with_properties",
+     "test_snapshots.py::test_invalid_operation",
+     "test_snapshots.py::test_invalid_type",
+     "test_snapshots.py::test_merge_snapshot_summaries_empty",
+     "test_snapshots.py::test_merge_snapshot_summaries_new_summary",
+     "test_snapshots.py::test_merge_snapshot_summaries_overwrite_summary",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_no_change",
+     "test_snapshots.py::test_partition_summaries_included_not_set_when_unpartitioned_files",
+     "test_snapshots.py::test_serialize_snapshot",
+     "test_snapshots.py::test_serialize_snapshot_with_properties",
+     "test_snapshots.py::test_serialize_snapshot_without_sequence_number",
+     "test_snapshots.py::test_serialize_summary",
+     "test_snapshots.py::test_serialize_summary_with_properties",
+     "test_snapshots.py::test_snapshot_repr",
+     "test_snapshots.py::test_snapshot_summary_collector",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition",
+     "test_snapshots.py::test_snapshot_summary_collector_with_partition_limit_in_constructor",
+     "test_snapshots.py::test_snapshot_with_properties_repr"
+    ],
+    "schema_version": 1,
+    "selection": "test_",
+    "sha256": "bc5e5bfb42b2d06659f387284146f5bc38cd6629901ac789229233c5bc1073f9",
+    "source_commit": "1f9c46b4b567add9821583a4717641d70cebee1d"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "e34c2360ad463b8ef2ea46dccc74632fa594ae9ba0ce3351309c41b712f3087b",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "7ad5751a6b254bca3f7594ed19b8d8eeefcdb579ca26e2a8c4eb4f8eaba02046",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 4.623924301999978
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 107,
+  "sha256": "bc5e5bfb42b2d06659f387284146f5bc38cd6629901ac789229233c5bc1073f9"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "7ad5751a6b254bca3f7594ed19b8d8eeefcdb579ca26e2a8c4eb4f8eaba02046"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "1bbd433c2816046472734fe935093b452f4edc67e93050a3e46d128426be741f"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "7ad5751a6b254bca3f7594ed19b8d8eeefcdb579ca26e2a8c4eb4f8eaba02046"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "e34c2360ad463b8ef2ea46dccc74632fa594ae9ba0ce3351309c41b712f3087b"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "8036392e009939c2fdc6a5ae35a3473c82e6fcd8065f2c3c2001b84ca8c92767"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "8036392e009939c2fdc6a5ae35a3473c82e6fcd8065f2c3c2001b84ca8c92767"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "b9c957bfa07ebe060683740a5b147c36188f8529e5aee5684c3f1e90ea020f47"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "b9c957bfa07ebe060683740a5b147c36188f8529e5aee5684c3f1e90ea020f47"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "e91299c443b6d2f5c8e1fbeebf0ef647897cbd8e7b2de96fa58319b81f77b61a"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "e91299c443b6d2f5c8e1fbeebf0ef647897cbd8e7b2de96fa58319b81f77b61a"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "45c4fef8cf97da280a6b64b24653265fd77a46d710eb9f96ba151bd42ec4b643"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "45c4fef8cf97da280a6b64b24653265fd77a46d710eb9f96ba151bd42ec4b643"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "fc8b85c2d49fbe6f85949bb292dcf62f885c1611a646ab813f806063d7bb9823"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "b4205191e3d6122c48225db995e6f066f8b2f5d2fbbc1707bcc80ad22b123583"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "fc8b85c2d49fbe6f85949bb292dcf62f885c1611a646ab813f806063d7bb9823"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "d280123aa8deb7e641d50d401e9662d9d671702a2ac7e2dc12a11b2b7b1354a8"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "2fb09cccf8e0112d17f4004be9f09230632157ed1d89c200b3fdde27113c2191"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "2fb09cccf8e0112d17f4004be9f09230632157ed1d89c200b3fdde27113c2191"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "fdd0124655080ef81c53259772c934583970c184ff1a3d1de7a70f84d107c547"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "fdd0124655080ef81c53259772c934583970c184ff1a3d1de7a70f84d107c547"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "31fc6aa5d4104a7b5b2bf3e6cac5905e24e8fc83e87023f807a723020dadfee2"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "31fc6aa5d4104a7b5b2bf3e6cac5905e24e8fc83e87023f807a723020dadfee2"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "6c7b193722caeb3fcca5d8766eb62a7b703d46ff1dcbda2c19b0d93d34f94382"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "6c7b193722caeb3fcca5d8766eb62a7b703d46ff1dcbda2c19b0d93d34f94382"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0028-stdout.bin",
+   "sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2"
+  },
+  {
+   "path": "raw/0028-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  },
+  {
+   "path": "raw/0029-stdout.bin",
+   "sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2"
+  },
+  {
+   "path": "raw/0029-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0030-stdout.bin",
+   "sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2"
+  },
+  {
+   "path": "raw/0030-stderr.bin",
+   "sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2"
+  },
+  {
+   "path": "raw/0031-stdout.bin",
+   "sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2"
+  },
+  {
+   "path": "raw/0031-stderr.bin",
+   "sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174"
+  }
+ ],
+ "repeats": 3,
+ "role": "baseline",
+ "role_wall_totals": {
+  "baseline": 162.84811320399695,
+  "candidate": 179.19275465400096
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 8160660,
+   "files": 241,
+   "sha256": "e61bc2feaae579f3e71f8ae36860354094c46e88ab6043b08a35fc3b09708368"
+  },
+  "candidate": {
+   "bytes": 8160660,
+   "files": 241,
+   "sha256": "e61bc2feaae579f3e71f8ae36860354094c46e88ab6043b08a35fc3b09708368"
+  }
+ },
+ "started_utc": "2026-10-01T09:53:57.572965+00:00",
+ "summaries": {
+  "backfill-500-s11": {
+   "baseline_cpu_median": 6.391636999999999,
+   "baseline_cpu_seconds": [
+    6.737314,
+    6.382506,
+    6.391636999999999
+   ],
+   "baseline_wall_seconds": [
+    26.75557171299988,
+    19.03031907499917,
+    19.076387887000237
+   ],
+   "candidate_cpu_seconds": [
+    7.882353999999999,
+    7.350586,
+    7.194928
+   ],
+   "candidate_wall_seconds": [
+    25.536885845000143,
+    21.69812564499989,
+    21.555397655999514
+   ],
+   "case": "backfill",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 0.8682989356222756,
+   "median_paired_candidate_over_baseline_cpu": 1.151677099872683,
+   "size": 500
+  },
+  "reload-1000": {
+   "baseline_cpu_median": 7.817055,
+   "baseline_cpu_seconds": [
+    9.752241,
+    7.817055,
+    7.67293
+   ],
+   "baseline_wall_seconds": [
+    20.22790449799959,
+    23.316650793999543,
+    22.85374055000011
+   ],
+   "candidate_cpu_seconds": [
+    8.796876,
+    8.066616,
+    7.5008799999999995
+   ],
+   "candidate_wall_seconds": [
+    32.880450689999634,
+    24.467046327999924,
+    22.852220997000586
+   ],
+   "case": "reload",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.0229373086891138,
+   "median_paired_candidate_over_baseline_cpu": 0.9775770142566138,
+   "size": 1000
+  }
+ },
+ "workers": [
+  {
+   "case_id": "fast-small-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.7583859999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.15234375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "8036392e009939c2fdc6a5ae35a3473c82e6fcd8065f2c3c2001b84ca8c92767",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.0466739129997222
+  },
+  {
+   "case_id": "fast-small-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.8093319999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.14453125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "8036392e009939c2fdc6a5ae35a3473c82e6fcd8065f2c3c2001b84ca8c92767",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.2347322630002964
+  },
+  {
+   "case_id": "merge-append-delete-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.799696,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.16015625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "b9c957bfa07ebe060683740a5b147c36188f8529e5aee5684c3f1e90ea020f47",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.2044123599998784
+  },
+  {
+   "case_id": "merge-append-delete-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.793298,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.15234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "b9c957bfa07ebe060683740a5b147c36188f8529e5aee5684c3f1e90ea020f47",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.167209301999719
+  },
+  {
+   "case_id": "tx-two-appends-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.816488,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 124.73046875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "e91299c443b6d2f5c8e1fbeebf0ef647897cbd8e7b2de96fa58319b81f77b61a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.282318280999789
+  },
+  {
+   "case_id": "tx-two-appends-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.808925,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 127.0390625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "e91299c443b6d2f5c8e1fbeebf0ef647897cbd8e7b2de96fa58319b81f77b61a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.577502058000391
+  },
+  {
+   "case_id": "fast-small-25-s3",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.187484,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.15625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 25,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "45c4fef8cf97da280a6b64b24653265fd77a46d710eb9f96ba151bd42ec4b643",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.5583886000003986
+  },
+  {
+   "case_id": "fast-small-25-s3",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.8219909999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.15234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 25,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "45c4fef8cf97da280a6b64b24653265fd77a46d710eb9f96ba151bd42ec4b643",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.4701517470002727
+  },
+  {
+   "case_id": "merge-delete-none-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.811446,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.16015625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "b4205191e3d6122c48225db995e6f066f8b2f5d2fbbc1707bcc80ad22b123583",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "fc8b85c2d49fbe6f85949bb292dcf62f885c1611a646ab813f806063d7bb9823",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.4546531679998225
+  },
+  {
+   "case_id": "merge-delete-none-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.2125700000000001,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 125.23828125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "d280123aa8deb7e641d50d401e9662d9d671702a2ac7e2dc12a11b2b7b1354a8",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "fc8b85c2d49fbe6f85949bb292dcf62f885c1611a646ab813f806063d7bb9823",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.655701227999998
+  },
+  {
+   "case_id": "empty-table-0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.096517,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.1484375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "2fb09cccf8e0112d17f4004be9f09230632157ed1d89c200b3fdde27113c2191",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.307691199999681
+  },
+  {
+   "case_id": "empty-table-0",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.222681,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.0234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "2fb09cccf8e0112d17f4004be9f09230632157ed1d89c200b3fdde27113c2191",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.6679589019995547
+  },
+  {
+   "case_id": "tx-two-appends-25-s5",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.25272,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.1484375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 25,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "fdd0124655080ef81c53259772c934583970c184ff1a3d1de7a70f84d107c547",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.1213386290000926
+  },
+  {
+   "case_id": "tx-two-appends-25-s5",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.0413569999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 127.05859375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 25,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "fdd0124655080ef81c53259772c934583970c184ff1a3d1de7a70f84d107c547",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.0790106050008035
+  },
+  {
+   "case_id": "tx-props-then-append-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.9992789999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.1484375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "31fc6aa5d4104a7b5b2bf3e6cac5905e24e8fc83e87023f807a723020dadfee2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.0228947769992374
+  },
+  {
+   "case_id": "tx-props-then-append-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.982454,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.15234375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "31fc6aa5d4104a7b5b2bf3e6cac5905e24e8fc83e87023f807a723020dadfee2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.9819263130002582
+  },
+  {
+   "case_id": "tx-schema-then-append-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.1933669999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.14453125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 10,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "6c7b193722caeb3fcca5d8766eb62a7b703d46ff1dcbda2c19b0d93d34f94382",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.4092341590003343
+  },
+  {
+   "case_id": "tx-schema-then-append-10",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.372116,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 126.16015625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 10,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "6c7b193722caeb3fcca5d8766eb62a7b703d46ff1dcbda2c19b0d93d34f94382",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.744510773000002
+  },
+  {
+   "case_id": "reload-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 9.752241,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 176.71875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 20.22790449799959
+  },
+  {
+   "case_id": "reload-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 8.796876,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 175.9453125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 32.880450689999634
+  },
+  {
+   "case_id": "reload-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 8.066616,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 172.984375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 24.467046327999924
+  },
+  {
+   "case_id": "reload-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.817055,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 178.265625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 23.316650793999543
+  },
+  {
+   "case_id": "reload-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.67293,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 176.7109375,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 22.85374055000011
+  },
+  {
+   "case_id": "reload-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.5008799999999995,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 176.109375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "e8ec44abd3d4f25ce35a2ddb5cffa61e792691a581756d9422ce8135e42c18bd",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 22.852220997000586
+  },
+  {
+   "case_id": "backfill-500-s11",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.737314,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 146.0,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 500,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 26.75557171299988
+  },
+  {
+   "case_id": "backfill-500-s11",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.882353999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 145.98046875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 500,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 25.536885845000143
+  },
+  {
+   "case_id": "backfill-500-s11",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.350586,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 147.10546875,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 500,
+   "stderr_path": "raw/0028-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0028-stdout.bin",
+   "stdout_sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 21.69812564499989
+  },
+  {
+   "case_id": "backfill-500-s11",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.382506,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 147.578125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 500,
+   "stderr_path": "raw/0029-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0029-stdout.bin",
+   "stdout_sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 19.03031907499917
+  },
+  {
+   "case_id": "backfill-500-s11",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.391636999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 145.98828125,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 500,
+   "stderr_path": "raw/0030-stderr.bin",
+   "stderr_sha256": "20c2bc2c4effb5b897f3d2824419864c795d3f872d52df2b0e58ccd63cf747d2",
+   "stdout_path": "raw/0030-stdout.bin",
+   "stdout_sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 19.076387887000237
+  },
+  {
+   "case_id": "backfill-500-s11",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.194928,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 147.0859375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 500,
+   "stderr_path": "raw/0031-stderr.bin",
+   "stderr_sha256": "04b36f1dc4277e090cfa947c4fb9926604e515abc9516ed12a5d1defdee95174",
+   "stdout_path": "raw/0031-stdout.bin",
+   "stdout_sha256": "0145c27c2c0b248e8d6365b9700538b4208255d8ef07c25431cf6ad9d3ad85b2",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 21.555397655999514
+  }
+ ]
+}

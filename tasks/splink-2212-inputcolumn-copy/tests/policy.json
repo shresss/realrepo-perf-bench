@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "purpose": "scoring_v1_task_policy",
+  "task_id": "swefficiency-ext/splink-2212-inputcolumn-copy",
+  "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+  "repeats": 3,
+  "baseline_sha256": "4c3e6bc151b25309a9e96c556e5c3811ffe6446f837caf35d6c13e3eeaf4979a",
+  "hashes": {
+    "task": {
+      "workload.py": "61d8e31d66985176a79a2029b91b549534087199c0d55621707a473c6fb5a99f",
+      "expected.py": "875fa736f9161f3e2224c3fe9fedb092d11129ea0dc09613d7cc4208a5142ac3",
+      "cases.json": "cf327e4ce0ba4782ee3ff6ed7070e04bfbc955528292c04f315b9634a6c47899",
+      "meter.json": "8930b544755edddad5f6bcc3fe81a108d66310253f7d624e4661032d37ce8209"
+    },
+    "tools": {
+      "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9",
+      "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4"
+    },
+    "runtime": {
+      "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+      "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+      "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+      "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+      "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+      "native.py": "6cba0455996adfab3fa000bdb22b093d17dcfe28181ff5e2d6a3546c70b10077"
+    }
+  },
+  "limits": {
+    "total_wall_seconds": 974,
+    "candidate_wall_seconds": 427,
+    "baseline_wall_seconds": 427,
+    "parent_reserve_seconds": 120,
+    "semantic_case_wall_seconds": 57,
+    "performance_case_wall_seconds": 203,
+    "native_wall_seconds": 60,
+    "source_max_bytes": 536870912,
+    "source_max_files": 50000,
+    "max_output_bytes": 16777216,
+    "address_space_bytes": 8589934592
+  },
+  "cpu_gates": {
+    "lookup-gated": {
+      "maximum_candidate_baseline_ratio": 0.4868,
+      "baseline_min_seconds": 8.392,
+      "baseline_max_seconds": 33.568
+    }
+  },
+  "control_provenance": [
+    {
+      "role": "baseline",
+      "path": "calibration/baseline.json",
+      "sha256": "1b3a3d01df590b8637103dc21d2dc359cc6719a38c772ac50e131a3260097e82",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "reference",
+      "path": "calibration/reference.json",
+      "sha256": "479c8d65895789d1a52e858fe21531f89908e98c9d2e4924155224a0fb4fc780",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "naive",
+      "path": "calibration/naive.json",
+      "sha256": "b91d462bd181af080cc689806ca6ff368ba2f4aad96fae42f3f381782474b278",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "alternative",
+      "path": "calibration/alternative.json",
+      "sha256": "d70dc098b472b780e0ef1cbe8bb1344944b1ad716c1534f991a7bc3d537e4586",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    }
+  ],
+  "native_regression": {
+    "mode": "protected_upstream",
+    "selection_sha256": "fd1d734d25cf4bb419209af75e03f4cbaf53455877290209cfcfc343f609539e",
+    "expected_count": 4
+  },
+  "scoring_v1": {
+    "formula": "gate: median paired candidate/baseline CPU <= floor4(1/sqrt(R)); perf_score = log(B/M)/log(R)",
+    "per_case": {
+      "lookup-gated": {
+        "R_reference_speedup_cpu": 4.2196365018659625,
+        "pairs": 3,
+        "baseline_cpu_median": 16.783908,
+        "threshold_candidate_over_baseline": 0.4868,
+        "nop_candidate_over_baseline": 0.9584429525194957,
+        "naive_candidate_over_baseline": 0.8725728430461636,
+        "alternative_candidate_over_baseline": 0.2768731160363797
+      }
+    }
+  },
+  "limitations": [
+    "Three repeats of fixed cases, not independent tasks.",
+    "CPU gate at declared gated cases only; other scales diagnostic.",
+    "Freezing this policy is not a model result or panel release."
+  ],
+  "runtime_lineage": [
+    {
+      "date_utc": "2026-10-01T13:42:54+00:00",
+      "from": "runtime-v1",
+      "to": "runtime-v1.1",
+      "reason": "per-worker state hygiene; timed region unchanged",
+      "old_hashes": {
+        "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "6cba0455996adfab3fa000bdb22b093d17dcfe28181ff5e2d6a3546c70b10077"
+      },
+      "new_hashes": {
+        "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "6cba0455996adfab3fa000bdb22b093d17dcfe28181ff5e2d6a3546c70b10077"
+      },
+      "changed_files": [
+        "verify.py"
+      ],
+      "unhashed_files_replaced": {
+        "test.sh": {
+          "old": "f19d23fc7b7e5481ea4354b356bb489631791f19b0847c6dc67073c9aa18d879",
+          "new": "6fe7f71d0de1e7bd1286a3afac733cc0fe3ac142b73733bdbd60ec962bb2710f"
+        }
+      },
+      "byte_identical_timed_region": [
+        "boundary.py",
+        "execute.py",
+        "native.py",
+        "policy.py",
+        "publish.py"
+      ],
+      "previous_policy": {
+        "path": "policy.v1.json",
+        "sha256": "9c41b1a6dd7950ac71a86b7393124994f4fd08395557239f82a85238a2d1bd32"
+      },
+      "source_runtime": "/Users/venkat/Documents/Codex/2026-09-30/im/outputs/afterquery-claude-ops/runtime-v1.1"
+    }
+  ],
+  "late_cohort_refreeze": {
+    "at": "2026-10-01T13:42:16.121233-07:00",
+    "task_version": "1.0.1",
+    "prior_policy_sha256": "bd9e84e5a81ebdb4318887fd5d428f7447061487d0026766640b381ca4c7099a",
+    "reason": "13:39 cap8 ruling and sole authorized 12:30 late reference passed; cases/sizes/runtime unchanged",
+    "reference_receipt": "mining/splink-2212-inputcolumn-copy/calibration/codex21-late-reference-r01/receipt/result.json"
+  }
+}

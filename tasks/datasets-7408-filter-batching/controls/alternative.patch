@@ -1,0 +1,26 @@
+--- a/src/datasets/arrow_dataset.py
++++ b/src/datasets/arrow_dataset.py
+@@ -3716,6 +3716,23 @@
+         if len(self) == 0:
+             return self
+ 
++        if (keep_in_memory and not batched and not with_rank and num_proc in (None, 1)
++                and cache_file_name is None and not inspect.iscoroutinefunction(function)):
++            # Streaming row iteration followed by one index selection is independent of map writers.
++            columns = [input_columns] if isinstance(input_columns, str) else input_columns
++            if columns is not None:
++                missing = set(columns).difference(self.column_names)
++                if missing:
++                    raise ValueError(f"Input columns {missing} not in the dataset.")
++            selected = []
++            for index, row in enumerate(self):
++                arguments = [row] if columns is None else [row[column] for column in columns]
++                if with_indices:
++                    arguments.append(index)
++                if function(*arguments, **(fn_kwargs or {})):
++                    selected.append(index)
++            return self.select(selected, keep_in_memory=True, new_fingerprint=new_fingerprint)
++
+         indices = self.map(
+             function=partial(
+                 async_get_indices_from_mask_function

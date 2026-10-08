@@ -1,0 +1,12 @@
+--- a/chardet/charsetgroupprober.py
++++ b/chardet/charsetgroupprober.py
+@@ -83,6 +83,9 @@
+         return self.state
+ 
+     def get_confidence(self):
++        if (self._best_guess_prober is not None and
++                self._best_guess_prober.state == ProbingState.FOUND_IT):
++            return 0.99
+         state = self.state
+         if state == ProbingState.FOUND_IT:
+             return 0.99

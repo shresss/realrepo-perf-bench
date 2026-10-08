@@ -1,0 +1,10 @@
+[
+  {"id":"semantic-n","case":"sem-nc-r1","size":120,"seed":1,"role":"semantic","public":true},
+  {"id":"semantic-co-rank2","case":"sem-co-r2","size":200,"seed":2,"role":"semantic","public":false},
+  {"id":"semantic-ci-lag0","case":"sem-ci-lag0","size":150,"seed":3,"role":"semantic","public":true},
+  {"id":"semantic-colo-seasons","case":"sem-colo-seas","size":240,"seed":4,"role":"semantic","public":false},
+  {"id":"semantic-cili-exog","case":"sem-cili-exog","size":300,"seed":5,"role":"semantic","public":false},
+  {"id":"semantic-li-rankmax","case":"sem-li-rankmax","size":180,"seed":6,"role":"semantic","public":false},
+  {"id":"hourly-8760","case":"perf-hourly-8760","size":8760,"seed":11,"role":"performance","public":true},
+  {"id":"hourly-8760x12","case":"perf-hourly-8760x12","size":8760,"seed":11,"role":"performance","public":false}
+]

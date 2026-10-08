@@ -1,0 +1,98 @@
+[
+  {
+    "id": "compile-0-seed0",
+    "case": "compile",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "compile-1-seed17",
+    "case": "compile",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "compile-2-seed3",
+    "case": "compile",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "compile-8-seed5",
+    "case": "compile",
+    "size": 8,
+    "seed": 5,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "compile-51-seed11",
+    "case": "compile",
+    "size": 51,
+    "seed": 11,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "compile-50",
+    "case": "compile",
+    "size": 50,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "compile-100",
+    "case": "compile",
+    "size": 100,
+    "seed": 30,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "compile-200",
+    "case": "compile",
+    "size": 200,
+    "seed": 43,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "exact-3",
+    "case": "exact",
+    "size": 3,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "exact-60",
+    "case": "exact",
+    "size": 60,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "range-8",
+    "case": "range",
+    "size": 8,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "range-61",
+    "case": "range",
+    "size": 61,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  }
+]

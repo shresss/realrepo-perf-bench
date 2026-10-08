@@ -1,0 +1,74 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-raw",
+    "case": "raw",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-inline",
+    "case": "inline",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-entities",
+    "case": "entities",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-comment",
+    "case": "comment",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "api-1",
+    "case": "api",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "api-4",
+    "case": "api",
+    "size": 4,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "api-200",
+    "case": "api",
+    "size": 200,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "api-400",
+    "case": "api",
+    "size": 400,
+    "seed": 0,
+    "role": "performance",
+    "public": false
+  }
+]

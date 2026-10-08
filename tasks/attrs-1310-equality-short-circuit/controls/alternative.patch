@@ -1,0 +1,44 @@
+diff --git a/src/attr/_make.py b/src/attr/_make.py
+index 097534f..d9c4299 100644
+--- a/src/attr/_make.py
++++ b/src/attr/_make.py
+@@ -1863,23 +1863,22 @@ def _make_eq(cls, attrs):
+     # irregularities like nan == nan is false but (nan,) == (nan,) is true.
+     globs = {}
+     if attrs:
+-        lines.append("    return  (")
+-        others = ["    ) == ("]
+-        for a in attrs:
+-            if a.eq_key:
+-                cmp_name = f"_{a.name}_key"
+-                # Add the key function to the global namespace
+-                # of the evaluated function.
+-                globs[cmp_name] = a.eq_key
+-                lines.append(f"        {cmp_name}(self.{a.name}),")
+-                others.append(f"        {cmp_name}(other.{a.name}),")
+-            else:
+-                lines.append(f"        self.{a.name},")
+-                others.append(f"        other.{a.name},")
+-
+-        lines += [*others, "    )"]
+-    else:
+-        lines.append("    return True")
++        for offset in range(0, len(attrs), 8):
++            left, right = [], []
++            for a in attrs[offset:offset + 8]:
++                if a.eq_key:
++                    cmp_name = f"_{a.name}_key"
++                    globs[cmp_name] = a.eq_key
++                    left.append(f"{cmp_name}(self.{a.name})")
++                    right.append(f"{cmp_name}(other.{a.name})")
++                else:
++                    left.append(f"self.{a.name}")
++                    right.append(f"other.{a.name}")
++            lhs = ", ".join(left) + ","
++            rhs = ", ".join(right) + ","
++            lines.append(f"    if ({lhs}) != ({rhs}):")
++            lines.append("        return False")
++    lines.append("    return True")
+ 
+     script = "\n".join(lines)
+ 

@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "jinja2"
+  ],
+  "package_paths": [
+    "jinja2"
+  ],
+  "pandas_udf": false,
+  "interpretation": "Diagnostic Python operation counts, not native-work coverage or a universal complexity claim."
+}

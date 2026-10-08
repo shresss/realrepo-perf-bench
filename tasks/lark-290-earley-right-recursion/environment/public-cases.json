@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sequence-0-seed0",
+    "case": "sequence",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sequence-1-seed17",
+    "case": "sequence",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sequence-125",
+    "case": "sequence",
+    "size": 125,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  }
+]

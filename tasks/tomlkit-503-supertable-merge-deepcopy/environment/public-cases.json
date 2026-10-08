@@ -1,0 +1,50 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-single_subtable",
+    "case": "single_subtable",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-duplicate_header",
+    "case": "duplicate_header",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-duplicate_key_across_merge",
+    "case": "duplicate_key_across_merge",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-unicode",
+    "case": "unicode",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "inventory-75",
+    "case": "inventory",
+    "size": 75,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

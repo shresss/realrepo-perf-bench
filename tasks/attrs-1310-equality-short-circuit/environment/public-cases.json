@@ -1,0 +1,42 @@
+[
+  {
+    "id": "reconcile-0",
+    "case": "reconcile",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "reconcile-17",
+    "case": "reconcile",
+    "size": 17,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "reconcile-500",
+    "case": "reconcile",
+    "size": 500,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "reconcile-2000",
+    "case": "reconcile",
+    "size": 2000,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "semantics",
+    "case": "semantics",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-duplicate",
+    "case": "duplicate",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-conflict",
+    "case": "conflict",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-header_collision",
+    "case": "header_collision",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-unicode",
+    "case": "unicode",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-interleaved",
+    "case": "interleaved",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-headers",
+    "case": "headers",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-aot",
+    "case": "aot",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-mutation",
+    "case": "mutation",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "logging-16",
+    "case": "logging",
+    "size": 16,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "logging-24",
+    "case": "logging",
+    "size": 24,
+    "seed": 0,
+    "role": "performance",
+    "public": false
+  }
+]

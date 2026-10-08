@@ -1,0 +1,30 @@
+--- a/statsmodels/discrete/conditional_models.py
++++ b/statsmodels/discrete/conditional_models.py
+@@ -7,6 +7,7 @@
+ import warnings
+ 
+ import numpy as np
++from scipy.special import logsumexp
+ 
+ import statsmodels.base.model as base
+ import statsmodels.base.wrapper as wrap
+@@ -612,14 +613,15 @@
+         lpr = np.dot(self.exog, pmat)
+ 
+         ll = 0.0
++
++        # denom - immediately calculate the sums for the selected elements
++
+         for ii in self._grp_ix:
+             x = lpr[ii, :]
+             jj = np.arange(x.shape[0], dtype=int)
+             y = self.endog[ii]
+-            denom = 0.0
+-            for p in itertools.permutations(y):
+-                denom += np.exp(x[(jj, p)].sum())
+-            ll += x[(jj, y)].sum() - np.log(denom)
++            denom = np.sum(x[jj, list(itertools.permutations(y))], axis=1)
++            ll += x[(jj, y)].sum() - logsumexp(denom)
+ 
+         return ll
+ 

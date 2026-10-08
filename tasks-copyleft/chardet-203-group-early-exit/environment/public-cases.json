@@ -1,0 +1,42 @@
+[
+  {
+    "id": "empty",
+    "case": "empty",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "ascii",
+    "case": "ascii",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "utf8-small",
+    "case": "utf8-small",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "utf8-documents-16",
+    "case": "utf8-documents",
+    "size": 16,
+    "seed": 29,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "utf8-documents-256",
+    "case": "utf8-documents",
+    "size": 256,
+    "seed": 203,
+    "role": "performance",
+    "public": true
+  }
+]

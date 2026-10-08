@@ -1,0 +1,19 @@
+--- a/statsmodels/tsa/vector_ar/vecm.py
++++ b/statsmodels/tsa/vector_ar/vecm.py
+@@ -404,11 +404,11 @@
+ 
+     # todo: rewrite m such that a big (TxT) matrix is avoided
+     nobs = y_lag1.shape[1]
+-    m = np.identity(nobs) - (
+-        delta_x.T.dot(inv(delta_x.dot(delta_x.T))).dot(delta_x)
+-    )  # p. 291
+-    r0 = delta_y_1_T.dot(m)  # p. 292
+-    r1 = y_lag1.dot(m)
++    targets = np.column_stack((delta_y_1_T.T, y_lag1.T))
++    coefficients, _, _, _ = np.linalg.lstsq(delta_x.T, targets, rcond=None)
++    residuals = targets - delta_x.T @ coefficients
++    r0 = residuals[:, : delta_y_1_T.shape[0]].T
++    r1 = residuals[:, delta_y_1_T.shape[0] :].T
+     return r0, r1
+ 
+ 

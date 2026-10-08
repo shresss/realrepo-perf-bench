@@ -1,0 +1,66 @@
+[
+  {
+    "id": "empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "duplicate",
+    "case": "duplicate",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "multiline-title",
+    "case": "multiline-title",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "heading-terminator",
+    "case": "heading-terminator",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "container",
+    "case": "container",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "inline-definitions",
+    "case": "inline-definitions",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "changelog-60",
+    "case": "changelog",
+    "size": 60,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "changelog-600",
+    "case": "changelog",
+    "size": 600,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

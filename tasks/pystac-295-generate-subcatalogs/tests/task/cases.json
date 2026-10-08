@@ -1,0 +1,74 @@
+[
+  {
+    "id": "catalog-0-seed0",
+    "case": "catalog",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "catalog-1-seed17",
+    "case": "catalog",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "catalog-2-seed3",
+    "case": "catalog",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "catalog-8-seed5",
+    "case": "catalog",
+    "size": 8,
+    "seed": 5,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "catalog-1000",
+    "case": "catalog",
+    "size": 1000,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "catalog-2000",
+    "case": "catalog",
+    "size": 2000,
+    "seed": 30,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "catalog-4000",
+    "case": "catalog",
+    "size": 4000,
+    "seed": 43,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "incremental-8",
+    "case": "incremental",
+    "size": 8,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "defaults-8",
+    "case": "defaults",
+    "size": 8,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  }
+]

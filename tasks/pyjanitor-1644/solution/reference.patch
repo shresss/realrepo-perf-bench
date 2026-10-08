@@ -1,0 +1,88 @@
+diff --git a/janitor/functions/_conditional_join/_greater_than_indices.py b/janitor/functions/_conditional_join/_greater_than_indices.py
+index eab6c9d..ba5afcc 100644
+--- a/janitor/functions/_conditional_join/_greater_than_indices.py
++++ b/janitor/functions/_conditional_join/_greater_than_indices.py
+@@ -5,6 +5,7 @@ import pandas as pd
+ 
+ from janitor.functions._conditional_join import _binary_search
+ from janitor.functions._conditional_join._helpers import (
++    _accumulate_keep_positions,
+     _convert_array_to_numpy,
+     _null_checks_cond_join,
+     _sort_if_not_monotonic,
+@@ -69,14 +70,14 @@ def _greater_than_indices(
+         }
+     if right_is_sorted & (keep == "last"):
+         return {"left_index": left_index, "right_index": search_indices - 1}
+-    if keep == "first":
+-        right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.min() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
+-    if keep == "last":
+-        right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.max() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
++    if keep in {"first", "last"}:
++        # ELI5: each match is a prefix of this array. One forward pass remembers
++        # the earliest/latest original row for every prefix.
++        right = _accumulate_keep_positions(right_index, keep)
++        return {
++            "left_index": left_index,
++            "right_index": right[search_indices - 1],
++        }
+     if return_matching_indices:
+         return dict(
+             left_index=left_index,
+diff --git a/janitor/functions/_conditional_join/_helpers.py b/janitor/functions/_conditional_join/_helpers.py
+index d3b3b84..2811111 100644
+--- a/janitor/functions/_conditional_join/_helpers.py
++++ b/janitor/functions/_conditional_join/_helpers.py
+@@ -82,6 +82,13 @@ def _keep_output(keep: str, left: np.ndarray, right: np.ndarray):
+     return grouped.index, grouped._values
+ 
+ 
++def _accumulate_keep_positions(index: np.ndarray, keep: str) -> np.ndarray:
++    """Return the running first or last original row position."""
++    if keep == "first":
++        return np.minimum.accumulate(index)
++    return np.maximum.accumulate(index)
++
++
+ def _separate_conditions_based_on_op(conditions: Sequence):
+     """
+     Create separate blocks (`equals`, `not_equals`, `le_or_ge`)
+diff --git a/janitor/functions/_conditional_join/_less_than_indices.py b/janitor/functions/_conditional_join/_less_than_indices.py
+index b801e2d..60ec532 100644
+--- a/janitor/functions/_conditional_join/_less_than_indices.py
++++ b/janitor/functions/_conditional_join/_less_than_indices.py
+@@ -5,6 +5,7 @@ import pandas as pd
+ 
+ from janitor.functions._conditional_join import _binary_search
+ from janitor.functions._conditional_join._helpers import (
++    _accumulate_keep_positions,
+     _convert_array_to_numpy,
+     _null_checks_cond_join,
+     _sort_if_not_monotonic,
+@@ -71,14 +72,14 @@ def _less_than_indices(
+         }
+     if right_is_sorted & (keep == "first"):
+         return {"left_index": left_index, "right_index": search_indices}
+-    if keep == "first":
+-        right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.min() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
+-    if keep == "last":
+-        right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.max() for arr in right]
+-        return {"left_index": left_index, "right_index": right}
++    if keep in {"first", "last"}:
++        # ELI5: each match is a suffix of this array. Walking backwards once
++        # remembers the earliest/latest original row for every suffix.
++        right = _accumulate_keep_positions(right_index[::-1], keep)[::-1]
++        return {
++            "left_index": left_index,
++            "right_index": right[search_indices],
++        }
+     if return_matching_indices:
+         return dict(
+             left_index=left_index,

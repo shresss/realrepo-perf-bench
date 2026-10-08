@@ -1,0 +1,5 @@
+{
+  "target_paths": ["flytekit/core/type_engine.py", "flytekit/core/promise.py", "flytekit/types/pickle/pickle.py"],
+  "package_paths": ["flytekit"],
+  "pandas_udf": false
+}

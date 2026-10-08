@@ -1,0 +1,60 @@
+--- a/src/cattrs/gen/__init__.py
++++ b/src/cattrs/gen/__init__.py
+@@ -1,6 +1,7 @@
+ from __future__ import annotations
+ 
+ import linecache
++from hashlib import sha256
+ import re
+ from typing import TYPE_CHECKING, Any, Callable, Iterable, Mapping, Tuple, TypeVar
+ 
+@@ -214,9 +215,7 @@
+         script = "\n".join(total_lines)
+         fname = ""
+         if _cattrs_use_linecache:
+-            fname = generate_unique_filename(
+-                cl, "unstructure", reserve=_cattrs_use_linecache
+-            )
++            fname = "<cattrs generated unstructure {}.{} {}>".format(cl.__module__, getattr(cl, "__qualname__", cl.__name__), sha256(script.encode()).hexdigest())
+             linecache.cache[fname] = len(script), None, total_lines, fname
+ 
+         eval(compile(script, fname, "exec"), globs)
+@@ -629,7 +628,7 @@
+     script = "\n".join(total_lines)
+     fname = ""
+     if _cattrs_use_linecache:
+-        fname = generate_unique_filename(cl, "structure", reserve=_cattrs_use_linecache)
++        fname = "<cattrs generated structure {}.{} {}>".format(cl.__module__, getattr(cl, "__qualname__", cl.__name__), sha256(script.encode()).hexdigest())
+         linecache.cache[fname] = len(script), None, total_lines, fname
+ 
+     eval(compile(script, fname, "exec"), globs)
+--- a/src/cattrs/gen/typeddicts.py
++++ b/src/cattrs/gen/typeddicts.py
+@@ -1,6 +1,7 @@
+ from __future__ import annotations
+ 
+ import linecache
++from hashlib import sha256
+ import re
+ import sys
+ from typing import TYPE_CHECKING, Any, Callable, TypeVar
+@@ -227,9 +228,7 @@
+ 
+         fname = ""
+         if _cattrs_use_linecache:
+-            fname = generate_unique_filename(
+-                cl, "unstructure", reserve=_cattrs_use_linecache
+-            )
++            fname = "<cattrs generated unstructure {}.{} {}>".format(cl.__module__, getattr(cl, "__qualname__", cl.__name__), sha256(script.encode()).hexdigest())
+             linecache.cache[fname] = len(script), None, total_lines, fname
+ 
+         eval(compile(script, fname, "exec"), globs)
+@@ -525,7 +524,7 @@
+     script = "\n".join(total_lines)
+     fname = ""
+     if _cattrs_use_linecache:
+-        fname = generate_unique_filename(cl, "structure", reserve=_cattrs_use_linecache)
++        fname = "<cattrs generated structure {}.{} {}>".format(cl.__module__, getattr(cl, "__qualname__", cl.__name__), sha256(script.encode()).hexdigest())
+         linecache.cache[fname] = len(script), None, total_lines, fname
+ 
+     eval(compile(script, fname, "exec"), globs)

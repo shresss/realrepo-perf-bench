@@ -1,0 +1,54 @@
+--- a/tomlkit/container.py
++++ b/tomlkit/container.py
+@@ -2,6 +2,9 @@
+ 
+ import copy
+ import math
++from contextvars import ContextVar
++
++_prevalidated_document = ContextVar("tomlkit_prevalidated_document", default=False)
+ 
+ from collections.abc import Iterator
+ from typing import TYPE_CHECKING
+@@ -152,6 +155,8 @@
+         return last_index + 1
+ 
+     def _validate_out_of_order_table(self, key: Key | None = None) -> None:
++        if self._parsed and _prevalidated_document.get():
++            return
+         if key is None:
+             for k in self._map:
+                 assert k is not None
+@@ -734,7 +739,7 @@
+         idx = self._map.get(key)
+         if idx is None:
+             return False
+-        if isinstance(idx, tuple):
++        if isinstance(idx, tuple) and not (self._parsed and _prevalidated_document.get()):
+             OutOfOrderTableProxy(self, idx)
+         return True
+ 
+--- a/tomlkit/api.py
++++ b/tomlkit/api.py
+@@ -103,7 +103,20 @@
+     """
+     Parses a string or bytes into a TOMLDocument.
+     """
+-    return Parser(string).parse()
++    try:
++        import tomllib
++    except ImportError:
++        return Parser(string).parse()
++    from tomlkit.container import _prevalidated_document
++    try:
++        tomllib.loads(string if isinstance(string, str) else string.decode("utf-8"))
++    except (ValueError, TypeError, UnicodeError, RecursionError):
++        return Parser(string).parse()
++    token = _prevalidated_document.set(True)
++    try:
++        return Parser(string).parse()
++    finally:
++        _prevalidated_document.reset(token)
+ 
+ 
+ def document() -> TOMLDocument:

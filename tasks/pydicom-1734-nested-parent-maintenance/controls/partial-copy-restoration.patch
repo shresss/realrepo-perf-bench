@@ -1,0 +1,406 @@
+--- a/pydicom/dataset.py
++++ b/pydicom/dataset.py
+@@ -29,7 +29,7 @@
+ from typing import (
+     Optional, Tuple, Union, List, Any, cast, Dict, ValuesView,
+     Iterator, BinaryIO, AnyStr, Callable, TypeVar, Type, overload,
+-    MutableSequence, MutableMapping, AbstractSet
++    MutableSequence, MutableMapping, AbstractSet, TYPE_CHECKING
+ )
+ import warnings
+ import weakref
+@@ -64,6 +64,10 @@
+ from pydicom.waveforms import numpy_handler as wave_handler
+ 
+ 
++if TYPE_CHECKING:  # pragma: no cover
++    from pydicom.sequence import Sequence
++
++
+ class PrivateBlock:
+     """Helper class for a private block in the :class:`Dataset`.
+ 
+@@ -398,7 +402,7 @@
+         self.is_undefined_length_sequence_item = False
+ 
+         # the parent data set, if this dataset is a sequence item
+-        self.parent: "Optional[weakref.ReferenceType[Dataset]]" = None
++        self._parent_seq: "Optional[weakref.ReferenceType[Sequence]]" = None
+ 
+         # known private creator blocks
+         self._private_blocks: Dict[Tuple[int, str], PrivateBlock] = {}
+@@ -407,6 +411,70 @@
+         self._pixel_id: Dict[str, int] = {}
+ 
+         self.file_meta: FileMetaDataset
++
++    @property
++    def parent_seq(self) -> "Optional[weakref.ReferenceType[Sequence]]":
++        """Return a weak reference to the parent
++        :class:`~pydicom.sequence.Sequence`.
++
++        .. versionadded:: 2.4
++
++            Returned value is a weak reference to the parent ``Sequence``.
++        """
++        return self._parent_seq
++
++    @parent_seq.setter
++    def parent_seq(self, value: "Sequence") -> None:
++        """Set the parent :class:`~pydicom.sequence.Sequence`
++
++        .. versionadded:: 2.4
++        """
++        if value != self._parent_seq:
++            self._parent_seq = weakref.ref(value)
++
++    @property
++    def parent(self) -> "Optional[weakref.ReferenceType[Dataset]]":
++        """Return a weak reference to the parent Sequence's
++        parent Dataset.
++
++        .. deprecated:: 2.4
++        """
++        if config._use_future:
++            raise AttributeError("Future: Dataset.parent is removed in v3.x")
++        else:
++            warnings.warn(
++                "Dataset.parent will be removed in pydicom 3.0",
++                DeprecationWarning
++            )
++
++            parent_ref = self.parent_seq
++            if parent_ref is None:
++                return None
++
++            return cast("Sequence", parent_ref()).parent_dataset
++
++    @parent.setter
++    def parent(self, value: "Dataset") -> None:
++        """Set the parent :class:`~pydicom.sequence.Sequence`
++
++        .. deprecated:: 2.4
++        """
++        if config._use_future:
++            raise AttributeError("Future: Dataset.parent is removed in v3.x")
++        else:
++            warnings.warn(
++                "Dataset.parent will be removed in pydicom 3.0",
++                DeprecationWarning
++            )
++        self._parent = weakref.ref(value)
++
++    def __deepcopy__(self, memo: Optional[Dict[int, Any]]) -> "Dataset":
++        copied = Dataset()
++        if memo:
++            memo[id(self)] = copied   # add the new class to the memo
++        # Insert a deepcopy of all instance attributes
++        copied.__dict__.update(copy.deepcopy(self.__dict__, memo))
++        return copied
+ 
+     def __enter__(self) -> "Dataset":
+         """Method invoked on entry to a with statement."""
+@@ -822,9 +890,9 @@
+               value (if present).
+         """
+         tag = tag_for_keyword(name)
+-        if tag is not None:  # `name` isn't a DICOM element keyword
++        if tag is not None:  # None means `name` isn't a DICOM element keyword
+             tag = Tag(tag)
+-            if tag in self._dict:  # DICOM DataElement not in the Dataset
++            if tag in self._dict:
+                 return self[tag].value
+ 
+         # no tag or tag not contained in the dataset
+@@ -913,12 +981,6 @@
+                 raise KeyError(f"'{key}'") from exc
+ 
+         elem = self._dict[tag]
+-        if isinstance(elem, DataElement):
+-            if elem.VR == VR_.SQ and elem.value:
+-                # let a sequence know its parent dataset, as sequence items
+-                # may need parent dataset tags to resolve ambiguous tags
+-                elem.value.parent = self
+-            return elem
+ 
+         if isinstance(elem, RawDataElement):
+             # If a deferred read, then go get the value now
+@@ -2120,6 +2182,16 @@
+         value
+             The value for the attribute to be added/changed.
+         """
++        # Save time for common Dataset attributes that are not DICOM keywords
++        # This check is fast if `name` is a DICOM keyword (first chr is upper)
++        # The startswith is needed for `is_implicit_VR`
++        if name.startswith("is_") or name.islower():
++            if name == "file_meta":
++                self._set_file_meta(value)
++            else:
++                object.__setattr__(self, name, value)
++            return
++
+         tag = tag_for_keyword(name)
+         if tag is not None:  # successfully mapped name to a tag
+             if tag not in self:
+@@ -2143,8 +2215,6 @@
+                 f"'{name}' is a DICOM repeating group element and must be "
+                 "added using the add() or add_new() methods."
+             )
+-        elif name == "file_meta":
+-            self._set_file_meta(value)
+         else:
+             # Warn if `name` is camel case but not a keyword
+             if _RE_CAMEL_CASE.match(name):
+@@ -2238,6 +2308,14 @@
+                 elem.private_creator = self[private_creator_tag].value
+ 
+         self._dict[elem_tag] = elem
++
++        if elem.VR == VR_.SQ and isinstance(elem, DataElement):
++            if not isinstance(elem.value, pydicom.Sequence):
++                elem.value = pydicom.Sequence(elem.value)  # type: ignore
++            if elem.value is not None:
++                # let a sequence know its parent dataset, as sequence items
++                # may need parent dataset tags to resolve ambiguous tags
++                elem.value.parent_dataset = self  # type:ignore
+ 
+     def _slice_dataset(
+         self,
+@@ -2574,17 +2652,22 @@
+             )
+         )
+ 
++    # For Pickle, need to make weakref a strong reference
++    # Adapted from https://stackoverflow.com/a/45588812/1987276
+     def __getstate__(self) -> Dict[str, Any]:
+-        # pickle cannot handle weakref - remove parent
+-        d = self.__dict__.copy()
+-        del d['parent']
+-        return d
+-
++        if self.parent_seq is not None:
++            s = self.__dict__.copy()
++            s['_parent_seq'] = s['_parent_seq']()
++            return s
++        return self.__dict__
++
++    # If recovering from a pickle, turn back into weak ref
+     def __setstate__(self, state: Dict[str, Any]) -> None:
+         self.__dict__.update(state)
+-        # re-add parent - it will be set to the parent dataset on demand
+-        # if the dataset is in a sequence
+-        self.__dict__['parent'] = None
++        if self.__dict__['_parent_seq'] is not None:
++            self.__dict__['_parent_seq'] = weakref.ref(
++                self.__dict__['_parent_seq']
++            )
+ 
+     __repr__ = __str__
+ 
+--- a/pydicom/sequence.py
++++ b/pydicom/sequence.py
+@@ -3,11 +3,14 @@
+ 
+ Sequence is a list of pydicom Dataset objects.
+ """
++from copy import deepcopy
+ from typing import (
+     Iterable, Optional, List, cast, Union, overload, MutableSequence,
+     Dict, Any)
+ import weakref
+-
++import warnings
++
++from pydicom import config
+ from pydicom.dataset import Dataset
+ from pydicom.multival import MultiValue
+ 
+@@ -50,19 +53,20 @@
+             raise TypeError('The Sequence constructor requires an iterable')
+ 
+         # the parent dataset
+-        self._parent: "Optional[weakref.ReferenceType[Dataset]]" = None
++        self._parent_dataset: "Optional[weakref.ReferenceType[Dataset]]" = None
+ 
+         # validate_dataset is used as a pseudo type_constructor
+         self._list: List[Dataset] = []
+         # If no inputs are provided, we create an empty Sequence
+         super().__init__(validate_dataset, iterable or [])
+-
++        for ds in self:
++            ds.parent_seq = self  # type: ignore
+         self.is_undefined_length: bool
+ 
+     def append(self, val: Dataset) -> None:  # type: ignore[override]
+         """Append a :class:`~pydicom.dataset.Dataset` to the sequence."""
+         super().append(val)
+-        val.parent = self._parent
++        val.parent_seq = self  # type: ignore
+ 
+     def extend(self, val: Iterable[Dataset]) -> None:  # type: ignore[override]
+         """Extend the :class:`~pydicom.sequence.Sequence` using an iterable
+@@ -73,7 +77,16 @@
+ 
+         super().extend(val)
+         for ds in val:
+-            ds.parent = self._parent
++            ds.parent_seq = self  # type: ignore
++
++    def __deepcopy__(self, memo: Optional[Dict[int, Any]]) -> "Sequence":
++        copied = Sequence()
++        if memo is not None:
++            memo[id(self)] = copied
++        copied.__dict__.update(deepcopy(self.__dict__, memo))
++        for ds in copied:
++            ds.parent_seq = copied  # type:ignore
++        return copied
+ 
+     def __iadd__(    # type: ignore[override]
+         self, other: Iterable[Dataset]
+@@ -84,7 +97,7 @@
+ 
+         result = super().__iadd__(other)
+         for ds in other:
+-            ds.parent = self.parent
++            ds.parent_seq = self  # type: ignore
+ 
+         return result
+ 
+@@ -93,32 +106,57 @@
+     ) -> None:
+         """Insert a :class:`~pydicom.dataset.Dataset` into the sequence."""
+         super().insert(position, val)
+-        val.parent = self._parent
++        val.parent_seq = self  # type: ignore
++
++    @property
++    def parent_dataset(self) -> "Optional[weakref.ReferenceType[Dataset]]":
++        """Return a weak reference to the parent
++        :class:`~pydicom.dataset.Dataset`.
++
++        .. versionadded:: 2.4
++
++            Returned value is a weak reference to the parent ``Dataset``.
++        """
++        return self._parent_dataset
++
++    @parent_dataset.setter
++    def parent_dataset(self, value: Dataset) -> None:
++        """Set the parent :class:`~pydicom.dataset.Dataset`
++
++        .. versionadded:: 2.4
++        """
++        if value != self._parent_dataset:
++            self._parent_dataset = weakref.ref(value)
+ 
+     @property
+     def parent(self) -> "Optional[weakref.ReferenceType[Dataset]]":
+-        """Return a weak reference to the parent
+-        :class:`~pydicom.dataset.Dataset`.
+-
+-        .. versionadded:: 1.3
+-
+-        .. versionchanged:: 1.4
+-
+-            Returned value is a weak reference to the parent ``Dataset``.
+-        """
+-        return self._parent
++        """Return a weak reference to the parent Dataset
++
++        .. deprecated:: 2.4
++        """
++        if config._use_future:
++            raise AttributeError("Future: Sequence.parent is removed in v3.x")
++        else:
++            warnings.warn(
++                "Sequence.parent will be removed in pydicom 3.0",
++                DeprecationWarning
++            )
++            return self.parent_dataset
+ 
+     @parent.setter
+-    def parent(self, value: Dataset) -> None:
+-        """Set the parent :class:`~pydicom.dataset.Dataset` and pass it to all
+-        :class:`Sequence` items.
+-
+-        .. versionadded:: 1.3
+-        """
+-        if value != self._parent:
+-            self._parent = weakref.ref(value)
+-            for item in self._list:
+-                item.parent = self._parent
++    def parent(self, value: "Dataset") -> None:
++        """Set the parent :class:`~pydicom.dataset.Dataset`
++
++        .. deprecated:: 2.4
++        """
++        if config._use_future:
++            raise AttributeError("Future: Sequence.parent is removed in v3.x")
++        else:
++            warnings.warn(
++                "Sequence.parent will be removed in pydicom 3.0",
++                DeprecationWarning
++            )
++            self.parent_dataset = value  # type:ignore
+ 
+     @overload  # type: ignore[override]
+     def __setitem__(self, idx: int, val: Dataset) -> None:
+@@ -140,11 +178,11 @@
+ 
+             super().__setitem__(idx, val)
+             for ds in val:
+-                ds.parent = self._parent
++                ds.parent_seq = self  # type: ignore
+         else:
+             val = cast(Dataset, val)
+             super().__setitem__(idx, val)
+-            val.parent = self._parent
++            val.parent_seq = self  # type: ignore
+ 
+     def __str__(self) -> str:
+         """String description of the Sequence."""
+@@ -155,12 +193,16 @@
+         return f"<{self.__class__.__name__}, length {len(self)}>"
+ 
+     def __getstate__(self) -> Dict[str, Any]:
+-        # pickle cannot handle weakref - remove _parent
+-        d = self.__dict__.copy()
+-        del d['_parent']
+-        return d
+-
++        if self.parent_dataset is not None:
++            s = self.__dict__.copy()
++            s['_parent_dataset'] = s['_parent_dataset']()
++            return s
++        return self.__dict__
++
++    # If recovering from a pickle, turn back into weak ref
+     def __setstate__(self, state: Dict[str, Any]) -> None:
+         self.__dict__.update(state)
+-        # re-add _parent - it will be set to the parent dataset on demand
+-        self.__dict__['_parent'] = None
++        if self.__dict__['_parent_dataset'] is not None:
++            self.__dict__['_parent_dataset'] = weakref.ref(
++                self.__dict__['_parent_dataset']
++            )
+--- a/pydicom/filewriter.py
++++ b/pydicom/filewriter.py
+@@ -91,10 +91,15 @@
+     elif elem.tag in _us_ss_tags:
+         # US if PixelRepresentation value is 0x0000, else SS
+         #   For references, see the list at
+-        #   https://github.com/darcymason/pydicom/pull/298
++        #   https://github.com/pydicom/pydicom/pull/298
+         # PixelRepresentation is usually set in the root dataset
+-        while 'PixelRepresentation' not in ds and ds.parent and ds.parent():
+-            ds = cast(Dataset, ds.parent())
++        while (
++            'PixelRepresentation' not in ds
++            and ds.parent_seq is not None
++            and ds.parent_seq().parent_dataset()   # type: ignore
++        ):
++            # Make weakrefs into strong refs (locally here) by calling () them
++            ds = ds.parent_seq().parent_dataset()  # type: ignore
+         # if no pixel data is present, none if these tags is used,
+         # so we can just ignore a missing PixelRepresentation in this case
+         if (

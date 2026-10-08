@@ -1,0 +1,31 @@
+--- a/lark/parsers/xearley.py
++++ b/lark/parsers/xearley.py
+@@ -35,6 +35,11 @@
+         self.resolve_ambiguity = resolve_ambiguity
+         self.ignore = [Terminal(t) for t in ignore]
+         self.complete_lex = complete_lex
++        # For a right-linear grammar, completion cannot enable a later terminal.
++        # Without ignored tokens, only completions at EOF can contribute to the result.
++        self._right_linear = not self.ignore and all(
++            all(symbol.is_term for symbol in rule.expansion[:-1])
++            for rule in parser_conf.rules)
+ 
+         self.FIRST = analysis.FIRST
+         self.callbacks = {}
+@@ -53,6 +58,7 @@
+ 
+     def parse(self, stream, start_symbol=None):
+         start_symbol = NonTerminal(start_symbol or self.parser_conf.start)
++        stream_length = len(stream)
+         delayed_matches = defaultdict(list)
+         match = self.term_matcher
+ 
+@@ -91,6 +97,8 @@
+ 
+                 ### The Earley completer
+                 if item.is_complete:   ### (item.s == string)
++                    if self._right_linear and column.i < stream_length:
++                        continue
+                     if item.node is None:
+                         item.node = make_symbol_node(item.s, item.start, column)
+                         item.node.add_family(item.s, item.rule, item.start, None, None)

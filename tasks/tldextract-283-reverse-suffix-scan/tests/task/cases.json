@@ -1,0 +1,74 @@
+[
+  {
+    "id": "empty-ip",
+    "case": "empty-ip",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "wildcard",
+    "case": "wildcard",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "unicode",
+    "case": "unicode",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "private",
+    "case": "private",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "root",
+    "case": "root",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "extra",
+    "case": "extra",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "deep-20000",
+    "case": "deep",
+    "size": 20000,
+    "seed": 1729,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "deep-200000",
+    "case": "deep",
+    "size": 200000,
+    "seed": 1729,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "short-200000",
+    "case": "short",
+    "size": 200000,
+    "seed": 1729,
+    "role": "performance",
+    "public": true
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "target_paths": [
+    "janitor/functions/_conditional_join"
+  ],
+  "pandas_udf": true,
+  "interpretation": "Diagnostic operation counts, not native-work coverage or universal complexity proof."
+}

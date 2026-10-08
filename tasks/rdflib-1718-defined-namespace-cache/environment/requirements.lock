@@ -1,0 +1,10 @@
+isodate==0.6.1
+owlrl==6.0.2
+pyparsing==3.0.9
+six==1.17.0
+setuptools==70.3.0
+wheel==0.43.0
+pytest==8.3.5
+iniconfig==2.0.0
+packaging==24.2
+pluggy==1.5.0

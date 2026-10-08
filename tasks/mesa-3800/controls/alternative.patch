@@ -1,0 +1,113 @@
+diff --git a/mesa/time/events.py b/mesa/time/events.py
+index 5c3f5df..cee5dc5 100644
+--- a/mesa/time/events.py
++++ b/mesa/time/events.py
+@@ -121,6 +121,8 @@ class Event:
+         self.unique_id = next(self._ids)
+         self.function_args = function_args if function_args else []
+         self.function_kwargs = function_kwargs if function_kwargs else {}
++        # The EventList currently holding this event as live, if any.
++        self._queue: EventList | None = None
+ 
+     def execute(self) -> None:
+         """Execute this event."""
+@@ -131,6 +133,10 @@ class Event:
+ 
+     def cancel(self) -> None:
+         """Cancel this event."""
++        queue = self._queue
++        if queue is not None:
++            self._queue = None
++            queue._live -= 1
+         self._canceled = True
+         self.fn = None
+         self.function_args = []
+@@ -151,12 +157,14 @@ class Event:
+         fn = self.fn() if self.fn is not None else None
+         state["_fn_strong"] = fn
+         state["fn"] = None  # Don't pickle the weak reference
++        state["_queue"] = None
+         return state
+ 
+     def __setstate__(self, state: dict[str, Any]) -> None:
+         """Restore state after unpickling."""
+         fn = state.pop("_fn_strong")
+         self.__dict__.update(state)
++        self._queue = None
+         # Recreate callable reference strategy.
+         if fn is not None:
+             self.fn = _create_callable_reference(fn)
+@@ -408,8 +416,22 @@ class EventList:
+     def __init__(self):
+         """Initialize an event list."""
+         self._events: list[Event] = []
++        self._live: int = 0
+         heapify(self._events)
+ 
++    def __getstate__(self) -> dict[str, Any]:
++        """Prepare state for pickling."""
++        return self.__dict__.copy()
++
++    def __setstate__(self, state: dict[str, Any]) -> None:
++        """Restore state and re-link live events to this list."""
++        self.__dict__.update(state)
++        self._live = 0
++        for event in self._events:
++            if not event.CANCELED:
++                event._queue = self
++                self._live += 1
++
+     def add_event(self, event: Event):
+         """Add the event to the event list.
+ 
+@@ -417,6 +439,11 @@ class EventList:
+             event (Event): The event to be added
+ 
+         """
++        if not event.CANCELED:
++            if event._queue is not None:
++                event._queue._live -= 1
++            event._queue = self
++            self._live += 1
+         heappush(self._events, event)
+ 
+     def peek_ahead(self, n: int = 1) -> list[Event]:
+@@ -449,6 +476,11 @@ class EventList:
+             event = heappop(self._events)
+ 
+             if not event.CANCELED:
++                if event._queue is self:
++                    event._queue = None
++                    self._live -= 1
++                if len(self._events) > 64 and len(self._events) > 2 * self._live:
++                    self.compact()
+                 return event
+ 
+         raise IndexError("Event list is empty")
+@@ -463,7 +495,7 @@ class EventList:
+ 
+     def is_empty(self) -> bool:
+         """Return whether the event list is empty."""
+-        return len(self) == 0
++        return self._live == 0
+ 
+     def __contains__(self, event: Event) -> bool:  # noqa
+         if event.CANCELED:
+@@ -471,7 +503,7 @@ class EventList:
+         return event in self._events
+ 
+     def __len__(self) -> int:  # noqa
+-        return sum(1 for e in self._events if not e.CANCELED)
++        return self._live
+ 
+     def __repr__(self) -> str:
+         """Return a string representation of the event list."""
+@@ -500,4 +532,8 @@ class EventList:
+ 
+     def clear(self) -> None:
+         """Clear the event list."""
++        for event in self._events:
++            if event._queue is self:
++                event._queue = None
+         self._events.clear()
++        self._live = 0

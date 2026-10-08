@@ -1,0 +1,15 @@
+diff --git a/nltk/sentiment/vader.py b/nltk/sentiment/vader.py
+index f6bca50..57f8146 100644
+--- a/nltk/sentiment/vader.py
++++ b/nltk/sentiment/vader.py
+@@ -368,9 +368,8 @@ class SentimentIntensityAnalyzer:
+         )
+         sentiments = []
+         words_and_emoticons = sentitext.words_and_emoticons
+-        for item in words_and_emoticons:
++        for i, item in enumerate(words_and_emoticons):
+             valence = 0
+-            i = words_and_emoticons.index(item)
+             if (
+                 i < len(words_and_emoticons) - 1
+                 and item.lower() == "kind"

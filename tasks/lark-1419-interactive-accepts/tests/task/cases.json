@@ -1,0 +1,90 @@
+[
+  {
+    "id": "records-0-seed0",
+    "case": "records",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-1-seed17",
+    "case": "records",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-2-seed3",
+    "case": "records",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "records-8-seed5",
+    "case": "records",
+    "size": 8,
+    "seed": 5,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "records-200",
+    "case": "records",
+    "size": 200,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "records-400",
+    "case": "records",
+    "size": 400,
+    "seed": 30,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "records-800",
+    "case": "records",
+    "size": 800,
+    "seed": 43,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "context-2",
+    "case": "context",
+    "size": 2,
+    "seed": 2,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "context-3",
+    "case": "context",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "copy-0",
+    "case": "copy",
+    "size": 2,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "callbacks-0",
+    "case": "callbacks",
+    "size": 2,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  }
+]

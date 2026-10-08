@@ -1,0 +1,26 @@
+[
+  {
+    "id": "semantic-1",
+    "case": "<:first:unsorted",
+    "size": 37,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-2",
+    "case": ">:last:unsorted",
+    "size": 43,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "scale-10000",
+    "case": "<:first:unsorted",
+    "size": 10000,
+    "seed": 100,
+    "role": "performance",
+    "public": true
+  }
+]

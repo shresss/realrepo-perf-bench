@@ -1,0 +1,1 @@
+{"target_paths": ["src/attr/_make.py"], "package_paths": ["src/attr", "src/attrs"], "pandas_udf": false}

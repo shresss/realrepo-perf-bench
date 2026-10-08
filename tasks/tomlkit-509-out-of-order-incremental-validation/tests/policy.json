@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "purpose": "scoring_v1_task_policy",
+  "task_id": "swefficiency-ext/tomlkit-509-out-of-order-incremental-validation",
+  "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+  "repeats": 3,
+  "baseline_sha256": "0ee31c97451e4344c3987627b1694581272607eecd78a75c8e34db84f9c0ae3d",
+  "hashes": {
+    "task": {
+      "workload.py": "654343655d7b427d924aa0fadf0bfdcec6d7e6840e5b0c0e5ba11c3f13dd12f8",
+      "expected.py": "76bcd2ab03c0d4b5a076bef6981c4555aa794cfca3d34766e6271d6cda226890",
+      "cases.json": "451769eeddd7a900e07697feded7fccf7a1a5c835acd743bbd2970892ad6ae7a",
+      "meter.json": "72dc4901059b5afb62ff86094c3859274db07f0c5658a6a233cb91496f5235e9"
+    },
+    "tools": {
+      "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9",
+      "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4"
+    },
+    "runtime": {
+      "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+      "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+      "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+      "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+      "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+      "native.py": "a910d4272e3387221877c6f8e7bb22c37d9d820848d6e2e3374fa590546315cf"
+    }
+  },
+  "limits": {
+    "total_wall_seconds": 468,
+    "candidate_wall_seconds": 174,
+    "baseline_wall_seconds": 174,
+    "parent_reserve_seconds": 120,
+    "semantic_case_wall_seconds": 30,
+    "performance_case_wall_seconds": 60,
+    "native_wall_seconds": 60,
+    "source_max_bytes": 536870912,
+    "source_max_files": 50000,
+    "max_output_bytes": 16777216,
+    "address_space_bytes": 8589934592
+  },
+  "cpu_gates": {
+    "logging-24": {
+      "maximum_candidate_baseline_ratio": 0.2032,
+      "baseline_min_seconds": 1.728,
+      "baseline_max_seconds": 6.913
+    }
+  },
+  "control_provenance": [
+    {
+      "role": "baseline",
+      "path": "calibration/baseline.json",
+      "sha256": "256271dc48443f1d679ec883aaa156a140ce14b2985868d8bee61284b0ff9c72",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "reference",
+      "path": "calibration/reference.json",
+      "sha256": "a8fba12b2a7c8fe82b1474b1e9963e151e8528e75e1f38760f939e1d0ae7a8d8",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "naive",
+      "path": "calibration/naive.json",
+      "sha256": "767c5aaa5d5aa8d004bbbbba730b99f9577b709fa62d9eedf1f7a1fb0d764e8d",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "alternative",
+      "path": "calibration/alternative.json",
+      "sha256": "9e9b0de440444a1eceebb63fa4a9beb8940ae3968139156768293a118261e715",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    }
+  ],
+  "native_regression": {
+    "mode": "protected_upstream",
+    "selection_sha256": "3344d389dee5d7325c79ab7b0c22c37697f7fbb70e75d2151ba9e99ddaa19e14",
+    "expected_count": 23
+  },
+  "scoring_v1": {
+    "formula": "gate: median paired candidate/baseline CPU <= floor4(1/sqrt(R)); perf_score = log(B/M)/log(R)",
+    "per_case": {
+      "logging-24": {
+        "R_reference_speedup_cpu": 24.204190094739275,
+        "pairs": 3,
+        "baseline_cpu_median": 3.456673,
+        "threshold_candidate_over_baseline": 0.2032,
+        "nop_candidate_over_baseline": 1.0274183980839942,
+        "naive_candidate_over_baseline": 0.7336822464479844,
+        "alternative_candidate_over_baseline": 0.043272721492062474
+      }
+    }
+  },
+  "limitations": [
+    "Three repeats of fixed cases, not independent tasks.",
+    "CPU gate at declared gated cases only; other scales diagnostic.",
+    "Freezing this policy is not a model result or panel release."
+  ]
+}

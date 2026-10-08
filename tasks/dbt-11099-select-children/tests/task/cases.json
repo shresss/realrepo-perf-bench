@@ -1,0 +1,114 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-singleton",
+    "case": "singleton",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-chain",
+    "case": "chain",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-diamond",
+    "case": "diamond",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-overlap",
+    "case": "overlap",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-depth-0",
+    "case": "depth-0",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-depth-1",
+    "case": "depth-1",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-depth-2",
+    "case": "depth-2",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-parent-test",
+    "case": "parent-test",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-selected-test",
+    "case": "selected-test",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-mutation",
+    "case": "mutation",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-random-small",
+    "case": "random-small",
+    "size": 1,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "lineage-60",
+    "case": "lineage",
+    "size": 60,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "lineage-1000",
+    "case": "lineage",
+    "size": 1000,
+    "seed": 0,
+    "role": "performance",
+    "public": false
+  }
+]

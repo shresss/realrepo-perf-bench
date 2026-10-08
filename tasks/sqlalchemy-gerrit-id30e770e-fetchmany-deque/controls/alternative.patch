@@ -1,0 +1,16 @@
+--- a/lib/sqlalchemy/engine/cursor.py
++++ b/lib/sqlalchemy/engine/cursor.py
+@@ -1321,9 +1321,10 @@
+         if size is None:
+             return self.fetchall(result, dbapi_cursor)
+ 
+-        buf = list(self._rowbuffer)
+-        rows = buf[0:size]
+-        self._rowbuffer = collections.deque(buf[size:])
++        rows = []
++        buffer = self._rowbuffer
++        while buffer and len(rows) < size:
++            rows.append(buffer.popleft())
+         if not rows:
+             result._soft_close()
+         return rows

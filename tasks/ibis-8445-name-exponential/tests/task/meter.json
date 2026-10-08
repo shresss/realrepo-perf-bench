@@ -1,0 +1,6 @@
+{
+  "target_paths": ["ibis/expr/operations/core.py"],
+  "package_paths": ["ibis"],
+  "pandas_udf": false,
+  "claim": "Diagnostics only. Shared grade worker disables instrumentation; parent CPU is separate."
+}

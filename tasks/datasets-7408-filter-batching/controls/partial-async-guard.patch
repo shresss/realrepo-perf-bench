@@ -1,0 +1,11 @@
+--- a/src/datasets/arrow_dataset.py
++++ b/src/datasets/arrow_dataset.py
+@@ -3732,7 +3732,7 @@
+             with_rank=True,
+             features=Features({"indices": Value("uint64")}),
+             batched=True,
+-            batch_size=batch_size if batched else 1,
++            batch_size=batch_size,
+             remove_columns=self.column_names,
+             keep_in_memory=keep_in_memory,
+             load_from_cache_file=load_from_cache_file,

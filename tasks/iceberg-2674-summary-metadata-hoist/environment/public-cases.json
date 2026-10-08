@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fast-small-10",
+    "case": "fast-small",
+    "size": 10,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "merge-append-delete-10",
+    "case": "merge-append-delete",
+    "size": 10,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "tx-two-appends-10",
+    "case": "tx-two-appends",
+    "size": 10,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "reload-1000",
+    "case": "reload",
+    "size": 1000,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "semantic-records-1",
+    "role": "semantic",
+    "case": "records",
+    "size": 1,
+    "seed": 17,
+    "public": true
+  },
+  {
+    "id": "semantic-records-7",
+    "role": "semantic",
+    "case": "records",
+    "size": 7,
+    "seed": 18,
+    "public": true
+  },
+  {
+    "id": "semantic-unicode-5",
+    "role": "semantic",
+    "case": "unicode",
+    "size": 5,
+    "seed": 19,
+    "public": true
+  },
+  {
+    "id": "semantic-nested-3",
+    "role": "semantic",
+    "case": "nested",
+    "size": 3,
+    "seed": 20,
+    "public": true
+  },
+  {
+    "id": "semantic-typed-9",
+    "role": "semantic",
+    "case": "typed",
+    "size": 9,
+    "seed": 21,
+    "public": true
+  },
+  {
+    "id": "performance-records-1000",
+    "role": "performance",
+    "case": "records",
+    "size": 1000,
+    "seed": 71,
+    "public": true
+  }
+]

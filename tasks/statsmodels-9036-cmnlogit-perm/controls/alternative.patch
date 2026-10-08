@@ -1,0 +1,88 @@
+--- a/statsmodels/discrete/conditional_models.py
++++ b/statsmodels/discrete/conditional_models.py
+@@ -602,57 +602,39 @@
+ 
+         return MultinomialResultsWrapper(rslt)
+ 
++
++    def _unique_assignment_statistics(self, ii):
++        outcomes = tuple(self.endog[ii])
++        assignments = np.asarray(sorted(set(itertools.permutations(outcomes))), dtype=int)
++        stats = np.stack([(assignments == label) @ self.exog[ii, :]
++                          for label in range(1, self.k_cat)], axis=2)
++        stats = stats.reshape((len(assignments), -1))
++        observed = np.array([self.exog[ii, j][self.endog[ii] == label].sum()
++                             for j in range(self.exog.shape[1]) for label in range(1, self.k_cat)])
++        counts = collections.Counter(outcomes)
++        import math
++        multiplicity = sum(math.lgamma(count + 1) for count in counts.values())
++        return stats, observed, multiplicity
++
+     def loglike(self, params):
+-
+-        q = self.exog.shape[1]
+-        c = self.k_cat - 1
+-
+-        pmat = params.reshape((q, c))
+-        pmat = np.concatenate((np.zeros((q, 1)), pmat), axis=1)
+-        lpr = np.dot(self.exog, pmat)
+-
+-        ll = 0.0
++        params = np.asarray(params).reshape(-1)
++        total = 0.0
+         for ii in self._grp_ix:
+-            x = lpr[ii, :]
+-            jj = np.arange(x.shape[0], dtype=int)
+-            y = self.endog[ii]
+-            denom = 0.0
+-            for p in itertools.permutations(y):
+-                denom += np.exp(x[(jj, p)].sum())
+-            ll += x[(jj, y)].sum() - np.log(denom)
+-
+-        return ll
++            stats, observed, multiple = self._unique_assignment_statistics(ii)
++            eta = stats @ params
++            largest = eta.max()
++            total += observed @ params - largest - np.log(np.exp(eta-largest).sum()) - multiple
++        return total
+ 
+     def score(self, params):
+-
+-        q = self.exog.shape[1]
+-        c = self.k_cat - 1
+-
+-        pmat = params.reshape((q, c))
+-        pmat = np.concatenate((np.zeros((q, 1)), pmat), axis=1)
+-        lpr = np.dot(self.exog, pmat)
+-
+-        grad = np.zeros((q, c))
++        params = np.asarray(params).reshape(-1)
++        gradient = np.zeros_like(params)
+         for ii in self._grp_ix:
+-            x = lpr[ii, :]
+-            jj = np.arange(x.shape[0], dtype=int)
+-            y = self.endog[ii]
+-            denom = 0.0
+-            denomg = np.zeros((q, c))
+-            for p in itertools.permutations(y):
+-                v = np.exp(x[(jj, p)].sum())
+-                denom += v
+-                for i, r in enumerate(p):
+-                    if r != 0:
+-                        denomg[:, r - 1] += v * self.exog[ii[i], :]
+-
+-            for i, r in enumerate(y):
+-                if r != 0:
+-                    grad[:, r - 1] += self.exog[ii[i], :]
+-
+-            grad -= denomg / denom
+-
+-        return grad.flatten()
++            stats, observed, multiple = self._unique_assignment_statistics(ii)
++            eta = stats @ params
++            mass = np.exp(eta-eta.max())
++            gradient += observed - (mass / mass.sum()) @ stats
++        return gradient
+ 
+ 
+ class ConditionalResultsWrapper(lm.RegressionResultsWrapper):

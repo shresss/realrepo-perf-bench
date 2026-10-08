@@ -1,0 +1,34 @@
+[
+  {
+    "id": "infer-0",
+    "case": "infer",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "infer-4",
+    "case": "infer",
+    "size": 4,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "infer-20",
+    "case": "infer",
+    "size": 20,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "infer-3000",
+    "case": "infer",
+    "size": 3000,
+    "seed": 0,
+    "role": "performance",
+    "public": false
+  }
+]

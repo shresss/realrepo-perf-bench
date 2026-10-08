@@ -1,0 +1,9 @@
+{
+  "target_paths": [
+    "src/datasets/arrow_dataset.py"
+  ],
+  "package_paths": [
+    "src/datasets"
+  ],
+  "pandas_udf": false
+}

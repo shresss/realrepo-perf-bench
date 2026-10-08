@@ -1,0 +1,17 @@
+diff --git a/markdown/treeprocessors.py b/markdown/treeprocessors.py
+index 9a27446..1e91bf1 100644
+--- a/markdown/treeprocessors.py
++++ b/markdown/treeprocessors.py
+@@ -323,8 +323,11 @@ class InlineProcessor(Treeprocessor):
+         placeholder = self.__stashNode(node, pattern.type())
+ 
+         if new_style:
++            # Links are the expensive repeated pattern: resume link scanning
++            # after the inserted placeholder instead of rescanning from 0.
++            resume = start + len(placeholder) if isinstance(pattern, inlinepatterns.LinkInlineProcessor) else 0
+             return "{}{}{}".format(data[:start],
+-                                   placeholder, data[end:]), True, 0
++                                   placeholder, data[end:]), True, resume
+         else:  # pragma: no cover
+             return "{}{}{}{}".format(leftData,
+                                      match.group(1),

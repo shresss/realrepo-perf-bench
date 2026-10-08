@@ -1,0 +1,22 @@
+--- a/rdflib/namespace/__init__.py
++++ b/rdflib/namespace/__init__.py
+@@ -196,18 +196,7 @@
+     _underscore_num: bool = False  # True means pass "_n" constructs
+ 
+     def __getitem__(cls, name: str, default=None) -> URIRef:
+-        name = str(name)
+-        if str(name).startswith("__"):
+-            return super().__getitem__(name, default)  # type: ignore[misc] # undefined in superclass
+-        if (cls._warn or cls._fail) and name not in cls:
+-            if cls._fail:
+-                raise AttributeError(f"term '{name}' not in namespace '{cls._NS}'")
+-            else:
+-                warnings.warn(
+-                    f"Code: {name} is not defined in namespace {cls.__name__}",
+-                    stacklevel=3,
+-                )
+-        return cls._NS[name]
++        return cls._NS[str(name)]
+ 
+     def __getattr__(cls, name: str):
+         return cls.__getitem__(name)

@@ -1,0 +1,15 @@
+diff --git a/lifelines/fitters/aalen_johansen_fitter.py b/lifelines/fitters/aalen_johansen_fitter.py
+index 772db53..da1d592 100644
+--- a/lifelines/fitters/aalen_johansen_fitter.py
++++ b/lifelines/fitters/aalen_johansen_fitter.py
+@@ -221,8 +221,8 @@ class AalenJohansenFitter(NonParametricUnivariateFitter):
+ 
+         # Have to loop through each time independently. Don't think there is a faster way
+         all_vars = []
+-        for _, r in df.iterrows():
+-            sf = df.loc[df.index <= r.name].copy()
++        for i, (_, r) in enumerate(df.iterrows()):
++            sf = df.iloc[: i + 1]
+             F_t = float(r["Ft"])
+             first_term = np.sum((F_t - sf["Ft"]) ** 2 * sf["observed"] / sf["at_risk"] / (sf["at_risk"] - sf["observed"]))
+             second_term = np.sum(

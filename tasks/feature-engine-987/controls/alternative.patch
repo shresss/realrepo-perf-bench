@@ -1,0 +1,33 @@
+--- a/feature_engine/creation/math_features.py	2026-09-30 22:49:43
++++ b/feature_engine/creation/math_features.py	2026-09-30 23:05:49
+@@ -234,11 +234,27 @@
+             else:
+                 func = _FUNC_TO_STRING_ALIAS.get(func, func)
+ 
+-        if len(new_variable_names) == 1:
+-            X[new_variable_names[0]] = X[self.variables].agg(func, axis=1)
++        selected = X[self.variables]
++        functions = func if isinstance(func, list) else [func]
++        supported = {"sum", "mean", "std", "var", "min", "max", "prod", "median"}
++        # Use pandas' native whole-frame named reductions, preserving its own
++        # null/ddof defaults. Extension dtypes and callables stay on legacy agg.
++        plain_float = all(
++            not isinstance(dtype, pd.api.extensions.ExtensionDtype)
++            and dtype.kind == "f"
++            for dtype in selected.dtypes
++        )
++        if plain_float and all(isinstance(fun, str) and fun in supported for fun in functions):
++            results = [getattr(selected, fun)(axis=1) for fun in functions]
++            result = results[0] if len(results) == 1 else pd.concat(results, axis=1)
+         else:
+-            X[new_variable_names] = X[self.variables].agg(func, axis=1)
++            result = selected.agg(func, axis=1)
+ 
++        if len(new_variable_names) == 1:
++            X[new_variable_names[0]] = result
++        else:
++            X[new_variable_names] = result
++
+         if self.drop_original:
+             X.drop(columns=self.variables, inplace=True)
+ 

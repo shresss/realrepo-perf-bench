@@ -1,0 +1,16 @@
+editables==0.6
+hatchling==1.32.4
+iniconfig==2.3.0
+numpy==2.5.3
+packaging==26.3
+pandas==3.0.6
+pathspec==1.1.1
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+scipy==1.18.1
+six==1.17.0
+tomlkit==0.15.1
+tqdm==4.70.1
+trove-classifiers==2026.9.21.13

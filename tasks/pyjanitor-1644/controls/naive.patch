@@ -1,0 +1,38 @@
+diff --git a/janitor/functions/_conditional_join/_greater_than_indices.py b/janitor/functions/_conditional_join/_greater_than_indices.py
+index eab6c9d..6ca1343 100644
+--- a/janitor/functions/_conditional_join/_greater_than_indices.py
++++ b/janitor/functions/_conditional_join/_greater_than_indices.py
+@@ -70,12 +70,10 @@ def _greater_than_indices(
+     if right_is_sorted & (keep == "last"):
+         return {"left_index": left_index, "right_index": search_indices - 1}
+     if keep == "first":
+-        right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.min() for arr in right]
++        right = [right_index[:ind].min() for ind in search_indices]
+         return {"left_index": left_index, "right_index": right}
+     if keep == "last":
+-        right = [right_index[:ind] for ind in search_indices]
+-        right = [arr.max() for arr in right]
++        right = [right_index[:ind].max() for ind in search_indices]
+         return {"left_index": left_index, "right_index": right}
+     if return_matching_indices:
+         return dict(
+diff --git a/janitor/functions/_conditional_join/_less_than_indices.py b/janitor/functions/_conditional_join/_less_than_indices.py
+index b801e2d..b7843c8 100644
+--- a/janitor/functions/_conditional_join/_less_than_indices.py
++++ b/janitor/functions/_conditional_join/_less_than_indices.py
+@@ -72,12 +72,10 @@ def _less_than_indices(
+     if right_is_sorted & (keep == "first"):
+         return {"left_index": left_index, "right_index": search_indices}
+     if keep == "first":
+-        right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.min() for arr in right]
++        right = [right_index[ind:len_right].min() for ind in search_indices]
+         return {"left_index": left_index, "right_index": right}
+     if keep == "last":
+-        right = [right_index[ind:len_right] for ind in search_indices]
+-        right = [arr.max() for arr in right]
++        right = [right_index[ind:len_right].max() for ind in search_indices]
+         return {"left_index": left_index, "right_index": right}
+     if return_matching_indices:
+         return dict(

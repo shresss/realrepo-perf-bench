@@ -1,0 +1,63 @@
+diff --git a/markdown_it/rules_block/reference.py b/markdown_it/rules_block/reference.py
+index b77944b..671c26d 100644
+--- a/markdown_it/rules_block/reference.py
++++ b/markdown_it/rules_block/reference.py
+@@ -1,9 +1,48 @@
+ import logging
++import re
+ 
+ from ..common.utils import charCodeAt, isSpace, normalizeReference
+ from .state_block import StateBlock
+ 
+ LOGGER = logging.getLogger(__name__)
++_SINGLE_REFERENCE = re.compile(r"^\[([^\[\]\\\n]+)\]:[ \t]*(\S+)[ \t]*$")
++
++
++def _single_reference(state: StateBlock, startLine: int, silent: bool) -> bool:
++    """Handle a complete one-line definition; preserve the general parser fallback."""
++    stop = startLine + 1
++    # A following quote/parenthesis can continue the title. A following opening
++    # bracket cannot do so, and a blank line/end of input ends this definition.
++    if stop < state.lineMax and not state.isEmpty(stop):
++        next_pos = state.bMarks[stop] + state.tShift[stop]
++        if state.src[next_pos : next_pos + 1] != "[":
++            return False
++    text = state.getLines(startLine, stop, state.blkIndent, False).strip()
++    match = _SINGLE_REFERENCE.fullmatch(text)
++    if match is None:
++        return False
++    label_text, destination = match.groups()
++    parsed = state.md.helpers.parseLinkDestination(destination, 0, len(destination))
++    if not parsed.ok or parsed.pos != len(destination):
++        return False
++    label = normalizeReference(label_text)
++    href = state.md.normalizeLink(parsed.str)
++    if not label or not state.md.validateLink(href):
++        return False
++    if silent:
++        return True
++    state.line = stop
++    if state.md.options.get("inline_definitions", False):
++        token = state.push("definition", "", 0)
++        token.meta = {"id": label, "title": "", "url": href, "label": label_text}
++        token.map = [startLine, stop]
++    references = state.env.setdefault("references", {})
++    record = {"title": "", "href": href, "map": [startLine, stop]}
++    if label in references:
++        state.env.setdefault("duplicate_refs", []).append({**record, "label": label})
++    else:
++        references[label] = record
++    return True
+ 
+ 
+ def reference(state: StateBlock, startLine: int, _endLine: int, silent: bool) -> bool:
+@@ -22,6 +61,9 @@ def reference(state: StateBlock, startLine: int, _endLine: int, silent: bool) ->
+     if state.src[pos] != "[":
+         return False
+ 
++    if _single_reference(state, startLine, silent):
++        return True
++
+     # Simple check to quickly interrupt scan on [link](url) at the start of line.
+     # Can be useful on practice: https:#github.com/markdown-it/markdown-it/issues/54
+     while pos < maximum:

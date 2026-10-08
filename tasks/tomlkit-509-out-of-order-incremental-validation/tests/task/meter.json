@@ -1,0 +1,9 @@
+{
+  "target_paths": [
+    "tomlkit/container.py"
+  ],
+  "package_paths": [
+    "tomlkit"
+  ],
+  "pandas_udf": false
+}

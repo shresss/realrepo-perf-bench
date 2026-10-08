@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sem-edge-public",
+    "case": "edge",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sem-transcripts-60",
+    "case": "transcripts",
+    "size": 60,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "perf-transcripts-2000",
+    "case": "transcripts",
+    "size": 2000,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "perf-transcripts-8000",
+    "case": "transcripts",
+    "size": 8000,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

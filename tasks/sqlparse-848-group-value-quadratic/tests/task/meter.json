@@ -1,0 +1,1 @@
+{"target_paths": ["sqlparse/sql.py", "sqlparse/engine/grouping.py"], "package_paths": ["sqlparse"], "pandas_udf": false}

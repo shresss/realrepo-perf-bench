@@ -1,0 +1,58 @@
+[
+  {
+    "id": "records-0",
+    "case": "records",
+    "size": 0,
+    "seed": 1,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-1",
+    "case": "records",
+    "size": 1,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "records-9",
+    "case": "records",
+    "size": 9,
+    "seed": 19,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "records-2000",
+    "case": "records",
+    "size": 2000,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "records-6000",
+    "case": "records",
+    "size": 6000,
+    "seed": 97,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "semantics",
+    "case": "semantics",
+    "size": 1,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "documents",
+    "case": "documents",
+    "size": 1,
+    "seed": 5,
+    "role": "semantic",
+    "public": false
+  }
+]

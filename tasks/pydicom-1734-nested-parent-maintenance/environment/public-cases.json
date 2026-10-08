@@ -1,0 +1,34 @@
+[
+  {
+    "id": "indexed-0",
+    "case": "indexed",
+    "size": 0,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "copy-5",
+    "case": "copy",
+    "size": 5,
+    "seed": 31,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "signed_write-3",
+    "case": "signed_write",
+    "size": 3,
+    "seed": 13,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "indexed-500",
+    "case": "indexed",
+    "size": 500,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  }
+]

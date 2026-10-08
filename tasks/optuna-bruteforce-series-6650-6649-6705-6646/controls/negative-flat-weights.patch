@@ -1,0 +1,12 @@
+--- a/optuna/samplers/_brute_force.py
++++ b/optuna/samplers/_brute_force.py
+@@ -119,6 +119,9 @@
+                 if child.is_running:
+                     weights[i] = 0.0
+         weights /= weights.sum()
++        # Flatten to a uniform choice over the eligible children (drops the count weighting).
++        weights = np.where(weights > 0, 1.0, 0.0)
++        weights /= weights.sum()
+         return rng.choice(list(children.keys()), p=weights).item()
+ 
+ 

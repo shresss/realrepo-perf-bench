@@ -1,0 +1,50 @@
+[
+  {
+    "id": "empty",
+    "case": "roundtrip",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "tiny",
+    "case": "roundtrip",
+    "size": 4,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "defaults",
+    "case": "defaults",
+    "size": 1,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "validation",
+    "case": "validation",
+    "size": 1,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "roundtrip-1000",
+    "case": "roundtrip",
+    "size": 1000,
+    "seed": 1729,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "roundtrip-3000",
+    "case": "roundtrip",
+    "size": 3000,
+    "seed": 1729,
+    "role": "performance",
+    "public": true
+  }
+]

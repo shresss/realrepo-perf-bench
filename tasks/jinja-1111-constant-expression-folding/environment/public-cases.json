@@ -1,0 +1,34 @@
+[
+  {
+    "id": "catalog-0",
+    "case": "catalog",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "catalog-3",
+    "case": "catalog",
+    "size": 3,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "catalog-10000",
+    "case": "catalog",
+    "size": 10000,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "expressions",
+    "case": "expressions",
+    "size": 8,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "semantic-clean-first",
+    "case": "pair:first:clean",
+    "size": 37,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-nulls-last",
+    "case": "pair:last:nulls",
+    "size": 41,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-firstnull-nulls-first",
+    "case": "pair:first:firstnull-nulls",
+    "size": 33,
+    "seed": 7,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-firstnull-last",
+    "case": "pair:last:firstnull",
+    "size": 33,
+    "seed": 11,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-allsame-first",
+    "case": "pair:first:allsame",
+    "size": 29,
+    "seed": 13,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-grouped-last",
+    "case": "pair:last:grouped",
+    "size": 45,
+    "seed": 17,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-int64-first",
+    "case": "pair:first:int64",
+    "size": 39,
+    "seed": 19,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-datetime-last",
+    "case": "pair:last:datetime",
+    "size": 39,
+    "seed": 23,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-onecode-nulls-first",
+    "case": "pair:first:onecode-nulls",
+    "size": 31,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-rightallnull-last",
+    "case": "pair:last:rightallnull",
+    "size": 21,
+    "seed": 31,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-rightempty-first",
+    "case": "pair:first:rightempty",
+    "size": 9,
+    "seed": 37,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-leftempty-last",
+    "case": "pair:last:clean",
+    "size": 0,
+    "seed": 41,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-suite-first",
+    "case": "suite:first",
+    "size": 64,
+    "seed": 100,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-suite-last",
+    "case": "suite:last",
+    "size": 64,
+    "seed": 200,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "window-1",
+    "case": "window",
+    "size": 1,
+    "seed": 1681,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "window-14",
+    "case": "window",
+    "size": 14,
+    "seed": 1681,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "grouped-14",
+    "case": "grouped",
+    "size": 14,
+    "seed": 5681,
+    "role": "performance",
+    "public": false
+  }
+]

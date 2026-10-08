@@ -1,0 +1,21 @@
+--- a/astroid/helpers.py
++++ b/astroid/helpers.py
+@@ -113,15 +113,15 @@
+     # strict compatibility with issubclass
+     # issubclass(type, (object, 1)) evaluates to true
+     # issubclass(object, (1, type)) raises TypeError
++    obj_mro = set(obj_type.mro())
+     for klass in class_seq:
+         if isinstance(klass, util.UninferableBase):
+             raise AstroidTypeError(
+                 "arg 2 must be a type or tuple of types, not <class 'astroid.util.UninferableBase'>"
+             )
+ 
+-        for obj_subclass in obj_type.mro():
+-            if obj_subclass == klass:
+-                return True
++        if klass in obj_mro:
++            return True
+     return False
+ 
+ 

@@ -1,0 +1,45 @@
+--- a/sqlglot/parser.py
++++ b/sqlglot/parser.py
+@@ -1307,6 +1307,7 @@
+         "_next",
+         "_prev",
+         "_prev_comments",
++        "_failed_nested_join_starts",
+     )
+ 
+     # Autofilled
+@@ -1333,6 +1334,8 @@
+         self.errors = []
+         self._tokens = []
+         self._index = 0
++        # Token positions (in the current token list) where a speculative nested-join parse failed.
++        self._failed_nested_join_starts: t.Set[int] = set()
+         self._curr = None
+         self._next = None
+         self._prev = None
+@@ -1419,6 +1422,7 @@
+         for tokens in chunks:
+             self._index = -1
+             self._tokens = tokens
++            self._failed_nested_join_starts = set()
+             self._advance()
+ 
+             expressions.append(parse_method(self))
+@@ -3271,13 +3275,16 @@
+             kind and kind.token_type == TokenType.CROSS
+         ):
+             index = self._index
+-            joins: t.Optional[list] = list(self._parse_joins())
++            failed = self._failed_nested_join_starts
++            joins: t.Optional[list] = None if index in failed else list(self._parse_joins())
+ 
+             if joins and self._match(TokenType.ON):
+                 kwargs["on"] = self._parse_assignment()
+             elif joins and self._match(TokenType.USING):
+                 kwargs["using"] = self._parse_using_identifiers()
+             else:
++                if joins is not None:
++                    failed.add(index)
+                 joins = None
+                 self._retreat(index)
+ 

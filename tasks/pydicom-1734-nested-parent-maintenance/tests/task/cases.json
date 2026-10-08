@@ -1,0 +1,82 @@
+[
+  {
+    "id": "indexed-0",
+    "case": "indexed",
+    "size": 0,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "indexed-1",
+    "case": "indexed",
+    "size": 1,
+    "seed": 21,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "copy-5",
+    "case": "copy",
+    "size": 5,
+    "seed": 31,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "pickle-4",
+    "case": "pickle",
+    "size": 4,
+    "seed": 41,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "mutate-7",
+    "case": "mutate",
+    "size": 7,
+    "seed": 51,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "signed_write-3",
+    "case": "signed_write",
+    "size": 3,
+    "seed": 13,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "copy_signed_write-5",
+    "case": "copy_signed_write",
+    "size": 5,
+    "seed": 31,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "pickle_signed_write-4",
+    "case": "pickle_signed_write",
+    "size": 4,
+    "seed": 67,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "indexed-500",
+    "case": "indexed",
+    "size": 500,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "indexed-4000",
+    "case": "indexed",
+    "size": 4000,
+    "seed": 937,
+    "role": "performance",
+    "public": false
+  }
+]

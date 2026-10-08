@@ -1,0 +1,44 @@
+--- a/lark/parsers/earley_common.py
++++ b/lark/parsers/earley_common.py
+@@ -65,6 +65,7 @@
+     def __init__(self, i, FIRST):
+         self.i = i
+         self.items = set()
++        self.waiting = {}
+         self.FIRST = FIRST
+ 
+     def add(self, item):
+@@ -72,7 +73,10 @@
+ 
+         Makes sure only unique items are added.
+         """
+-        self.items.add(item)
++        if item not in self.items:
++            self.items.add(item)
++            if item.expect is not None:
++                self.waiting.setdefault(item.expect, set()).add(item)
+ 
+     def __bool__(self):
+         return bool(self.items)
+--- a/lark/parsers/earley.py
++++ b/lark/parsers/earley.py
+@@ -90,7 +90,7 @@
+                     if is_empty_item:
+                         held_completions[item.rule.origin] = item.node
+ 
+-                    originators = [originator for originator in item.start.items if originator.expect is not None and originator.expect == item.s]
++                    originators = tuple(item.start.waiting.get(item.s, ()))
+                     for originator in originators:
+                         new_item = originator.advance()
+                         new_item.node = make_symbol_node(new_item.s, originator.start, column)
+--- a/lark/parsers/xearley.py
++++ b/lark/parsers/xearley.py
+@@ -104,7 +104,7 @@
+                     if is_empty_item:
+                         held_completions[item.rule.origin] = item.node
+ 
+-                    originators = [originator for originator in item.start.items if originator.expect is not None and originator.expect == item.s]
++                    originators = tuple(item.start.waiting.get(item.s, ()))
+                     for originator in originators:
+                         new_item = originator.advance()
+                         new_item.node = make_symbol_node(new_item.s, originator.start, column)

@@ -1,0 +1,17 @@
+--- a/frictionless/detector.py
++++ b/frictionless/detector.py
+@@ -241,12 +241,13 @@
+                 schema.fields = [{"name": name, "type": type or "any"} for name in names]
+                 return schema
+ 
++            candidate_descriptors = tuple(system.create_candidates())
+             # Prepare fields
+             runners = []
+             max_score = [len(fragment)] * len(names)
+             for index, name in enumerate(names):
+                 runners.append([])
+-                for candidate in system.create_candidates():
++                for candidate in candidate_descriptors:
+                     field = Field(candidate, name=name, schema=schema)
+                     if field.type == "number" and self.__field_float_numbers:
+                         field.float_number = True

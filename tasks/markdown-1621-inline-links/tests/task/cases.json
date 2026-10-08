@@ -1,0 +1,16 @@
+[
+  {"id":"semantic-tag-index-5","case":"tag_index","size":5,"seed":3,"role":"semantic","public":true},
+  {"id":"semantic-tag-index-empty","case":"tag_index","size":0,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-adjacent-30","case":"adjacent","size":30,"seed":5,"role":"semantic","public":true},
+  {"id":"semantic-mixed-60","case":"mixed","size":60,"seed":1,"role":"semantic","public":true},
+  {"id":"semantic-edge-core","case":"edge_core","size":0,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-hidden-tag-index-40","case":"tag_index","size":40,"seed":1,"role":"semantic","public":false},
+  {"id":"semantic-hidden-symbol-index-6","case":"symbol_index","size":6,"seed":4,"role":"semantic","public":false},
+  {"id":"semantic-hidden-symbol-index-50","case":"symbol_index","size":50,"seed":2,"role":"semantic","public":false},
+  {"id":"semantic-hidden-symbol-index-empty","case":"symbol_index","size":0,"seed":1,"role":"semantic","public":false},
+  {"id":"semantic-hidden-adjacent-200","case":"adjacent","size":200,"seed":8,"role":"semantic","public":false},
+  {"id":"semantic-hidden-mixed-400","case":"mixed","size":400,"seed":9,"role":"semantic","public":false},
+  {"id":"semantic-hidden-edge-ext","case":"edge_ext","size":0,"seed":0,"role":"semantic","public":false},
+  {"id":"performance-tag-index-3000","case":"tag_index","size":3000,"seed":0,"role":"performance","public":true},
+  {"id":"performance-symbol-index-1500","case":"symbol_index","size":1500,"seed":7,"role":"performance","public":false}
+]

@@ -1,0 +1,9 @@
+[
+  {"id":"semantic-edges","case":"edges","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-cleanup-3","case":"cleanup","size":3,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-hidden-cleanup-1","case":"cleanup","size":1,"seed":3,"role":"semantic","public":false},
+  {"id":"semantic-hidden-cleanup-7","case":"cleanup","size":7,"seed":5,"role":"semantic","public":false},
+  {"id":"semantic-hidden-cleanup-40","case":"cleanup","size":40,"seed":2,"role":"semantic","public":false},
+  {"id":"performance-cleanup-250","case":"cleanup","size":250,"seed":0,"role":"performance","public":true},
+  {"id":"performance-cleanup-1000","case":"cleanup","size":1000,"seed":0,"role":"performance","public":true}
+]

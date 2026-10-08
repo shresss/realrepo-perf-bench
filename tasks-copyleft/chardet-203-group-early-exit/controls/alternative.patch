@@ -1,0 +1,16 @@
+--- a/chardet/charsetgroupprober.py
++++ b/chardet/charsetgroupprober.py
+@@ -45,6 +45,13 @@
+                 prober.active = True
+                 self._active_num += 1
+         self._best_guess_prober = None
++
++    @property
++    def state(self):
++        winner = getattr(self, '_best_guess_prober', None)
++        if winner is not None and winner.state == ProbingState.FOUND_IT:
++            return ProbingState.FOUND_IT
++        return self._state
+ 
+     @property
+     def charset_name(self):

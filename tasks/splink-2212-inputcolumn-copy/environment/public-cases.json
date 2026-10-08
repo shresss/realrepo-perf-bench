@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lookup-small",
+    "case": "lookup",
+    "size": 2,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "mixed-rules-small",
+    "case": "mixed_rules",
+    "size": 3,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  }
+]

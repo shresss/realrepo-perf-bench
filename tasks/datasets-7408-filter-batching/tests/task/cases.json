@@ -1,0 +1,74 @@
+[
+  {
+    "id": "row_filter-0",
+    "case": "row_filter",
+    "size": 0,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "row_filter-1",
+    "case": "row_filter",
+    "size": 1,
+    "seed": 72,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "row_filter-43",
+    "case": "row_filter",
+    "size": 43,
+    "seed": 73,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "indexed-47",
+    "case": "indexed",
+    "size": 47,
+    "seed": 74,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "input_columns-63",
+    "case": "input_columns",
+    "size": 63,
+    "seed": 75,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "batched-53",
+    "case": "batched",
+    "size": 53,
+    "seed": 76,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "async-31",
+    "case": "async",
+    "size": 31,
+    "seed": 77,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "filter-10000",
+    "case": "row_filter",
+    "size": 10000,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "filter-120000",
+    "case": "row_filter",
+    "size": 120000,
+    "seed": 937,
+    "role": "performance",
+    "public": false
+  }
+]

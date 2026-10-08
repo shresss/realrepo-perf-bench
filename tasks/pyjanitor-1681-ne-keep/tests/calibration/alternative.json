@@ -1,0 +1,2776 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T15:29:52.599343+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "68eab8aec57ae53be2f41acee6382ad0d82a54e42f317654d19f884e7631c02f",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a"
+  },
+  "task": {
+   "cases.json": "b6aaabadba63eda4fb790182c76b584c037bb71471d177c9cc936cfdb627f840",
+   "expected.py": "0c0c35b8bab70a2176b149023e04954efdff5042347ce14995e550cbae2abb4e",
+   "meter.json": "f98716d6966098d57afccd1b7d13d83207bb9152681d78ee0fb8081de96efefe",
+   "workload.py": "057cf8c70fb8085de389f98b648919516d5d1df45047ad923c7f2efaa27a0533"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "",
+ "max_wall_seconds": {
+  "native": 16.52839232000042,
+  "performance": 12.124897593999776,
+  "semantic": 1.6110348430011072
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 59,
+   "cpu_seconds": 12.278447,
+   "exit_code": 0,
+   "expected_count": 59,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 238,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_conditional_join.py::test_check_aggfunc_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_conditional_join_does_not_mutate_inputs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_conditions_eq_and_gt_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_conditions_eq_and_lt_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_conditions_eq_and_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_conditions_ne_and_eq": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_ne_dates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_ne_extension": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_le_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_le_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_ge_le_ne_extension_array": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_ge_lt_ne_extension": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_ge_lt_ne_extension_variant": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_lt_ne_conditions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_lt_ne_conditions_regions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_lt_ne_start": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_ne_conditions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_le_ne_conditions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_lt_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_lt_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_multiple_ne_dates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_multiple_range_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_multiple_range_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_datetime": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_floats_only": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_ints": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[first-right_positions0]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[last-right_positions1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_conditional_join.py::test_conditional_join_does_not_mutate_inputs",
+     "test_conditional_join.py::test_check_aggfunc_ne",
+     "test_conditional_join.py::test_single_condition_not_equal_ints",
+     "test_conditional_join.py::test_single_condition_not_equal_floats_only",
+     "test_conditional_join.py::test_single_condition_not_equal_datetime",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[first-right_positions0]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[last-right_positions1]",
+     "test_conditional_join.py::test_dual_ne_extension",
+     "test_conditional_join.py::test_dual_ne",
+     "test_conditional_join.py::test_dual_ne_dates",
+     "test_conditional_join.py::test_multiple_ne_dates",
+     "test_conditional_join.py::test_dual_conditions_eq_and_ne",
+     "test_conditional_join.py::test_conditions_eq_and_lt_ne",
+     "test_conditional_join.py::test_conditions_eq_and_gt_ne",
+     "test_conditional_join.py::test_dual_conditions_ne_and_eq",
+     "test_conditional_join.py::test_gt_lt_ne_conditions",
+     "test_conditional_join.py::test_gt_lt_ne_conditions_regions",
+     "test_conditional_join.py::test_gt_ne_conditions",
+     "test_conditional_join.py::test_le_ne_conditions",
+     "test_conditional_join.py::test_gt_lt_ne_start",
+     "test_conditional_join.py::test_ge_le_ne_extension_array",
+     "test_conditional_join.py::test_ge_lt_ne_extension",
+     "test_conditional_join.py::test_ge_lt_ne_extension_variant",
+     "test_conditional_join.py::test_gt_ne_agg",
+     "test_conditional_join.py::test_lt_ne_agg",
+     "test_conditional_join.py::test_multiple_range_ne_agg",
+     "test_conditional_join.py::test_equi_ne_agg",
+     "test_conditional_join.py::test_equi_le_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_le_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg",
+     "test_conditional_join.py::test_gt_ne_agg_rev",
+     "test_conditional_join.py::test_lt_ne_agg_rev",
+     "test_conditional_join.py::test_multiple_range_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg_rev"
+    ],
+    "selected_count": 59
+   },
+   "outcome": "passed",
+   "passed_count": 59,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 59,
+    "files": {
+     "janitor/testing_utils/strategies.py": "4bcce0111654c2900d39208825277babe6b260846ec879871617dbae39110bc9",
+     "tests/functions/test_conditional_join.py": "bbda45a4980bcf2184ba4569ad724c2c686855993033fc8598c2e8bc323790e7"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_conditional_join.py::test_check_aggfunc_ne",
+     "test_conditional_join.py::test_conditional_join_does_not_mutate_inputs",
+     "test_conditional_join.py::test_conditions_eq_and_gt_ne",
+     "test_conditional_join.py::test_conditions_eq_and_lt_ne",
+     "test_conditional_join.py::test_dual_conditions_eq_and_ne",
+     "test_conditional_join.py::test_dual_conditions_ne_and_eq",
+     "test_conditional_join.py::test_dual_ne",
+     "test_conditional_join.py::test_dual_ne_dates",
+     "test_conditional_join.py::test_dual_ne_extension",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ge_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_le_ne_agg",
+     "test_conditional_join.py::test_equi_le_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ne_agg",
+     "test_conditional_join.py::test_equi_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ne_agg",
+     "test_conditional_join.py::test_equi_ne_agg_rev",
+     "test_conditional_join.py::test_ge_le_ne_extension_array",
+     "test_conditional_join.py::test_ge_lt_ne_extension",
+     "test_conditional_join.py::test_ge_lt_ne_extension_variant",
+     "test_conditional_join.py::test_gt_lt_ne_conditions",
+     "test_conditional_join.py::test_gt_lt_ne_conditions_regions",
+     "test_conditional_join.py::test_gt_lt_ne_start",
+     "test_conditional_join.py::test_gt_ne_agg",
+     "test_conditional_join.py::test_gt_ne_agg_rev",
+     "test_conditional_join.py::test_gt_ne_conditions",
+     "test_conditional_join.py::test_le_ne_conditions",
+     "test_conditional_join.py::test_lt_ne_agg",
+     "test_conditional_join.py::test_lt_ne_agg_rev",
+     "test_conditional_join.py::test_multiple_ne_dates",
+     "test_conditional_join.py::test_multiple_range_ne_agg",
+     "test_conditional_join.py::test_multiple_range_ne_agg_rev",
+     "test_conditional_join.py::test_single_condition_not_equal_datetime",
+     "test_conditional_join.py::test_single_condition_not_equal_floats_only",
+     "test_conditional_join.py::test_single_condition_not_equal_ints",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[first-right_positions0]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[last-right_positions1]"
+    ],
+    "schema_version": 1,
+    "selection": "(not_equal or _ne or does_not_mutate) and not numba",
+    "sha256": "156d044670659fd618681fc9772e38fcdbc5e740fdba5f014b71254c7eb7a7b4",
+    "source_commit": "f3ef4546ddb9eae8af8bd672fc5228693bec32fc"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "322ce6e92a1fb0a5be4f4064d7d4878fc201e03f2bbf10c9faa2a0e845c6e8c2",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "63ed4373c4172d1346faabca690651e440911a0961d494efa8dc4a71888b6f7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 12.759725949999847
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 59,
+   "cpu_seconds": 15.896062,
+   "exit_code": 0,
+   "expected_count": 59,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 238,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_conditional_join.py::test_check_aggfunc_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_conditional_join_does_not_mutate_inputs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_conditions_eq_and_gt_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_conditions_eq_and_lt_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_conditions_eq_and_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_conditions_ne_and_eq": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_ne": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_ne_dates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_dual_ne_extension": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ge_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_le_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_le_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_le_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_equi_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_ge_le_ne_extension_array": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_ge_lt_ne_extension": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_ge_lt_ne_extension_variant": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_lt_ne_conditions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_lt_ne_conditions_regions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_lt_ne_start": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_gt_ne_conditions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_le_ne_conditions": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_lt_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_lt_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_multiple_ne_dates": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_multiple_range_ne_agg": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_multiple_range_ne_agg_rev": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_datetime": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_floats_only": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_ints": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-first]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-last]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[first-right_positions0]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[last-right_positions1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_conditional_join.py::test_conditional_join_does_not_mutate_inputs",
+     "test_conditional_join.py::test_check_aggfunc_ne",
+     "test_conditional_join.py::test_single_condition_not_equal_ints",
+     "test_conditional_join.py::test_single_condition_not_equal_floats_only",
+     "test_conditional_join.py::test_single_condition_not_equal_datetime",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[first-right_positions0]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[last-right_positions1]",
+     "test_conditional_join.py::test_dual_ne_extension",
+     "test_conditional_join.py::test_dual_ne",
+     "test_conditional_join.py::test_dual_ne_dates",
+     "test_conditional_join.py::test_multiple_ne_dates",
+     "test_conditional_join.py::test_dual_conditions_eq_and_ne",
+     "test_conditional_join.py::test_conditions_eq_and_lt_ne",
+     "test_conditional_join.py::test_conditions_eq_and_gt_ne",
+     "test_conditional_join.py::test_dual_conditions_ne_and_eq",
+     "test_conditional_join.py::test_gt_lt_ne_conditions",
+     "test_conditional_join.py::test_gt_lt_ne_conditions_regions",
+     "test_conditional_join.py::test_gt_ne_conditions",
+     "test_conditional_join.py::test_le_ne_conditions",
+     "test_conditional_join.py::test_gt_lt_ne_start",
+     "test_conditional_join.py::test_ge_le_ne_extension_array",
+     "test_conditional_join.py::test_ge_lt_ne_extension",
+     "test_conditional_join.py::test_ge_lt_ne_extension_variant",
+     "test_conditional_join.py::test_gt_ne_agg",
+     "test_conditional_join.py::test_lt_ne_agg",
+     "test_conditional_join.py::test_multiple_range_ne_agg",
+     "test_conditional_join.py::test_equi_ne_agg",
+     "test_conditional_join.py::test_equi_le_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_le_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg",
+     "test_conditional_join.py::test_gt_ne_agg_rev",
+     "test_conditional_join.py::test_lt_ne_agg_rev",
+     "test_conditional_join.py::test_multiple_range_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg_rev"
+    ],
+    "selected_count": 59
+   },
+   "outcome": "passed",
+   "passed_count": 59,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 59,
+    "files": {
+     "janitor/testing_utils/strategies.py": "4bcce0111654c2900d39208825277babe6b260846ec879871617dbae39110bc9",
+     "tests/functions/test_conditional_join.py": "bbda45a4980bcf2184ba4569ad724c2c686855993033fc8598c2e8bc323790e7"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_conditional_join.py::test_check_aggfunc_ne",
+     "test_conditional_join.py::test_conditional_join_does_not_mutate_inputs",
+     "test_conditional_join.py::test_conditions_eq_and_gt_ne",
+     "test_conditional_join.py::test_conditions_eq_and_lt_ne",
+     "test_conditional_join.py::test_dual_conditions_eq_and_ne",
+     "test_conditional_join.py::test_dual_conditions_ne_and_eq",
+     "test_conditional_join.py::test_dual_ne",
+     "test_conditional_join.py::test_dual_ne_dates",
+     "test_conditional_join.py::test_dual_ne_extension",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ge_ne_agg",
+     "test_conditional_join.py::test_equi_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg",
+     "test_conditional_join.py::test_equi_le_ge_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_le_ne_agg",
+     "test_conditional_join.py::test_equi_le_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_le_ne_agg",
+     "test_conditional_join.py::test_equi_le_ne_agg_rev",
+     "test_conditional_join.py::test_equi_ne_agg",
+     "test_conditional_join.py::test_equi_ne_agg_rev",
+     "test_conditional_join.py::test_ge_le_ne_extension_array",
+     "test_conditional_join.py::test_ge_lt_ne_extension",
+     "test_conditional_join.py::test_ge_lt_ne_extension_variant",
+     "test_conditional_join.py::test_gt_lt_ne_conditions",
+     "test_conditional_join.py::test_gt_lt_ne_conditions_regions",
+     "test_conditional_join.py::test_gt_lt_ne_start",
+     "test_conditional_join.py::test_gt_ne_agg",
+     "test_conditional_join.py::test_gt_ne_agg_rev",
+     "test_conditional_join.py::test_gt_ne_conditions",
+     "test_conditional_join.py::test_le_ne_conditions",
+     "test_conditional_join.py::test_lt_ne_agg",
+     "test_conditional_join.py::test_lt_ne_agg_rev",
+     "test_conditional_join.py::test_multiple_ne_dates",
+     "test_conditional_join.py::test_multiple_range_ne_agg",
+     "test_conditional_join.py::test_multiple_range_ne_agg_rev",
+     "test_conditional_join.py::test_single_condition_not_equal_datetime",
+     "test_conditional_join.py::test_single_condition_not_equal_floats_only",
+     "test_conditional_join.py::test_single_condition_not_equal_ints",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[all-null-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[datetimes-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[duplicates-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-left-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[empty-right-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[float-nan-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[nullable-integers-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-first]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one[one-distinct-value-last]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[first-right_positions0]",
+     "test_conditional_join.py::test_single_condition_not_equal_keep_one_preserves_output_order[last-right_positions1]"
+    ],
+    "schema_version": 1,
+    "selection": "(not_equal or _ne or does_not_mutate) and not numba",
+    "sha256": "156d044670659fd618681fc9772e38fcdbc5e740fdba5f014b71254c7eb7a7b4",
+    "source_commit": "f3ef4546ddb9eae8af8bd672fc5228693bec32fc"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "3e0dcbbd34041ef6e77a6a0886f69f9242dbdd55df4964bfb2c9c30fee10ea28",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "63ed4373c4172d1346faabca690651e440911a0961d494efa8dc4a71888b6f7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 16.52839232000042
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 59,
+  "sha256": "156d044670659fd618681fc9772e38fcdbc5e740fdba5f014b71254c7eb7a7b4"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "63ed4373c4172d1346faabca690651e440911a0961d494efa8dc4a71888b6f7c"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "322ce6e92a1fb0a5be4f4064d7d4878fc201e03f2bbf10c9faa2a0e845c6e8c2"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "63ed4373c4172d1346faabca690651e440911a0961d494efa8dc4a71888b6f7c"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "3e0dcbbd34041ef6e77a6a0886f69f9242dbdd55df4964bfb2c9c30fee10ea28"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "d2f3263213d8aa8aac443cdb6da88e52a5437040ae00f492d9674ea22cef1d31"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "d2f3263213d8aa8aac443cdb6da88e52a5437040ae00f492d9674ea22cef1d31"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "95d2176be673fb98ade27679ecd7e282f686bbd8d18f2f0f88620822e2e3bb23"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "95d2176be673fb98ade27679ecd7e282f686bbd8d18f2f0f88620822e2e3bb23"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "ad4c3228d450665043af1a7a4db42acaf4d5ae074c9d0d284e66a46fdd0de379"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "ad4c3228d450665043af1a7a4db42acaf4d5ae074c9d0d284e66a46fdd0de379"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "ff881c145b3dd93a130c2f46625d1fd5b2f3779b4864ea9468b68d2f4f3a43fa"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "ff881c145b3dd93a130c2f46625d1fd5b2f3779b4864ea9468b68d2f4f3a43fa"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "4bf5664ee559bbe28b639072b613853b54f84d0448b66fd4066c61e105838799"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "4bf5664ee559bbe28b639072b613853b54f84d0448b66fd4066c61e105838799"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "c460861205b0a8e9aba27f1f0b02bbe3b0fe2c23a715cd6fec64ff58e1b07d8b"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "c460861205b0a8e9aba27f1f0b02bbe3b0fe2c23a715cd6fec64ff58e1b07d8b"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "253e9b0f1c5b1995db94aaecb81ff5ce3571c899362070c93c3770184dd3f272"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "253e9b0f1c5b1995db94aaecb81ff5ce3571c899362070c93c3770184dd3f272"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "457e547d71666a43c279ff347f92621a0e99ad1891871c1205d0f47e4674f4c7"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "457e547d71666a43c279ff347f92621a0e99ad1891871c1205d0f47e4674f4c7"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "0de3b935abdb610528765d93fb00b3dc12a06588050323c74ff75f8142bece5e"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "0de3b935abdb610528765d93fb00b3dc12a06588050323c74ff75f8142bece5e"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "3af7eaec5e154d6bede1144d67069188b73291c577b4ec5b420d7cf6f3834072"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "3af7eaec5e154d6bede1144d67069188b73291c577b4ec5b420d7cf6f3834072"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "4b3e140e01ef9bf7ef2e7a64c528d1c95d7bcad0d0369eec640916e767576dc3"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "4b3e140e01ef9bf7ef2e7a64c528d1c95d7bcad0d0369eec640916e767576dc3"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "3ea462911ee5b1269baa429d6baa840c660b99fe4e366fffab4ae70c83ad6215"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "3ea462911ee5b1269baa429d6baa840c660b99fe4e366fffab4ae70c83ad6215"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "bf126a0d7a280542ecc2a5d5aaa9c40a1c3bce0ad1f2f14757b48bea53de2e4f"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "bf126a0d7a280542ecc2a5d5aaa9c40a1c3bce0ad1f2f14757b48bea53de2e4f"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0028-stdout.bin",
+   "sha256": "2875a709238a65d6c9869fdbd31165f1d4e6626e7f863e1a5149578dc6d60af4"
+  },
+  {
+   "path": "raw/0028-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0029-stdout.bin",
+   "sha256": "2875a709238a65d6c9869fdbd31165f1d4e6626e7f863e1a5149578dc6d60af4"
+  },
+  {
+   "path": "raw/0029-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0030-stdout.bin",
+   "sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494"
+  },
+  {
+   "path": "raw/0030-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0031-stdout.bin",
+   "sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494"
+  },
+  {
+   "path": "raw/0031-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0032-stdout.bin",
+   "sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494"
+  },
+  {
+   "path": "raw/0032-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0033-stdout.bin",
+   "sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494"
+  },
+  {
+   "path": "raw/0033-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0034-stdout.bin",
+   "sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494"
+  },
+  {
+   "path": "raw/0034-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0035-stdout.bin",
+   "sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494"
+  },
+  {
+   "path": "raw/0035-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0036-stdout.bin",
+   "sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7"
+  },
+  {
+   "path": "raw/0036-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0037-stdout.bin",
+   "sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7"
+  },
+  {
+   "path": "raw/0037-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0038-stdout.bin",
+   "sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7"
+  },
+  {
+   "path": "raw/0038-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0039-stdout.bin",
+   "sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7"
+  },
+  {
+   "path": "raw/0039-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0040-stdout.bin",
+   "sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7"
+  },
+  {
+   "path": "raw/0040-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0041-stdout.bin",
+   "sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7"
+  },
+  {
+   "path": "raw/0041-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0042-stdout.bin",
+   "sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5"
+  },
+  {
+   "path": "raw/0042-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0043-stdout.bin",
+   "sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5"
+  },
+  {
+   "path": "raw/0043-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0044-stdout.bin",
+   "sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5"
+  },
+  {
+   "path": "raw/0044-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0045-stdout.bin",
+   "sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5"
+  },
+  {
+   "path": "raw/0045-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0046-stdout.bin",
+   "sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5"
+  },
+  {
+   "path": "raw/0046-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0047-stdout.bin",
+   "sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5"
+  },
+  {
+   "path": "raw/0047-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "alternative",
+ "role_wall_totals": {
+  "baseline": 85.93868691899115,
+  "candidate": 47.32341614297184
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 20585950,
+   "files": 389,
+   "sha256": "418ac1159eddab5732d14dfb2be0a2637e15bc50e4451d5c118c0ba9eeae52a1"
+  },
+  "candidate": {
+   "bytes": 20588068,
+   "files": 389,
+   "sha256": "a16b3e296ebfd7b8f7e2b043fc7c9d23ad02b43a120d0f1b3da5266a3cc919fe"
+  }
+ },
+ "started_utc": "2026-10-01T15:27:38.267374+00:00",
+ "summaries": {
+  "grouped-14": {
+   "baseline_cpu_median": 6.599057,
+   "baseline_cpu_seconds": [
+    7.761525000000001,
+    6.599057,
+    6.291135
+   ],
+   "baseline_wall_seconds": [
+    8.100049736000074,
+    6.746239282001625,
+    6.4142681949997495
+   ],
+   "candidate_cpu_seconds": [
+    1.863566,
+    1.447698,
+    1.353863
+   ],
+   "candidate_wall_seconds": [
+    1.9560500459992909,
+    1.4737084769985813,
+    1.381774987999961
+   ],
+   "case": "grouped",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 4.558310503986329,
+   "median_paired_candidate_over_baseline_cpu": 0.2193795264990134,
+   "size": 14
+  },
+  "window-1": {
+   "baseline_cpu_median": 2.298209,
+   "baseline_cpu_seconds": [
+    1.773268,
+    2.364133,
+    2.298209
+   ],
+   "baseline_wall_seconds": [
+    1.8548948759998893,
+    2.441036758998962,
+    2.3696655399980955
+   ],
+   "candidate_cpu_seconds": [
+    1.402449,
+    1.398958,
+    1.330346
+   ],
+   "candidate_wall_seconds": [
+    1.425605545999133,
+    1.4347570849968179,
+    1.3559340369974962
+   ],
+   "case": "window",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.6899242150228955,
+   "median_paired_candidate_over_baseline_cpu": 0.5917425119483548,
+   "size": 1
+  },
+  "window-14": {
+   "baseline_cpu_median": 8.550613,
+   "baseline_cpu_seconds": [
+    6.862425,
+    8.550613,
+    11.464958999999999
+   ],
+   "baseline_wall_seconds": [
+    6.97135008999976,
+    8.754141304001678,
+    12.124897593999776
+   ],
+   "candidate_cpu_seconds": [
+    1.449974,
+    1.276519,
+    1.670776
+   ],
+   "candidate_wall_seconds": [
+    1.4713822059966333,
+    1.2949295190010162,
+    1.7344019689990091
+   ],
+   "case": "window",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 6.698382867783402,
+   "median_paired_candidate_over_baseline_cpu": 0.14928976437127958,
+   "size": 14
+  }
+ },
+ "workers": [
+  {
+   "case_id": "semantic-clean-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.360006,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.8125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 37,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "d2f3263213d8aa8aac443cdb6da88e52a5437040ae00f492d9674ea22cef1d31",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4016931779988226
+  },
+  {
+   "case_id": "semantic-clean-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.398527,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.23046875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 37,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "d2f3263213d8aa8aac443cdb6da88e52a5437040ae00f492d9674ea22cef1d31",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4376875499983726
+  },
+  {
+   "case_id": "semantic-nulls-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.566473,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.8671875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 41,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "95d2176be673fb98ade27679ecd7e282f686bbd8d18f2f0f88620822e2e3bb23",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.6110348430011072
+  },
+  {
+   "case_id": "semantic-nulls-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.135419,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.1953125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 41,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "95d2176be673fb98ade27679ecd7e282f686bbd8d18f2f0f88620822e2e3bb23",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1541084310010774
+  },
+  {
+   "case_id": "semantic-firstnull-nulls-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.228581,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.81640625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 33,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "ad4c3228d450665043af1a7a4db42acaf4d5ae074c9d0d284e66a46fdd0de379",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2547895649986458
+  },
+  {
+   "case_id": "semantic-firstnull-nulls-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.1952939999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.2109375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 33,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "ad4c3228d450665043af1a7a4db42acaf4d5ae074c9d0d284e66a46fdd0de379",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2156554859975586
+  },
+  {
+   "case_id": "semantic-firstnull-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.099924,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.8359375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 33,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "ff881c145b3dd93a130c2f46625d1fd5b2f3779b4864ea9468b68d2f4f3a43fa",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.112672114999441
+  },
+  {
+   "case_id": "semantic-firstnull-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.3585909999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.171875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 33,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "ff881c145b3dd93a130c2f46625d1fd5b2f3779b4864ea9468b68d2f4f3a43fa",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3778837469981227
+  },
+  {
+   "case_id": "semantic-allsame-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.099352,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.80078125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 29,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "4bf5664ee559bbe28b639072b613853b54f84d0448b66fd4066c61e105838799",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1145024739998917
+  },
+  {
+   "case_id": "semantic-allsame-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.338039,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.18359375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 29,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "4bf5664ee559bbe28b639072b613853b54f84d0448b66fd4066c61e105838799",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.365155894000054
+  },
+  {
+   "case_id": "semantic-grouped-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.180862,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.8515625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 45,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "c460861205b0a8e9aba27f1f0b02bbe3b0fe2c23a715cd6fec64ff58e1b07d8b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1950900079973508
+  },
+  {
+   "case_id": "semantic-grouped-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.2318660000000001,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.203125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 45,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "c460861205b0a8e9aba27f1f0b02bbe3b0fe2c23a715cd6fec64ff58e1b07d8b",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2515958529984346
+  },
+  {
+   "case_id": "semantic-int64-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.00078,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.6953125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 39,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "253e9b0f1c5b1995db94aaecb81ff5ce3571c899362070c93c3770184dd3f272",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0112585589995433
+  },
+  {
+   "case_id": "semantic-int64-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.2582829999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.0859375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 39,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "253e9b0f1c5b1995db94aaecb81ff5ce3571c899362070c93c3770184dd3f272",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.283242990000872
+  },
+  {
+   "case_id": "semantic-datetime-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.477801,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.7109375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 39,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "457e547d71666a43c279ff347f92621a0e99ad1891871c1205d0f47e4674f4c7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.507203043998743
+  },
+  {
+   "case_id": "semantic-datetime-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.086814,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.328125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 39,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "457e547d71666a43c279ff347f92621a0e99ad1891871c1205d0f47e4674f4c7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1027788429964858
+  },
+  {
+   "case_id": "semantic-onecode-nulls-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.039819,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 31,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "0de3b935abdb610528765d93fb00b3dc12a06588050323c74ff75f8142bece5e",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0511170899990248
+  },
+  {
+   "case_id": "semantic-onecode-nulls-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.945411,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.20703125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 31,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "0de3b935abdb610528765d93fb00b3dc12a06588050323c74ff75f8142bece5e",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9542485189995205
+  },
+  {
+   "case_id": "semantic-rightallnull-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.095291,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.359375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 21,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "3af7eaec5e154d6bede1144d67069188b73291c577b4ec5b420d7cf6f3834072",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1094660910021048
+  },
+  {
+   "case_id": "semantic-rightallnull-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.018205,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.1640625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 21,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "3af7eaec5e154d6bede1144d67069188b73291c577b4ec5b420d7cf6f3834072",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0300542059994768
+  },
+  {
+   "case_id": "semantic-rightempty-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.939829,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 139.703125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 9,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "4b3e140e01ef9bf7ef2e7a64c528d1c95d7bcad0d0369eec640916e767576dc3",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9472688429996197
+  },
+  {
+   "case_id": "semantic-rightempty-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.953838,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 139.8046875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 9,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "4b3e140e01ef9bf7ef2e7a64c528d1c95d7bcad0d0369eec640916e767576dc3",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9669037829989975
+  },
+  {
+   "case_id": "semantic-leftempty-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.045594,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 139.94140625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 0,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "3ea462911ee5b1269baa429d6baa840c660b99fe4e366fffab4ae70c83ad6215",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0612021349988936
+  },
+  {
+   "case_id": "semantic-leftempty-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.180378,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 139.96875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 0,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "3ea462911ee5b1269baa429d6baa840c660b99fe4e366fffab4ae70c83ad6215",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2482319029986684
+  },
+  {
+   "case_id": "semantic-suite-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.531514,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.3359375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 64,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "bf126a0d7a280542ecc2a5d5aaa9c40a1c3bce0ad1f2f14757b48bea53de2e4f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5452116480009863
+  },
+  {
+   "case_id": "semantic-suite-first",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.332225,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.79296875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 64,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "bf126a0d7a280542ecc2a5d5aaa9c40a1c3bce0ad1f2f14757b48bea53de2e4f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.341421099998115
+  },
+  {
+   "case_id": "semantic-suite-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.465578,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.33203125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 64,
+   "stderr_path": "raw/0028-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0028-stdout.bin",
+   "stdout_sha256": "2875a709238a65d6c9869fdbd31165f1d4e6626e7f863e1a5149578dc6d60af4",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.479907999997522
+  },
+  {
+   "case_id": "semantic-suite-last",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.5219880000000001,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 140.80078125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 64,
+   "stderr_path": "raw/0029-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0029-stdout.bin",
+   "stdout_sha256": "2875a709238a65d6c9869fdbd31165f1d4e6626e7f863e1a5149578dc6d60af4",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5375116449977213
+  },
+  {
+   "case_id": "window-1",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.773268,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1289.328125,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0030-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0030-stdout.bin",
+   "stdout_sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.8548948759998893
+  },
+  {
+   "case_id": "window-1",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.402449,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.9765625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0031-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0031-stdout.bin",
+   "stdout_sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.425605545999133
+  },
+  {
+   "case_id": "window-1",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.398958,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.86328125,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0032-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0032-stdout.bin",
+   "stdout_sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4347570849968179
+  },
+  {
+   "case_id": "window-1",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.364133,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1289.17578125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0033-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0033-stdout.bin",
+   "stdout_sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.441036758998962
+  },
+  {
+   "case_id": "window-1",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 2.298209,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1289.46484375,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0034-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0034-stdout.bin",
+   "stdout_sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 2.3696655399980955
+  },
+  {
+   "case_id": "window-1",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.330346,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 142.06640625,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0035-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0035-stdout.bin",
+   "stdout_sha256": "3cd9b9d83f12f4f258f024605c40d0b0cec5c500d0c5d0855303368d24be7494",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3559340369974962
+  },
+  {
+   "case_id": "window-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.862425,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1309.8984375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0036-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0036-stdout.bin",
+   "stdout_sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.97135008999976
+  },
+  {
+   "case_id": "window-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.449974,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.5,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0037-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0037-stdout.bin",
+   "stdout_sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4713822059966333
+  },
+  {
+   "case_id": "window-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.276519,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 142.12109375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0038-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0038-stdout.bin",
+   "stdout_sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.2949295190010162
+  },
+  {
+   "case_id": "window-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 8.550613,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1310.03125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0039-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0039-stdout.bin",
+   "stdout_sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 8.754141304001678
+  },
+  {
+   "case_id": "window-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 11.464958999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1310.0,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0040-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0040-stdout.bin",
+   "stdout_sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 12.124897593999776
+  },
+  {
+   "case_id": "window-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.670776,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 142.1015625,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0041-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0041-stdout.bin",
+   "stdout_sha256": "0b0e544d32a211df612835b307bf119264a71827ed1526a5e236401f57a05ca7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.7344019689990091
+  },
+  {
+   "case_id": "grouped-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 7.761525000000001,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1142.1640625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0042-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0042-stdout.bin",
+   "stdout_sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 8.100049736000074
+  },
+  {
+   "case_id": "grouped-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.863566,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.36328125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0043-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0043-stdout.bin",
+   "stdout_sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.9560500459992909
+  },
+  {
+   "case_id": "grouped-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.447698,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 141.12109375,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0044-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0044-stdout.bin",
+   "stdout_sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4737084769985813
+  },
+  {
+   "case_id": "grouped-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.599057,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1141.953125,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0045-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0045-stdout.bin",
+   "stdout_sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.746239282001625
+  },
+  {
+   "case_id": "grouped-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 6.291135,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 1142.12890625,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 14,
+   "stderr_path": "raw/0046-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0046-stdout.bin",
+   "stdout_sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 6.4142681949997495
+  },
+  {
+   "case_id": "grouped-14",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.353863,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 142.30859375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 14,
+   "stderr_path": "raw/0047-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0047-stdout.bin",
+   "stdout_sha256": "08b0d67f74fa69850c85c7e0d46bf88c70d5500c5aea2fbfb05cc44e580aaed5",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.381774987999961
+  }
+ ]
+}

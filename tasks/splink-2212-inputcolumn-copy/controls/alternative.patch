@@ -1,0 +1,19 @@
+--- a/splink/input_column.py
++++ b/splink/input_column.py
+@@ -214,6 +214,16 @@
+         return self.from_settings_obj_else_default(
+             "_tf_prefix", "term_frequency_adjustment_column_prefix"
+         )
++
++    def __deepcopy__(self, memo) -> InputColumn:
++        # The settings object is shared, read-only configuration owned by the linker:
++        # a copied column refers to it instead of duplicating the whole settings graph.
++        cls = self.__class__
++        new = cls.__new__(cls)
++        memo[id(self)] = new
++        for key, value in self.__dict__.items():
++            setattr(new, key, value if key == "_settings_obj" else deepcopy(value, memo))
++        return new
+ 
+     def unquote(self) -> InputColumn:
+         self_copy = deepcopy(self)

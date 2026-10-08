@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "purpose": "scoring_v1_task_policy",
+  "task_id": "swefficiency-ext/iceberg-2674-summary-metadata-hoist",
+  "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+  "repeats": 3,
+  "baseline_sha256": "e61bc2feaae579f3e71f8ae36860354094c46e88ab6043b08a35fc3b09708368",
+  "hashes": {
+    "task": {
+      "workload.py": "88694b9fa334b1a314395bd71fdbb53cee7f7b7c656d6abdd678862d4e93e269",
+      "expected.py": "4f744728b590a35be252c2ac139d5a4b82367716e15600f1a0a55afdb4c3ad0d",
+      "cases.json": "d9898b6f7b6d75e49c0a3d24f3b6db47d428779c7bd4c7061f8bb25bea2663cc",
+      "meter.json": "67a993970acda25bfb83838ce7670ad7ed018f5045f24943258b90b2e96defa7"
+    },
+    "tools": {
+      "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9",
+      "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4"
+    },
+    "runtime": {
+      "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+      "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+      "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+      "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+      "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+      "native.py": "02fd887e60e922632719ff93acd78fc0e52a962cd0307bbc36622ccaed5524f9"
+    }
+  },
+  "limits": {
+    "total_wall_seconds": 2374,
+    "candidate_wall_seconds": 1127,
+    "baseline_wall_seconds": 1127,
+    "parent_reserve_seconds": 120,
+    "semantic_case_wall_seconds": 30,
+    "performance_case_wall_seconds": 474,
+    "native_wall_seconds": 60,
+    "source_max_bytes": 536870912,
+    "source_max_files": 50000,
+    "max_output_bytes": 16777216,
+    "address_space_bytes": 8589934592
+  },
+  "cpu_gates": {
+    "reload-1000": {
+      "maximum_candidate_baseline_ratio": 0.5114,
+      "baseline_min_seconds": 4.272,
+      "baseline_max_seconds": 17.088
+    },
+    "backfill-500-s11": {
+      "maximum_candidate_baseline_ratio": 0.4846,
+      "baseline_min_seconds": 3.943,
+      "baseline_max_seconds": 15.771
+    }
+  },
+  "control_provenance": [
+    {
+      "role": "baseline",
+      "path": "calibration/baseline.json",
+      "sha256": "ca54318f75b2d001aa21c1844b9e48307c37ccf18d6819219013c876ab743408",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "reference",
+      "path": "calibration/reference.json",
+      "sha256": "59eb8134739fed0655e3fecff8d628924eb7c3bb0d9039aaa16c26087467e100",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "naive",
+      "path": "calibration/naive.json",
+      "sha256": "35d17c6b39d002b6e778e29483e407b630e57c66b56cb6044513952b6937cd0c",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    },
+    {
+      "role": "alternative",
+      "path": "calibration/alternative.json",
+      "sha256": "84b98353723b89a6297b4869cbe9b2c484204c880c678a1f20e3835a444b4e3d",
+      "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+      "reviewed": true
+    }
+  ],
+  "native_regression": {
+    "mode": "protected_upstream",
+    "selection_sha256": "bc5e5bfb42b2d06659f387284146f5bc38cd6629901ac789229233c5bc1073f9",
+    "expected_count": 107
+  },
+  "scoring_v1": {
+    "formula": "gate: median paired candidate/baseline CPU <= floor4(1/sqrt(R)); perf_score = log(B/M)/log(R)",
+    "per_case": {
+      "reload-1000": {
+        "R_reference_speedup_cpu": 3.8227296257007,
+        "pairs": 3,
+        "baseline_cpu_median": 8.544118,
+        "threshold_candidate_over_baseline": 0.5114,
+        "nop_candidate_over_baseline": 0.9775770142566138,
+        "naive_candidate_over_baseline": 0.2728630062727484,
+        "alternative_candidate_over_baseline": 0.3122303805959186
+      },
+      "backfill-500-s11": {
+        "R_reference_speedup_cpu": 4.257461653575853,
+        "pairs": 3,
+        "baseline_cpu_median": 7.885365999999999,
+        "threshold_candidate_over_baseline": 0.4846,
+        "nop_candidate_over_baseline": 1.151677099872683,
+        "naive_candidate_over_baseline": 0.25147329268772284,
+        "alternative_candidate_over_baseline": 0.25788569765722763
+      }
+    }
+  },
+  "limitations": [
+    "Three repeats of fixed cases, not independent tasks.",
+    "CPU gate at declared gated cases only; other scales diagnostic.",
+    "Freezing this policy is not a model result or panel release."
+  ],
+  "runtime_lineage": [
+    {
+      "date_utc": "2026-10-01T13:41:44+00:00",
+      "from": "runtime-v1",
+      "to": "runtime-v1.1",
+      "reason": "per-worker state hygiene; timed region unchanged",
+      "old_hashes": {
+        "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "02fd887e60e922632719ff93acd78fc0e52a962cd0307bbc36622ccaed5524f9"
+      },
+      "new_hashes": {
+        "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a",
+        "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+        "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+        "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+        "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+        "native.py": "02fd887e60e922632719ff93acd78fc0e52a962cd0307bbc36622ccaed5524f9"
+      },
+      "changed_files": [
+        "verify.py"
+      ],
+      "unhashed_files_replaced": {
+        "test.sh": {
+          "old": "f19d23fc7b7e5481ea4354b356bb489631791f19b0847c6dc67073c9aa18d879",
+          "new": "6fe7f71d0de1e7bd1286a3afac733cc0fe3ac142b73733bdbd60ec962bb2710f"
+        }
+      },
+      "byte_identical_timed_region": [
+        "boundary.py",
+        "execute.py",
+        "native.py",
+        "policy.py",
+        "publish.py"
+      ],
+      "previous_policy": {
+        "path": "policy.v1.json",
+        "sha256": "4326fd0d0ea9da1efd6f4056c009062e7d4009e5bb3b5de306bd09a92dc635f6"
+      },
+      "source_runtime": "/Users/venkat/Documents/Codex/2026-09-30/im/outputs/afterquery-claude-ops/runtime-v1.1"
+    }
+  ]
+}

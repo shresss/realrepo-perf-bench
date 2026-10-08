@@ -1,0 +1,50 @@
+[
+  {
+    "id": "resave-depth0",
+    "case": "resave:1",
+    "size": 0,
+    "seed": 2,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "resave-depth3",
+    "case": "resave:1",
+    "size": 3,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "special-short",
+    "case": "special:12",
+    "size": 6,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "boundary-16",
+    "case": "boundary:16",
+    "size": 6,
+    "seed": 8,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "brokenlen-short",
+    "case": "brokenlen:1",
+    "size": 40,
+    "seed": 16,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "resave-depth10",
+    "case": "resave:2",
+    "size": 10,
+    "seed": 1,
+    "role": "performance",
+    "public": true
+  }
+]

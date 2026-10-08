@@ -1,0 +1,18 @@
+--- a/jinja2/optimizer.py
++++ b/jinja2/optimizer.py
+@@ -47,3 +47,15 @@
+     visit_Not = visit_Compare = visit_Getitem = visit_Getattr = visit_Call = \
+     visit_Filter = visit_Test = visit_CondExpr = fold
+     del fold
++
++    def visit_Concat(self, node, eval_ctx=None):
++        node = self.generic_visit(node)
++        if eval_ctx is None or eval_ctx.autoescape or eval_ctx.volatile:
++            return node
++        try:
++            return nodes.Const.from_untrusted(
++                node.as_const(eval_ctx), lineno=node.lineno,
++                environment=self.environment,
++            )
++        except nodes.Impossible:
++            return node

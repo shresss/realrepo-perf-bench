@@ -1,0 +1,42 @@
+--- review-r01/../trees/baseline/lifelines/fitters/aalen_johansen_fitter.py	2026-02-03 18:09:05
++++ review-r01/trees/quadratic-numpy/lifelines/fitters/aalen_johansen_fitter.py	2026-10-01 03:48:51
+@@ -219,23 +219,23 @@
+             ci_labels = ["%s_upper_%g" % (self._label, ci), "%s_lower_%g" % (self._label, ci)]
+         assert len(ci_labels) == 2, "ci_labels should be a length 2 array."
+ 
+-        # Have to loop through each time independently. Don't think there is a faster way
++        f = df["Ft"].to_numpy(dtype=float)
++        n = df["at_risk"].to_numpy(dtype=float)
++        d = df["observed"].to_numpy(dtype=float)
++        j = df[self.label_cmprisk].to_numpy(dtype=float)
++        s = df["lagS"].to_numpy(dtype=float)
++        # REVIEW diagnostic: correct but still quadratic; per-row NumPy slices instead of pandas copies.
++        with np.errstate(divide="ignore", invalid="ignore"):
++            a = d / n / (n - d)
++            b = s ** 2 / n * j / n * (n - j) / n
++            c = s * j / n / n
+         all_vars = []
+-        for _, r in df.iterrows():
+-            sf = df.loc[df.index <= r.name].copy()
+-            F_t = float(r["Ft"])
+-            first_term = np.sum((F_t - sf["Ft"]) ** 2 * sf["observed"] / sf["at_risk"] / (sf["at_risk"] - sf["observed"]))
+-            second_term = np.sum(
+-                sf["lagS"] ** 2
+-                / sf["at_risk"]
+-                * sf[self.label_cmprisk]
+-                / sf["at_risk"]
+-                * (sf["at_risk"] - sf[self.label_cmprisk])
+-                / sf["at_risk"]
+-            )
+-            third_term = np.sum((F_t - sf["Ft"]) / sf["at_risk"] * sf["lagS"] * sf[self.label_cmprisk] / sf["at_risk"])
+-            variance = first_term + second_term - 2 * third_term
+-            all_vars.append(variance)
++        for i in range(len(f)):
++            F_t = f[i]
++            diff = F_t - f[: i + 1]
++            with np.errstate(invalid="ignore"):
++                t1 = np.nansum(diff ** 2 * a[: i + 1])
++            all_vars.append(t1 + np.sum(b[: i + 1]) - 2 * np.sum(diff * c[: i + 1]))
+         df["variance"] = all_vars
+ 
+         # Calculating Confidence Intervals

@@ -1,0 +1,11 @@
+--- a/pydicom/sequence.py
++++ b/pydicom/sequence.py
+@@ -115,7 +115,7 @@
+ 
+         .. versionadded:: 1.3
+         """
+-        if value != self._parent:
++        if self._parent is None or value is not self._parent():
+             self._parent = weakref.ref(value)
+             for item in self._list:
+                 item.parent = self._parent

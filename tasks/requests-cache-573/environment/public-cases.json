@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fresh-small",
+    "case": "fresh",
+    "size": 20,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "legacy-small",
+    "case": "legacy",
+    "size": 20,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "never-expire-mixed",
+    "case": "legacy",
+    "size": 36,
+    "seed": 1,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "fresh-1000",
+    "case": "fresh",
+    "size": 1000,
+    "seed": 11,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "legacy-4000",
+    "case": "legacy",
+    "size": 4000,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  }
+]

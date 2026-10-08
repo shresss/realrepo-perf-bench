@@ -1,0 +1,42 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-duplicate",
+    "case": "duplicate",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-interleaved",
+    "case": "interleaved",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-mutation",
+    "case": "mutation",
+    "size": 0,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "logging-16",
+    "case": "logging",
+    "size": 16,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

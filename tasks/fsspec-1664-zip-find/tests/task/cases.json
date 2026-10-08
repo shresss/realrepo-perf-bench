@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bundle-0",
+    "case": "bundle",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "bundle-2",
+    "case": "bundle",
+    "size": 2,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "bundle-336",
+    "case": "bundle",
+    "size": 336,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "bundle-1344",
+    "case": "bundle",
+    "size": 1344,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "edges",
+    "case": "edges",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  }
+]

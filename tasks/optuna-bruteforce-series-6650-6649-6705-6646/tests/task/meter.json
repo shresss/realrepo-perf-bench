@@ -1,0 +1,1 @@
+{"target_paths":["optuna/samplers/_brute_force.py"],"package_paths":["optuna"],"pandas_udf":false,"interpretation":"Diagnostic only; authoritative comparisons require uninstrumented parent resource measurements."}

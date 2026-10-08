@@ -1,0 +1,11 @@
+--- a/src/datasets/arrow_dataset.py
++++ b/src/datasets/arrow_dataset.py
+@@ -3737,7 +3737,7 @@
+             keep_in_memory=keep_in_memory,
+             load_from_cache_file=load_from_cache_file,
+             cache_file_name=cache_file_name,
+-            writer_batch_size=writer_batch_size,
++            writer_batch_size=10000,
+             fn_kwargs=fn_kwargs,
+             num_proc=num_proc,
+             suffix_template=suffix_template,

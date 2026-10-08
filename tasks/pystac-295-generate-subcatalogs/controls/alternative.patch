@@ -1,0 +1,77 @@
+--- a/pystac/catalog.py
++++ b/pystac/catalog.py
+@@ -550,41 +550,41 @@
+         parent_ids = parent_ids or list()
+         parent_ids.append(self.id)
+         for child in self.get_children():
+-            result.extend(
+-                child.generate_subcatalogs(template,
+-                                           defaults=defaults,
+-                                           parent_ids=parent_ids.copy()))
+-
++            result.extend(child.generate_subcatalogs(template, defaults=defaults,
++                                                     parent_ids=parent_ids.copy()))
+         layout_template = LayoutTemplate(template, defaults=defaults)
+-
+-        items = list(self.get_items())
+-        for item in items:
+-            item_parts = layout_template.get_template_values(item)
+-            id_iter = reversed(parent_ids)
+-            if all(['{}'.format(id) == next(id_iter, None)
+-                    for id in reversed(item_parts.values())]):
+-                # Skip items for which the sub-catalog structure already
+-                # matches the template. The list of parent IDs can include more
+-                # elements on the root side, so compare the reversed sequences.
++        groups = {}
++        keep = []
++        for source_link in self.links:
++            if source_link.rel != 'item':
++                keep.append(source_link)
+                 continue
+-            curr_parent = self
+-            for k, v in item_parts.items():
+-                subcat_id = '{}'.format(v)
+-                subcat = curr_parent.get_child(subcat_id)
+-                if subcat is None:
+-                    subcat_desc = 'Catalog of items from {} with {} of {}'.format(
+-                        curr_parent.id, k, v)
+-                    subcat = pystac.Catalog(id=subcat_id, description=subcat_desc)
+-                    curr_parent.add_child(subcat)
+-                    result.append(subcat)
+-                curr_parent = subcat
+-            self.remove_item(item.id)
+-            # resolve collection link so when added back points to correct location
+-            link = item.get_single_link('collection')
+-            if link is not None:
+-                link.resolve_stac_object()
+-            curr_parent.add_item(item)
+-
++            source_link.resolve_stac_object(root=self.get_root())
++            item = source_link.target
++            parts = tuple(layout_template.get_template_values(item).items())
++            ids = tuple(str(value) for _, value in parts)
++            if tuple(parent_ids[-len(ids):]) == ids:
++                keep.append(source_link)
++            else:
++                groups.setdefault(parts, []).append(item)
++        self.links = keep
++        child_maps = {}
++        for parts, items in groups.items():
++            parent = self
++            for key, value in parts:
++                choices = child_maps.setdefault(id(parent), {c.id:c for c in parent.get_children()})
++                ident = str(value)
++                if ident not in choices:
++                    child = pystac.Catalog(id=ident, description='Catalog of items from {} with {} of {}'.format(parent.id,key,value))
++                    parent.add_child(child)
++                    choices[ident] = child
++                    result.append(child)
++                parent = choices[ident]
++            for item in items:
++                collection = item.get_single_link('collection')
++                if collection is not None:
++                    collection.resolve_stac_object()
++                parent.add_item(item)
+         return result
+ 
+     def save(self, catalog_type=None):

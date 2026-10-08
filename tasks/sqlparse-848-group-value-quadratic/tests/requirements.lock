@@ -1,0 +1,9 @@
+editables==0.6
+hatchling==1.32.4
+iniconfig==2.3.0
+packaging==26.3
+pathspec==1.1.1
+pluggy==1.6.0
+pygments==2.21.0
+pytest==8.4.2
+trove-classifiers==2026.9.21.13

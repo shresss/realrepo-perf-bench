@@ -1,0 +1,26 @@
+[
+  {
+    "id": "closure-1",
+    "case": "closure",
+    "size": 1,
+    "seed": 2,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "closure-120",
+    "case": "closure",
+    "size": 120,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "namespaces",
+    "case": "namespaces",
+    "size": 1,
+    "seed": 5,
+    "role": "semantic",
+    "public": true
+  }
+]

@@ -1,0 +1,19 @@
+--- a/lark/load_grammar.py
++++ b/lark/load_grammar.py
+@@ -220,7 +220,15 @@
+                 mn, mx = map(int, args)
+                 if mx < mn or mn < 0:
+                     raise GrammarError("Bad Range for %s (%d..%d isn't allowed)" % (rule, mn, mx))
+-            return ST('expansions', [ST('expansion', [rule] * n) for n in range(mn, mx+1)])
++            tail = []
++            for remaining in range(mx - mn + 1):
++                new_name = '__%s_bounded_%d' % (self.prefix, self.i)
++                self.i += 1
++                tree = ST('expansions', [ST('expansion', []),
++                                          ST('expansion', [rule] + tail)])
++                self.new_rules.append((new_name, tree, self.rule_options))
++                tail = [NonTerminal(new_name)]
++            return ST('expansion', [rule] * mn + tail)
+         assert False, op
+ 
+     def maybe(self, rule):

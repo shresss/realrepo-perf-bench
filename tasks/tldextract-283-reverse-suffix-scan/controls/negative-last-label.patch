@@ -1,0 +1,10 @@
+--- a/tldextract/tldextract.py
++++ b/tldextract/tldextract.py
+@@ -370,6 +370,7 @@
+         """
+         tlds = self.tlds(include_psl_private_domains)
+         length = len(lower_spl)
++        return max(0, length - 1)
+         for i in range(length):
+             maybe_tld = ".".join(lower_spl[i:])
+             exception_tld = "!" + maybe_tld

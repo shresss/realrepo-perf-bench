@@ -1,0 +1,29 @@
+--- a/markdown/postprocessors.py
++++ b/markdown/postprocessors.py
+@@ -86,23 +86,18 @@
+ 
+             if key not in replacements:
+                 if key[3:-4] in replacements:
+-                    return f'<p>{ replacements[key[3:-4]] }</p>'
++                    return f'<p>{ pattern.sub(substitute_match, replacements[key[3:-4]]) }</p>'
+                 else:
+                     return key
+ 
+-            return replacements[key]
++            return pattern.sub(substitute_match, replacements[key])
+ 
+         if replacements:
+             base_placeholder = util.HTML_PLACEHOLDER % r'([0-9]+)'
+             pattern = re.compile(f'<p>{ base_placeholder }</p>|{ base_placeholder }')
+-            processed_text = pattern.sub(substitute_match, text)
++            return pattern.sub(substitute_match, text)
+         else:
+             return text
+-
+-        if processed_text == text:
+-            return processed_text
+-        else:
+-            return self.run(processed_text)
+ 
+     def isblocklevel(self, html: str) -> bool:
+         """ Check is block of HTML is block-level. """

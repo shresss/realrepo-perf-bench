@@ -1,0 +1,1680 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T11:29:04.516637+00:00",
+ "hashes": {
+  "calibrate.py": "694c3187804ae3998fbb117e921a12e92922a746025e92c95b750ce7b263f8b4",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "51d745e1b48b3cdbda23366f73a252f95dd5b980d581312295825a47d4972516",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "038356d7e161eb7f928653d7fc2afbf2e401f4a4c78766e0461a65d7caab6e70"
+  },
+  "task": {
+   "cases.json": "f3863fafb65d516579a98ea960fa69f731c2c223780b41422d5472b0705ac6df",
+   "expected.py": "346a030db5f4c7e115dc364ba2d6e969adfaeec74bf1f0fd1c36f17dd6fc3f1f",
+   "meter.json": "e18b2f715b090d57ac64c4a815157c5a57c2ca5c4679f4c2b9ae73929b6f0b6a",
+   "workload.py": "e505ef62209a7d769bee8cbcd4b515fa2ed4e9ca70709d56db4f7df6c16424d3"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "",
+ "max_wall_seconds": {
+  "native": 5.690646781999931,
+  "performance": 11.811950491000061,
+  "semantic": 1.4634409499999492
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 44,
+   "cpu_seconds": 0.8494189999999999,
+   "exit_code": 0,
+   "expected_count": 44,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 368,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_session.py::test_expire_after_alias": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_expire_immediately": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_remove_expired_responses__error": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_remove_expired_responses__extend_expiration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_remove_expired_responses__shorten_expiration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_request_expire_after__disable_expiration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_basic_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_bulk_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete__chunked": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_clear_and_work_again": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_connection_kwargs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_del": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_iterable_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_keyerrors": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_non_dir_parent_exists": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_picklable_dict": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs0]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_same_settings": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_str": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_switch_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_use_cache_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_use_memory": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_use_memory__uri": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_basic_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete__chunked": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_clear_and_work_again": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_connection_kwargs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_del": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_iterable_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_keyerrors": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_non_dir_parent_exists": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_picklable_dict": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs0]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_same_settings": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_str": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_switch_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_use_cache_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory__uri": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_session.py::test_expire_after_alias",
+     "test_session.py::test_expire_immediately",
+     "test_session.py::test_remove_expired_responses__error",
+     "test_session.py::test_remove_expired_responses__extend_expiration",
+     "test_session.py::test_remove_expired_responses__shorten_expiration",
+     "test_session.py::test_request_expire_after__disable_expiration",
+     "test_sqlite.py::TestSQLiteDict::test_basic_methods",
+     "test_sqlite.py::TestSQLiteDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLiteDict::test_del",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLiteDict::test_keyerrors",
+     "test_sqlite.py::TestSQLiteDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLiteDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLiteDict::test_same_settings",
+     "test_sqlite.py::TestSQLiteDict::test_str",
+     "test_sqlite.py::TestSQLiteDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLiteDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory__uri",
+     "test_sqlite.py::TestSQLiteDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLiteDict::test_switch_commit",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs1]",
+     "test_sqlite.py::TestSQLitePickleDict::test_basic_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_del",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLitePickleDict::test_keyerrors",
+     "test_sqlite.py::TestSQLitePickleDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLitePickleDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLitePickleDict::test_same_settings",
+     "test_sqlite.py::TestSQLitePickleDict::test_str",
+     "test_sqlite.py::TestSQLitePickleDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory__uri",
+     "test_sqlite.py::TestSQLitePickleDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLitePickleDict::test_switch_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs1]"
+    ],
+    "selected_count": 44
+   },
+   "outcome": "passed",
+   "passed_count": 44,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 44,
+    "files": {
+     "tests/conftest.py": "bb89aaec6c6193473d610a858346a79302053043b5bd5d783764536727827101",
+     "tests/integration/base_cache_test.py": "de2b8c7ec8b3d2e6dbdc08b803de38a0e953b8d82c47eb9aae6529bf09148254",
+     "tests/integration/base_storage_test.py": "08711942add8c039ba1c8181f373a3465148fc64f19a8242195b551bad622373",
+     "tests/integration/test_sqlite.py": "56d2da49f738718900f88c6405fb6fc01b9fb0b32ac6f0bb50015e3d8cb102d8",
+     "tests/unit/test_session.py": "0fd793305f2acb84ec0b51693a128ce5f4ac81a73d6b92e00535de106ffceae3"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_session.py::test_expire_after_alias",
+     "test_session.py::test_expire_immediately",
+     "test_session.py::test_remove_expired_responses__error",
+     "test_session.py::test_remove_expired_responses__extend_expiration",
+     "test_session.py::test_remove_expired_responses__shorten_expiration",
+     "test_session.py::test_request_expire_after__disable_expiration",
+     "test_sqlite.py::TestSQLiteDict::test_basic_methods",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLiteDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLiteDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLiteDict::test_del",
+     "test_sqlite.py::TestSQLiteDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLiteDict::test_keyerrors",
+     "test_sqlite.py::TestSQLiteDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLiteDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs1]",
+     "test_sqlite.py::TestSQLiteDict::test_same_settings",
+     "test_sqlite.py::TestSQLiteDict::test_str",
+     "test_sqlite.py::TestSQLiteDict::test_switch_commit",
+     "test_sqlite.py::TestSQLiteDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory__uri",
+     "test_sqlite.py::TestSQLitePickleDict::test_basic_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLitePickleDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLitePickleDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLitePickleDict::test_del",
+     "test_sqlite.py::TestSQLitePickleDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_keyerrors",
+     "test_sqlite.py::TestSQLitePickleDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLitePickleDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs1]",
+     "test_sqlite.py::TestSQLitePickleDict::test_same_settings",
+     "test_sqlite.py::TestSQLitePickleDict::test_str",
+     "test_sqlite.py::TestSQLitePickleDict::test_switch_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory__uri"
+    ],
+    "schema_version": 1,
+    "selection": "(test_session and (expire_after_alias or expire_immediately or remove_expired_responses__error or extend_expiration or shorten_expiration or disable_expiration)) or ((TestSQLiteDict or TestSQLitePickleDict) and not sorted and not noop and not use_temp)",
+    "sha256": "543cd1169282e9d9316f3a416875c1a353b903985217ee46240539deb1d37c85",
+    "source_commit": "2bd683658e17602a826a26b864a399b68181ee33"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "ae8466ae6241cd04ec8835c0196f8065a1a69ee501e709631baf7c6e439aa3ea",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "c4d68b434678008c5f007ce44b6266d3b912c80c97faac7c964562861c9dc8ab",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 4.653280436999921
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 44,
+   "cpu_seconds": 0.8935019999999999,
+   "exit_code": 0,
+   "expected_count": 44,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 368,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_session.py::test_expire_after_alias": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_expire_immediately": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_remove_expired_responses__error": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_remove_expired_responses__extend_expiration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_remove_expired_responses__shorten_expiration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_session.py::test_request_expire_after__disable_expiration": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_basic_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_bulk_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete__chunked": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_clear_and_work_again": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_connection_kwargs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_del": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_iterable_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_keyerrors": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_non_dir_parent_exists": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_picklable_dict": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs0]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_same_settings": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_str": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_switch_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_use_cache_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_use_memory": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLiteDict::test_use_memory__uri": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_basic_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete__chunked": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_clear_and_work_again": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_connection_kwargs": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_del": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_iterable_methods": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_keyerrors": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_non_dir_parent_exists": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_picklable_dict": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs0]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_same_settings": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_str": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_switch_commit": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_use_cache_dir": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory__uri": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_session.py::test_expire_after_alias",
+     "test_session.py::test_expire_immediately",
+     "test_session.py::test_remove_expired_responses__error",
+     "test_session.py::test_remove_expired_responses__extend_expiration",
+     "test_session.py::test_remove_expired_responses__shorten_expiration",
+     "test_session.py::test_request_expire_after__disable_expiration",
+     "test_sqlite.py::TestSQLiteDict::test_basic_methods",
+     "test_sqlite.py::TestSQLiteDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLiteDict::test_del",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLiteDict::test_keyerrors",
+     "test_sqlite.py::TestSQLiteDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLiteDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLiteDict::test_same_settings",
+     "test_sqlite.py::TestSQLiteDict::test_str",
+     "test_sqlite.py::TestSQLiteDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLiteDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory__uri",
+     "test_sqlite.py::TestSQLiteDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLiteDict::test_switch_commit",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs1]",
+     "test_sqlite.py::TestSQLitePickleDict::test_basic_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_del",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLitePickleDict::test_keyerrors",
+     "test_sqlite.py::TestSQLitePickleDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLitePickleDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLitePickleDict::test_same_settings",
+     "test_sqlite.py::TestSQLitePickleDict::test_str",
+     "test_sqlite.py::TestSQLitePickleDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory__uri",
+     "test_sqlite.py::TestSQLitePickleDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLitePickleDict::test_switch_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs1]"
+    ],
+    "selected_count": 44
+   },
+   "outcome": "passed",
+   "passed_count": 44,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 44,
+    "files": {
+     "tests/conftest.py": "bb89aaec6c6193473d610a858346a79302053043b5bd5d783764536727827101",
+     "tests/integration/base_cache_test.py": "de2b8c7ec8b3d2e6dbdc08b803de38a0e953b8d82c47eb9aae6529bf09148254",
+     "tests/integration/base_storage_test.py": "08711942add8c039ba1c8181f373a3465148fc64f19a8242195b551bad622373",
+     "tests/integration/test_sqlite.py": "56d2da49f738718900f88c6405fb6fc01b9fb0b32ac6f0bb50015e3d8cb102d8",
+     "tests/unit/test_session.py": "0fd793305f2acb84ec0b51693a128ce5f4ac81a73d6b92e00535de106ffceae3"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_session.py::test_expire_after_alias",
+     "test_session.py::test_expire_immediately",
+     "test_session.py::test_remove_expired_responses__error",
+     "test_session.py::test_remove_expired_responses__extend_expiration",
+     "test_session.py::test_remove_expired_responses__shorten_expiration",
+     "test_session.py::test_request_expire_after__disable_expiration",
+     "test_sqlite.py::TestSQLiteDict::test_basic_methods",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLiteDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLiteDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLiteDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLiteDict::test_del",
+     "test_sqlite.py::TestSQLiteDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLiteDict::test_keyerrors",
+     "test_sqlite.py::TestSQLiteDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLiteDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLiteDict::test_pragma[kwargs1]",
+     "test_sqlite.py::TestSQLiteDict::test_same_settings",
+     "test_sqlite.py::TestSQLiteDict::test_str",
+     "test_sqlite.py::TestSQLiteDict::test_switch_commit",
+     "test_sqlite.py::TestSQLiteDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory",
+     "test_sqlite.py::TestSQLiteDict::test_use_memory__uri",
+     "test_sqlite.py::TestSQLitePickleDict::test_basic_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete",
+     "test_sqlite.py::TestSQLitePickleDict::test_bulk_delete__chunked",
+     "test_sqlite.py::TestSQLitePickleDict::test_clear_and_work_again",
+     "test_sqlite.py::TestSQLitePickleDict::test_connection_kwargs",
+     "test_sqlite.py::TestSQLitePickleDict::test_del",
+     "test_sqlite.py::TestSQLitePickleDict::test_iterable_methods",
+     "test_sqlite.py::TestSQLitePickleDict::test_keyerrors",
+     "test_sqlite.py::TestSQLitePickleDict::test_non_dir_parent_exists",
+     "test_sqlite.py::TestSQLitePickleDict::test_picklable_dict",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs0]",
+     "test_sqlite.py::TestSQLitePickleDict::test_pragma[kwargs1]",
+     "test_sqlite.py::TestSQLitePickleDict::test_same_settings",
+     "test_sqlite.py::TestSQLitePickleDict::test_str",
+     "test_sqlite.py::TestSQLitePickleDict::test_switch_commit",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_cache_dir",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory",
+     "test_sqlite.py::TestSQLitePickleDict::test_use_memory__uri"
+    ],
+    "schema_version": 1,
+    "selection": "(test_session and (expire_after_alias or expire_immediately or remove_expired_responses__error or extend_expiration or shorten_expiration or disable_expiration)) or ((TestSQLiteDict or TestSQLitePickleDict) and not sorted and not noop and not use_temp)",
+    "sha256": "543cd1169282e9d9316f3a416875c1a353b903985217ee46240539deb1d37c85",
+    "source_commit": "2bd683658e17602a826a26b864a399b68181ee33"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "15f3b316e5a1e8c4fbfb406878f26e4253e1eda202853061259052978c96ffc8",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "c4d68b434678008c5f007ce44b6266d3b912c80c97faac7c964562861c9dc8ab",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 5.690646781999931
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 44,
+  "sha256": "543cd1169282e9d9316f3a416875c1a353b903985217ee46240539deb1d37c85"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "c4d68b434678008c5f007ce44b6266d3b912c80c97faac7c964562861c9dc8ab"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "ae8466ae6241cd04ec8835c0196f8065a1a69ee501e709631baf7c6e439aa3ea"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "c4d68b434678008c5f007ce44b6266d3b912c80c97faac7c964562861c9dc8ab"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "15f3b316e5a1e8c4fbfb406878f26e4253e1eda202853061259052978c96ffc8"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "8f72132db7b5aa4965f9ae98c29fcce44f8c9ad21da0598c86f0e8ba32d664df"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "8f72132db7b5aa4965f9ae98c29fcce44f8c9ad21da0598c86f0e8ba32d664df"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "ee071c581ffff6bd45cf554f7f8da204c0779097072adec90a5cc1a69615d7fc"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "ee071c581ffff6bd45cf554f7f8da204c0779097072adec90a5cc1a69615d7fc"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "4fe85f48eb427f94edbcd66c033fe226131c00db66247a119dbcccf1fa3297fa"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "4fe85f48eb427f94edbcd66c033fe226131c00db66247a119dbcccf1fa3297fa"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "alternative",
+ "role_wall_totals": {
+  "baseline": 52.39334233799991,
+  "candidate": 24.731743991999338
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 3832496,
+   "files": 182,
+   "sha256": "ba5f588386df1b888ff261a1a81ed80382a7de269c4c02ebb9c9c01df4040a64"
+  },
+  "candidate": {
+   "bytes": 3834335,
+   "files": 182,
+   "sha256": "3f89a7658e51d070d4c524b3b3441a1c0a22084040a6f237e3c91aaf8080b3a3"
+  }
+ },
+ "started_utc": "2026-10-01T11:27:46.969687+00:00",
+ "summaries": {
+  "fresh-1000": {
+   "baseline_cpu_median": 0.932923,
+   "baseline_cpu_seconds": [
+    0.94733,
+    0.932923,
+    0.908992
+   ],
+   "baseline_wall_seconds": [
+    3.1241970830001264,
+    3.0892745719997947,
+    3.034675798999615
+   ],
+   "candidate_cpu_seconds": [
+    0.478819,
+    0.504646,
+    0.462958
+   ],
+   "candidate_wall_seconds": [
+    1.4903432340001928,
+    1.5494200889997956,
+    1.4349229740000737
+   ],
+   "case": "fresh",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.9634437681171943,
+   "median_paired_candidate_over_baseline_cpu": 0.5093092128423572,
+   "size": 1000
+  },
+  "legacy-4000": {
+   "baseline_cpu_median": 3.2100210000000002,
+   "baseline_cpu_seconds": [
+    3.2100210000000002,
+    3.198989,
+    3.3902799999999997
+   ],
+   "baseline_wall_seconds": [
+    10.599732932000279,
+    10.465321951000078,
+    11.811950491000061
+   ],
+   "candidate_cpu_seconds": [
+    1.0874419999999998,
+    1.089452,
+    1.1265589999999999
+   ],
+   "candidate_wall_seconds": [
+    3.3240933150000274,
+    3.313384013999894,
+    3.437941237999894
+   ],
+   "case": "legacy",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 2.9519008829896225,
+   "median_paired_candidate_over_baseline_cpu": 0.3387647619750773,
+   "size": 4000
+  }
+ },
+ "workers": [
+  {
+   "case_id": "fresh-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.26872,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.68359375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8803690849999839
+  },
+  {
+   "case_id": "fresh-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.251592,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.12109375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7741365460001361
+  },
+  {
+   "case_id": "legacy-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.31583500000000003,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.75390625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 20,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0659708809998847
+  },
+  {
+   "case_id": "legacy-small",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.347031,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.08984375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 20,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "ce845b6bd8ce9896d206ec8a87aadf674333b42cee5894265a3fbe31fd9d1ad1",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.061865011000009
+  },
+  {
+   "case_id": "never-expire-mixed",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.27913799999999994,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.81640625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 36,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "8f72132db7b5aa4965f9ae98c29fcce44f8c9ad21da0598c86f0e8ba32d664df",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9030074090001108
+  },
+  {
+   "case_id": "never-expire-mixed",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.25220499999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.08984375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 36,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "8f72132db7b5aa4965f9ae98c29fcce44f8c9ad21da0598c86f0e8ba32d664df",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7871929509997244
+  },
+  {
+   "case_id": "hidden-legacy-257",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.401161,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 38.15234375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 257,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "ee071c581ffff6bd45cf554f7f8da204c0779097072adec90a5cc1a69615d7fc",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3021207480001067
+  },
+  {
+   "case_id": "hidden-legacy-257",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.299549,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.3359375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 257,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "ee071c581ffff6bd45cf554f7f8da204c0779097072adec90a5cc1a69615d7fc",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9208221879998746
+  },
+  {
+   "case_id": "hidden-fresh-333",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.44770299999999996,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.9296875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 333,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "4fe85f48eb427f94edbcd66c033fe226131c00db66247a119dbcccf1fa3297fa",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4634409499999492
+  },
+  {
+   "case_id": "hidden-fresh-333",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.305846,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 36.32421875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 333,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "4fe85f48eb427f94edbcd66c033fe226131c00db66247a119dbcccf1fa3297fa",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9469756499997857
+  },
+  {
+   "case_id": "fresh-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.94733,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 40.0625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.1241970830001264
+  },
+  {
+   "case_id": "fresh-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.478819,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.328125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4903432340001928
+  },
+  {
+   "case_id": "fresh-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.504646,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.2890625,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5494200889997956
+  },
+  {
+   "case_id": "fresh-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.932923,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 40.06640625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.0892745719997947
+  },
+  {
+   "case_id": "fresh-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.908992,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 40.06640625,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.034675798999615
+  },
+  {
+   "case_id": "fresh-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.462958,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 39.32421875,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "e4a38956d150fe12854005446eb440e0a389da7fa2357bb25c70744b4bd14e4c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4349229740000737
+  },
+  {
+   "case_id": "legacy-4000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.2100210000000002,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 55.75,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 4000,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 10.599732932000279
+  },
+  {
+   "case_id": "legacy-4000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.0874419999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 59.765625,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 4000,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.3240933150000274
+  },
+  {
+   "case_id": "legacy-4000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.089452,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 59.70703125,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 4000,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.313384013999894
+  },
+  {
+   "case_id": "legacy-4000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.198989,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 55.7734375,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 4000,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 10.465321951000078
+  },
+  {
+   "case_id": "legacy-4000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.3902799999999997,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 55.77734375,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 4000,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 11.811950491000061
+  },
+  {
+   "case_id": "legacy-4000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.1265589999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 59.70703125,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 4000,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "7afb47402faa6759271283a90a04abb2d1977e81b687d40556e03c6f3148c5b9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.437941237999894
+  }
+ ]
+}

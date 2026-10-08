@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sequence-0-seed0",
+    "case": "sequence",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sequence-1-seed17",
+    "case": "sequence",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "sequence-2-seed3",
+    "case": "sequence",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "sequence-8-seed5",
+    "case": "sequence",
+    "size": 8,
+    "seed": 5,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "sequence-125",
+    "case": "sequence",
+    "size": 125,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "sequence-250",
+    "case": "sequence",
+    "size": 250,
+    "seed": 30,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "sequence-500",
+    "case": "sequence",
+    "size": 500,
+    "seed": 43,
+    "role": "performance",
+    "public": false
+  },
+  {
+    "id": "branch-8",
+    "case": "branch",
+    "size": 8,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "ignored-8",
+    "case": "ignored",
+    "size": 8,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "malformed-3",
+    "case": "malformed",
+    "size": 3,
+    "seed": 29,
+    "role": "semantic",
+    "public": false
+  }
+]

@@ -1,0 +1,26 @@
+--- a/tomlkit/items.py
++++ b/tomlkit/items.py
+@@ -331,6 +331,23 @@
+ 
+     def copy(self) -> Trivia:
+         return dataclasses.replace(self)
++
++    def __deepcopy__(self, memo):
++        if type(self) is not Trivia:
++            # Keep subclass slots and custom state protocols on the generic path.
++            reduced = self.__reduce_ex__(4)
++            if isinstance(reduced, str):
++                return self
++            return copy._reconstruct(self, memo, *reduced)
++        result = object.__new__(type(self))
++        memo[id(self)] = result
++        for name, value in self.__dict__.items():
++            # Formatting metadata is normally plain immutable text. Preserve
++            # independent copies for any additional mutable attributes.
++            result.__dict__[name] = (
++                value if type(value) is str else copy.deepcopy(value, memo)
++            )
++        return result
+ 
+ 
+ class KeyType(Enum):

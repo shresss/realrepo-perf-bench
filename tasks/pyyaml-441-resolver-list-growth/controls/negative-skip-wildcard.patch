@@ -1,0 +1,10 @@
+--- a/lib3/yaml/resolver.py
++++ b/lib3/yaml/resolver.py
+@@ -146,7 +146,6 @@
+                 resolvers = self.yaml_implicit_resolvers.get('', [])
+             else:
+                 resolvers = self.yaml_implicit_resolvers.get(value[0], [])
+-            resolvers += self.yaml_implicit_resolvers.get(None, [])
+             for tag, regexp in resolvers:
+                 if regexp.match(value):
+                     return tag

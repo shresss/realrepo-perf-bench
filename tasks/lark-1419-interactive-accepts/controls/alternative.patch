@@ -1,0 +1,46 @@
+--- a/lark/parsers/lalr_interactive_parser.py
++++ b/lark/parsers/lalr_interactive_parser.py
+@@ -102,21 +102,29 @@
+ 
+     def accepts(self):
+         """Returns the set of possible tokens that will advance the parser into a new valid state."""
++        from .lalr_analysis import Shift
++        conf = self.parser_state.parse_conf
+         accepts = set()
+-        conf_no_callbacks = copy(self.parser_state.parse_conf)
+-        # We don't want to call callbacks here since those might have arbitrary side effects
+-        # and are unnecessarily slow.
+-        conf_no_callbacks.callbacks = {}
+-        for t in self.choices():
+-            if t.isupper(): # is terminal?
+-                new_cursor = copy(self)
+-                new_cursor.parser_state.parse_conf = conf_no_callbacks
+-                try:
+-                    new_cursor.feed_token(self.lexer_thread._Token(t, ''))
+-                except UnexpectedToken:
+-                    pass
+-                else:
+-                    accepts.add(t)
++        for terminal in self.choices():
++            if not terminal.isupper():
++                continue
++            stack = list(self.parser_state.state_stack)
++            while True:
++                transition = conf.states[stack[-1]].get(terminal)
++                if transition is None:
++                    break
++                action, arg = transition
++                if action is Shift:
++                    accepts.add(terminal)
++                    break
++                count = len(arg.expansion)
++                if count:
++                    del stack[-count:]
++                _, target = conf.states[stack[-1]][arg.origin.name]
++                stack.append(target)
++                if terminal == '$END' and target == conf.end_state:
++                    accepts.add(terminal)
++                    break
+         return accepts
+ 
+     def resume_parse(self):

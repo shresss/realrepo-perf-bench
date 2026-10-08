@@ -1,0 +1,18 @@
+--- a/splink/settings.py
++++ b/splink/settings.py
+@@ -2,6 +2,7 @@
+ 
+ import logging
+ from copy import deepcopy
++from functools import lru_cache
+ from typing import List
+ 
+ from .blocking import BlockingRule, SaltedBlockingRule, blocking_rule_to_obj
+@@ -215,6 +216,7 @@
+         return dedupe_preserving_order(cols_used)
+ 
+     @property
++    @lru_cache(maxsize=None)
+     def _columns_to_select_for_blocking(self):
+         cols = []
+ 

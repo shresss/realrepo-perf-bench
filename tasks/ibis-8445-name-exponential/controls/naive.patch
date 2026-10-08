@@ -1,0 +1,12 @@
+diff --git a/ibis/expr/operations/core.py b/ibis/expr/operations/core.py
+index 96d724f..92322d3 100644
+--- a/ibis/expr/operations/core.py
++++ b/ibis/expr/operations/core.py
+@@ -87,4 +87,5 @@ class Value(Node, Coercible, DefaultTypeVars, Generic[T, S]):
+     def name(self) -> str:
+-        names = (arg.name for arg in self.__args__ if hasattr(arg, "name"))
+-        return f"{self.__class__.__name__}({', '.join(names)})"
++        cls_name = type(self).__name__
++        names = [arg.name for arg in self.__args__ if hasattr(arg, "name")]
++        return cls_name + "(" + ", ".join(names) + ")"
+ 

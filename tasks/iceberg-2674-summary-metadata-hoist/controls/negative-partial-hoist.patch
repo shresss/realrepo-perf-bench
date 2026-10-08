@@ -1,0 +1,24 @@
+--- a/pyiceberg/table/update/snapshot.py
++++ b/pyiceberg/table/update/snapshot.py
+@@ -240,8 +240,11 @@
+     def _summary(self, snapshot_properties: Dict[str, str] = EMPTY_DICT) -> Summary:
+         from pyiceberg.table import TableProperties
+ 
++        table_metadata = self._transaction.table_metadata
++        partition_spec = table_metadata.spec()
++
+         partition_summary_limit = int(
+-            self._transaction.table_metadata.properties.get(
++            table_metadata.properties.get(
+                 TableProperties.WRITE_PARTITION_SUMMARY_LIMIT, TableProperties.WRITE_PARTITION_SUMMARY_LIMIT_DEFAULT
+             )
+         )
+@@ -250,7 +253,7 @@
+         for data_file in self._added_data_files:
+             ssc.add_file(
+                 data_file=data_file,
+-                partition_spec=self._transaction.table_metadata.spec(),
++                partition_spec=partition_spec,
+                 schema=self._transaction.table_metadata.schema(),
+             )
+ 

@@ -1,0 +1,18 @@
+# Linux lock for optuna-bruteforce-series task. Pins copied from the M4 author resolution (mining/_m4/optuna-env.lock,
+# uv venv Python 3.12) plus the setuptools build backend pins used by the other template tasks.
+alembic==1.20.0
+colorlog==6.12.0
+iniconfig==2.3.0
+mako==1.4.3
+markupsafe==3.0.3
+numpy==2.5.3
+packaging==26.3
+pluggy==1.6.0
+pygments==2.21.0
+pytest==9.1.1
+pyyaml==6.0.3
+sqlalchemy==2.1.1
+tqdm==4.70.1
+typing-extensions==4.16.0
+setuptools==84.0.0
+wheel==0.48.0

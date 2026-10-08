@@ -1,0 +1,19 @@
+[
+  {"id":"empty","case":"empty","size":0,"seed":0,"role":"semantic","public":true},
+  {"id":"duplicate","case":"duplicate","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"multiline-title","case":"multiline-title","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"multiline-label","case":"multiline-label","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"rollback-title","case":"rollback-title","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"blank-title","case":"blank-title","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"heading-terminator","case":"heading-terminator","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"paragraph-before","case":"paragraph-before","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"angle-destination","case":"angle-destination","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"no-end-newline","case":"no-end-newline","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"container","case":"container","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"indented-code","case":"indented-code","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"inline-definitions","case":"inline-definitions","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"existing-env","case":"existing-env","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"title-escaped-newline","case":"title-escaped-newline","size":1,"seed":0,"role":"semantic","public":false},
+  {"id":"changelog-60","case":"changelog","size":60,"seed":0,"role":"performance","public":true},
+  {"id":"changelog-600","case":"changelog","size":600,"seed":0,"role":"performance","public":true}
+]

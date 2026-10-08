@@ -1,0 +1,74 @@
+[
+  {
+    "id": "empty",
+    "case": "roundtrip",
+    "size": 0,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "tiny",
+    "case": "roundtrip",
+    "size": 4,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "seeded",
+    "case": "roundtrip",
+    "size": 7,
+    "seed": 2911,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "defaults",
+    "case": "defaults",
+    "size": 1,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "overrides",
+    "case": "override-traceback",
+    "size": 1,
+    "seed": 1729,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "typed",
+    "case": "typeddict",
+    "size": 1,
+    "seed": 1729,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "validation",
+    "case": "validation",
+    "size": 1,
+    "seed": 1729,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "roundtrip-1000",
+    "case": "roundtrip",
+    "size": 1000,
+    "seed": 1729,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "roundtrip-3000",
+    "case": "roundtrip",
+    "size": 3000,
+    "seed": 1729,
+    "role": "performance",
+    "public": true
+  }
+]

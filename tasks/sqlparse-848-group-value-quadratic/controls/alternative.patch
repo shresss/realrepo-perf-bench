@@ -1,0 +1,51 @@
+--- a/sqlparse/sql.py
++++ b/sqlparse/sql.py
+@@ -310,7 +310,7 @@
+         return start + self.tokens[start:].index(token)
+ 
+     def group_tokens(self, grp_cls, start, end, include_end=True,
+-                     extend=False):
++                     extend=False, _update_value=True):
+         """Replace tokens by an instance of *grp_cls*."""
+         start_idx = start
+         start = self.tokens[start_idx]
+@@ -327,7 +327,8 @@
+             grp = start
+             grp.tokens.extend(subtokens)
+             del self.tokens[start_idx + 1:end_idx]
+-            grp.value = str(start)
++            if _update_value:
++                grp.value = str(start)
+         else:
+             subtokens = self.tokens[start_idx:end_idx]
+             grp = grp_cls(subtokens)
+--- a/sqlparse/engine/grouping.py
++++ b/sqlparse/engine/grouping.py
+@@ -491,6 +491,7 @@
+             f"Maximum number of tokens exceeded ({MAX_GROUPING_TOKENS})."
+         )
+ 
++    deferred_values = set()
+     tidx_offset = 0
+     pidx, prev_ = None, None
+     token_list = list(tlist)
+@@ -511,10 +512,18 @@
+             nidx, next_ = tlist.token_next(tidx)
+             if prev_ and valid_prev(prev_) and valid_next(next_):
+                 from_idx, to_idx = post(tlist, pidx, tidx, nidx)
+-                grp = tlist.group_tokens(cls, from_idx, to_idx, extend=extend)
++                if cls is sql.IdentifierList:
++                    grp = tlist.group_tokens(cls, from_idx, to_idx, extend=extend,
++                                             _update_value=False)
++                    deferred_values.add(grp)
++                else:
++                    grp = tlist.group_tokens(cls, from_idx, to_idx, extend=extend)
+ 
+                 tidx_offset += to_idx - from_idx
+                 pidx, prev_ = from_idx, grp
+                 continue
+ 
+         pidx, prev_ = tidx, token
++
++    for grp in deferred_values:
++        grp.value = str(grp)

@@ -1,0 +1,1808 @@
+{
+ "all_correct": true,
+ "error": null,
+ "final_quiescence": {
+  "checked": true,
+  "initial_pids": [],
+  "quiescent": true
+ },
+ "finished": true,
+ "finished_utc": "2026-10-01T15:42:05.337621+00:00",
+ "hashes": {
+  "calibrate.py": "97866440105efa2698920706b1cd390e726a45fda031fa7dc3def71b89c24774",
+  "runtime": {
+   "boundary.py": "63881dfab17c0635e0033db6658af27cef6ea4c8efaeae3a4e933aeddb158e1c",
+   "execute.py": "71ee6b0d9c42770f94ec8d2c52a14c5a7d71b6e6a356d54277964fdf7ac496f3",
+   "native.py": "3982e425bd082f3ec93a30f4e0a6450cdb90ad7772d5ed51e7f1319fb865582f",
+   "policy.py": "139ed3583278c089bfd0699dbfd904a4fbfec7b96513dadd3e5eab0d6c48e83f",
+   "publish.py": "ee3e8d1dd1c9acce888b21a1ce3dbd8d72e02ec8cb3d6c12133ff61a27fcd570",
+   "verify.py": "5a6d904c77fcd14cccc97c4fc91cd905f79ef51f0f5da092c0cf23d2fcce4e3a"
+  },
+  "task": {
+   "cases.json": "049f0c31218afa3f4232e8e2d7093751531c39bb355c2e2852ccbf7488a90d16",
+   "expected.py": "4e5eeb02ca208e118f6e1d9e451e5068cbb0c5b38421cca19aa885474abbdfc6",
+   "meter.json": "0e887ee3b9facceea34b843c6fe0f1d5f50c3d5fca7a8e9dda04114daec5577f",
+   "workload.py": "09cf9cf4890f65a12775cd11f587e178310ae04d149b3b11c2e77d1f028fcfab"
+  },
+  "tools": {
+   "generic_meter.py": "0d1bf94c7fecc97ce5e909e43ff5f7c27b27191762dbe33f74908626904394f4",
+   "probe_worker.py": "b9757fe7f731799c1af789d6041b981a1c81f18dee94f10d75b2d3b5cb50eed9"
+  }
+ },
+ "kind": "author_control_calibration",
+ "label": "alternative-source-control",
+ "max_wall_seconds": {
+  "native": 1.5297013710005558,
+  "performance": 42.97106661900034,
+  "semantic": 1.553113599999051
+ },
+ "measurement_boundary": "whole_fresh_uninstrumented_probe_worker_process_v1",
+ "model_reward": null,
+ "native": [
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 31,
+   "cpu_seconds": 1.390581,
+   "exit_code": 0,
+   "expected_count": 31,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 602,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_distance_measures.py::TestDistance::test_bound_center": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[100]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[99]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_simple_tree": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_None": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_attr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_fn": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_None": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_attr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_fn": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_hardcoded": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_input_not_tree": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_rooted_tree_isomorphism_different_order": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[DiGraph]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[MultiGraph]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_trivial_rooted_tree_isomorphism": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_distance_measures.py::TestDistance::test_center_simple_tree",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-4]",
+     "test_distance_measures.py::TestDistance::test_center",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[1]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[2]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[99]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[100]",
+     "test_distance_measures.py::TestDistance::test_bound_center",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_fn",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_fn",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[DiGraph]",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[MultiGraph]",
+     "test_tree_isomorphism.py::test_input_not_tree",
+     "test_tree_isomorphism.py::test_hardcoded",
+     "test_tree_isomorphism.py::test_trivial_rooted_tree_isomorphism",
+     "test_tree_isomorphism.py::test_rooted_tree_isomorphism_different_order"
+    ],
+    "selected_count": 31
+   },
+   "outcome": "passed",
+   "passed_count": 31,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 31,
+    "files": {
+     "networkx/algorithms/isomorphism/tests/test_tree_isomorphism.py": "9993d646fdac49527d3dba468b93048f919a15bae9fe16b66cbd70aded7e26aa",
+     "networkx/algorithms/tests/test_distance_measures.py": "905fa947959b541b3577f20ef94e83afeb1ff0c6911dfc5cfc3dbceac04deb61"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_distance_measures.py::TestDistance::test_bound_center",
+     "test_distance_measures.py::TestDistance::test_center",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-4]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[100]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[1]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[2]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[99]",
+     "test_distance_measures.py::TestDistance::test_center_simple_tree",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_fn",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_fn",
+     "test_tree_isomorphism.py::test_hardcoded",
+     "test_tree_isomorphism.py::test_input_not_tree",
+     "test_tree_isomorphism.py::test_rooted_tree_isomorphism_different_order",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[DiGraph]",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[MultiGraph]",
+     "test_tree_isomorphism.py::test_trivial_rooted_tree_isomorphism"
+    ],
+    "schema_version": 1,
+    "selection": "test_center or test_bound_center or test_input_not_tree or test_hardcoded or test_trivial_rooted_tree_isomorphism or test_rooted_tree_isomorphism_different_order or test_tree_isomorphism_raises_on_directed_and_multigraphs",
+    "sha256": "dd4a056a57d3437cb8c4206d10d4712833cd12c4e9aa805e85377c1073832a5e",
+    "source_commit": "a986762f2a1919126df2174644232c92c58be2be"
+   },
+   "reason": null,
+   "role": "baseline",
+   "stderr_path": "raw/0000-stderr.bin",
+   "stderr_sha256": "301b7cd1ad198fcdc66f7b28b8f4e8eb1d3be37f56e02a5553f5dd71557790ea",
+   "stdout_path": "raw/0000-stdout.bin",
+   "stdout_sha256": "90749dfb49a2a7c1a3524ce8bb90340667b6feb365b9a4e107ddbb5fde0e59a9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5297013710005558
+  },
+  {
+   "claim_limit": "supplementary native regression, not adversarial proof",
+   "collected_count": 31,
+   "cpu_seconds": 1.28782,
+   "exit_code": 0,
+   "expected_count": 31,
+   "mode": "protected_upstream",
+   "native_summary": {
+    "collection_errors": 0,
+    "deselected_count": 602,
+    "duplicate_reports": [],
+    "exit_code": 0,
+    "reports": {
+     "test_distance_measures.py::TestDistance::test_bound_center": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-3]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-4]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[100]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[1]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[2]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[99]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestDistance::test_center_simple_tree": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_None": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_attr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_fn": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_None": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_attr": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_fn": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_hardcoded": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_input_not_tree": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_rooted_tree_isomorphism_different_order": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[DiGraph]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[MultiGraph]": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     },
+     "test_tree_isomorphism.py::test_trivial_rooted_tree_isomorphism": {
+      "call": "passed",
+      "setup": "passed",
+      "teardown": "passed"
+     }
+    },
+    "schema_version": 1,
+    "selected": [
+     "test_distance_measures.py::TestDistance::test_center_simple_tree",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-4]",
+     "test_distance_measures.py::TestDistance::test_center",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[1]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[2]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[99]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[100]",
+     "test_distance_measures.py::TestDistance::test_bound_center",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_fn",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_fn",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[DiGraph]",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[MultiGraph]",
+     "test_tree_isomorphism.py::test_input_not_tree",
+     "test_tree_isomorphism.py::test_hardcoded",
+     "test_tree_isomorphism.py::test_trivial_rooted_tree_isomorphism",
+     "test_tree_isomorphism.py::test_rooted_tree_isomorphism_different_order"
+    ],
+    "selected_count": 31
+   },
+   "outcome": "passed",
+   "passed_count": 31,
+   "pre_uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "protected_inputs": {
+    "expected_count": 31,
+    "files": {
+     "networkx/algorithms/isomorphism/tests/test_tree_isomorphism.py": "9993d646fdac49527d3dba468b93048f919a15bae9fe16b66cbd70aded7e26aa",
+     "networkx/algorithms/tests/test_distance_measures.py": "905fa947959b541b3577f20ef94e83afeb1ff0c6911dfc5cfc3dbceac04deb61"
+    },
+    "mode": "protected_upstream",
+    "nodeids": [
+     "test_distance_measures.py::TestDistance::test_bound_center",
+     "test_distance_measures.py::TestDistance::test_center",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[1-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[2-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[3-4]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-2]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-3]",
+     "test_distance_measures.py::TestDistance::test_center_balanced_tree[4-4]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[100]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[1]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[2]",
+     "test_distance_measures.py::TestDistance::test_center_path_graphs[99]",
+     "test_distance_measures.py::TestDistance::test_center_simple_tree",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_bound_center_weight_fn",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_None",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_attr",
+     "test_distance_measures.py::TestWeightedDistance::test_center_weight_fn",
+     "test_tree_isomorphism.py::test_hardcoded",
+     "test_tree_isomorphism.py::test_input_not_tree",
+     "test_tree_isomorphism.py::test_rooted_tree_isomorphism_different_order",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[DiGraph]",
+     "test_tree_isomorphism.py::test_tree_isomorphism_raises_on_directed_and_multigraphs[MultiGraph]",
+     "test_tree_isomorphism.py::test_trivial_rooted_tree_isomorphism"
+    ],
+    "schema_version": 1,
+    "selection": "test_center or test_bound_center or test_input_not_tree or test_hardcoded or test_trivial_rooted_tree_isomorphism or test_rooted_tree_isomorphism_different_order or test_tree_isomorphism_raises_on_directed_and_multigraphs",
+    "sha256": "dd4a056a57d3437cb8c4206d10d4712833cd12c4e9aa805e85377c1073832a5e",
+    "source_commit": "a986762f2a1919126df2174644232c92c58be2be"
+   },
+   "reason": null,
+   "role": "candidate",
+   "stderr_path": "raw/0001-stderr.bin",
+   "stderr_sha256": "cf6e76f8dd9e85df4f7fecaa708f292702e1347cdf694fce2c9dc70d868c16d2",
+   "stdout_path": "raw/0001-stdout.bin",
+   "stdout_sha256": "90749dfb49a2a7c1a3524ce8bb90340667b6feb365b9a4e107ddbb5fde0e59a9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.3366484610014595
+  }
+ ],
+ "native_all_passed": true,
+ "native_outcomes": {
+  "baseline": "passed",
+  "candidate": "passed"
+ },
+ "native_selection": {
+  "expected_count": 31,
+  "sha256": "dd4a056a57d3437cb8c4206d10d4712833cd12c4e9aa805e85377c1073832a5e"
+ },
+ "raw_artifacts": [
+  {
+   "path": "raw/0000-stdout.bin",
+   "sha256": "90749dfb49a2a7c1a3524ce8bb90340667b6feb365b9a4e107ddbb5fde0e59a9"
+  },
+  {
+   "path": "raw/0000-stderr.bin",
+   "sha256": "301b7cd1ad198fcdc66f7b28b8f4e8eb1d3be37f56e02a5553f5dd71557790ea"
+  },
+  {
+   "path": "raw/0001-stdout.bin",
+   "sha256": "90749dfb49a2a7c1a3524ce8bb90340667b6feb365b9a4e107ddbb5fde0e59a9"
+  },
+  {
+   "path": "raw/0001-stderr.bin",
+   "sha256": "cf6e76f8dd9e85df4f7fecaa708f292702e1347cdf694fce2c9dc70d868c16d2"
+  },
+  {
+   "path": "raw/0002-stdout.bin",
+   "sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a"
+  },
+  {
+   "path": "raw/0002-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0003-stdout.bin",
+   "sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a"
+  },
+  {
+   "path": "raw/0003-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0004-stdout.bin",
+   "sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a"
+  },
+  {
+   "path": "raw/0004-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0005-stdout.bin",
+   "sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a"
+  },
+  {
+   "path": "raw/0005-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0006-stdout.bin",
+   "sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a"
+  },
+  {
+   "path": "raw/0006-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0007-stdout.bin",
+   "sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a"
+  },
+  {
+   "path": "raw/0007-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0008-stdout.bin",
+   "sha256": "6e8d90f1379240462c3751517e2d9ca49824e34925ce9b7477d4011e7fa28a6f"
+  },
+  {
+   "path": "raw/0008-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0009-stdout.bin",
+   "sha256": "6e8d90f1379240462c3751517e2d9ca49824e34925ce9b7477d4011e7fa28a6f"
+  },
+  {
+   "path": "raw/0009-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0010-stdout.bin",
+   "sha256": "b2d9715be27f466bdd569eae8aef8b3380f56bc35a989da2502e42f35d55c8ea"
+  },
+  {
+   "path": "raw/0010-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0011-stdout.bin",
+   "sha256": "b2d9715be27f466bdd569eae8aef8b3380f56bc35a989da2502e42f35d55c8ea"
+  },
+  {
+   "path": "raw/0011-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0012-stdout.bin",
+   "sha256": "75f27c9eedf76fb95a8f1b817ac1ced8222c7bfb3fbeb139f534fb032a998db9"
+  },
+  {
+   "path": "raw/0012-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0013-stdout.bin",
+   "sha256": "75f27c9eedf76fb95a8f1b817ac1ced8222c7bfb3fbeb139f534fb032a998db9"
+  },
+  {
+   "path": "raw/0013-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0014-stdout.bin",
+   "sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58"
+  },
+  {
+   "path": "raw/0014-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0015-stdout.bin",
+   "sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58"
+  },
+  {
+   "path": "raw/0015-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0016-stdout.bin",
+   "sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58"
+  },
+  {
+   "path": "raw/0016-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0017-stdout.bin",
+   "sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58"
+  },
+  {
+   "path": "raw/0017-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0018-stdout.bin",
+   "sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58"
+  },
+  {
+   "path": "raw/0018-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0019-stdout.bin",
+   "sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58"
+  },
+  {
+   "path": "raw/0019-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0020-stdout.bin",
+   "sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7"
+  },
+  {
+   "path": "raw/0020-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0021-stdout.bin",
+   "sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7"
+  },
+  {
+   "path": "raw/0021-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0022-stdout.bin",
+   "sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7"
+  },
+  {
+   "path": "raw/0022-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0023-stdout.bin",
+   "sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7"
+  },
+  {
+   "path": "raw/0023-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0024-stdout.bin",
+   "sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7"
+  },
+  {
+   "path": "raw/0024-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0025-stdout.bin",
+   "sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7"
+  },
+  {
+   "path": "raw/0025-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0026-stdout.bin",
+   "sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c"
+  },
+  {
+   "path": "raw/0026-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0027-stdout.bin",
+   "sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c"
+  },
+  {
+   "path": "raw/0027-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0028-stdout.bin",
+   "sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c"
+  },
+  {
+   "path": "raw/0028-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0029-stdout.bin",
+   "sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c"
+  },
+  {
+   "path": "raw/0029-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0030-stdout.bin",
+   "sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c"
+  },
+  {
+   "path": "raw/0030-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "raw/0031-stdout.bin",
+   "sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c"
+  },
+  {
+   "path": "raw/0031-stderr.bin",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "repeats": 3,
+ "role": "alternative",
+ "role_wall_totals": {
+  "baseline": 130.76412283200625,
+  "candidate": 16.15724446799868
+ },
+ "schema_version": 1,
+ "score_eligible": false,
+ "smoke": false,
+ "snapshots": {
+  "baseline": {
+   "bytes": 9393066,
+   "files": 941,
+   "sha256": "114bae481a6c0c4309ff6d2c06279c419dcb0661e41f843e69566e999f15c003"
+  },
+  "candidate": {
+   "bytes": 9393554,
+   "files": 941,
+   "sha256": "e2303729cb460b64231b788c29a20d4638ddbcaf714c77fe7c6859acca6538de"
+  }
+ },
+ "started_utc": "2026-10-01T15:39:35.389564+00:00",
+ "summaries": {
+  "schema-1000": {
+   "baseline_cpu_median": 3.267966,
+   "baseline_cpu_seconds": [
+    3.267966,
+    3.75265,
+    3.203112
+   ],
+   "baseline_wall_seconds": [
+    3.3963454840013583,
+    3.8731085850013187,
+    3.2695976120012347
+   ],
+   "candidate_cpu_seconds": [
+    1.108581,
+    0.81623,
+    0.943325
+   ],
+   "candidate_wall_seconds": [
+    1.1640067519983859,
+    0.8326010999990103,
+    0.9764481890015304
+   ],
+   "case": "schema_pairs",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 3.395555084408873,
+   "median_paired_candidate_over_baseline_cpu": 0.2945026586644488,
+   "size": 1000
+  },
+  "schema-300": {
+   "baseline_cpu_median": 0.973241,
+   "baseline_cpu_seconds": [
+    1.399324,
+    0.93098,
+    0.973241
+   ],
+   "baseline_wall_seconds": [
+    1.5176840370004356,
+    0.9515870489994995,
+    0.9904865999997128
+   ],
+   "candidate_cpu_seconds": [
+    0.901978,
+    0.6978769999999999,
+    0.58843
+   ],
+   "candidate_wall_seconds": [
+    0.9233281330016325,
+    0.720454828999209,
+    0.5973914089991013
+   ],
+   "case": "schema_pairs",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 1.551394823377067,
+   "median_paired_candidate_over_baseline_cpu": 0.6445812406562025,
+   "size": 300
+  },
+  "schema-3000": {
+   "baseline_cpu_median": 34.762925,
+   "baseline_cpu_seconds": [
+    34.762925,
+    37.423063,
+    26.322751999999998
+   ],
+   "baseline_wall_seconds": [
+    37.406332708000264,
+    42.97106661900034,
+    29.297687952999695
+   ],
+   "candidate_cpu_seconds": [
+    1.435924,
+    1.6590589999999998,
+    0.912656
+   ],
+   "candidate_wall_seconds": [
+    1.4792652249998355,
+    1.726284932999988,
+    1.0084433690026344
+   ],
+   "case": "schema_pairs",
+   "complete_pairs": 3,
+   "median_paired_baseline_over_candidate_cpu": 24.209446321671624,
+   "median_paired_candidate_over_baseline_cpu": 0.04130619043132878,
+   "size": 3000
+  }
+ },
+ "workers": [
+  {
+   "case_id": "schema-tiny-public",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.01585,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.9140625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 40,
+   "stderr_path": "raw/0002-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0002-stdout.bin",
+   "stdout_sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0955301340000005
+  },
+  {
+   "case_id": "schema-tiny-public",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.693031,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.921875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 40,
+   "stderr_path": "raw/0003-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0003-stdout.bin",
+   "stdout_sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.716332052998041
+  },
+  {
+   "case_id": "schema-tiny-seed7",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.697409,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.91015625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 40,
+   "stderr_path": "raw/0004-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0004-stdout.bin",
+   "stdout_sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7095955799995863
+  },
+  {
+   "case_id": "schema-tiny-seed7",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.7400439999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.93359375,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 40,
+   "stderr_path": "raw/0005-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0005-stdout.bin",
+   "stdout_sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7597234950007987
+  },
+  {
+   "case_id": "schema-tiny-seed91",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.666954,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.9140625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 40,
+   "stderr_path": "raw/0006-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0006-stdout.bin",
+   "stdout_sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.6926749529993685
+  },
+  {
+   "case_id": "schema-tiny-seed91",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.731686,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.92578125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 40,
+   "stderr_path": "raw/0007-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0007-stdout.bin",
+   "stdout_sha256": "b411e396d6d18f233d66b892759cecf05e102ba53ea1702f52d0bbe67eae718a",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7908624349984166
+  },
+  {
+   "case_id": "edge-pairs",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.004006,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.9140625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0008-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0008-stdout.bin",
+   "stdout_sha256": "6e8d90f1379240462c3751517e2d9ca49824e34925ce9b7477d4011e7fa28a6f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0564574240015645
+  },
+  {
+   "case_id": "edge-pairs",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.241342,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.92578125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0009-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0009-stdout.bin",
+   "stdout_sha256": "6e8d90f1379240462c3751517e2d9ca49824e34925ce9b7477d4011e7fa28a6f",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.553113599999051
+  },
+  {
+   "case_id": "invalid-pairs",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.905534,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.90234375,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0010-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0010-stdout.bin",
+   "stdout_sha256": "b2d9715be27f466bdd569eae8aef8b3380f56bc35a989da2502e42f35d55c8ea",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9418155269995623
+  },
+  {
+   "case_id": "invalid-pairs",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.8039569999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.921875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0011-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0011-stdout.bin",
+   "stdout_sha256": "b2d9715be27f466bdd569eae8aef8b3380f56bc35a989da2502e42f35d55c8ea",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8350563999993028
+  },
+  {
+   "case_id": "center-guards",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 1.022665,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.9140625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1,
+   "stderr_path": "raw/0012-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0012-stdout.bin",
+   "stdout_sha256": "75f27c9eedf76fb95a8f1b817ac1ced8222c7bfb3fbeb139f534fb032a998db9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0644511960017553
+  },
+  {
+   "case_id": "center-guards",
+   "case_role": "semantic",
+   "correct": true,
+   "cpu_seconds": 0.7129759999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 35.92578125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1,
+   "stderr_path": "raw/0013-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0013-stdout.bin",
+   "stdout_sha256": "75f27c9eedf76fb95a8f1b817ac1ced8222c7bfb3fbeb139f534fb032a998db9",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 60.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.7372840850002831
+  },
+  {
+   "case_id": "schema-300",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.399324,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.2890625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 300,
+   "stderr_path": "raw/0014-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0014-stdout.bin",
+   "stdout_sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.5176840370004356
+  },
+  {
+   "case_id": "schema-300",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.901978,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.3125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 300,
+   "stderr_path": "raw/0015-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0015-stdout.bin",
+   "stdout_sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9233281330016325
+  },
+  {
+   "case_id": "schema-300",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.6978769999999999,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.29296875,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 300,
+   "stderr_path": "raw/0016-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0016-stdout.bin",
+   "stdout_sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.720454828999209
+  },
+  {
+   "case_id": "schema-300",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.93098,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.2890625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 300,
+   "stderr_path": "raw/0017-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0017-stdout.bin",
+   "stdout_sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9515870489994995
+  },
+  {
+   "case_id": "schema-300",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.973241,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.2890625,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 300,
+   "stderr_path": "raw/0018-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0018-stdout.bin",
+   "stdout_sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9904865999997128
+  },
+  {
+   "case_id": "schema-300",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.58843,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 37.3125,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 300,
+   "stderr_path": "raw/0019-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0019-stdout.bin",
+   "stdout_sha256": "2e311c2c4f0ab2936bb0a58482335b611e8a02ac4e2f385f46755e16e9453c58",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.5973914089991013
+  },
+  {
+   "case_id": "schema-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.267966,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 43.2890625,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0020-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0020-stdout.bin",
+   "stdout_sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.3963454840013583
+  },
+  {
+   "case_id": "schema-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.108581,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 43.1875,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0021-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0021-stdout.bin",
+   "stdout_sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.1640067519983859
+  },
+  {
+   "case_id": "schema-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.81623,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 43.1875,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0022-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0022-stdout.bin",
+   "stdout_sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.8326010999990103
+  },
+  {
+   "case_id": "schema-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.75265,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 43.2890625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0023-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0023-stdout.bin",
+   "stdout_sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.8731085850013187
+  },
+  {
+   "case_id": "schema-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 3.203112,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 43.29296875,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 1000,
+   "stderr_path": "raw/0024-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0024-stdout.bin",
+   "stdout_sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 3.2695976120012347
+  },
+  {
+   "case_id": "schema-1000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.943325,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 43.30859375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 1000,
+   "stderr_path": "raw/0025-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0025-stdout.bin",
+   "stdout_sha256": "ac820cfaf3b778795bc741748e2704f48eb0940200340ca7e2be83211f2768a7",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 0.9764481890015304
+  },
+  {
+   "case_id": "schema-3000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 34.762925,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 55.6171875,
+   "repeat": 0,
+   "role": "baseline",
+   "size": 3000,
+   "stderr_path": "raw/0026-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0026-stdout.bin",
+   "stdout_sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 37.406332708000264
+  },
+  {
+   "case_id": "schema-3000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.435924,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 56.14453125,
+   "repeat": 0,
+   "role": "candidate",
+   "size": 3000,
+   "stderr_path": "raw/0027-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0027-stdout.bin",
+   "stdout_sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.4792652249998355
+  },
+  {
+   "case_id": "schema-3000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 1.6590589999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 56.05078125,
+   "repeat": 1,
+   "role": "candidate",
+   "size": 3000,
+   "stderr_path": "raw/0028-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0028-stdout.bin",
+   "stdout_sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.726284932999988
+  },
+  {
+   "case_id": "schema-3000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 37.423063,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 55.625,
+   "repeat": 1,
+   "role": "baseline",
+   "size": 3000,
+   "stderr_path": "raw/0029-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0029-stdout.bin",
+   "stdout_sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 42.97106661900034
+  },
+  {
+   "case_id": "schema-3000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 26.322751999999998,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 55.625,
+   "repeat": 2,
+   "role": "baseline",
+   "size": 3000,
+   "stderr_path": "raw/0030-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0030-stdout.bin",
+   "stdout_sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10002,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 29.297687952999695
+  },
+  {
+   "case_id": "schema-3000",
+   "case_role": "performance",
+   "correct": true,
+   "cpu_seconds": 0.912656,
+   "exit_code": 0,
+   "failure": null,
+   "mode": "uninstrumented",
+   "parse_error": null,
+   "peak_rss_mib": 56.0234375,
+   "repeat": 2,
+   "role": "candidate",
+   "size": 3000,
+   "stderr_path": "raw/0031-stderr.bin",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout_path": "raw/0031-stdout.bin",
+   "stdout_sha256": "d346b5cc3a8b7544ad143ad3c5d9f2343d617e44e101ded408b02d0c1aaf3d7c",
+   "surviving_process": false,
+   "timeout": false,
+   "timeout_seconds_effective": 300.0,
+   "uid": 10001,
+   "uid_quiescence": {
+    "checked": true,
+    "initial_pids": [],
+    "quiescent": true
+   },
+   "wall_seconds": 1.0084433690026344
+  }
+ ]
+}

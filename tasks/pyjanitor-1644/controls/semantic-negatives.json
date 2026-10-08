@@ -1,0 +1,36 @@
+{
+  "kind": "ordinary_functional_negative_controls",
+  "base_commit": "da03bfd019e5b01bc9406910d0acd46dd9461dee",
+  "scope": "local_author_semantics_not_production_performance",
+  "candidate_output_contract": "Candidate exits0 and emits valid JSON; independent exact oracle reports a mismatch.",
+  "controls": [
+    {
+      "name": "sorted-position",
+      "patch": "negative-sorted-position.patch",
+      "patch_sha256": "7ffea3010b987a55fbca55c1a50619f8af6eea209c44e1e95627fd394ce653d4",
+      "checkout": "../../../repos/pyjanitor-1644-negative-sorted",
+      "expected_failure_cases": ["semantic-1", "semantic-2"],
+      "observed_candidate_exit_codes": [0, 0],
+      "observed_semantic_mismatches": [true, true],
+      "author_checker_exit_code": 0,
+      "evidence": "../../../evidence/1644-negative-sorted-semantic.json"
+    },
+    {
+      "name": "strict-inclusive",
+      "patch": "negative-strict-inclusive.patch",
+      "patch_sha256": "ca6739669c130d921b6c5be8160166ad22f45372a88050ebe8ced1a27dbf8920",
+      "checkout": "../../../repos/pyjanitor-1644-negative-inclusive",
+      "expected_failure_cases": ["semantic-5", "semantic-6"],
+      "observed_candidate_exit_codes": [0, 0],
+      "observed_semantic_mismatches": [true, true],
+      "author_checker_exit_code": 0,
+      "evidence": "../../../evidence/1644-negative-inclusive-semantic.json"
+    }
+  ],
+  "active_cases_sha256_unchanged": "56da7cafccaae28da16282399d3da57c22947040e93d8b86cdf26fa05996b05c",
+  "active_workload_sha256_unchanged": "ce3a992bb61a856b4025b83874c7ca54e590bc95bf5f7eef92cb7c92d81005d0",
+  "active_expected_sha256_unchanged": "bb7fd6968c33d17c9ab282ddb762f2b0c99927b0cdc2127089b33b099b7b2c54",
+  "score_eligible": false,
+  "model_reward": null,
+  "task_accepted": false
+}

@@ -1,0 +1,16 @@
+diff --git a/markdown_it/rules_block/reference.py b/markdown_it/rules_block/reference.py
+index b77944b..96f0bc4 100644
+--- a/markdown_it/rules_block/reference.py
++++ b/markdown_it/rules_block/reference.py
+@@ -37,7 +37,10 @@ def reference(state: StateBlock, startLine: int, _endLine: int, silent: bool) ->
+     endLine = state.lineMax
+ 
+     # jump line-by-line until empty one or EOF
+-    terminatorRules = state.md.block.ruler.getRules("reference")
++    terminatorRules = getattr(state, "_reference_terminators", None)
++    if terminatorRules is None:
++        terminatorRules = state.md.block.ruler.getRules("reference")
++        state._reference_terminators = terminatorRules
+ 
+     oldParentType = state.parentType
+     state.parentType = "reference"

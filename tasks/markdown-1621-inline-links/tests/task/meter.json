@@ -1,0 +1,6 @@
+{
+  "target_paths": ["markdown/treeprocessors.py", "markdown/inlinepatterns.py"],
+  "package_paths": ["markdown"],
+  "pandas_udf": false,
+  "claim": "Diagnostics only. Shared grade worker disables instrumentation; parent CPU is separate."
+}

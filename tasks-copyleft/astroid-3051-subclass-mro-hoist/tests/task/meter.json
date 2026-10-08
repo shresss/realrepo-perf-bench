@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "astroid"
+  ],
+  "package_paths": [
+    "astroid"
+  ],
+  "pandas_udf": false,
+  "interpretation": "Diagnostic operation counts only."
+}

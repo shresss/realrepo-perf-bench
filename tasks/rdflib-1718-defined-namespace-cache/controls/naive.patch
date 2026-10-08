@@ -1,0 +1,11 @@
+--- a/rdflib/namespace/__init__.py
++++ b/rdflib/namespace/__init__.py
+@@ -197,7 +197,7 @@
+ 
+     def __getitem__(cls, name: str, default=None) -> URIRef:
+         name = str(name)
+-        if str(name).startswith("__"):
++        if name.startswith("__"):
+             return super().__getitem__(name, default)  # type: ignore[misc] # undefined in superclass
+         if (cls._warn or cls._fail) and name not in cls:
+             if cls._fail:

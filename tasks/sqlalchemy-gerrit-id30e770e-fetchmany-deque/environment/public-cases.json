@@ -1,0 +1,42 @@
+[
+  {
+    "id": "insert-returning-50000",
+    "case": "insert-returning",
+    "size": 50000,
+    "seed": 7,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "insert-returning-200000",
+    "case": "insert-returning",
+    "size": 200000,
+    "seed": 7,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "insert-returning-1-s11",
+    "case": "insert-returning",
+    "size": 1,
+    "seed": 11,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "insert-returning-23-s13",
+    "case": "insert-returning",
+    "size": 23,
+    "seed": 13,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "fetch-sequence-23-s29",
+    "case": "fetch-sequence",
+    "size": 23,
+    "seed": 29,
+    "role": "semantic",
+    "public": true
+  }
+]

@@ -1,0 +1,13 @@
+diff --git a/src/attr/_make.py b/src/attr/_make.py
+index 097534f..1700b81 100644
+--- a/src/attr/_make.py
++++ b/src/attr/_make.py
+@@ -1850,7 +1850,7 @@ def _make_eq(cls, attrs):
+     """
+     Create __eq__ method for *cls* with *attrs*.
+     """
+-    attrs = [a for a in attrs if a.eq]
++    attrs = [a for a in attrs if a.eq][:1]
+ 
+     unique_filename = _generate_unique_filename(cls, "eq")
+     lines = [

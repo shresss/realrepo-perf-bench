@@ -1,0 +1,25 @@
+import hashlib, json
+def build_doc(n):
+    lines = ['# fleet inventory', 'title = "prod fleet"', '']
+    for i in range(n):
+        lines += [f'[inventory.hosts.web-{i:04d}]', f'ip = "10.{i // 250}.{i % 250}.{i * 7 % 250}"', f'''role = "{['web', 'db', 'cache', 'queue'][i % 4]}"''', f'zone = "eu-west-{1 + i % 3}"', f'cpus = {2 ** (i % 5)}', f'memory_gb = {4 * (1 + i % 8)}', f'tags = ["tier-{i % 3}", "team-{i % 7}"]', f"enabled = {('true' if i % 5 else 'false')}", f'notes = "host {i} été rack {i % 40}"', '']
+    return '\n'.join(lines)
+
+CASES = {'empty': '', 'single_subtable': '[inventory.hosts.a]\nip = "1"\n', 'duplicate_header': '[a.b.c]\nx = 1\n[a.b.c]\ny = 2\n', 'duplicate_key_across_merge': '[a.b.c]\nx = 1\n[a.b]\nc = 2\n', 'unicode': '[inventaire."hôtes"."été"]\nnom = "日本語 😀"\n[inventaire."hôtes".hiver]\nnom = "ß"\n', 'out_of_order': '[a.b.c]\nx = 1\n[z]\nq = 1\n[a.b.d]\ny = 2\n[a.e]\nw = 3\n', 'out_of_order_conflict': '[a.b]\nc = 1\n[z]\nq = 1\n[a.b.c]\ny = 2\n', 'dotted_keys_mix': '[a]\nb.c = 1\n[a.b.d]\ne = 2\n[a.f.g]\nh = 3\n', 'aot_under_super': '[[a.b.items]]\nx = 1\n[[a.b.items]]\nx = 2\n[a.c.d]\ny = 3\n', 'comments_ws': '# head\n[a.b.c] # c1\nx = 1 # v\n\n\n[a.b.d]\n\ty = 2\n# trailing\n', 'boundary_deep': ''.join((f'[r.s.t{i}.u.v]\nk = {i}\n' for i in range(40))), 'implicit_then_explicit': '[a.b.c]\nx = 1\n[a]\ny = 2\n[a.b.d]\nz = 3\n'}
+
+def fixture(case,size,seed):
+    if case == "inventory":
+        return build_doc(size).replace('title = "prod fleet"', f'title = "prod fleet {seed}"')
+    return CASES[case]
+
+def normal(value):
+    return json.loads(json.dumps(value,sort_keys=True,ensure_ascii=False,default=str))
+
+def expected(case,size,seed):
+    import tomllib
+    text=fixture(case,size,seed)
+    try: data=tomllib.loads(text)
+    except tomllib.TOMLDecodeError: return {"error":True}
+    result={"error":False,"data":normal(data),"render_sha256":hashlib.sha256(text.encode()).hexdigest(),"roundtrip":True}
+    if case != "inventory": result["copy_independent"]=True
+    return result

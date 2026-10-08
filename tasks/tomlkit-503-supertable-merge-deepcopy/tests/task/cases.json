@@ -1,0 +1,114 @@
+[
+  {
+    "id": "semantic-empty",
+    "case": "empty",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-single_subtable",
+    "case": "single_subtable",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-duplicate_header",
+    "case": "duplicate_header",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-duplicate_key_across_merge",
+    "case": "duplicate_key_across_merge",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-unicode",
+    "case": "unicode",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-out_of_order",
+    "case": "out_of_order",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-out_of_order_conflict",
+    "case": "out_of_order_conflict",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-dotted_keys_mix",
+    "case": "dotted_keys_mix",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-aot_under_super",
+    "case": "aot_under_super",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-comments_ws",
+    "case": "comments_ws",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-boundary_deep",
+    "case": "boundary_deep",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "semantic-implicit_then_explicit",
+    "case": "implicit_then_explicit",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "inventory-75",
+    "case": "inventory",
+    "size": 75,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "inventory-150",
+    "case": "inventory",
+    "size": 150,
+    "seed": 0,
+    "role": "performance",
+    "public": false
+  }
+]

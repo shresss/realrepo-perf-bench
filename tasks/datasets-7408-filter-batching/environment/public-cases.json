@@ -1,0 +1,34 @@
+[
+  {
+    "id": "row_filter-0",
+    "case": "row_filter",
+    "size": 0,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "row_filter-1",
+    "case": "row_filter",
+    "size": 1,
+    "seed": 72,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "row_filter-43",
+    "case": "row_filter",
+    "size": 43,
+    "seed": 73,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "filter-10000",
+    "case": "row_filter",
+    "size": 10000,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  }
+]

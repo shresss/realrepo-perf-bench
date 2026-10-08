@@ -1,0 +1,50 @@
+[
+  {
+    "id": "columns-1",
+    "case": "records",
+    "size": 1,
+    "seed": 3,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "columns-8",
+    "case": "records",
+    "size": 8,
+    "seed": 71,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "columns-17",
+    "case": "records",
+    "size": 17,
+    "seed": 13,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "columns-33",
+    "case": "records",
+    "size": 33,
+    "seed": 31,
+    "role": "semantic",
+    "public": false
+  },
+  {
+    "id": "columns-256",
+    "case": "records",
+    "size": 256,
+    "seed": 71,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "columns-1280",
+    "case": "records",
+    "size": 1280,
+    "seed": 97,
+    "role": "performance",
+    "public": false
+  }
+]

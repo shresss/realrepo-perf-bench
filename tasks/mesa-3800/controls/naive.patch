@@ -1,0 +1,13 @@
+diff --git a/mesa/time/events.py b/mesa/time/events.py
+index 5c3f5df..5bd0d98 100644
+--- a/mesa/time/events.py
++++ b/mesa/time/events.py
+@@ -463,7 +463,7 @@ class EventList:
+ 
+     def is_empty(self) -> bool:
+         """Return whether the event list is empty."""
+-        return len(self) == 0
++        return not any(not e.CANCELED for e in self._events)
+ 
+     def __contains__(self, event: Event) -> bool:  # noqa
+         if event.CANCELED:

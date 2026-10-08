@@ -1,0 +1,26 @@
+[
+  {
+    "id": "symbols-0-seed0",
+    "case": "symbols",
+    "size": 0,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "symbols-1-seed17",
+    "case": "symbols",
+    "size": 1,
+    "seed": 17,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "symbols-10000",
+    "case": "symbols",
+    "size": 10000,
+    "seed": 17,
+    "role": "performance",
+    "public": true
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {"id":"grid-small","case":"grid","size":264,"seed":1,"role":"semantic","public":true},
+  {"id":"conditional","case":"conditional","size":96,"seed":2,"role":"semantic","public":true},
+  {"id":"nan-choices","case":"nan","size":180,"seed":3,"role":"semantic","public":false},
+  {"id":"failures-pruned","case":"failures","size":36,"seed":4,"role":"semantic","public":true},
+  {"id":"enqueue-offgrid","case":"enqueue","size":40,"seed":5,"role":"semantic","public":false},
+  {"id":"ask-tell-running","case":"ask-tell-running","size":15,"seed":6,"role":"semantic","public":false},
+  {"id":"conditional-aps","case":"conditional-aps","size":96,"seed":7,"role":"semantic","public":false},
+  {"id":"grid-528","case":"grid","size":528,"seed":5,"role":"performance","public":true},
+  {"id":"grid-1320","case":"grid","size":1320,"seed":11,"role":"performance","public":false}
+]

@@ -1,0 +1,6 @@
+{
+  "target_paths": ["fsspec/utils.py", "fsspec/implementations/reference.py"],
+  "package_paths": ["fsspec"],
+  "pandas_udf": false,
+  "claim": "Diagnostics only. Shared grade worker disables instrumentation; parent CPU is separate."
+}

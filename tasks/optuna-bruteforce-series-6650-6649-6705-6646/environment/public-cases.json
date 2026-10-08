@@ -1,0 +1,34 @@
+[
+  {
+    "id": "grid-small",
+    "case": "grid",
+    "size": 264,
+    "seed": 1,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "conditional",
+    "case": "conditional",
+    "size": 96,
+    "seed": 2,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "failures-pruned",
+    "case": "failures",
+    "size": 36,
+    "seed": 4,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "grid-528",
+    "case": "grid",
+    "size": 528,
+    "seed": 5,
+    "role": "performance",
+    "public": true
+  }
+]

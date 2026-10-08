@@ -1,0 +1,27 @@
+--- a/pypdf/_reader.py
++++ b/pypdf/_reader.py
+@@ -57,6 +57,7 @@
+     logger_warning,
+     read_non_whitespace,
+     read_previous_line,
++    read_until_regex,
+     read_until_whitespace,
+     skip_over_comment,
+     skip_over_whitespace,
+@@ -361,12 +362,11 @@
+             objnum = NumberObject.read_from_stream(stream_data)
+             read_non_whitespace(stream_data)
+             stream_data.seek(-1, 1)
++            if objnum != indirect_reference.idnum:
++                # Consume the unused offset without constructing a numeric object.
++                read_until_regex(stream_data, NumberObject.NumberPattern)
++                continue
+             offset = NumberObject.read_from_stream(stream_data)
+-            read_non_whitespace(stream_data)
+-            stream_data.seek(-1, 1)
+-            if objnum != indirect_reference.idnum:
+-                # We're only interested in one object
+-                continue
+             if self.strict and idx != i:
+                 raise PdfReadError("Object is in wrong index.")
+             stream_data.seek(int(obj_stm["/First"] + offset), 0)  # type: ignore

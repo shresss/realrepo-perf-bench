@@ -1,0 +1,18 @@
+diff --git a/networkx/algorithms/distance_measures.py b/networkx/algorithms/distance_measures.py
+--- a/networkx/algorithms/distance_measures.py
++++ b/networkx/algorithms/distance_measures.py
+@@ -678,6 +678,14 @@
+     """
+     if usebounds is True and e is None and not G.is_directed():
+         return _extrema_bounding(G, compute="center", weight=weight)
++    if e is None and weight is None and not G.is_directed() and nx.is_tree(G):
++        first = nx.single_source_shortest_path_length(G, next(iter(G)))
++        endpoint = max(first, key=first.get)
++        second = nx.single_source_shortest_path_length(G, endpoint)
++        farthest = max(second, key=second.get)
++        path = nx.shortest_path(G, endpoint, farthest)
++        middle = {path[(len(path) - 1) // 2], path[len(path) // 2]}
++        return [node for node in G if node in middle]
+     if e is None:
+         e = eccentricity(G, weight=weight)
+     radius = min(e.values())

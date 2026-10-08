@@ -1,0 +1,24 @@
+diff --git a/ibis/expr/operations/core.py b/ibis/expr/operations/core.py
+index 96d724f..56d707f 100644
+--- a/ibis/expr/operations/core.py
++++ b/ibis/expr/operations/core.py
+@@ -2,2 +2,3 @@ from __future__ import annotations
+ 
++import functools
+ from abc import abstractmethod
+@@ -87,4 +88,3 @@ class Value(Node, Coercible, DefaultTypeVars, Generic[T, S]):
+     def name(self) -> str:
+-        names = (arg.name for arg in self.__args__ if hasattr(arg, "name"))
+-        return f"{self.__class__.__name__}({', '.join(names)})"
++        return _default_value_name(self)
+ 
+@@ -198 +198,9 @@ class Argument(Value):
+ public(ValueOp=Value, UnaryOp=Unary, BinaryOp=Binary, Scalar=Scalar, Column=Column)
++
++
++@functools.lru_cache(maxsize=4096)
++def _default_value_name(node) -> str:
++    # Nodes are immutable and hashable, so a node's default name never changes;
++    # caching it keeps nested chains from re-deriving every child name.
++    names = (arg.name for arg in node.__args__ if hasattr(arg, "name"))
++    return f"{node.__class__.__name__}({', '.join(names)})"

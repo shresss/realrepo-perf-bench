@@ -1,0 +1,13 @@
+--- a/pydicom/dataset.py
++++ b/pydicom/dataset.py
+@@ -914,10 +914,6 @@
+ 
+         elem = self._dict[tag]
+         if isinstance(elem, DataElement):
+-            if elem.VR == VR_.SQ and elem.value:
+-                # let a sequence know its parent dataset, as sequence items
+-                # may need parent dataset tags to resolve ambiguous tags
+-                elem.value.parent = self
+             return elem
+ 
+         if isinstance(elem, RawDataElement):

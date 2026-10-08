@@ -1,0 +1,18 @@
+[
+  {"id":"gray-two-pages","case":"gray8:eod","size":2,"seed":3,"role":"semantic","public":true},
+  {"id":"gray-no-eod","case":"gray8:noeod","size":1,"seed":4,"role":"semantic","public":false},
+  {"id":"gray-data-after-eod","case":"gray8:junk","size":1,"seed":5,"role":"semantic","public":false},
+  {"id":"gray-max-runs","case":"gray8:maxruns","size":1,"seed":6,"role":"semantic","public":false},
+  {"id":"gray-odd-width","case":"gray8odd:eod","size":3,"seed":7,"role":"semantic","public":false},
+  {"id":"gray-odd-max-runs","case":"gray8odd:maxruns","size":1,"seed":12,"role":"semantic","public":false},
+  {"id":"gray-odd-after-eod","case":"gray8odd:junk","size":2,"seed":15,"role":"semantic","public":false},
+  {"id":"bilevel-two-pages","case":"drawmini:eod","size":2,"seed":8,"role":"semantic","public":true},
+  {"id":"bilevel-no-eod","case":"drawmini:noeod","size":1,"seed":9,"role":"semantic","public":false},
+  {"id":"bilevel-after-eod","case":"drawmini:junk","size":1,"seed":13,"role":"semantic","public":false},
+  {"id":"rgb-two-pages","case":"rgb:eod","size":2,"seed":10,"role":"semantic","public":false},
+  {"id":"rgb-max-runs","case":"rgb:maxruns","size":1,"seed":11,"role":"semantic","public":false},
+  {"id":"rgb-no-eod","case":"rgb:noeod","size":1,"seed":14,"role":"semantic","public":false},
+  {"id":"fax-3","case":"gray8:eod","size":3,"seed":5,"role":"performance","public":true},
+  {"id":"fax-12","case":"gray8:eod","size":12,"seed":0,"role":"performance","public":false},
+  {"id":"drawing-1","case":"drawing:eod","size":1,"seed":21,"role":"performance","public":false}
+]

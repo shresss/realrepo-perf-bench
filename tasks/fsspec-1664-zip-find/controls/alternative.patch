@@ -1,0 +1,22 @@
+--- a/fsspec/implementations/zip.py
++++ b/fsspec/implementations/zip.py
+@@ -132,3 +132,19 @@
+             out.size = info["size"]
+             out.name = info["name"]
+         return out
++
++    def ls(self, path, detail=True, **kwargs):
++        if path != self._strip_protocol(path):
++            return super().ls(path, detail=detail, **kwargs)
++        self._get_dirs()
++        # Materialize immediate children once, then retain generic walk/find semantics.
++        if getattr(self, '_children_source', None) is not self.dir_cache:
++            children = {}
++            for name, info in self.dir_cache.items():
++                parent = name.rpartition('/')[0]
++                children.setdefault(parent, {})[name] = info
++            self._zip_children = children
++            self._children_source = self.dir_cache
++        entries = self._zip_children.get(path.rstrip('/'), {})
++        names = sorted(entries)
++        return [entries[name] for name in names] if detail else names

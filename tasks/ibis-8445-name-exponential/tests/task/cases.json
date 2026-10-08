@@ -1,0 +1,12 @@
+[
+  {"id":"semantic-daily-1","case":"daily","size":1,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-daily-2","case":"daily","size":2,"seed":7,"role":"semantic","public":true},
+  {"id":"semantic-daily-3","case":"daily","size":3,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-daily-5","case":"daily","size":5,"seed":2,"role":"semantic","public":true},
+  {"id":"semantic-daily-16","case":"daily","size":16,"seed":3,"role":"semantic","public":false},
+  {"id":"semantic-tariff-1","case":"tariff","size":1,"seed":4,"role":"semantic","public":false},
+  {"id":"semantic-tariff-4","case":"tariff","size":4,"seed":1,"role":"semantic","public":false},
+  {"id":"semantic-tariff-12","case":"tariff","size":12,"seed":9,"role":"semantic","public":false},
+  {"id":"performance-daily-24","case":"daily","size":24,"seed":0,"role":"performance","public":true},
+  {"id":"performance-tariff-20","case":"tariff","size":20,"seed":5,"role":"performance","public":false}
+]

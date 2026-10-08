@@ -1,0 +1,21 @@
+[
+  {"id":"semantic-variable-12","case":"variable","size":12,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-variable-60","case":"variable","size":60,"seed":3,"role":"semantic","public":true},
+  {"id":"semantic-overlap","case":"overlap","size":10,"seed":1,"role":"semantic","public":true},
+  {"id":"semantic-nested","case":"nested","size":8,"seed":2,"role":"semantic","public":true},
+  {"id":"semantic-whole","case":"whole","size":6,"seed":2,"role":"semantic","public":true},
+  {"id":"semantic-missing","case":"missing","size":5,"seed":3,"role":"semantic","public":true},
+  {"id":"semantic-single-key","case":"single_key","size":7,"seed":3,"role":"semantic","public":true},
+  {"id":"semantic-empty","case":"empty","size":4,"seed":0,"role":"semantic","public":true},
+  {"id":"semantic-hidden-single-file","case":"single_file","size":40,"seed":5,"role":"semantic","public":false},
+  {"id":"semantic-hidden-chain-block","case":"chain_block","size":12,"seed":3,"role":"semantic","public":false},
+  {"id":"semantic-hidden-gaps","case":"gaps","size":15,"seed":4,"role":"semantic","public":false},
+  {"id":"semantic-hidden-inline","case":"inline","size":9,"seed":1,"role":"semantic","public":false},
+  {"id":"semantic-hidden-zero-len","case":"zero_len","size":8,"seed":0,"role":"semantic","public":false},
+  {"id":"semantic-hidden-nested-wide","case":"nested","size":120,"seed":11,"role":"semantic","public":false},
+  {"id":"semantic-hidden-overlap-wide","case":"overlap","size":150,"seed":7,"role":"semantic","public":false},
+  {"id":"semantic-hidden-single-file-mid","case":"single_file","size":900,"seed":2,"role":"semantic","public":false},
+  {"id":"performance-variable-1800","case":"variable","size":1800,"seed":0,"role":"performance","public":true},
+  {"id":"performance-variable-6000","case":"variable","size":6000,"seed":0,"role":"performance","public":true},
+  {"id":"performance-single-file-6000","case":"single_file","size":6000,"seed":1,"role":"performance","public":false}
+]

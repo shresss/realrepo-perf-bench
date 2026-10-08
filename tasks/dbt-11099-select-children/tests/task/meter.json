@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "core/dbt/graph/graph.py"
+  ],
+  "package_paths": [
+    "core/dbt"
+  ],
+  "pandas_udf": false,
+  "interpretation": "Diagnostic graph-selector operation counts only; not native coverage or universal complexity proof."
+}

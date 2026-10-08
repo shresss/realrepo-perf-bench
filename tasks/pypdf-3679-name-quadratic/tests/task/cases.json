@@ -1,0 +1,22 @@
+[
+  {"id":"resave-depth0","case":"resave:1","size":0,"seed":2,"role":"semantic","public":true},
+  {"id":"resave-depth3","case":"resave:1","size":3,"seed":3,"role":"semantic","public":true},
+  {"id":"tagged-depth4","case":"tagged:1","size":4,"seed":4,"role":"semantic","public":false},
+  {"id":"special-short","case":"special:12","size":6,"seed":5,"role":"semantic","public":true},
+  {"id":"special-long","case":"special:20","size":40,"seed":6,"role":"semantic","public":false},
+  {"id":"special-empty","case":"special:2","size":0,"seed":7,"role":"semantic","public":false},
+  {"id":"boundary-16","case":"boundary:16","size":6,"seed":8,"role":"semantic","public":true},
+  {"id":"boundary-32","case":"boundary:32","size":6,"seed":9,"role":"semantic","public":false},
+  {"id":"boundary-48","case":"boundary:48","size":6,"seed":10,"role":"semantic","public":false},
+  {"id":"boundary-64","case":"boundary:64","size":6,"seed":11,"role":"semantic","public":false},
+  {"id":"boundary-112","case":"boundary:112","size":6,"seed":12,"role":"semantic","public":false},
+  {"id":"boundary-8176","case":"boundary:8176","size":3,"seed":13,"role":"semantic","public":false},
+  {"id":"boundary-16368","case":"boundary:16368","size":3,"seed":14,"role":"semantic","public":false},
+  {"id":"boundary-24560","case":"boundary:24560","size":3,"seed":15,"role":"semantic","public":false},
+  {"id":"brokenlen-short","case":"brokenlen:1","size":40,"seed":16,"role":"semantic","public":true},
+  {"id":"brokenlen-8k","case":"brokenlen:8160","size":40,"seed":17,"role":"semantic","public":false},
+  {"id":"brokenlen-16k","case":"brokenlen:16350","size":24,"seed":18,"role":"semantic","public":false},
+  {"id":"resave-depth10","case":"resave:2","size":10,"seed":1,"role":"performance","public":true},
+  {"id":"resave-depth12","case":"resave:2","size":12,"seed":1,"role":"performance","public":false},
+  {"id":"tagged-depth12","case":"tagged:2","size":12,"seed":5,"role":"performance","public":false}
+]

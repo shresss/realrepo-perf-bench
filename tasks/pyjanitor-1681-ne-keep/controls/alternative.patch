@@ -1,0 +1,65 @@
+diff --git a/janitor/functions/_conditional_join/_not_equal_indices.py b/janitor/functions/_conditional_join/_not_equal_indices.py
+index f0489b8..f6d16af 100644
+--- a/janitor/functions/_conditional_join/_not_equal_indices.py
++++ b/janitor/functions/_conditional_join/_not_equal_indices.py
+@@ -24,6 +24,9 @@ def _not_equal_indices(
+     and strictly greater than indices.
+     """
+ 
++    if keep in {"first", "last"}:
++        return _not_equal_keep_by_value(left=left, right=right, keep=keep)
++
+     dummy = np.array([], dtype=np.intp)
+ 
+     # deal with nulls
+@@ -106,3 +109,50 @@ def _not_equal_indices(
+     outcome = _keep_output(keep, left, right)
+     left_index, right_index = outcome
+     return {"left_index": left_index, "right_index": right_index}
++
++
++def _not_equal_keep_by_value(
++    left: pd.Series,
++    right: pd.Series,
++    keep: str,
++) -> dict:
++    """First/last unequal right row per left row, computed once per distinct left value."""
++    dummy = np.array([], dtype=np.intp)
++    if left.empty or right.empty:
++        return {"left_index": dummy, "right_index": dummy}
++    left_nulls = left.isna().to_numpy()
++    right_nulls = right.isna().to_numpy()
++    codes, uniques = pd.factorize(left, use_na_sentinel=True)
++    pick = 0 if keep == "first" else -1
++    per_value = np.full(len(uniques) + 1, -1, dtype=np.intp)
++    # A missing left value is unequal to every right row.
++    per_value[-1] = 0 if keep == "first" else right.size - 1
++    for code, value in enumerate(uniques):
++        unequal = right.ne(value).to_numpy(dtype=bool, na_value=True)
++        hits = np.flatnonzero(unequal | right_nulls)
++        if hits.size:
++            per_value[code] = hits[pick]
++    right_positions = per_value[codes]
++
++    # Rank rows the way the materialized join emits them: below the largest
++    # right value, then above the smallest, then missing left values, then
++    # (only when the right side has missing values) every remaining row.
++    unmatched = 4
++    group = np.full(left.size, unmatched, dtype=np.int8)
++    present = right[~right_nulls]
++    if not present.empty:
++        below = left.lt(present.max()).to_numpy(dtype=bool, na_value=False)
++        above = left.gt(present.min()).to_numpy(dtype=bool, na_value=False)
++        group[left_nulls] = 2
++        group[above & ~left_nulls] = 1
++        group[below & ~left_nulls] = 0
++    if right_nulls.any():
++        group[group == unmatched] = 3
++    order = np.argsort(group, kind="stable")
++    order = order[group[order] != unmatched]
++    left_index = left.index.to_numpy(copy=False)[order]
++    right_index = right.index.to_numpy(copy=False)[right_positions[order]]
++    return {
++        "left_index": left_index.astype(np.intp, copy=False),
++        "right_index": right_index.astype(np.intp, copy=False),
++    }

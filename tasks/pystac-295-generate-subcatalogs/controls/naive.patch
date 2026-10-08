@@ -1,0 +1,29 @@
+--- a/pystac/catalog.py
++++ b/pystac/catalog.py
+@@ -557,6 +557,7 @@
+ 
+         layout_template = LayoutTemplate(template, defaults=defaults)
+ 
++        destination_cache = {}
+         items = list(self.get_items())
+         for item in items:
+             item_parts = layout_template.get_template_values(item)
+@@ -570,13 +571,17 @@
+             curr_parent = self
+             for k, v in item_parts.items():
+                 subcat_id = '{}'.format(v)
+-                subcat = curr_parent.get_child(subcat_id)
++                cache_key = (id(curr_parent), subcat_id)
++                subcat = destination_cache.get(cache_key)
++                if subcat is None:
++                    subcat = curr_parent.get_child(subcat_id)
+                 if subcat is None:
+                     subcat_desc = 'Catalog of items from {} with {} of {}'.format(
+                         curr_parent.id, k, v)
+                     subcat = pystac.Catalog(id=subcat_id, description=subcat_desc)
+                     curr_parent.add_child(subcat)
+                     result.append(subcat)
++                destination_cache[cache_key] = subcat
+                 curr_parent = subcat
+             self.remove_item(item.id)
+             # resolve collection link so when added back points to correct location

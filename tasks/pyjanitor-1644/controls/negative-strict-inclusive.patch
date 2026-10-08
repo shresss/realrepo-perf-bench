@@ -1,0 +1,26 @@
+diff --git a/janitor/functions/_conditional_join/_greater_than_indices.py b/janitor/functions/_conditional_join/_greater_than_indices.py
+index eab6c9d..5b82750 100644
+--- a/janitor/functions/_conditional_join/_greater_than_indices.py
++++ b/janitor/functions/_conditional_join/_greater_than_indices.py
+@@ -45,7 +45,7 @@ def _greater_than_indices(
+     left_array = _convert_array_to_numpy(array=left._values)
+     right_array = _convert_array_to_numpy(array=right._values)
+     if strict:
+-        outcome = _binary_search._binary_search_gt_first(
++        outcome = _binary_search._binary_search_ge_first(
+             left=left_array, right=right_array, left_index=left.index._values
+         )
+     else:
+diff --git a/janitor/functions/_conditional_join/_less_than_indices.py b/janitor/functions/_conditional_join/_less_than_indices.py
+index b801e2d..34c7081 100644
+--- a/janitor/functions/_conditional_join/_less_than_indices.py
++++ b/janitor/functions/_conditional_join/_less_than_indices.py
+@@ -45,7 +45,7 @@ def _less_than_indices(
+     left_array = _convert_array_to_numpy(array=left._values)
+     right_array = _convert_array_to_numpy(array=right._values)
+     if strict:
+-        outcome = _binary_search._binary_search_lt_first(
++        outcome = _binary_search._binary_search_le_first(
+             left=left_array, right=right_array, left_index=left.index._values
+         )
+     else:

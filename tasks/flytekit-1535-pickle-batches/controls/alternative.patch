@@ -1,0 +1,62 @@
+--- a/flytekit/core/type_engine.py
++++ b/flytekit/core/type_engine.py
+@@ -968,12 +968,27 @@
+         except Exception as e:
+             raise ValueError(f"Type of Generic List type is not supported, {e}")
+ 
++    @staticmethod
++    def _pickle_elements(python_type: Type) -> bool:
++        from flytekit.types.pickle import FlytePickle
++
++        subtype = ListTransformer.get_sub_type(python_type)
++        return isinstance(subtype, type) and issubclass(subtype, FlytePickle)
++
+     def to_literal(self, ctx: FlyteContext, python_val: T, python_type: Type[T], expected: LiteralType) -> Literal:
+         if type(python_val) != list:
+             raise TypeTransformerFailedError("Expected a list")
+ 
+         t = self.get_sub_type(python_type)
+-        lit_list = [TypeEngine.to_literal(ctx, x, t, expected.collection_type) for x in python_val]  # type: ignore
++        if self._pickle_elements(python_type):
++            # Bound each transport unit while retaining an unambiguous envelope.
++            # A tuple tag keeps list-valued records distinct from the batch itself.
++            lit_list = []
++            for offset in range(0, len(python_val), 256):
++                envelope = ("flyte-list-chunk-v1", python_val[offset : offset + 256])
++                lit_list.append(TypeEngine.to_literal(ctx, envelope, t, expected.collection_type))
++        else:
++            lit_list = [TypeEngine.to_literal(ctx, x, t, expected.collection_type) for x in python_val]
+         return Literal(collection=LiteralCollection(literals=lit_list))
+ 
+     def to_python_value(self, ctx: FlyteContext, lv: Literal, expected_python_type: Type[T]) -> typing.List[typing.Any]:  # type: ignore
+@@ -983,6 +998,19 @@
+             raise TypeTransformerFailedError()
+ 
+         st = self.get_sub_type(expected_python_type)
++        if self._pickle_elements(expected_python_type):
++            result = []
++            for literal in lits:
++                envelope = TypeEngine.to_python_value(ctx, literal, st)
++                if not (
++                    isinstance(envelope, tuple)
++                    and len(envelope) == 2
++                    and envelope[0] == "flyte-list-chunk-v1"
++                    and isinstance(envelope[1], list)
++                ):
++                    raise TypeTransformerFailedError("Invalid list transport envelope")
++                result.extend(envelope[1])
++            return result
+         return [TypeEngine.to_python_value(ctx, x, st) for x in lits]
+ 
+     def guess_python_type(self, literal_type: LiteralType) -> list:  # type: ignore
+--- a/flytekit/core/promise.py
++++ b/flytekit/core/promise.py
+@@ -92,6 +92,8 @@
+                 if len(input_val) == 0:
+                     raise
+                 sub_type = type(input_val[0])
++            if ListTransformer._pickle_elements(python_type):
++                return TypeEngine.to_literal(ctx, input_val, python_type, lt)
+             literal_list = [extract_value(ctx, v, sub_type, lt.collection_type) for v in input_val]
+             return _literal_models.Literal(collection=_literal_models.LiteralCollection(literals=literal_list))
+         elif isinstance(input_val, dict):

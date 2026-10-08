@@ -1,0 +1,26 @@
+--- a/fsspec/implementations/memory.py	2026-10-01 02:43:45
++++ b/fsspec/implementations/memory.py	2026-10-01 02:43:45
+@@ -181,9 +181,10 @@
+         if path in self.pseudo_dirs:
+             raise IsADirectoryError(path)
+         parent = path
++        store = self.store
+         while len(parent) > 1:
+             parent = self._parent(parent)
+-            if self.isfile(parent):
++            if parent in store and parent not in self.pseudo_dirs:
+                 raise FileExistsError(parent)
+         if mode in ["rb", "ab", "r+b"]:
+             if path in self.store:
+@@ -254,7 +255,11 @@
+         else:
+             path = [self._strip_protocol(p) for p in path]
+         paths = self.expand_path(path, recursive=recursive, maxdepth=maxdepth)
++        store = self.store
+         for p in reversed(paths):
++            if p in store:
++                del store[p]
++                continue
+             # If the expanded path doesn't exist, it is only because the expanded
+             # path was a directory that does not exist in self.pseudo_dirs. This
+             # is possible if you directly create files without making the

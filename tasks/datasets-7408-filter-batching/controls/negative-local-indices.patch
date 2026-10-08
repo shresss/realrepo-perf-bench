@@ -1,0 +1,41 @@
+--- a/src/datasets/arrow_dataset.py
++++ b/src/datasets/arrow_dataset.py
+@@ -3716,6 +3716,11 @@
+         if len(self) == 0:
+             return self
+ 
++        # We generally batch the underlying map() to get faster throughput,
++        # but in case of async we force batch_size=1 to enable parallelism
++        if inspect.iscoroutinefunction(function) and not batched:
++            batch_size = 1
++
+         indices = self.map(
+             function=partial(
+                 async_get_indices_from_mask_function
+@@ -3732,7 +3737,7 @@
+             with_rank=True,
+             features=Features({"indices": Value("uint64")}),
+             batched=True,
+-            batch_size=batch_size if batched else 1,
++            batch_size=batch_size,
+             remove_columns=self.column_names,
+             keep_in_memory=keep_in_memory,
+             load_from_cache_file=load_from_cache_file,
+@@ -6394,7 +6399,7 @@
+                 example = {key: batch[key][i] for key in batch}
+                 additional_args = ()
+                 if with_indices:
+-                    additional_args += (indices[i],)
++                    additional_args += (i,)
+                 if with_rank:
+                     additional_args += (rank,)
+                 mask.append(function(example, *additional_args, **fn_kwargs))
+@@ -6406,7 +6411,7 @@
+                 input = [column[i] for column in columns]
+                 additional_args = ()
+                 if with_indices:
+-                    additional_args += (indices[i],)
++                    additional_args += (i,)
+                 if with_rank:
+                     additional_args += (rank,)
+                 mask.append(function(*input, *additional_args, **fn_kwargs))

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gray-two-pages",
+    "case": "gray8:eod",
+    "size": 2,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "bilevel-two-pages",
+    "case": "drawmini:eod",
+    "size": 2,
+    "seed": 8,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "fax-3",
+    "case": "gray8:eod",
+    "size": 3,
+    "seed": 5,
+    "role": "performance",
+    "public": true
+  }
+]

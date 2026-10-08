@@ -1,0 +1,9 @@
+{
+  "target_paths": [
+    "src/cattrs/gen"
+  ],
+  "package_paths": [
+    "cattrs"
+  ],
+  "pandas_udf": false
+}

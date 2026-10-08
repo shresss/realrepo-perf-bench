@@ -1,0 +1,42 @@
+[
+  {
+    "id": "reschedule-small",
+    "case": "reschedule",
+    "size": 11,
+    "seed": 3,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "clear-reuse",
+    "case": "clear-reuse",
+    "size": 12,
+    "seed": 19,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "priority",
+    "case": "priority",
+    "size": 40,
+    "seed": 47,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "scale-500",
+    "case": "reschedule",
+    "size": 500,
+    "seed": 179,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "scale-2000",
+    "case": "reschedule",
+    "size": 2000,
+    "seed": 179,
+    "role": "performance",
+    "public": true
+  }
+]

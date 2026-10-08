@@ -1,0 +1,42 @@
+[
+  {
+    "id": "semantic-daily-1",
+    "case": "daily",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-daily-2",
+    "case": "daily",
+    "size": 2,
+    "seed": 7,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-daily-3",
+    "case": "daily",
+    "size": 3,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-daily-5",
+    "case": "daily",
+    "size": 5,
+    "seed": 2,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "performance-daily-24",
+    "case": "daily",
+    "size": 24,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]

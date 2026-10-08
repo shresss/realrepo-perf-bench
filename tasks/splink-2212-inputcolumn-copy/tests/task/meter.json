@@ -1,0 +1,10 @@
+{
+  "target_paths": [
+    "splink"
+  ],
+  "package_paths": [
+    "splink"
+  ],
+  "pandas_udf": false,
+  "interpretation": "Diagnostic operation counts, not native-work coverage or universal complexity proof."
+}

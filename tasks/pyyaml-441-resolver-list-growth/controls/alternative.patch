@@ -1,0 +1,17 @@
+--- a/lib3/yaml/resolver.py
++++ b/lib3/yaml/resolver.py
+@@ -146,10 +146,10 @@
+                 resolvers = self.yaml_implicit_resolvers.get('', [])
+             else:
+                 resolvers = self.yaml_implicit_resolvers.get(value[0], [])
+-            resolvers += self.yaml_implicit_resolvers.get(None, [])
+-            for tag, regexp in resolvers:
+-                if regexp.match(value):
+-                    return tag
++            for group in (resolvers, self.yaml_implicit_resolvers.get(None, [])):
++                for tag, regexp in group:
++                    if regexp.match(value):
++                        return tag
+             implicit = implicit[1]
+         if self.yaml_path_resolvers:
+             exact_paths = self.resolver_exact_paths[-1]

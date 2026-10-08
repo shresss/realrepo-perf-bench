@@ -1,0 +1,34 @@
+[
+  {
+    "id": "semantic-edges",
+    "case": "edges",
+    "size": 1,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "semantic-cleanup-3",
+    "case": "cleanup",
+    "size": 3,
+    "seed": 0,
+    "role": "semantic",
+    "public": true
+  },
+  {
+    "id": "performance-cleanup-250",
+    "case": "cleanup",
+    "size": 250,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  },
+  {
+    "id": "performance-cleanup-1000",
+    "case": "cleanup",
+    "size": 1000,
+    "seed": 0,
+    "role": "performance",
+    "public": true
+  }
+]
